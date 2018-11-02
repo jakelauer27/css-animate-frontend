@@ -1,0 +1,63 @@
+@import './vars';
+
+.editor {
+  overflow: scroll;
+}
+
+.animation-container,
+.keyframes-container {
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Inconsolata', monospace;
+  margin: 10px 16px;
+  width: 500px;
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.class-container {
+  margin: 15px 0;
+}
+
+.class-selector {
+  color: #ffce09;
+}
+
+.ani-prop,
+.keyframe-property {
+  color: #00d8ff;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+p {
+  span {
+    color: white;
+  }
+}
+
+.prop-input {
+  background-color: rgb(68, 68, 68);
+  border: none;
+  color: rgb(189, 107, 0);
+  font-size: 1em;
+  font-family: 'Inconsolata', monospace;
+  margin-left: 5px;
+}
+
+.keyframes-section {
+  margin-left: 15px;
+}
+
+.keyframe-prop-value {
+  color: rgb(189, 107, 0);
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.keyframes-label,
+.keyframes-name {
+  color: #ffce09;
+}

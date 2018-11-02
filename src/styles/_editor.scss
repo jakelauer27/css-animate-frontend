@@ -1,0 +1,48 @@
+@import './vars';
+
+.editor-component {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+}
+
+.editor {
+  border: 4px solid black;
+  border-radius: 0 12px 12px;
+  background-color: #292929;
+  height: 550px;
+  width: 100%;
+}
+
+.editor-options {
+
+  button {
+    background-color: lightgray;
+    border: 4px solid black;
+    border-bottom: none;
+    font-size: 1.2em;
+    padding: 6px 12px;
+    transition: all .3s;
+
+    &:hover {
+      color: white;
+      cursor: pointer;
+      background-color: $mainBlue;
+    }
+  }
+
+  .selected {
+    color: white;
+    background-color: $mainBlue;
+  }
+
+  .animation-btn {
+    border-right: none;
+    border-radius: 12px 0 0 0;
+  }
+
+  .keyframes-btn {
+    border-radius: 0 12px 0 0;
+  }
+}
+

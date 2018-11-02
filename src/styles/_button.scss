@@ -1,0 +1,30 @@
+@import './vars';
+
+.lower-btn {
+  background-color: $mainBlue;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-size: 1.4em;
+  margin-top: 10px;
+  padding: 2px 26px 5px;
+  transition: all .3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.play-btn {
+  background-color: $goGreen;
+}
+
+.stop-btn {
+  background-color: $stopRed;
+  margin-left: 15px;
+}
+
+.copy-btn {
+  margin-right: 15px;
+}
