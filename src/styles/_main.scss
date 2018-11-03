@@ -25,22 +25,61 @@ header {
   button {
     background-color: $mainBlue;
     border: 0;
+    border-radius: 2px;
+    padding: 6px 18px;
+    margin-right: 10px;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.3em;
     margin-top: 24px;
     transition: all .3s;
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.03);
+    &:hover + .examples-list {
+      display: block;
     }
   }
 }
 
-.load-example-btn {
-  border-radius: 20px;
-  padding: 6px 18px;
-  margin-right: 10px;
+.header-btn-container {
+  &:hover .load-example-btn {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  &:hover .load-example-btn .fa-caret-right {
+    transform: rotate(90deg);
+  }
+}
+
+.fa-caret-right {
+  left: 6px;
+  position: relative;
+  top: 1px;
+  transition: all .2s;
+}
+
+.examples-list {
+  background-color: white;
+  display: none;
+  position: absolute;
+  list-style: none;
+  transition: all 2s;
+  width: 180px;
+
+  &:hover {
+    display: block;
+  }
+
+  li {
+    text-align: center;
+    padding: 4px;
+    font-size: 1.2em;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(61, 61, 61);
+      color: white;
+    }
+  }
 }
 
 .questions-btn {
