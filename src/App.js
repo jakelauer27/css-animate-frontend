@@ -16,8 +16,6 @@ class App extends Component {
   }
 
   chooseExample(e) {
-    var styleSheet = document.styleSheets[0]
-    console.log(styleSheet)
     this.setState({
       animation: animations[e.target.innerText]
     })
@@ -36,15 +34,31 @@ class App extends Component {
     })
   }
 
+  updateKeyframes = (stageIndex, propIndex, value) => {
+    let name = this.state.animation.properties.name
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    let updatedRule = animations[name].keyframes;
+    updatedRule.sections[stageIndex].properties[propIndex].value = value;
+    
+    let formattedRule = `@keyframes ${updatedRule.name} 
+    ${this.getKeyframeStages(updatedRule)}`;
+
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
+  }
+
   getKeyframeStages(keyframe) {
     var obj = keyframe.sections.reduce( (stages, section, i) => {
       let sectionProps = section.properties.reduce( (propsObj, prop, i) => {
-        if (i === keyframe.sections.length - 1) {
+        if (i === section.properties.length - 1) {
           return `${propsObj} ${prop.name}: ${prop.value};}`
         }
         return `${propsObj} ${prop.name}: ${prop.value};` ;
       }, `{`)
-
       if (i === keyframe.sections.length - 1) {
         return stages + section.label + sectionProps + "}"
       }
@@ -54,6 +68,12 @@ class App extends Component {
   }
   ///////////////////////////////////////
 
+  reset = () => {
+    this.setState({
+      animation: this.state.animation.keyframes.name
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,7 +81,7 @@ class App extends Component {
           <h1 className='main-title'>CSS Ani-Mate</h1>
           <div className='header-btn-container'>
             <button className='load-example-btn'>Load Examples
-              <i class="fas fa-caret-right"></i>
+              <i className="fas fa-caret-right"></i>
             </button>
             <ul className='examples-list'>
               {
@@ -79,7 +99,9 @@ class App extends Component {
           </div>
         </header>
         <main>
-          <Editor animation={this.state.animation}/>
+          <Editor animation={this.state.animation}
+            updateKeyframes={this.updateKeyframes}
+            reset={this.reset}/>
           <Viewer animation={this.state.animation.properties}/>
         </main>
       </div>

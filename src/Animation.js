@@ -37,6 +37,30 @@ class Animation extends Component {
     })
   }
 
+  saveKeyframes(e) {
+    document.querySelector('.stop-btn').click();
+    let newAnimation = Object.assign(this.state.animation);
+    let stageLabel = e.target.parentElement.parentElement.childNodes[0].classList[1];
+    let propLabel = e.target.classList[1];
+    let stageIndex = '';
+    let propIndex = '';
+    newAnimation.keyframes.sections.map( (stage, i) => {
+       if (stage.label === stageLabel) {
+         stageIndex = i;
+       }
+    })
+    newAnimation.keyframes.sections[stageIndex].properties.map( (prop, i) => {
+       if (prop.name === propLabel) {
+         propIndex = i;
+       }
+    })
+    newAnimation.keyframes.sections[stageIndex].properties[propIndex].value = e.target.value;
+    this.setState({
+      animation: newAnimation
+    })
+    this.props.updateKeyframes(stageIndex, propIndex, e.target.value)
+  }
+
   render() {
     if (!this.state.animation) {
       return <div></div>
@@ -78,13 +102,16 @@ class Animation extends Component {
             this.state.animation.keyframes.sections.map( (section, i) => {
               return (
                 <div className='keyframes-section'>
-                  <p className='keyframes-label'>{section.label} <span> {openCurly}</span></p>
+                  <p className={`keyframes-label ${section.label}`}>{section.label} <span> {openCurly}</span></p>
                   {
                     section.properties.map( (prop) => {
                       return (
-                        <div className='keyframe-properties-container'>
+                        <div className='props-container'>
                           <p className='keyframe-property'>{prop.name}<span>:</span></p>
-                          <p className='keyframe-prop-value'>{prop.value}</p>
+                          <input className={`keyframe-prop-value ${prop.name}`} 
+                            type='text' 
+                            value={prop.value}
+                            onChange={e => this.saveKeyframes(e)}></input>
                         </div>                   
                         )
                       })
@@ -92,8 +119,7 @@ class Animation extends Component {
                   <p className='close-curly'>{closeCurly}</p>
                 </div>
               )
-            })
-            
+            }) 
           }
           <p className='close-curly'>{closeCurly}</p>
         </div>

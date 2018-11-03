@@ -10,7 +10,7 @@
   font-size: 1.5em;
   font-family: 'Inconsolata', monospace;
   margin: 10px 16px;
-  width: 500px;
+  overflow: hidden;
 
   p {
     margin-top: 5px;
@@ -29,7 +29,6 @@
 .keyframe-property {
   color: #00d8ff;
   margin-left: 20px;
-  display: inline-block;
 }
 
 p {
@@ -38,23 +37,24 @@ p {
   }
 }
 
-.prop-input {
+.props-container {
+  display: flex;
+}
+
+.prop-input,
+.keyframe-prop-value {
   background-color: rgb(68, 68, 68);
   border: none;
   color: rgb(189, 107, 0);
   font-size: 1em;
   font-family: 'Inconsolata', monospace;
   margin-left: 5px;
+  margin-top: 5px;
+  flex-grow: 1;
 }
 
 .keyframes-section {
   margin-left: 15px;
-}
-
-.keyframe-prop-value {
-  color: rgb(189, 107, 0);
-  margin-left: 5px;
-  display: inline-block;
 }
 
 .keyframes-label,

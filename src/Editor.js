@@ -59,14 +59,15 @@ class Editor extends Component {
           </div>
           <div className='editor'>
             <Animation animation={this.state.animation} 
-              animationEx={this.state.animationEx}/>
+              animationEx={this.state.animationEx}
+              updateKeyframes={(stageIndex, propIndex, value) => this.props.updateKeyframes(stageIndex, propIndex, value)}/>
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
           <button class={`lower-btn copy-btn`}>
             copy
           </button>
-          <button class={`lower-btn reset-btn`}>
+          <button class={`lower-btn reset-btn`} onClick={() => this.props.reset()}>
             reset
           </button>
         </div>
