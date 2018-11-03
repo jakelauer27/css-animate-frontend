@@ -14,6 +14,10 @@
     cursor: pointer;
     transform: scale(1.05);
   }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .play-btn {
