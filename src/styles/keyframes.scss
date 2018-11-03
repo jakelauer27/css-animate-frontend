@@ -1,8 +1,17 @@
 @keyframes slideIn {
   from {
-    transform: translateX(-100px)
+    transform: translateX(-300px)
   }
   to {
     transform: translateX(0px)
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: translateX(400px) rotate(900deg) ;   
+  }
+  to {
+    transform: translateX(0px) rotate(0deg) ; 
   }
 }
