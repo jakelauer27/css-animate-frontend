@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Button from './Button';
 import Animation from './Animation'
 import './styles/app.scss';
-import animations from './data';
 
 class Editor extends Component {
   constructor() {
@@ -10,7 +8,7 @@ class Editor extends Component {
     this.state = {
       animation: 'selected',
       keyframes: false,
-      animations: animations
+      animationEx: null
     }
   }
 
@@ -27,8 +25,25 @@ class Editor extends Component {
       })
     }
   }
+
+  componentDidMount() {
+    this.setState({
+      animationEx: this.props.animation
+    })
+  }
+
+  componentDidUpdate(prevProp) {
+    if (prevProp.animation !== this.props.animation) {
+      this.setState({
+        animationEx: this.props.animation
+      })
+    }
+  }
   
   render() {
+    if (!this.state.animationEx) {
+      return <div></div>
+    }
     return (
       <div className='editor-component'>
         <div className='editor-container'>
@@ -44,12 +59,16 @@ class Editor extends Component {
           </div>
           <div className='editor'>
             <Animation animation={this.state.animation} 
-              animationEx={this.state.animations.slideIn}/>
+              animationEx={this.state.animationEx}/>
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
-          <Button title={'copy'}/>
-          <Button title={'reset'}/>
+          <button class={`lower-btn copy-btn`}>
+            copy
+          </button>
+          <button class={`lower-btn reset-btn`}>
+            reset
+          </button>
         </div>
       </div>
     )

@@ -17,7 +17,7 @@ const animations = {
           'properties': [
             {
               'name': 'transform',
-              'value': 'translateX(-100px)'
+              'value': 'translateX(-300px)'
             }
           ]
         },
@@ -33,6 +33,42 @@ const animations = {
       ]
     }
   },
+
+  'rotateIn': {
+    'properties': {
+      'name': 'rotateIn',
+      'duration': '1.8s',
+      'timing-function': 'ease',
+      'delay': '.5s',
+      'iteration-count': '1',
+      'direction': 'forwards',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'rotateIn',
+      'sections': [
+        {
+          'label': 'from',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(400px) rotate(900deg)'
+            }
+          ]
+        },
+        {
+          'label': 'to',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(0px) rotate(0deg)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+
 }
 
 export default animations;

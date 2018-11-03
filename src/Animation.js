@@ -20,7 +20,16 @@ class Animation extends Component {
     })
   }
 
+  componentDidUpdate(prevProp) {
+    if (prevProp.animationEx !== this.props.animationEx) {
+      this.setState({
+        animation: this.props.animationEx
+      })
+    }
+  }
+
   saveForm(e) {
+    document.querySelector('.stop-btn').click()
     let newAnimation = Object.assign(this.state.animation);
     newAnimation.properties[e.target.classList[1]] = e.target.value;
     this.setState({
