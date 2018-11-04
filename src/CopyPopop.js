@@ -1,44 +1,61 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 
+const openCurly = '{';
+const closeCurly = '}';
+
 class CopyPopup extends Component {
 
   copyPasteKeyframes = () => {
-    let keyframes = `@keyframes ${this.props.animation.properties.name} 
-    ${this.getKeyframeStages(this.props.animation.keyframes)}`;
-    return keyframes;
+    return (
+      <div className='keyframes-popup'>
+        <textarea className='keyframe-text' value={`@keyframes ${this.props.animation.keyframes.name} {
+  ${this.getKeyframeStages(this.props.animation.keyframes)}
+}`
+}>
+        </textarea>  
+      </div>
+    );
   }
 
   copyPasteAnimation = () => {
     let keys = Object.keys(this.props.animation.properties)
     let props = this.props.animation.properties;
-    let animation = `animation: ${
-      keys.reduce((animation, key, i) => {
-        if (i === keys.length -1) {
-          animation += `; animation-fill-mode: ${props[key]}`;
-        } else {
-          animation += props[key] + ' ';
-        }
-        return animation;
-      }, '')
-    };`
+    let animation = (
+      <div className='animation-popup'>
+        <textarea className='animation-text'value={
+            `animation:${
+                keys.map((key, i) => {
+                  console.log(props[key])
+                  if (i === keys.length -1) {
+                    return ';'
+                  } 
+                  return ` ${props[key]}`
+                }).join('')} 
+animation-fill-mode: ${props['fill-mode']};`
+        }>
+        </textarea>
+      </div>
+    )
     return animation;
   }
 
   getKeyframeStages(keyframe) {
-    var obj = keyframe.sections.reduce( (stages, section, i) => {
-      let sectionProps = section.properties.reduce( (propsObj, prop, i) => {
-        if (i === section.properties.length - 1) {
-          return `${propsObj} ${prop.name}: ${prop.value};}`
-        }
-        return `${propsObj} ${prop.name}: ${prop.value};` ;
-      }, `{`)
-      if (i === keyframe.sections.length - 1) {
-        return stages + section.label + sectionProps + "}"
+    var obj = keyframe.sections.map( (section, i) => {
+      return (
+  `${section.label} {
+    ${
+      section.properties.map( (prop) => {
+        return (
+          `${prop.name}: ${prop.value};`                
+          )
+        })
       }
-      return stages + section.label + sectionProps
-    }, "{")
-    return obj
+  }
+  `
+      )
+    }) 
+    return obj.join('')
   }
 
   
@@ -48,15 +65,19 @@ class CopyPopup extends Component {
     }
     return (
     <div className='copy-paste-popup'>
-      <h2>Keyframes</h2>
-      {
-        <p>{this.copyPasteKeyframes()}</p>
-      } 
-      <h2>Animation</h2>
-      {
-        <p>{this.copyPasteAnimation()}</p>
-      } 
-      <button className='close-popup-btn' onClick={() => this.props.closePopup()}>close</button>
+      <div className='popup-keyframes-container popup-container'>
+        <h2 className='copy-popup-label'>Keyframes</h2>
+        {
+          <p>{this.copyPasteKeyframes()}</p>
+        } 
+      </div>
+      <div className='popup-animation-container popup-container'>
+        <h2 className='copy-popup-label'>Animation</h2>
+        {
+          <p>{this.copyPasteAnimation()}</p>
+        } 
+      </div>
+      <button className='close-popup-btn' onClick={() => this.props.closePopup()}><i className="fas fa-times"></i></button>
     </div>
     )
   }

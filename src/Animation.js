@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './styles/app.scss';
 
 const openCurly = '{';
-const closeCurly = '}';
+const closeCurly = '};';
 const aniProps = ['name', 'duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
 
 class Animation extends Component {

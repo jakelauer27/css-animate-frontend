@@ -1,0 +1,71 @@
+.copy-paste-popup {
+  background-color: rgb(78, 78, 78);
+  border: 4px solid black;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 115px;
+  left: 37px;
+  width: 500px;
+  z-index: 2;
+}
+
+.close-popup-btn {
+  position: absolute;
+  top: 5px; 
+  right: 5px;
+  border-radius: 50%;
+  background: $darkBlue;
+  border: 2px solid black;
+  padding: 5px 8px;
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    color: white;
+  }
+}
+
+.popup-container {
+  margin: 10px;
+}
+
+.popup-prop-value {
+  background: none;
+  position: relative;
+  bottom: 6px;
+  left: -3px;
+}
+
+.copy-popup-label {
+  font-family: 'Roboto slab', serrif;
+  margin-bottom: 6px;
+}
+
+.popup-prop-label {
+  margin: 0px;
+}
+
+.popup-prop-container {
+  display: flex;
+}
+
+.popup-ani-prop {
+  margin-left: 5px;
+}
+
+textarea {
+  background-color: rgb(53, 52, 52);
+  padding: 8px 7px;
+  border-color: $mainBlue;
+  border-radius: 5px;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  font-size: 1em;
+  width: 97%;
+  resize: none;
+}
+
+.keyframe-text {
+  height: 170px;
+}
