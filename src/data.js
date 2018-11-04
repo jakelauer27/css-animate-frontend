@@ -1,4 +1,4 @@
-const animations = {
+const animationsData = {
   'slideIn': {
     'properties': {
       'name': 'slideIn',
@@ -71,4 +71,4 @@ const animations = {
 
 }
 
-export default animations;
+export default animationsData;

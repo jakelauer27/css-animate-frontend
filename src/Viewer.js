@@ -14,6 +14,7 @@ class Viewer extends Component {
   componentDidUpdate(prevProp) {
     if (prevProp.animation !== this.props.animation) {
       this.setState({
+        animation: {},
         play: true
       })
     }

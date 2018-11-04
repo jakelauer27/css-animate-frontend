@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import './styles/app.scss';
 import Editor from './Editor';
 import Viewer from './Viewer';
-import animations from './data';
+import animationsData from './data';
 
-const keyframes = Object.keys(animations);
-var sheet = document.styleSheets[4]
+const keyframes = Object.keys(animationsData);
+var sheet = document.styleSheets[4];
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      animation: Object.assign(animations.slideIn)
+      animations:  JSON.parse(JSON.stringify(animationsData)),
+      animation:  JSON.parse(JSON.stringify(animationsData)).slideIn,
+      original:  JSON.parse(JSON.stringify(animationsData)).slideIn
     }
   }
 
   chooseExample(e) {
     this.setState({
-      animation: animations[e.target.innerText]
+      animation: this.state.animations[e.target.innerText],
+      original: JSON.parse(JSON.stringify(this.state.animations[e.target.innerText]))
     })
   }
 
@@ -28,7 +31,7 @@ class App extends Component {
   ////////INSERTING KEYFRAMES TO CSS
   loadKeyframes() {
     keyframes.forEach( (keyframe) => {
-      let key = animations[keyframe].keyframes;
+      let key = this.state.animations[keyframe].keyframes;
       sheet.insertRule(`@keyframes ${key.name} 
         ${this.getKeyframeStages(key)}`, sheet.length)
     })
@@ -40,7 +43,7 @@ class App extends Component {
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
       return sheet.cssRules[rule].name === name;
     })
-    let updatedRule = animations[name].keyframes;
+    let updatedRule = this.state.animations[name].keyframes;
     updatedRule.sections[stageIndex].properties[propIndex].value = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
@@ -69,9 +72,9 @@ class App extends Component {
   ///////////////////////////////////////
 
   reset = () => {
-    console.log(animations[this.state.animation.keyframes.name])
     this.setState({
-      animation: animations[this.state.animation.keyframes.name]
+      original: JSON.parse(JSON.stringify(this.state.original)),
+      animation: this.state.original
     })
   }
 
