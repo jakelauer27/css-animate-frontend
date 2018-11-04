@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   ////////INSERTING KEYFRAMES TO CSS
+
   loadKeyframes() {
     keyframes.forEach( (keyframe) => {
       let key = this.state.animations[keyframe].keyframes;
@@ -38,20 +39,26 @@ class App extends Component {
   }
 
   updateKeyframes = (stageIndex, propIndex, value) => {
-    let name = this.state.animation.properties.name
+    let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
       return sheet.cssRules[rule].name === name;
     })
+    let formattedRule = this.formatKeyframes(stageIndex, propIndex, value);
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
+  }
+
+  formatKeyframes(stageIndex, propIndex, value) {
+    let name = this.state.animation.properties.name
     let updatedRule = this.state.animations[name].keyframes;
+
     updatedRule.sections[stageIndex].properties[propIndex].value = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
     ${this.getKeyframeStages(updatedRule)}`;
-
-
-    sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
+    return formattedRule
   }
 
   getKeyframeStages(keyframe) {
@@ -69,6 +76,7 @@ class App extends Component {
     }, "{")
     return obj
   }
+
   ///////////////////////////////////////
 
   reset = () => {
@@ -76,6 +84,16 @@ class App extends Component {
       original: JSON.parse(JSON.stringify(this.state.original)),
       animation: this.state.original
     })
+  }
+
+  resetRule() {
+    let name = this.state.animation.properties.name  
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(this.state.animation.keyframes, sheet.length)
   }
 
   render() {

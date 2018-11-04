@@ -48,7 +48,8 @@ class Viewer extends Component {
               return (
                 <div className={`square square-${i}`} 
                      key={i}
-                     style={this.state.animation}>
+                     style={this.state.animation}
+                     onAnimationEnd={() => this.resetAnimation()}>
                   {item} 
                 </div>
               )

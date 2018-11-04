@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Animation from './Animation'
+import CopyPopup from './CopyPopop';
 import './styles/app.scss';
 
 class Editor extends Component {
@@ -8,7 +9,8 @@ class Editor extends Component {
     this.state = {
       animation: 'selected',
       keyframes: false,
-      animationEx: null
+      animationEx: null,
+      popup: false
     }
   }
 
@@ -24,6 +26,18 @@ class Editor extends Component {
         keyframes: false
       })
     }
+  }
+
+  renderPopup() {
+    this.setState({
+      popup: true
+    })
+  }
+
+  closePopup = () => {
+    this.setState({
+      popup: false
+    })
   }
 
   componentDidMount() {
@@ -64,7 +78,10 @@ class Editor extends Component {
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
-          <button class={`lower-btn copy-btn`}>
+          <CopyPopup animation={this.state.animationEx}
+              active={this.state.popup}
+              closePopup={this.closePopup}/>
+          <button class={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
             copy
           </button>
           <button class={`lower-btn reset-btn`} onClick={() => this.props.reset()}>

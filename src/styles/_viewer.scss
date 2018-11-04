@@ -1,14 +1,15 @@
 @import './vars';
 
 .viewer-component {
-  margin: 15px;
+  margin: 10px 12px;
   height: 550px;
   flex-grow: 1;
 }
 
 .current-animation-label {
+  color: white;
   float: right;
-  margin: 6px 2px;
+  margin: 8px 2px;
   font-family: 'Roboto slab', serrif;
 }
 
@@ -16,10 +17,10 @@
   border: 4px solid black;
   box-shadow: 0px 0px 8px 3px #ffffffbd;
   border-radius: 12px;
-  height: 550px;
+  height: 552px;
   width: 100%;
   background-image: none;
-  background-color: rgba(8, 8, 8, 0.144);
+  background-color: rgba(28, 25, 116, 0.185);
   overflow: hidden;
 }
 
