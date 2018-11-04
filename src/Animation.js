@@ -44,12 +44,12 @@ class Animation extends Component {
     let propLabel = e.target.classList[1];
     let stageIndex = '';
     let propIndex = '';
-    newAnimation.keyframes.sections.map( (stage, i) => {
+    newAnimation.keyframes.sections.forEach( (stage, i) => {
        if (stage.label === stageLabel) {
          stageIndex = i;
        }
     })
-    newAnimation.keyframes.sections[stageIndex].properties.map( (prop, i) => {
+    newAnimation.keyframes.sections[stageIndex].properties.forEach( (prop, i) => {
        if (prop.name === propLabel) {
          propIndex = i;
        }

@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      animation: animations.slideIn
+      animation: Object.assign(animations.slideIn)
     }
   }
 
@@ -69,8 +69,9 @@ class App extends Component {
   ///////////////////////////////////////
 
   reset = () => {
+    console.log(animations[this.state.animation.keyframes.name])
     this.setState({
-      animation: this.state.animation.keyframes.name
+      animation: animations[this.state.animation.keyframes.name]
     })
   }
 
@@ -78,7 +79,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1 className='main-title'>CSS Ani-Mate</h1>
+          <h1 className='main-title'>CSS ani<span>Mate</span></h1>
           <div className='header-btn-container'>
             <button className='load-example-btn'>Load Examples
               <i className="fas fa-caret-right"></i>
@@ -95,8 +96,8 @@ class App extends Component {
                 })
               }
             </ul>
-            <button className='questions-btn'>?</button>
           </div>
+          <button className='questions-btn'>?</button>
         </header>
         <main>
           <Editor animation={this.state.animation}

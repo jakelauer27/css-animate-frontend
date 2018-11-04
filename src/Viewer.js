@@ -39,6 +39,7 @@ class Viewer extends Component {
   render() {
     return (
       <div className='viewer-component'>
+      <h2 className='current-animation-label'>*{this.props.animation.name}*</h2>
       <div className='viewer-container'>
         <div className='viewer'>
           {
@@ -54,7 +55,7 @@ class Viewer extends Component {
           }
         </div>
       </div>
-      <div className='viewer-bottom-btns-container'>
+      <div className='editor-bottom-btns-container'>
         <button className={`lower-btn play-btn`} 
           onClick={() => this.playAnimation()}
           disabled={!this.state.play}>play</button>

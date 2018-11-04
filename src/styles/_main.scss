@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, .5);
-  padding: 10px 20px;
+  background-color: rgb(151, 168, 167);
+  padding: 0px;
   height: 100%;
 }
 
@@ -16,19 +16,25 @@ body {
   color: white;
   font-family: 'Roboto slab', serrif;
   font-size: 3.5em;
+
+  span {
+    color: $mainBlue;
+  }
 }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #343E3D;
+  padding: 5px;
 
   button {
     background-color: $mainBlue;
-    border: 0;
+    border: 3px solid black;
     border-radius: 2px;
     padding: 6px 18px;
     margin-right: 10px;
-    color: white;
+    color: black;
     font-size: 1.3em;
     margin-top: 24px;
     transition: all .3s;
@@ -40,13 +46,18 @@ header {
 }
 
 .header-btn-container {
+  position: absolute;
+  top: 5px;
+  right: 70px;
+
   &:hover .load-example-btn {
     cursor: pointer;
-    transform: scale(1.03);
+    color: white;
   }
 
   &:hover .load-example-btn .fa-caret-right {
     transform: rotate(90deg);
+    color: white;
   }
 }
 
@@ -54,16 +65,17 @@ header {
   left: 6px;
   position: relative;
   top: 1px;
-  transition: all .2s;
+  transition: all .3s;
 }
 
 .examples-list {
   background-color: white;
+  border: 2px solid black;
   display: none;
   position: absolute;
   list-style: none;
   transition: all 2s;
-  width: 180px;
+  width: 182px;
 
   &:hover {
     display: block;
@@ -85,8 +97,19 @@ header {
 .questions-btn {
   border-radius: 50%;
   padding: 6px 14px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: white;
+  }
 }
 
 main {
   display: flex;
+  margin: 5px 30px;
 }

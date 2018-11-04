@@ -22,7 +22,7 @@
 }
 
 .class-selector {
-  color: #ffce09;
+  color: #f6c810;
 }
 
 .ani-prop,
@@ -45,11 +45,12 @@ p {
 .keyframe-prop-value {
   background-color: rgb(68, 68, 68);
   border: none;
-  color: rgb(189, 107, 0);
+  color: rgb(246, 141, 3);
   font-size: 1em;
   font-family: 'Inconsolata', monospace;
   margin-left: 5px;
   margin-top: 5px;
+  padding: 2px 5px;
   flex-grow: 1;
 }
 

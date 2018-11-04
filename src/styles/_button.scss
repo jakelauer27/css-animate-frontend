@@ -1,34 +1,59 @@
 @import './vars';
 
+.editor-bottom-btns-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .lower-btn {
-  background-color: $mainBlue;
-  border: none;
+  background-color: #607466;
+  border: 3px solid black;
   border-radius: 16px;
-  color: white;
+  color: black;
   font-size: 1.4em;
-  margin-top: 10px;
+  margin: 10px;
   padding: 2px 26px 5px;
   transition: all .3s;
+  flex-grow: 1;
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    color: white;
+    transform: scale(1.02);
+    background-color: $mainBlue;
   }
 
   &:disabled {
     opacity: 0.5;
   }
+
+  &:disabled:hover {
+    color: black;
+    cursor: default;
+    transform: scale(1.00);
+  }
 }
 
 .play-btn {
-  background-color: $goGreen;
+  background-color: $mainBlue;
+
+  &:hover {
+    background-color:  #AEDCC0;
+  }
+
+  &:disabled:hover {
+    background-color: $mainBlue;
+  }
 }
 
 .stop-btn {
   background-color: $stopRed;
-  margin-left: 15px;
-}
 
-.copy-btn {
-  margin-right: 15px;
+  &:hover {
+    background-color: red;
+  }
+
+  &:disabled:hover {
+    background-color: $stopRed;
+  }
 }
