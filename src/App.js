@@ -3,6 +3,7 @@ import './styles/app.scss';
 import Editor from './Editor';
 import Viewer from './Viewer';
 import animationsData from './data';
+import InfoPopup from './infoPopup';
 
 const keyframes = Object.keys(animationsData);
 var sheet = document.styleSheets[4];
@@ -13,7 +14,8 @@ class App extends Component {
     this.state = {
       animations:  JSON.parse(JSON.stringify(animationsData)),
       animation:  JSON.parse(JSON.stringify(animationsData)).slideIn,
-      original:  JSON.parse(JSON.stringify(animationsData)).slideIn
+      original:  JSON.parse(JSON.stringify(animationsData)).slideIn,
+      infoPopup: false
     }
   }
 
@@ -77,24 +79,31 @@ class App extends Component {
     return obj
   }
 
+  toggleInfoPopup = (toggle) => {
+    this.setState({
+      infoPopup: toggle
+    })
+  }
+
   ///////////////////////////////////////
 
   reset = () => {
     this.setState({
       original: JSON.parse(JSON.stringify(this.state.original)),
-      animation: this.state.original
+      animation: JSON.parse(JSON.stringify(this.state.original))
     })
   }
 
-  resetRule() {
-    let name = this.state.animation.properties.name  
-    let ruleKeys = Object.keys(sheet.cssRules)
-    let keyframeToDeleteIndex = ruleKeys.find(rule => {
-      return sheet.cssRules[rule].name === name;
-    })
-    sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(this.state.animation.keyframes, sheet.length)
-  }
+  // resetRule() {
+  //   console.log('hi')
+  //   let name = this.state.animation.properties.name  
+  //   let ruleKeys = Object.keys(sheet.cssRules)
+  //   let keyframeToDeleteIndex = ruleKeys.find(rule => {
+  //     return sheet.cssRules[rule].name === name;
+  //   })
+  //   sheet.deleteRule(keyframeToDeleteIndex)
+  //   sheet.insertRule(this.state.animation.keyframes, sheet.length)
+  // }
 
   render() {
     return (
@@ -118,7 +127,10 @@ class App extends Component {
               }
             </ul>
           </div>
-          <button className='questions-btn'>?</button>
+          <button className='questions-btn'
+            onClick={() => this.toggleInfoPopup(true)}>?</button>
+          <InfoPopup display={this.state.infoPopup}
+            toggleOff={this.toggleInfoPopup}/>
         </header>
         <main>
           <Editor animation={this.state.animation}

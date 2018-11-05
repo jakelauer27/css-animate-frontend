@@ -1,0 +1,183 @@
+.infoPopup-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.61);
+  z-index: 3;
+
+  .info-popup {
+    background-color: rgb(39, 39, 39);
+    border: 4px solid black;
+    border-radius: 18px;
+    box-shadow: 0px 0px 8px 3px #ffffffbd;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    right: 15%;
+    height: 630px;
+    animation: slideFromRight .2s;
+    width: 70%;
+  }
+
+  header {
+    justify-content: space-between;
+
+    button {
+      margin: 3px;
+      width: 100%;
+      font-family: 'Roboto slab', serrif;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $mainBlue;
+      }
+    }
+  }
+
+  .close-info-popup-btn {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px;
+    width: 80px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $mainBlue;
+    }
+  }
+
+  .info-section {
+    animation: slideFromRight .5s;
+    padding: 10px 15px;
+    color: white;
+  }
+
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(1500px)
+    }
+    to {
+      transform: translateX(0px)
+    }
+  }
+
+  ///////////HOWTO//////////
+
+  .howto-info {
+    p {
+      font-size: 1.7em;
+      margin-top: 30px;
+    }
+
+    .animating-span {
+      color: $mainBlue;
+    }
+
+    .howto-final-line {
+      font-size: 2.3em;
+      margin-top: 75px;
+    }
+  }
+
+  .title {
+    font-family: 'Roboto slab', serrif;
+    font-size: 2.8em;
+
+    span {
+      color: $mainBlue;
+    }
+  }
+
+  //////KEYFRAMES INFO
+
+  .keyframes-info {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 30px;
+    grid-template-areas: 
+      'main main'
+      'keyframes transform-area';
+    
+    .keyframes-body {
+      font-size: 1.5em;
+    }
+
+    .title {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+  }
+
+  .main-keyframes-info {
+    grid-area: main;
+  }
+
+  .keyframes-info-example {
+    grid-area: keyframes;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  .code-container {
+    margin-left: 20px;
+  }
+
+  .code {
+    font-size: 1.5em;
+    margin: 7px;
+
+    span {
+      margin-left: 10px;
+    }
+
+    .colon {
+      margin: 0;
+    }
+  }
+
+  .indent1 {
+    padding-left: 25px;
+  }
+
+  .indent2 {
+    padding-left: 50px;
+  }
+
+  .transform-example {
+    grid-area: transform-area;
+  }
+
+  .pink-code {
+    margin-top: 22px;
+    color: rgb(230, 90, 155);
+  }
+
+  .blue-code {
+    color: $codeBlue;
+  }
+
+  .yellow-code {
+    color: $codeYellow;
+  }
+  
+  .transformations-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 22px;
+  }
+
+  .transform-group {
+    list-style: none;
+    font-size: 1.6em;
+
+    li {
+      margin: 8px;
+      color: $codeBlue;
+
+      span {
+        color: white;
+      }
+    }
+  }
+}

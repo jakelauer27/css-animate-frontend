@@ -50,7 +50,7 @@ class Viewer extends Component {
                      key={i}
                      style={this.state.animation}
                      onAnimationEnd={() => this.resetAnimation()}>
-                  {item} 
+                    <h4 className='main-title'>ani<span>Mate</span></h4>
                 </div>
               )
             })
