@@ -19,6 +19,15 @@ $codeOrange: rgb(246, 141, 3);
   }
 }
 
+@keyframes slideDown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 342px;
+  }
+}
+
 @mixin lower-button($background) {
   background-color: $background;
   border: 3px solid black;

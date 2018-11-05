@@ -13,8 +13,8 @@ const animationsData = {
       'name': 'slideInX',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'transform',
@@ -23,8 +23,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'transform',
@@ -49,8 +49,8 @@ const animationsData = {
       'name': 'slideInY',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'transform',
@@ -59,8 +59,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'transform',
@@ -85,8 +85,8 @@ const animationsData = {
       'name': 'fadeIn',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'opacity',
@@ -95,8 +95,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'opacity',
@@ -122,8 +122,8 @@ const animationsData = {
       'name': 'rotateIn',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'transform',
@@ -132,8 +132,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'transform',
@@ -188,7 +188,7 @@ const animationsData = {
           ]
         },
         {
-          'name': '95%',
+          'name': '100%',
           'label': '100%',
           'properties': [
             {
@@ -215,8 +215,8 @@ const animationsData = {
       'name': 'dropDown',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'height',
@@ -229,8 +229,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'height',
@@ -260,8 +260,8 @@ const animationsData = {
       'name': 'ySpinLoad',
       'sections': [
         {
-          'name': 'from',
-          'label': 'from',
+          'name': '0%',
+          'label': '0%',
           'properties': [
             {
               'name': 'transform',
@@ -270,8 +270,8 @@ const animationsData = {
           ]
         },
         {
-          'name': 'to',
-          'label': 'to',
+          'name': '100%',
+          'label': '100%',
           'properties': [
             {
               'name': 'transform',

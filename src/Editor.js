@@ -74,8 +74,9 @@ class Editor extends Component {
           <div className='editor'>
             <Animation animation={this.state.animation} 
               animationEx={this.state.animationEx}
-              updateKeyframes={(stageIndex, propIndex, value) => this.props.updateKeyframes(stageIndex, propIndex, value)}
-              updateKeyframesStages={(stageIndex, value) => this.props.updateKeyframesStages(stageIndex, value)}/>
+              updateKeyframes={(stageIndex, propIndex, value, newAnimation) => this.props.updateKeyframes(stageIndex, propIndex, value, newAnimation)}
+              updateKeyframesStages={(stageIndex, value, newAnimation) => this.props.updateKeyframesStages(stageIndex, value, newAnimation)}
+              updateAnimationProperties={(newAnimation) => this.props.updateAnimationProperties(newAnimation)}/>
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
