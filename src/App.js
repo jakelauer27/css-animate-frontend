@@ -151,6 +151,8 @@ class App extends Component {
     return (
       <div className="App">
         <header>
+          <button className='questions-btn'
+          onClick={() => this.toggleInfoPopup(true)}>Instructions</button>
           <h1 className='main-title'>CSS ani<span>Mate</span></h1>
           <div className='header-btn-container'>
             <button className='load-example-btn'>Load Examples
@@ -169,8 +171,6 @@ class App extends Component {
               }
             </ul>
           </div>
-          <button className='questions-btn'
-            onClick={() => this.toggleInfoPopup(true)}>?</button>
           <InfoPopup display={this.state.infoPopup}
             toggleOff={this.toggleInfoPopup}/>
         </header>

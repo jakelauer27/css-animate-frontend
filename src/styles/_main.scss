@@ -50,19 +50,10 @@ header {
   }
 }
 
-@keyframes slideDown {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 140px;
-  }
-}
-
 .header-btn-container {
   position: absolute;
   top: 5px;
-  right: 70px;
+  left: 28px;
 
   &:hover .load-example-btn {
     cursor: pointer;
@@ -87,12 +78,13 @@ header {
   background-color: white;
   border: 2px solid black;
   display: none;
-  height: 140px;
+  height: 340px;
   overflow: scroll;
   position: absolute;
   list-style: none;
   transition: all 2s;
   width: 177px;
+  z-index: 4;
 
   &:hover {
     animation: slideDown .3s ease;
@@ -113,11 +105,11 @@ header {
 }
 
 .questions-btn {
-  border-radius: 50%;
+  border-radius: 12px;
   padding: 6px 14px;
   position: absolute;
   top: 5px;
-  right: 15px;
+  right: 20px;
   
 
   &:hover {
