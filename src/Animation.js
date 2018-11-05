@@ -30,14 +30,31 @@ class Animation extends Component {
 
   saveForm(e) {
     document.querySelector('.stop-btn').click()
-    let newAnimation = Object.assign(this.state.animation);
+    let newAnimation = this.state.animation;
     newAnimation.properties[e.target.classList[1]] = e.target.value;
     this.setState({
       animation: newAnimation
     })
   }
 
-  saveKeyframes(e) {
+  saveKeyframesStages(e) {
+    document.querySelector('.stop-btn').click();
+    let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
+    let stageLabel = e.target.classList[1];
+    let stageIndex = '';
+    newAnimation.keyframes.sections.forEach( (stage, i) => {
+       if (stage.name === stageLabel) {
+         stageIndex = i;
+       }
+    })
+    newAnimation.keyframes.sections[stageIndex].label = e.target.value;
+    this.setState({
+      animation: newAnimation
+    })
+    this.props.updateKeyframesStages(stageIndex, e.target.value)
+  }
+
+  saveKeyframesProps(e) {
     document.querySelector('.stop-btn').click();
     let newAnimation = Object.assign(this.state.animation);
     let stageLabel = e.target.parentElement.parentElement.childNodes[0].classList[1];
@@ -102,7 +119,11 @@ class Animation extends Component {
             this.state.animation.keyframes.sections.map( (section, i) => {
               return (
                 <div className='keyframes-section'>
-                  <p className={`keyframes-label ${section.label}`}>{section.label} <span> {openCurly}</span></p>
+                  <input className={`keyframes-label ${section.name}`} 
+                    value={section.label} 
+                    type='text'
+                    onChange={e => this.saveKeyframesStages(e)}/> 
+                    <span> {openCurly}</span>
                   {
                     section.properties.map( (prop) => {
                       return (
@@ -111,7 +132,7 @@ class Animation extends Component {
                           <input className={`keyframe-prop-value ${prop.name}`} 
                             type='text' 
                             value={prop.value}
-                            onChange={e => this.saveKeyframes(e)}></input>
+                            onChange={e => this.saveKeyframesProps(e)}></input>
                         </div>                   
                         )
                       })

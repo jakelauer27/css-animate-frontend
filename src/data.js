@@ -1,7 +1,7 @@
 const animationsData = {
-  'slideIn': {
+  'slideInX': {
     'properties': {
-      'name': 'slideIn',
+      'name': 'slideInX',
       'duration': '1.5s',
       'timing-function': 'ease',
       'delay': '0s',
@@ -10,9 +10,10 @@ const animationsData = {
       'fill-mode': 'forwards'
     },
     'keyframes': {
-      'name': 'slideIn',
+      'name': 'slideInX',
       'sections': [
         {
+          'name': 'from',
           'label': 'from',
           'properties': [
             {
@@ -22,11 +23,84 @@ const animationsData = {
           ]
         },
         {
+          'name': 'to',
           'label': 'to',
           'properties': [
             {
               'name': 'transform',
               'value': 'translateX(0px)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+  'slideInY': {
+    'properties': {
+      'name': 'slideInY',
+      'duration': '1.5s',
+      'timing-function': 'ease',
+      'delay': '0s',
+      'iteration-count': '1',
+      'direction': 'normal',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'slideInY',
+      'sections': [
+        {
+          'name': 'from',
+          'label': 'from',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(-400px)'
+            }
+          ]
+        },
+        {
+          'name': 'to',
+          'label': 'to',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(0px)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+  'fadeIn': {
+    'properties': {
+      'name': 'fadeIn',
+      'duration': '.9s',
+      'timing-function': 'linear',
+      'delay': '0s',
+      'iteration-count': '1',
+      'direction': 'normal',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'fadeIn',
+      'sections': [
+        {
+          'name': 'from',
+          'label': 'from',
+          'properties': [
+            {
+              'name': 'opacity',
+              'value': '0'
+            }
+          ]
+        },
+        {
+          'name': 'to',
+          'label': 'to',
+          'properties': [
+            {
+              'name': 'opacity',
+              'value': '1'
             }
           ]
         },
@@ -48,6 +122,7 @@ const animationsData = {
       'name': 'rotateIn',
       'sections': [
         {
+          'name': 'from',
           'label': 'from',
           'properties': [
             {
@@ -57,11 +132,68 @@ const animationsData = {
           ]
         },
         {
+          'name': 'to',
           'label': 'to',
           'properties': [
             {
               'name': 'transform',
               'value': 'translateX(0px) rotate(0deg)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+  'zoomIn': {
+    'properties': {
+      'name': 'zoomIn',
+      'duration': '.5s',
+      'timing-function': 'ease',
+      'delay': '0s',
+      'iteration-count': '1',
+      'direction': 'normal',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'zoomIn',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(400px) skewX(-15deg)'
+            }
+          ]
+        },
+        {
+          'name': '90%',
+          'label': '90%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(0px) skew(0deg)'
+            }
+          ]
+        },
+        {
+          'name': '95%',
+          'label': '95%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(-2px) skew(2deg)'
+            }
+          ]
+        },
+        {
+          'name': '95%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(0px) skew(0deg)'
             }
           ]
         },
@@ -83,6 +215,7 @@ const animationsData = {
       'name': 'dropDown',
       'sections': [
         {
+          'name': 'from',
           'label': 'from',
           'properties': [
             {
@@ -96,6 +229,7 @@ const animationsData = {
           ]
         },
         {
+          'name': 'to',
           'label': 'to',
           'properties': [
             {
@@ -112,9 +246,9 @@ const animationsData = {
     }
   },
 
-  'ySpin': {
+  'ySpinLoad': {
     'properties': {
-      'name': 'ySpin',
+      'name': 'ySpinLoad',
       'duration': '2.6s',
       'timing-function': 'linear',
       'delay': '0s',
@@ -123,18 +257,20 @@ const animationsData = {
       'fill-mode': 'forwards'
     },
     'keyframes': {
-      'name': 'ySpin',
+      'name': 'ySpinLoad',
       'sections': [
         {
+          'name': 'from',
           'label': 'from',
           'properties': [
             {
               'name': 'transform',
-              'value': 'rotateX(0deg)'
+              'value': 'rotateY(0deg)'
             },
           ]
         },
         {
+          'name': 'to',
           'label': 'to',
           'properties': [
             {
@@ -147,9 +283,9 @@ const animationsData = {
     }
   },
 
-  'bounceIn': {
+  'bounceAppear': {
     'properties': {
-      'name': 'bounceIn',
+      'name': 'bounceAppear',
       'duration': '450ms',
       'timing-function': 'linear',
       'delay': '.7s',
@@ -158,9 +294,10 @@ const animationsData = {
       'fill-mode': 'both'
     },
     'keyframes': {
-      'name': 'bounceIn',
+      'name': 'bounceAppear',
       'sections': [
         {
+          'name': '0%',
           'label': '0%',
           'properties': [
             {
@@ -174,6 +311,7 @@ const animationsData = {
           ]
         },
         {
+          'name': '50%',
           'label': '50%',
           'properties': [
             {
@@ -187,6 +325,7 @@ const animationsData = {
           ]
         },
         {
+          'name': '80%',
           'label': '80%',
           'properties': [
             {
@@ -200,6 +339,7 @@ const animationsData = {
           ]
         },
         {
+          'name': '100%',
           'label': '100%',
           'properties': [
             {
@@ -215,6 +355,195 @@ const animationsData = {
       ]
     }
   },
+
+  'bounceDrop': {
+    'properties': {
+      'name': 'bounceDrop',
+      'duration': '650ms',
+      'timing-function': 'linear',
+      'delay': '.2s',
+      'iteration-count': 1,
+      'direction': 'normal',
+      'fill-mode': 'both'
+    },
+    'keyframes': {
+      'name': 'bounceDrop',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(-400px)'
+            },
+          ]
+        },
+        {
+          'name': '49%',
+          'label': '49%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(0px) scaleY(1)'
+            },
+          ]
+        },
+        {
+          'name': '50%',
+          'label': '50%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(0px) scaleY(0.95)'
+            },
+          ]
+        },
+        {
+          'name': '70%',
+          'label': '70%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(-10px) scaleY(1)'
+            },
+          ]
+        },
+        {
+          'name': '100%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(0px)'
+            },
+          ]
+        }
+      ]
+    }
+  },
+
+  'wiggle': {
+    'properties': {
+      'name': 'wiggle',
+      'duration': '.2s',
+      'timing-function': 'linear',
+      'delay': '0s',
+      'iteration-count': 3,
+      'direction': 'forwards',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'wiggle',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'rotate(0deg)'
+            },
+          ]
+        },
+        {
+          'name': '30%',
+          'label': '30%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'rotate(7deg)'
+            },
+          ]
+        },
+        {
+          'name': '70%',
+          'label': '70%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'rotate(-7deg)'
+            },
+          ]
+        },
+      ]
+    }
+  },
+
+  'color': {
+    'properties': {
+      'name': 'color',
+      'duration': '4s',
+      'timing-function': 'ease',
+      'delay': '0s',
+      'iteration-count': 'infinite',
+      'direction': 'alternate',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'color',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'background-color',
+              'value': 'rgb(59, 74, 129)'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+          ]
+        },
+        {
+          'name': '33%',
+          'label': '33%',
+          'properties': [
+            {
+              'name': 'background-color',
+              'value': '#26B177'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+          ]
+        },
+        {
+          'name': '66%',
+          'label': '66%',
+          'properties': [
+            {
+              'name': 'background-color',
+              'value': 'rgb(69, 163, 235)'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+          ]
+        },
+        {
+          'name': '100%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'background-color',
+              'value': 'rgb(59, 74, 129)'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+          ]
+        }
+      ]
+    }
+  },
 }
+
+
 
 export default animationsData;

@@ -1,4 +1,3 @@
-@import './vars';
 
 .editor {
   overflow: scroll;
@@ -57,4 +56,15 @@ p {
 .keyframes-label,
 .keyframes-name {
   color: #ffce09;
+}
+
+.keyframes-label {
+  background-color: rgb(68, 68, 68);
+  border: none;
+  font-size: 1em;
+  font-family: 'Inconsolata', monospace;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 2px 5px;
+  width: 60px;
 }

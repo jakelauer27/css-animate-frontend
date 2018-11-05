@@ -13,8 +13,8 @@ class App extends Component {
     super();
     this.state = {
       animations:  JSON.parse(JSON.stringify(animationsData)),
-      animation:  JSON.parse(JSON.stringify(animationsData)).slideIn,
-      original:  JSON.parse(JSON.stringify(animationsData)).slideIn,
+      animation:  JSON.parse(JSON.stringify(animationsData)).slideInX,
+      original:  JSON.parse(JSON.stringify(animationsData)).slideInX,
       infoPopup: false
     }
   }
@@ -51,6 +51,30 @@ class App extends Component {
     sheet.deleteRule(keyframeToDeleteIndex)
     sheet.insertRule(formattedRule, sheet.length)
   }
+
+  updateKeyframesStages = (stageIndex, value) => {
+    let name = this.state.animation.properties.name  
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    let formattedRule = this.formatKeyframesStages(stageIndex, value);
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
+  }
+
+  formatKeyframesStages(stageIndex, value) {
+    let name = this.state.animation.properties.name
+    let updatedRule = this.state.animations[name].keyframes;
+
+    updatedRule.sections[stageIndex].label = value;
+    
+    let formattedRule = `@keyframes ${updatedRule.name} 
+    ${this.getKeyframeStages(updatedRule)}`;
+    return formattedRule
+  }
+
 
   formatKeyframes(stageIndex, propIndex, value) {
     let name = this.state.animation.properties.name
@@ -94,17 +118,6 @@ class App extends Component {
     })
   }
 
-  // resetRule() {
-  //   console.log('hi')
-  //   let name = this.state.animation.properties.name  
-  //   let ruleKeys = Object.keys(sheet.cssRules)
-  //   let keyframeToDeleteIndex = ruleKeys.find(rule => {
-  //     return sheet.cssRules[rule].name === name;
-  //   })
-  //   sheet.deleteRule(keyframeToDeleteIndex)
-  //   sheet.insertRule(this.state.animation.keyframes, sheet.length)
-  // }
-
   render() {
     return (
       <div className="App">
@@ -135,6 +148,7 @@ class App extends Component {
         <main>
           <Editor animation={this.state.animation}
             updateKeyframes={this.updateKeyframes}
+            updateKeyframesStages={this.updateKeyframesStages}
             reset={this.reset}/>
           <Viewer animation={this.state.animation.properties}/>
         </main>
@@ -144,3 +158,15 @@ class App extends Component {
 }
 
 export default App;
+
+
+  // resetRule() {
+  //   console.log('hi')
+  //   let name = this.state.animation.properties.name  
+  //   let ruleKeys = Object.keys(sheet.cssRules)
+  //   let keyframeToDeleteIndex = ruleKeys.find(rule => {
+  //     return sheet.cssRules[rule].name === name;
+  //   })
+  //   sheet.deleteRule(keyframeToDeleteIndex)
+  //   sheet.insertRule(this.state.animation.keyframes, sheet.length)
+  // }

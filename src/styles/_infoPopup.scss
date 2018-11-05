@@ -54,13 +54,8 @@
     color: white;
   }
 
-  @keyframes slideFromRight {
-    from {
-      transform: translateX(1500px)
-    }
-    to {
-      transform: translateX(0px)
-    }
+  .selected-section {
+    background-color: rgb(68, 139, 206);
   }
 
   ///////////HOWTO//////////

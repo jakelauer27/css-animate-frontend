@@ -5,8 +5,28 @@ $mainBlue: rgb(69, 163, 235);
 $goGreen: #26B177;
 $stopRed: #C25555;
 $darkBlue: rgb(59, 74, 129);
-
 $codeBlue: #00d8ff;
 $codeYellow: #f6c810;
 $codeOrange: rgb(246, 141, 3);
 
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(1500px)
+  }
+  to {
+    transform: translateX(0px)
+  }
+}
+
+@mixin lower-button($background) {
+  background-color: $background;
+  border: 3px solid black;
+  border-radius: 16px;
+  color: white;
+  font-size: 1.4em;
+  margin: 10px;
+  padding: 2px 26px 5px;
+  transition: all .3s;
+  flex-grow: 1;
+}

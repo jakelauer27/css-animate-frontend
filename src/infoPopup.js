@@ -17,6 +17,11 @@ class InfoPopup extends Component {
 
   renderSection = (e) => {
     const section = e.target.classList[0];
+    document.querySelectorAll('.header-button').forEach(button => {
+      button.classList.remove('selected-section')
+    })
+
+    e.target.classList.add('selected-section');
 
     this.setState({
       keyframes: false,
@@ -34,7 +39,7 @@ class InfoPopup extends Component {
       <div className="infoPopup-overlay">
         <div className="info-popup">
           <header className="header">
-              <button className='howTo header-button' 
+              <button className='howTo header-button selected-section' 
                 onClick={this.renderSection}>how to play</button>
               <button className='keyframes header-button' 
                 onClick={this.renderSection}>keyframes</button>
