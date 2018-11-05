@@ -117,6 +117,22 @@ class App extends Component {
       original: JSON.parse(JSON.stringify(this.state.original)),
       animation: JSON.parse(JSON.stringify(this.state.original))
     })
+    this.resetRule()
+  }
+
+  resetRule() {
+    let name = this.state.animation.properties.name  
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    let updatedRule = this.state.original.keyframes
+    let formattedRule = `@keyframes ${name} 
+    ${this.getKeyframeStages(updatedRule)}`;
+
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
   }
 
   render() {
@@ -160,14 +176,3 @@ class App extends Component {
 
 export default App;
 
-
-  // resetRule() {
-  //   console.log('hi')
-  //   let name = this.state.animation.properties.name  
-  //   let ruleKeys = Object.keys(sheet.cssRules)
-  //   let keyframeToDeleteIndex = ruleKeys.find(rule => {
-  //     return sheet.cssRules[rule].name === name;
-  //   })
-  //   sheet.deleteRule(keyframeToDeleteIndex)
-  //   sheet.insertRule(this.state.animation.keyframes, sheet.length)
-  // }

@@ -40,10 +40,10 @@ class Animation extends Component {
   saveKeyframesStages(e) {
     document.querySelector('.stop-btn').click();
     let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
-    let stageLabel = e.target.classList[2];
+    let stageLabel = e.target.classList[1];
     let stageIndex = '';
     newAnimation.keyframes.sections.forEach( (stage, i) => {
-       if (stage.name === stageLabel) {
+       if (stage.label === stageLabel) {
          stageIndex = i;
        }
     })
@@ -61,9 +61,8 @@ class Animation extends Component {
     let propLabel = e.target.classList[1];
     let stageIndex = '';
     let propIndex = '';
-    console.log(stageLabel)
     newAnimation.keyframes.sections.forEach( (stage, i) => {
-       if (stage.name === stageLabel) {
+       if (stage.label === stageLabel) {
          stageIndex = i;
        }
     })
