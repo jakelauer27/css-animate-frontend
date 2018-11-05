@@ -50,7 +50,7 @@
 
   .info-section {
     animation: slideFromRight .5s;
-    padding: 10px 15px;
+    padding: 10px 20px;
     color: white;
   }
 
@@ -177,6 +177,41 @@
 
       span {
         color: white;
+      }
+    }
+  }
+
+  ///////////ANIMATION PROPERTIES SECTION
+
+  .animation-info {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      font-size: 1.8em;
+      list-style: none;
+      margin: 23px;
+      margin-left: 0px;
+    }
+  }
+
+  .ani-popup-property-container {
+    flex-grow: 1;
+
+    li {
+      color: $codeBlue;
+    }
+  }
+  
+  .ani-popup-value-container {
+    flex-grow: 1;
+
+    li {
+      color: $codeOrange;
+
+      span {
+        color: white;
+        margin: 5px;
       }
     }
   }
