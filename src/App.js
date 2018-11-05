@@ -31,6 +31,12 @@ class App extends Component {
     document.querySelector('.slideInX').click()
   }
 
+  updateAnimationProperties = (newAnimation) => {
+    this.setState({
+      animation: newAnimation
+    })
+  }
+
   ////////INSERTING KEYFRAMES TO CSS
 
   loadKeyframes() {
@@ -41,7 +47,7 @@ class App extends Component {
     })
   }
 
-  updateKeyframes = (stageIndex, propIndex, value) => {
+  updateKeyframes = (stageIndex, propIndex, value, newAnimation) => {
     let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
@@ -51,9 +57,12 @@ class App extends Component {
 
     sheet.deleteRule(keyframeToDeleteIndex)
     sheet.insertRule(formattedRule, sheet.length)
+    this.setState({
+      animation: newAnimation
+    })
   }
 
-  updateKeyframesStages = (stageIndex, value) => {
+  updateKeyframesStages = (stageIndex, value, newAnimation) => {
     let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
@@ -61,8 +70,11 @@ class App extends Component {
     })
     let formattedRule = this.formatKeyframesStages(stageIndex, value);
 
-    sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
+    sheet.deleteRule(keyframeToDeleteIndex);
+    sheet.insertRule(formattedRule, sheet.length);
+    this.setState({
+      animation: newAnimation
+    })
   }
 
   formatKeyframesStages(stageIndex, value) {
@@ -166,6 +178,7 @@ class App extends Component {
           <Editor animation={this.state.animation}
             updateKeyframes={this.updateKeyframes}
             updateKeyframesStages={this.updateKeyframesStages}
+            updateAnimationProperties={this.updateAnimationProperties}
             reset={this.reset}/>
           <Viewer animation={this.state.animation.properties}/>
         </main>

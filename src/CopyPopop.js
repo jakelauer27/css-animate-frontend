@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 
-const openCurly = '{';
-const closeCurly = '}';
-
 class CopyPopup extends Component {
 
   copyPasteKeyframes = () => {

@@ -188,7 +188,7 @@ const animationsData = {
           ]
         },
         {
-          'name': '95%',
+          'name': '100%',
           'label': '100%',
           'properties': [
             {

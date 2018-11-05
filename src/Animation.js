@@ -30,8 +30,9 @@ class Animation extends Component {
 
   saveForm(e) {
     document.querySelector('.stop-btn').click()
-    let newAnimation = this.state.animation;
+    let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
     newAnimation.properties[e.target.classList[1]] = e.target.value;
+    this.props.updateAnimationProperties(newAnimation)
     this.setState({
       animation: newAnimation
     })
@@ -43,7 +44,7 @@ class Animation extends Component {
     let stageLabel = e.target.classList[1];
     let stageIndex = '';
     newAnimation.keyframes.sections.forEach( (stage, i) => {
-       if (stage.label === stageLabel) {
+       if (stage.name === stageLabel) {
          stageIndex = i;
        }
     })
@@ -51,7 +52,7 @@ class Animation extends Component {
     this.setState({
       animation: newAnimation
     })
-    this.props.updateKeyframesStages(stageIndex, e.target.value)
+    this.props.updateKeyframesStages(stageIndex, e.target.value, newAnimation)
   }
 
   saveKeyframesProps(e) {
@@ -62,7 +63,7 @@ class Animation extends Component {
     let stageIndex = '';
     let propIndex = '';
     newAnimation.keyframes.sections.forEach( (stage, i) => {
-       if (stage.label === stageLabel) {
+       if (stage.name === stageLabel) {
          stageIndex = i;
        }
     })
@@ -75,7 +76,7 @@ class Animation extends Component {
     this.setState({
       animation: newAnimation
     })
-    this.props.updateKeyframes(stageIndex, propIndex, e.target.value)
+    this.props.updateKeyframes(stageIndex, propIndex, e.target.value, newAnimation)
   }
 
   render() {
@@ -123,7 +124,7 @@ class Animation extends Component {
             this.state.animation.keyframes.sections.map( (section, i) => {
               return (
                 <div className='keyframes-section' key={i}>
-                  <input className={`keyframes-label ${section.label}`} 
+                  <input className={`keyframes-label ${section.name}`} 
                     value={section.label} 
                     type='text'
                     onChange={e => this.saveKeyframesStages(e)}/> 
