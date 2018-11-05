@@ -28,6 +28,7 @@ class App extends Component {
 
   componentDidMount() {
     this.loadKeyframes()
+    document.querySelector('.slideInX').click()
   }
 
   ////////INSERTING KEYFRAMES TO CSS
@@ -131,7 +132,7 @@ class App extends Component {
               {
                 keyframes.map( (keyframe, i) => {
                   return (
-                    <li className='keyframe-ex' 
+                    <li className={`keyframe-ex ${keyframe}`} 
                         key={i}
                         onClick={e => this.chooseExample(e)}>{keyframe}
                     </li>
