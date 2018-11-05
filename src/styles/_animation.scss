@@ -17,12 +17,12 @@
 }
 
 .class-selector {
-  color: $codeYellow
+  color: #f6c810;
 }
 
 .ani-prop,
 .keyframe-property {
-  color: $codeBlue;
+  color: #00d8ff;
   margin-left: 20px;
 }
 
@@ -40,7 +40,7 @@ p {
 .keyframe-prop-value {
   background-color: rgb(68, 68, 68);
   border: none;
-  color: $codeOrange;
+  color: rgb(246, 141, 3);
   font-size: 1em;
   font-family: 'Inconsolata', monospace;
   margin-left: 5px;

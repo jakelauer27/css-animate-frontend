@@ -6,7 +6,7 @@ const animationsData = {
       'timing-function': 'ease',
       'delay': '0s',
       'iteration-count': '1',
-      'direction': 'normal',
+      'direction': 'forwards',
       'fill-mode': 'forwards'
     },
     'keyframes': {
@@ -115,7 +115,7 @@ const animationsData = {
       'timing-function': 'ease',
       'delay': '.5s',
       'iteration-count': '1',
-      'direction': 'normal',
+      'direction': 'forwards',
       'fill-mode': 'forwards'
     },
     'keyframes': {
@@ -208,7 +208,7 @@ const animationsData = {
       'timing-function': 'ease',
       'delay': '0s',
       'iteration-count': '1',
-      'direction': 'normal',
+      'direction': 'forwards',
       'fill-mode': 'forwards'
     },
     'keyframes': {
@@ -253,7 +253,7 @@ const animationsData = {
       'timing-function': 'linear',
       'delay': '0s',
       'iteration-count': 'infinite',
-      'direction': 'normal',
+      'direction': 'forwards',
       'fill-mode': 'forwards'
     },
     'keyframes': {
@@ -290,7 +290,7 @@ const animationsData = {
       'timing-function': 'linear',
       'delay': '.7s',
       'iteration-count': 1,
-      'direction': 'normal',
+      'direction': 'forwards',
       'fill-mode': 'both'
     },
     'keyframes': {

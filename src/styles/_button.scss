@@ -18,7 +18,6 @@
 
   &:hover {
     cursor: pointer;
-    background-color: rgb(70, 90, 204);
     color: white;
     transform: scale(1.02);
   }
@@ -42,8 +41,7 @@
   }
 
   &:disabled:hover {
-    background-color:  rgb(44, 141, 109);
-    color:white;
+    background-color: $mainBlue;
   }
 }
 
@@ -56,7 +54,6 @@
 
   &:disabled:hover {
     background-color: $stopRed;
-    color: white;
   }
 }
 

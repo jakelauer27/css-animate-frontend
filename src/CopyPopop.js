@@ -26,6 +26,7 @@ class CopyPopup extends Component {
         <textarea className='animation-text'value={
             `animation:${
                 keys.map((key, i) => {
+                  console.log(props[key])
                   if (i === keys.length -1) {
                     return ';'
                   } 
@@ -57,6 +58,7 @@ animation-fill-mode: ${props['fill-mode']};`
     return obj.join('')
   }
 
+  
   render() {
     if (!this.props.active) {
       return <div></div>
