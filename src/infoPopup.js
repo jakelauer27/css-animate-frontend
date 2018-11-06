@@ -15,8 +15,7 @@ class InfoPopup extends Component {
     this.keys = Object.keys(this.state);
   }
 
-  renderSection = (e) => {
-    const section = e.target.classList[0];
+  renderSection = (section, e) => {
     document.querySelectorAll('.header-button').forEach(button => {
       button.classList.remove('selected-section')
     })
@@ -40,11 +39,11 @@ class InfoPopup extends Component {
         <div className="info-popup">
           <header className="header">
               <button className='howTo header-button selected-section' 
-                onClick={this.renderSection}>how to play</button>
+                onClick={e => this.renderSection(e.target.classList[0], e)}>how to play</button>
               <button className='keyframes header-button' 
-                onClick={this.renderSection}>keyframes</button>
+                onClick={e => this.renderSection(e.target.classList[0], e)}>keyframes</button>
               <button className='animation header-button' 
-                onClick={this.renderSection}>animation properties</button>
+                onClick={e => this.renderSection(e.target.classList[0], e)}>animation properties</button>
           </header>
           {
             this.keys.map( key => {
@@ -56,12 +55,18 @@ class InfoPopup extends Component {
                   return <KeyframesInfo key={key} />;
                 case 'animation':
                   return <AnimationInfo key={key}/>;
+                default:
+                  return <div key={key}></div>
                 }
               }
+              return <div key={key}></div>;
             })
           }
         <button className='close-info-popup-btn' 
-          onClick={() => this.props.toggleOff(false)}>Go!</button>
+          onClick={e => {
+            this.renderSection('howTo', e)
+            this.props.toggleOff(false);
+          }}>Go!</button>
         </div>
       </div>
     );

@@ -9,7 +9,6 @@ $codeBlue: #00d8ff;
 $codeYellow: #f6c810;
 $codeOrange: rgb(246, 141, 3);
 
-
 @keyframes slideFromRight {
   from {
     transform: translateX(1500px)
@@ -19,14 +18,23 @@ $codeOrange: rgb(246, 141, 3);
   }
 }
 
+@keyframes slideDown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 422px;
+  }
+}
+
 @mixin lower-button($background) {
   background-color: $background;
   border: 3px solid black;
   border-radius: 16px;
   color: white;
+  flex-grow: 1;
   font-size: 1.4em;
   margin: 10px;
   padding: 2px 26px 5px;
   transition: all .3s;
-  flex-grow: 1;
 }

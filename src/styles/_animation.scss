@@ -40,13 +40,17 @@ p {
 .keyframe-prop-value {
   background-color: rgb(68, 68, 68);
   border: none;
+<<<<<<< HEAD
   color: rgb(246, 141, 3);
+=======
+  color: $codeOrange;
+  flex-grow: 1;
+>>>>>>> f1535473ed8d65a08672a7c7d4e9b5470f3267dd
   font-size: 1em;
   font-family: 'Inconsolata', monospace;
   margin-left: 5px;
   margin-top: 5px;
   padding: 2px 5px;
-  flex-grow: 1;
 }
 
 .keyframes-section {
@@ -67,4 +71,8 @@ p {
   margin-top: 5px;
   padding: 2px 5px;
   width: 60px;
+}
+
+#name {
+  background-color: rgba(0, 0, 0, 0);
 }

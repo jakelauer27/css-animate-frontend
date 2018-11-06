@@ -74,16 +74,22 @@ class Editor extends Component {
           <div className='editor'>
             <Animation animation={this.state.animation} 
               animationEx={this.state.animationEx}
-              updateKeyframes={(stageIndex, propIndex, value) => this.props.updateKeyframes(stageIndex, propIndex, value)}
-              updateKeyframesStages={(stageIndex, value) => this.props.updateKeyframesStages(stageIndex, value)}/>
+              updateKeyframes={(stageIndex, propIndex, value, newAnimation) => this.props.updateKeyframes(stageIndex, propIndex, value, newAnimation)}
+              updateKeyframesStages={(stageIndex, value, newAnimation) => this.props.updateKeyframesStages(stageIndex, value, newAnimation)}
+              updateAnimationProperties={(newAnimation) => this.props.updateAnimationProperties(newAnimation)}/>
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
           <CopyPopup animation={this.state.animationEx}
               active={this.state.popup}
               closePopup={this.closePopup}/>
+<<<<<<< HEAD
           <button class={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
             copy
+=======
+          <button className={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
+            copy code
+>>>>>>> f1535473ed8d65a08672a7c7d4e9b5470f3267dd
           </button>
           <button class={`lower-btn reset-btn`} onClick={() => this.props.reset()}>
             reset

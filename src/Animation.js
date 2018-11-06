@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 
-const openCurly = '{';
-const closeCurly = '};';
-const aniProps = ['name', 'duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
+const aniProps = ['duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
 
 class Animation extends Component {
   constructor() {
@@ -30,8 +28,9 @@ class Animation extends Component {
 
   saveForm(e) {
     document.querySelector('.stop-btn').click()
-    let newAnimation = this.state.animation;
+    let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
     newAnimation.properties[e.target.classList[1]] = e.target.value;
+    this.props.updateAnimationProperties(newAnimation)
     this.setState({
       animation: newAnimation
     })
@@ -47,11 +46,11 @@ class Animation extends Component {
          stageIndex = i;
        }
     })
-    newAnimation.keyframes.sections[stageIndex].label = e.target.value;
+    newAnimation.keyframes.sections[stageIndex].label = e.target.value || '%';
     this.setState({
       animation: newAnimation
     })
-    this.props.updateKeyframesStages(stageIndex, e.target.value)
+    this.props.updateKeyframesStages(stageIndex, e.target.value, newAnimation)
   }
 
   saveKeyframesProps(e) {
@@ -62,7 +61,7 @@ class Animation extends Component {
     let stageIndex = '';
     let propIndex = '';
     newAnimation.keyframes.sections.forEach( (stage, i) => {
-       if (stage.label === stageLabel) {
+       if (stage.name === stageLabel) {
          stageIndex = i;
        }
     })
@@ -75,7 +74,7 @@ class Animation extends Component {
     this.setState({
       animation: newAnimation
     })
-    this.props.updateKeyframes(stageIndex, propIndex, e.target.value)
+    this.props.updateKeyframes(stageIndex, propIndex, e.target.value, newAnimation)
   }
 
   render() {
@@ -89,11 +88,15 @@ class Animation extends Component {
             this.state.squares.map( (square, i) => {
               return (
                 <div className='class-container' key={i}>
-                  <p className='class-selector'>.square-{square} <span> {openCurly}</span></p>
+                  <p className='class-selector'>.square-{square} <span>{'{'}</span></p>
+                  <div className='props-container' key={i}>
+                    <p className='ani-prop name'>name<span>:</span></p>
+                    <p className='prop-input name' id='name'>{this.state.animation.properties.name}</p>
+                  </div>
                   {
                     aniProps.map( (prop, i) => {
                       return (
-                        <div className='props-container'>
+                        <div className='props-container' key={i}>
                           <p className={`ani-prop ${prop}`}>{prop}<span>:</span></p>
                           <input className={`prop-input ${prop}`} 
                             type='text' 
@@ -103,7 +106,7 @@ class Animation extends Component {
                       )
                     })
                   }
-                  <p className='close-curly'>{closeCurly}</p>
+                  <p className='close-curly'>{'}'}</p>
                 </div>
               )
             })
@@ -114,20 +117,20 @@ class Animation extends Component {
     return (
       <div className='keyframes-container'>
         <div className='keyframe'>
-          <p className='keyframes-name'><span>@keyframes </span>{this.state.animation.keyframes.name} <span> {openCurly}</span></p>
+          <p className='keyframes-name'><span>@keyframes </span>{this.state.animation.keyframes.name} <span> {'{'}</span></p>
           {
             this.state.animation.keyframes.sections.map( (section, i) => {
               return (
-                <div className='keyframes-section'>
+                <div className='keyframes-section' key={i}>
                   <input className={`keyframes-label ${section.name}`} 
                     value={section.label} 
                     type='text'
                     onChange={e => this.saveKeyframesStages(e)}/> 
-                    <span> {openCurly}</span>
+                    <span> {'{'}</span>
                   {
-                    section.properties.map( (prop) => {
+                    section.properties.map( (prop, i) => {
                       return (
-                        <div className='props-container'>
+                        <div className='props-container' key={i}>
                           <p className='keyframe-property'>{prop.name}<span>:</span></p>
                           <input className={`keyframe-prop-value ${prop.name}`} 
                             type='text' 
@@ -137,12 +140,12 @@ class Animation extends Component {
                         )
                       })
                     }
-                  <p className='close-curly'>{closeCurly}</p>
+                  <p className='close-curly'>{'}'}</p>
                 </div>
               )
             }) 
           }
-          <p className='close-curly'>{closeCurly}</p>
+          <p className='close-curly'>{'}'}</p>
         </div>
       </div>
     )

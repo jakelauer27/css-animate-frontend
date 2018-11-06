@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 
-const openCurly = '{';
-const closeCurly = '}';
-
 class CopyPopup extends Component {
 
   copyPasteKeyframes = () => {
     return (
       <div className='keyframes-popup'>
-        <textarea className='keyframe-text' value={`@keyframes ${this.props.animation.keyframes.name} {
+        <textarea className='keyframe-text' readOnly value={`@keyframes ${this.props.animation.keyframes.name} {
   ${this.getKeyframeStages(this.props.animation.keyframes)}
 }`
 }>
@@ -23,7 +20,7 @@ class CopyPopup extends Component {
     let props = this.props.animation.properties;
     let animation = (
       <div className='animation-popup'>
-        <textarea className='animation-text'value={
+        <textarea className='animation-text' readOnly value={
             `animation:${
                 keys.map((key, i) => {
                   console.log(props[key])
@@ -58,7 +55,18 @@ animation-fill-mode: ${props['fill-mode']};`
     return obj.join('')
   }
 
-  
+  copySelection(e) {
+    document.querySelectorAll('.copy-code-btn').forEach( btn => {
+      btn.innerText = 'copy';
+      btn.classList.remove('copied');
+    })
+
+    e.target.previousElementSibling.childNodes[0].select();
+    document.execCommand('copy');
+    e.target.innerText = 'copied!';
+    e.target.classList.add('copied');
+  }
+
   render() {
     if (!this.props.active) {
       return <div></div>
@@ -68,14 +76,16 @@ animation-fill-mode: ${props['fill-mode']};`
       <div className='popup-keyframes-container popup-container'>
         <h2 className='copy-popup-label'>Keyframes</h2>
         {
-          <p>{this.copyPasteKeyframes()}</p>
+          this.copyPasteKeyframes()
         } 
+        <button className='copy-code-btn copy-keyframes-btn' onClick={this.copySelection}>copy</button>
       </div>
       <div className='popup-animation-container popup-container'>
         <h2 className='copy-popup-label'>Animation</h2>
         {
-          <p>{this.copyPasteAnimation()}</p>
+          this.copyPasteAnimation()
         } 
+        <button className='copy-code-btn copy-animation-btn' onClick={this.copySelection}>copy</button>
       </div>
       <button className='close-popup-btn' onClick={() => this.props.closePopup()}><i className="fas fa-times"></i></button>
     </div>

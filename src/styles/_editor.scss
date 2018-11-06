@@ -23,8 +23,8 @@
     border-bottom: none;
     font-size: 1.2em;
     padding: 6px 12px;
-    transition: all .3s;
     position: relative;
+    transition: all .3s;
     z-index: 2;
 
     &:hover {
@@ -34,8 +34,8 @@
   }
 
   .selected {
-    color: white;
     background-color: $darkBlue;
+    color: white;
   }
 
   .animation-btn {

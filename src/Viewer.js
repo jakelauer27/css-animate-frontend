@@ -30,11 +30,13 @@ class Viewer extends Component {
     })
   }
 
-  resetAnimation() {
-    this.setState({
-      animation: {},
-      play: true
-    })
+  resetAnimation(waitTime) {
+    setTimeout( () => {
+      this.setState({
+        animation: {},
+        play: true
+      })
+    }, waitTime)
   }
 
   render() {
@@ -49,8 +51,8 @@ class Viewer extends Component {
                 <div className={`square square-${i}`} 
                      key={i}
                      style={this.state.animation}
-                     onAnimationEnd={() => this.resetAnimation()}>
-                  {item} 
+                     onAnimationEnd={() => this.resetAnimation(1000)}>
+                    <h4 className='main-title'>ani<span>Mate</span></h4>
                 </div>
               )
             })
@@ -62,7 +64,7 @@ class Viewer extends Component {
           onClick={() => this.playAnimation()}
           disabled={!this.state.play}>play</button>
         <button className={`lower-btn stop-btn`} 
-          onClick={() => this.resetAnimation()}
+          onClick={() => this.resetAnimation(0)}
           disabled={this.state.play}>stop</button>
       </div>
     </div>

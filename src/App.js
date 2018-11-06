@@ -27,7 +27,42 @@ class App extends Component {
 
   componentDidMount() {
     this.loadKeyframes()
+    document.querySelector('.slideInX').click()
   }
+
+  updateAnimationProperties = (newAnimation) => {
+    this.setState({
+      animation: newAnimation
+    })
+  }
+
+  toggleInfoPopup = (toggle) => {
+    this.setState({
+      infoPopup: toggle
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      original: JSON.parse(JSON.stringify(this.state.original)),
+      animation: JSON.parse(JSON.stringify(this.state.original))
+    })
+    this.resetCSSKeyframesRule()
+  }
+
+  resetCSSKeyframesRule() {
+    let name = this.state.animation.properties.name  
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    let formattedRule = `@keyframes ${name} 
+    ${this.StringifyKeyframes(this.state.original.keyframes)}`;
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
+  }
+
 
   ////////INSERTING KEYFRAMES TO CSS
 
@@ -35,23 +70,26 @@ class App extends Component {
     keyframes.forEach( (keyframe) => {
       let key = this.state.animations[keyframe].keyframes;
       sheet.insertRule(`@keyframes ${key.name} 
-        ${this.getKeyframeStages(key)}`, sheet.length)
+        ${this.StringifyKeyframes(key)}`, sheet.length)
     })
   }
 
-  updateKeyframes = (stageIndex, propIndex, value) => {
+  updateKeyframesProps = (stageIndex, propIndex, value, newAnimation) => {
     let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
       return sheet.cssRules[rule].name === name;
     })
-    let formattedRule = this.formatKeyframes(stageIndex, propIndex, value);
+    let formattedRule = this.formatKeyframesProps(stageIndex, propIndex, value);
 
     sheet.deleteRule(keyframeToDeleteIndex)
     sheet.insertRule(formattedRule, sheet.length)
+    this.setState({
+      animation: newAnimation
+    })
   }
 
-  updateKeyframesStages = (stageIndex, value) => {
+  updateKeyframesStages = (stageIndex, value, newAnimation) => {
     let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
@@ -59,8 +97,11 @@ class App extends Component {
     })
     let formattedRule = this.formatKeyframesStages(stageIndex, value);
 
-    sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
+    sheet.deleteRule(keyframeToDeleteIndex);
+    sheet.insertRule(formattedRule, sheet.length);
+    this.setState({
+      animation: newAnimation
+    })
   }
 
   formatKeyframesStages(stageIndex, value) {
@@ -70,23 +111,25 @@ class App extends Component {
     updatedRule.sections[stageIndex].label = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
-    ${this.getKeyframeStages(updatedRule)}`;
+    ${this.StringifyKeyframes(updatedRule)}`;
     return formattedRule
   }
 
 
-  formatKeyframes(stageIndex, propIndex, value) {
+  formatKeyframesProps(stageIndex, propIndex, value) {
     let name = this.state.animation.properties.name
     let updatedRule = this.state.animations[name].keyframes;
 
     updatedRule.sections[stageIndex].properties[propIndex].value = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
-    ${this.getKeyframeStages(updatedRule)}`;
+    ${this.StringifyKeyframes(updatedRule)}`;
     return formattedRule
   }
 
-  getKeyframeStages(keyframe) {
+  
+
+  StringifyKeyframes(keyframe) {
     var obj = keyframe.sections.reduce( (stages, section, i) => {
       let sectionProps = section.properties.reduce( (propsObj, prop, i) => {
         if (i === section.properties.length - 1) {
@@ -125,6 +168,8 @@ class App extends Component {
     return (
       <div className="App">
         <header>
+          <button className='questions-btn'
+          onClick={() => this.toggleInfoPopup(true)}>Instructions</button>
           <h1 className='main-title'>CSS ani<span>Mate</span></h1>
           <div className='header-btn-container'>
             <button className='load-example-btn'>Load Examples
@@ -134,7 +179,7 @@ class App extends Component {
               {
                 keyframes.map( (keyframe, i) => {
                   return (
-                    <li className='keyframe-ex' 
+                    <li className={`keyframe-ex ${keyframe}`} 
                         key={i}
                         onClick={e => this.chooseExample(e)}>{keyframe}
                     </li>
@@ -143,12 +188,14 @@ class App extends Component {
               }
             </ul>
           </div>
-          <button className='questions-btn'>?</button>
+          <InfoPopup display={this.state.infoPopup}
+            toggleOff={this.toggleInfoPopup}/>
         </header>
         <main>
           <Editor animation={this.state.animation}
-            updateKeyframes={this.updateKeyframes}
+            updateKeyframes={this.updateKeyframesProps}
             updateKeyframesStages={this.updateKeyframesStages}
+            updateAnimationProperties={this.updateAnimationProperties}
             reset={this.reset}/>
           <Viewer animation={this.state.animation.properties}/>
         </main>
@@ -159,14 +206,3 @@ class App extends Component {
 
 export default App;
 
-
-  // resetRule() {
-  //   console.log('hi')
-  //   let name = this.state.animation.properties.name  
-  //   let ruleKeys = Object.keys(sheet.cssRules)
-  //   let keyframeToDeleteIndex = ruleKeys.find(rule => {
-  //     return sheet.cssRules[rule].name === name;
-  //   })
-  //   sheet.deleteRule(keyframeToDeleteIndex)
-  //   sheet.insertRule(this.state.animation.keyframes, sheet.length)
-  // }

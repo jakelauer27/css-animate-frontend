@@ -1,24 +1,25 @@
 @import './vars';
 
 * {
-  padding: 0px;
   margin: 0px;
   outline:none;
+  padding: 0px;
 }
 
 body {
-  padding: 0px;
-  height: 100%;
   background-image: url('./images/space.jpg');
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.767);
   background-size: cover;
+  height: 100%;
+  padding: 0px;
 }
 
 .main-title {
   color: white;
   font-family: 'Roboto slab', serrif;
   font-size: 3.5em;
+  margin: 7px;
 
   span {
     color: $mainBlue;
@@ -26,51 +27,44 @@ body {
 }
 
 header {
+  background-color: rgb(18, 29, 44);
   display: flex;
   justify-content: center;
-  background-color: rgb(18, 29, 44);
   padding: 5px;
 
   button {
     background-color: $darkBlue;
     border: 3px solid black;
     border-radius: 2px;
-    padding: 6px 18px;
-    margin-right: 10px;
     color: white;
     font-size: 1.3em;
+    margin-right: 10px;
     margin-top: 24px;
+    padding: 6px 18px;
     transition: all .3s;
 
     &:hover + .examples-list {
-      display: block;
       animation: slideDown .3s ease;
       animation-fill-mode: forwards; 
+      display: block;
     }
-  }
-}
-
-@keyframes slideDown {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 140px;
   }
 }
 
 .header-btn-container {
   position: absolute;
   top: 5px;
-  right: 70px;
+  left: 28px;
 
   &:hover .load-example-btn {
+    background-color: rgb(70, 90, 204);
     cursor: pointer;
+    transform: scale(1.02);
   }
 
   &:hover .load-example-btn .fa-caret-right {
-    transform: rotate(90deg);
     color: white;
+    transform: rotate(90deg);
   }
 }
 
@@ -85,12 +79,13 @@ header {
   background-color: white;
   border: 2px solid black;
   display: none;
-  height: 140px;
+  height: 422px;
   overflow: scroll;
   position: absolute;
   list-style: none;
   transition: all 2s;
-  width: 182px;
+  width: 177px;
+  z-index: 4;
 
   &:hover {
     animation: slideDown .3s ease;
@@ -98,28 +93,29 @@ header {
   }
 
   li {
-    text-align: center;
     padding: 4px;
     font-size: 1.2em;
+    text-align: center;
 
     &:hover {
-      cursor: pointer;
       background-color: $darkBlue;
+      cursor: pointer;
       color: white;
     }
   }
 }
 
 .questions-btn {
-  border-radius: 50%;
+  border-radius: 12px;
   padding: 6px 14px;
   position: absolute;
   top: 5px;
-  right: 15px;
+  right: 20px;
   
 
   &:hover {
     cursor: pointer;
+    background-color: rgb(70, 90, 204);
     transform: scale(1.05);
   }
 }
