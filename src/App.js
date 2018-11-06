@@ -188,7 +188,7 @@ class App extends Component {
               }
             </ul>
           </div>
-          <InfoPopup display={this.state.infoPopup}
+          <infoPopup display={this.state.infoPopup}
             toggleOff={this.toggleInfoPopup}/>
         </header>
         <main>

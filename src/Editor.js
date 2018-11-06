@@ -83,13 +83,8 @@ class Editor extends Component {
           <CopyPopup animation={this.state.animationEx}
               active={this.state.popup}
               closePopup={this.closePopup}/>
-<<<<<<< HEAD
-          <button class={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
-            copy
-=======
           <button className={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
             copy code
->>>>>>> f1535473ed8d65a08672a7c7d4e9b5470f3267dd
           </button>
           <button class={`lower-btn reset-btn`} onClick={() => this.props.reset()}>
             reset
