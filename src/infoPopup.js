@@ -55,8 +55,11 @@ class InfoPopup extends Component {
                   return <KeyframesInfo key={key} />;
                 case 'animation':
                   return <AnimationInfo key={key}/>;
+                default:
+                  return <div key={key}></div>
                 }
               }
+              return <div key={key}></div>;
             })
           }
         <button className='close-info-popup-btn' 

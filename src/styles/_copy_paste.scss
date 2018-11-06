@@ -9,22 +9,6 @@
   z-index: 2;
 }
 
-.close-popup-btn {
-  position: absolute;
-  top: 5px; 
-  right: 5px;
-  border-radius: 50%;
-  background: $darkBlue;
-  border: 2px solid black;
-  padding: 5px 8px;
-  transition: all .2s;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    color: white;
-  }
-}
 
 .popup-container {
   margin: 10px;

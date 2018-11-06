@@ -37,23 +37,51 @@ class App extends Component {
     })
   }
 
+  toggleInfoPopup = (toggle) => {
+    this.setState({
+      infoPopup: toggle
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      original: JSON.parse(JSON.stringify(this.state.original)),
+      animation: JSON.parse(JSON.stringify(this.state.original))
+    })
+    this.resetCSSKeyframesRule()
+  }
+
+  resetCSSKeyframesRule() {
+    let name = this.state.animation.properties.name  
+    let ruleKeys = Object.keys(sheet.cssRules)
+    let keyframeToDeleteIndex = ruleKeys.find(rule => {
+      return sheet.cssRules[rule].name === name;
+    })
+    let formattedRule = `@keyframes ${name} 
+    ${this.StringifyKeyframes(this.state.original.keyframes)}`;
+
+    sheet.deleteRule(keyframeToDeleteIndex)
+    sheet.insertRule(formattedRule, sheet.length)
+  }
+
+
   ////////INSERTING KEYFRAMES TO CSS
 
   loadKeyframes() {
     keyframes.forEach( (keyframe) => {
       let key = this.state.animations[keyframe].keyframes;
       sheet.insertRule(`@keyframes ${key.name} 
-        ${this.getKeyframeStages(key)}`, sheet.length)
+        ${this.StringifyKeyframes(key)}`, sheet.length)
     })
   }
 
-  updateKeyframes = (stageIndex, propIndex, value, newAnimation) => {
+  updateKeyframesProps = (stageIndex, propIndex, value, newAnimation) => {
     let name = this.state.animation.properties.name  
     let ruleKeys = Object.keys(sheet.cssRules)
     let keyframeToDeleteIndex = ruleKeys.find(rule => {
       return sheet.cssRules[rule].name === name;
     })
-    let formattedRule = this.formatKeyframes(stageIndex, propIndex, value);
+    let formattedRule = this.formatKeyframesProps(stageIndex, propIndex, value);
 
     sheet.deleteRule(keyframeToDeleteIndex)
     sheet.insertRule(formattedRule, sheet.length)
@@ -84,23 +112,25 @@ class App extends Component {
     updatedRule.sections[stageIndex].label = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
-    ${this.getKeyframeStages(updatedRule)}`;
+    ${this.StringifyKeyframes(updatedRule)}`;
     return formattedRule
   }
 
 
-  formatKeyframes(stageIndex, propIndex, value) {
+  formatKeyframesProps(stageIndex, propIndex, value) {
     let name = this.state.animation.properties.name
     let updatedRule = this.state.animations[name].keyframes;
 
     updatedRule.sections[stageIndex].properties[propIndex].value = value;
     
     let formattedRule = `@keyframes ${updatedRule.name} 
-    ${this.getKeyframeStages(updatedRule)}`;
+    ${this.StringifyKeyframes(updatedRule)}`;
     return formattedRule
   }
 
-  getKeyframeStages(keyframe) {
+  
+
+  StringifyKeyframes(keyframe) {
     var obj = keyframe.sections.reduce( (stages, section, i) => {
       let sectionProps = section.properties.reduce( (propsObj, prop, i) => {
         if (i === section.properties.length - 1) {
@@ -116,36 +146,7 @@ class App extends Component {
     return obj
   }
 
-  toggleInfoPopup = (toggle) => {
-    this.setState({
-      infoPopup: toggle
-    })
-  }
-
   ///////////////////////////////////////
-
-  reset = () => {
-    this.setState({
-      original: JSON.parse(JSON.stringify(this.state.original)),
-      animation: JSON.parse(JSON.stringify(this.state.original))
-    })
-    this.resetRule()
-  }
-
-  resetRule() {
-    let name = this.state.animation.properties.name  
-    let ruleKeys = Object.keys(sheet.cssRules)
-    let keyframeToDeleteIndex = ruleKeys.find(rule => {
-      return sheet.cssRules[rule].name === name;
-    })
-    let updatedRule = this.state.original.keyframes
-    let formattedRule = `@keyframes ${name} 
-    ${this.getKeyframeStages(updatedRule)}`;
-
-
-    sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
-  }
 
   render() {
     return (
@@ -176,7 +177,7 @@ class App extends Component {
         </header>
         <main>
           <Editor animation={this.state.animation}
-            updateKeyframes={this.updateKeyframes}
+            updateKeyframes={this.updateKeyframesProps}
             updateKeyframesStages={this.updateKeyframesStages}
             updateAnimationProperties={this.updateAnimationProperties}
             reset={this.reset}/>
