@@ -6,7 +6,7 @@ import InfoPopup from './InfoPopup'
 import animationsData from './data';
 
 const keyframes = Object.keys(animationsData);
-var sheet = document.styleSheets[4];
+var sheet = document.styleSheets[document.styleSheets.length - 1];
 
 class App extends Component {
   constructor() {
