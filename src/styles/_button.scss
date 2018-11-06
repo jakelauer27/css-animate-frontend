@@ -81,14 +81,14 @@
 }
 
 .close-popup-btn {
-  position: absolute;
   background-color: rgb(56, 55, 55);
-  color: white;
-  top: 5px; 
-  right: 5px;
   border-radius: 50%;
   border: 2px solid black;
+  color: white;
   padding: 5px 8px;
+  position: absolute;
+  right: 5px;
+  top: 5px; 
   transition: all .2s;
 
   &:hover {

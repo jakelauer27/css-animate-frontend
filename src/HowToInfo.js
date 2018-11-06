@@ -17,7 +17,9 @@ class HowToInfo extends Component {
           property, checkout the keyframes and animation property info 
           sections by clicking the tabs on the top of this popup.
           This app is meant to give an introduction to CSS animations.
-          For more detailed info, please visit W3schools or MDN.
+          For more detailed info, please visit 
+            <a className='link' target='_blank' href='https://www.w3schools.com/css/css3_animations.asp'> W3schools </a> or 
+            <a className='link' target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/animation'> MDN </a>.
         </p>
          <p className='howto-final-line'>Happy <span className='animating-span'>animating</span>!</p>
       </div>

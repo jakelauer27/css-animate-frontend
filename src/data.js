@@ -283,6 +283,43 @@ const animationsData = {
     }
   },
 
+  'cardFlip': {
+    'properties': {
+      'name': 'cardFlip',
+      'duration': '.9s',
+      'timing-function': 'ease',
+      'delay': '0s',
+      'iteration-count': '1',
+      'direction': 'normal',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'cardFlip',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'rotateY(0deg) scale(1)'
+            }
+          ]
+        },
+        {
+          'name': '100%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'rotateY(-180deg) scale(1.2)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+
   'bounceAppear': {
     'properties': {
       'name': 'bounceAppear',
@@ -539,6 +576,166 @@ const animationsData = {
             },
           ]
         }
+      ]
+    }
+  },
+
+  'path': {
+    'properties': {
+      'name': 'path',
+      'duration': '6.5s',
+      'timing-function': 'linear',
+      'delay': '0s',
+      'iteration-count': 'infinite',
+      'direction': 'normal',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'path',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translate(0px)'
+            }
+          ]
+        },
+        {
+          'name': '25%',
+          'label': '25%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateX(100px)'
+            }
+          ]
+        },
+        {
+          'name': '45%',
+          'label': '45%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translate(-150px, -70px)'
+            }
+          ]
+        },
+        {
+          'name': '65%',
+          'label': '65%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translate(-100px, -80px)'
+            }
+          ]
+        },
+        {
+          'name': '75%',
+          'label': '75%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translateY(105px)'
+            }
+          ]
+        },
+        {
+          'name': '100%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'transform',
+              'value': 'translate(0px)'
+            }
+          ]
+        },
+      ]
+    }
+  },
+
+  'abstract': {
+    'properties': {
+      'name': 'abstract',
+      'duration': '4s',
+      'timing-function': 'ease',
+      'delay': '0s',
+      'iteration-count': 'infinite',
+      'direction': 'alternate',
+      'fill-mode': 'forwards'
+    },
+    'keyframes': {
+      'name': 'abstract',
+      'sections': [
+        {
+          'name': '0%',
+          'label': '0%',
+          'properties': [
+            {
+              'name': 'height',
+              'value': '0'
+            },
+            {
+              'name': 'background-color',
+              'value': '#26B177'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+            {
+              'name': 'transform',
+              'value': 'rotate(-180deg)'
+            },
+          ]
+        },
+        {
+          'name': '50%',
+          'label': '50%',
+          'properties': [
+            {
+              'name': 'height',
+              'value': '110px'
+            },
+            {
+              'name': 'background-color',
+              'value': '#26C077'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+            {
+              'name': 'transform',
+              'value': 'rotate(180deg)'
+            },
+          ]
+        },
+        {
+          'name': '100%',
+          'label': '100%',
+          'properties': [
+            {
+              'name': 'height',
+              'value': '100px'
+            },
+            {
+              'name': 'background-color',
+              'value': '#21B177'
+            },
+            {
+              'name': 'background-image',
+              'value': 'none'
+            },
+            {
+              'name': 'transform',
+              'value': 'rotate(-90deg)'
+            },
+          ]
+        },
       ]
     }
   },
