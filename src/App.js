@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles/app.scss';
 import Editor from './Editor';
 import Viewer from './Viewer';
+import InfoPopup from './InfoPopup'
 import animationsData from './data';
 
 const keyframes = Object.keys(animationsData);
@@ -188,7 +189,7 @@ class App extends Component {
               }
             </ul>
           </div>
-          <infoPopup display={this.state.infoPopup}
+          <InfoPopup display={this.state.infoPopup}
             toggleOff={this.toggleInfoPopup}/>
         </header>
         <main>

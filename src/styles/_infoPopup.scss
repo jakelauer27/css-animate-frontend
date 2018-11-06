@@ -186,4 +186,39 @@
       }
     }
   }
+
+  ///////////ANIMATION PROPERTIES SECTION
+
+  .animation-info {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      font-size: 1.8em;
+      list-style: none;
+      margin: 23px;
+      margin-left: 0px;
+    }
+  }
+
+  .ani-popup-property-container {
+    flex-grow: 1;
+
+    li {
+      color: $codeBlue;
+    }
+  }
+  
+  .ani-popup-value-container {
+    flex-grow: 1;
+
+    li {
+      color: $codeOrange;
+
+      span {
+        color: white;
+        margin: 5px;
+      }
+    }
+  }
 }
