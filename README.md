@@ -20,7 +20,7 @@ CSS animations are an incredible way to give sites a very polished and professio
 
 ### See it Live! 
 
-https://jakelauer27.github.io/smash_brothers/
+https://jakelauer27.github.io/css-animate/
 
 
 ### Primary Technologies Used
