@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import AnimationPropValidator from './FormValidators'
 import './styles/app.scss';
+import animationPropValidator from './FormValidators';
 
 const aniProps = ['duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
 
@@ -26,7 +28,16 @@ class Animation extends Component {
     }
   }
 
+  validateAnimationProp(target, inputValue) {
+    if (!animationPropValidator[target.classList[1]].test(inputValue)) {
+      target.classList.add('red');
+    } else {
+      target.classList.remove('red');
+    }
+  }
+
   saveForm(e) {
+    this.validateAnimationProp(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
     let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
     newAnimation.properties[e.target.classList[1]] = e.target.value;

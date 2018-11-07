@@ -86,7 +86,7 @@ class Editor extends Component {
           <button className={`lower-btn copy-btn`} onClick={() => this.renderPopup()}>
             copy code
           </button>
-          <button class={`lower-btn reset-btn`} onClick={() => this.props.reset()}>
+          <button className={`lower-btn reset-btn`} onClick={() => this.props.reset()}>
             reset
           </button>
         </div>

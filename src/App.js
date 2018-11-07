@@ -61,7 +61,7 @@ class App extends Component {
     ${this.StringifyKeyframes(this.state.original.keyframes)}`;
 
     sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
+    sheet.insertRule(formattedRule, sheet.cssRules.length)
   }
 
 
@@ -71,7 +71,7 @@ class App extends Component {
     keyframes.forEach( (keyframe) => {
       let key = this.state.animations[keyframe].keyframes;
       sheet.insertRule(`@keyframes ${key.name} 
-        ${this.StringifyKeyframes(key)}`, sheet.length)
+        ${this.StringifyKeyframes(key)}`, sheet.cssRules.length)
     })
   }
 
@@ -84,7 +84,7 @@ class App extends Component {
     let formattedRule = this.formatKeyframesProps(stageIndex, propIndex, value);
 
     sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(formattedRule, sheet.length)
+    sheet.insertRule(formattedRule, sheet.cssRules.length)
     this.setState({
       animation: newAnimation
     })
@@ -99,7 +99,7 @@ class App extends Component {
     let formattedRule = this.formatKeyframesStages(stageIndex, value);
 
     sheet.deleteRule(keyframeToDeleteIndex);
-    sheet.insertRule(formattedRule, sheet.length);
+    sheet.insertRule(formattedRule, sheet.cssRules.length);
     this.setState({
       animation: newAnimation
     })
@@ -162,7 +162,7 @@ class App extends Component {
       return sheet.cssRules[rule].name === name;
     })
     sheet.deleteRule(keyframeToDeleteIndex)
-    sheet.insertRule(this.state.animation.keyframes, sheet.length)
+    sheet.insertRule(this.state.animation.keyframes, sheet.cssRules.length)
   }
 
   render() {
