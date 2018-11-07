@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AnimationPropValidator from './FormValidators'
 import './styles/app.scss';
-import animationPropValidator from './FormValidators';
+import { animationPropValidator, keyframeStageValidator, keyframeValueValidator } from './FormValidators';
+
 
 const aniProps = ['duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
 
@@ -31,23 +31,36 @@ class Animation extends Component {
   validateAnimationProp(target, inputValue) {
     if (!animationPropValidator[target.classList[1]].test(inputValue)) {
       target.classList.add('red');
+      document.querySelector('.play-btn').setAttribute('disabled', true);
     } else {
       target.classList.remove('red');
+      document.querySelector('.play-btn').removeAttribute('disabled');
+    }
+  }
+
+  validateKeyframeStage(target, inputValue) {
+    if (!keyframeStageValidator.test(inputValue)) {
+      target.classList.add('red');
+      document.querySelector('.play-btn').setAttribute('disabled', true);
+    } else {
+      target.classList.remove('red');
+      document.querySelector('.play-btn').removeAttribute('disabled');
     }
   }
 
   saveForm(e) {
-    this.validateAnimationProp(e.target, e.target.value)
-    document.querySelector('.stop-btn').click()
+    this.validateAnimationProp(e.target, e.target.value);
+    document.querySelector('.stop-btn').click();
     let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
     newAnimation.properties[e.target.classList[1]] = e.target.value;
-    this.props.updateAnimationProperties(newAnimation)
+    this.props.updateAnimationProperties(newAnimation);
     this.setState({
       animation: newAnimation
     })
   }
 
   saveKeyframesStages(e) {
+    this.validateKeyframeStage(e.target, e.target.value);
     document.querySelector('.stop-btn').click();
     let newAnimation = JSON.parse(JSON.stringify(this.state.animation));
     let stageLabel = e.target.classList[1];
