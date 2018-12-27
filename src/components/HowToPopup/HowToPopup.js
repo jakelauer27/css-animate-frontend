@@ -37,11 +37,11 @@ export class HowToPopup extends Component {
           </header>
           {
             <Switch>
-              <Route path={`/${animation}/properties/howto/general`}
+              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/general`}
                 component={GeneralInfo} />
-              <Route path={`/${animation}/properties/howto/properties`}
+              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/properties`}
                 component={PropertiesInfo} />
-              <Route path={`/${animation}/properties/howto/keyframes`}
+              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/keyframes`}
                 component={KeyframesInfo} />
             </Switch>
           }

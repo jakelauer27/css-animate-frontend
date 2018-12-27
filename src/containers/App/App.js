@@ -41,13 +41,13 @@ export class App extends Component {
           </div>
         </header>
         <Switch>
-          <Route exact path='/'
+          <Route exact path={`${process.env.PUBLIC_URL}/`}
           render={() => <Redirect to='/slideInX/properties'/>}
           />
           {
             animationKeys.map( keyframe => {
               return (
-                <Route path={`/${keyframe}`} key={uid(keyframe)} render={() => (
+                <Route path={`${process.env.PUBLIC_URL}/${keyframe}`} key={uid(keyframe)} render={() => (
                   <main>
                     <Editor currentAnimation={keyframe} location={this.props.location}/>
                     <Viewer currentAnimation={keyframe}/> 
@@ -57,7 +57,7 @@ export class App extends Component {
             })
           }     
         </Switch>
-        <Route path={`/${animation}/properties/howto`} component={HowToPopup}/>
+        <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto`} component={HowToPopup}/>
       </div>
     );
   }

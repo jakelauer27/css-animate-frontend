@@ -54,8 +54,8 @@ export class Editor extends Component {
           <div className='editor'>
           {
             <Switch>
-              <Route path={`/${animation.keyframes.name}/keyframes`} component={KeyframesEditor} />
-              <Route path={`/${animation.keyframes.name}/properties`} component={PropertiesEditor}/>
+              <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/keyframes`} component={KeyframesEditor} />
+              <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/properties`} component={PropertiesEditor}/>
             </Switch>
           }
           </div>
@@ -64,7 +64,7 @@ export class Editor extends Component {
           <Link to={`/${animation.keyframes.name}/properties/copy`} className='lower-btn copy-btn'>
             copy code   
           </Link>
-          <Route path={`/${animation.keyframes.name}/properties/copy`} render={() => <CopyPopup currentPage={currentAnimation}/>} />
+          <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/properties/copy`} render={() => <CopyPopup currentPage={currentAnimation}/>} />
           <button className={`lower-btn reset-btn`} onClick={() => {
               this.loadNewAnimation(this.props.currentAnimation)
               this.resetInputValidation()  
