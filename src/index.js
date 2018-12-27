@@ -14,7 +14,7 @@ const store = createStore(rootReducer, devTools)
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
       <Route path='/' component={App} />
     </BrowserRouter> 
   </Provider>,

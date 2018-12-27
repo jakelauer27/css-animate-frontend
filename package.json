@@ -1,7 +1,7 @@
 {
   "name": "css-animate",
   "version": "1.1.0",
-  "homepage": "https://jakelauer27.github.io/css-animate",
+  "homepage": "http://css-animate.com",
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
@@ -15,6 +15,7 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,7 +32,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "airbnb"
+    ]
   },
   "browserslist": [
     ">0.2%",
@@ -42,6 +46,7 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "enzyme": "^3.8.0",
+    "eslint-config-airbnb": "^17.1.0",
     "enzyme-adapter-react-16": "^1.7.1"
   }
 }
