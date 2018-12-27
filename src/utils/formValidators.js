@@ -82,7 +82,7 @@ export const keyframeValue = (target, inputValue) => {
     return;
   }
   if (target.classList[1] === 'background-color') {
-    this.colorInput(target, inputValue);
+    colorInput(target, inputValue);
     return;
   }
   if (!keyframeValueRegex[target.classList[1]].test(inputValue)) {

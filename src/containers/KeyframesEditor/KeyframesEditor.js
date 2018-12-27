@@ -9,7 +9,7 @@ class KeyframesEditor extends Component {
   saveKeyframesStages(e) {
     formValidation.keyframeStage(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
-    let newAnimation = JSON.stringify(JSON.parse(this.props.animation))
+    let newAnimation = JSON.parse(JSON.stringify(this.props.animation))
     let stageLabel = e.target.classList[1]
     let stageIndex = ''
     newAnimation.keyframes.sections.forEach( (stage, i) => {
@@ -18,7 +18,7 @@ class KeyframesEditor extends Component {
        }
     })
     newAnimation.keyframes.sections[stageIndex].label = e.target.value || '%'
-    this.props.updateKeyframesStages(stageIndex, e.target.value, newAnimation)
+    this.props.updateAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
   }
 

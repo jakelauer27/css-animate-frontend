@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Route, Switch, NavLink, withRouter, Link } from 'react-router-dom'
+import { Route, Switch, NavLink, Link } from 'react-router-dom'
 import KeyframesEditor from '../KeyframesEditor/KeyframesEditor'
 import PropertiesEditor from '../PropertiesEditor/PropertiesEditor'
 import { loadAnimation } from '../../actions/actions'

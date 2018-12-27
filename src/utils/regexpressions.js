@@ -18,10 +18,10 @@ const keyframeValueRegex= {
 }
 
 const transformRegex= {
-  'rotate': RegExp('^rotate(X|Y)?[(]((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg(,([-.s])?((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg)?[)](?!.)'),
+  'rotate': RegExp('^rotate(X|Y)?[(]((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg(([-.s])?((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg)?[)](?!.)'),
   'translate': RegExp('^translate(X|Y)?[(](-)?([0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9])(%|px)(,([-.s])?(-)?([0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9])(%|px))?[)](?!.)'),
-  'skew': RegExp('^skew(X|Y)?[(]((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg(,([-.s])?((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg)?[)](?!.)'),
-  'scale': RegExp('^scale(X|Y)?[(]((-)?[0-9](\\.)?[0-9]?|(-)?[0-9](\\.)?[0-9]|(-)?[0-9](\\.)?[0-9]?[0-9])(%)?(,([-.s])?((-)?(\\.)?[0-9]|(-)?[1-9](\\.)?[0-9]|(-)?[1-9](\\.)?[0-9](\\.)?[0-9])(%)?)?[)](?!.)'),
+  'skew': RegExp('^skew(X|Y)?[(]((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg(, ([-.s])?((-)?[0-9]|(-)?[1-9][0-9]|(-)?[1-9][0-9][0-9]|(-)?[1-9][0-9][0-9][0-9])deg)?[)](?!.)'),
+  'scale': RegExp('^scale(X|Y)?[(]((-)?[0-9](\\.)?[0-9]?|(-)?[0-9](\\.)?[0-9]|(-)?[0-9](\\.)?[0-9]?[0-9])(%)?(, ([-.s])?((-)?(\\.)?[0-9]|(-)?[1-9](\\.)?[0-9]|(-)?[1-9](\\.)?[0-9](\\.)?[0-9])(%)?)?[)](?!.)'),
   'none': RegExp('^none(?!.)'),
   'initial': RegExp('^initial(?!.)'),
   'inherit': RegExp('^inherit(?!.)'),
@@ -30,7 +30,7 @@ const transformRegex= {
 }
 
 const colorRegex= {
-  'rgb': RegExp('^rgb[(]([0-9]|[1-9][0-9]|[1-2][0-9][0-9]),([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9]),([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9])[)](?!.)'),
+  'rgb': RegExp('^rgb[(]([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9])[)](?!.)'),
   '#': RegExp('^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$(?!.)'),
   'color': RegExp('^(aliceBlue|antiqueWhite|aqua|aquamarine|azure|beige|bisque|black|blanchedAlmond|blue|blueViolet|brown|burly|wood|cadetBlue|chartreuse|chocolate|coral|cornflowerBlue|cornsilk|crimson|cyan|darkBlue|darkCyan|darkGoldenRod|darkGray|darkGrey|darkGreen|darkKhaki|darkMagenta|darkOliveGreen|darkOrange|darkOrchid|darkRed|darkSalmon|darkSeaGreen|darkSlateBlue|darkSlateGray|darkSlateGrey|darkTurquoise|darkViolet|deepPink|deepSkyBlue|dimGray|dimGrey|dodgerBlue|fireBrick|floralWhite|forestGreen|fuchsia|gainsboro|ghostWhite|gold|goldenRod|gray|grey|green|greenYellow|honeyDew|hotPink|indianRed|indigo|ivory|khaki|lavender|lavenderBlush|lawnGreen|lemonChiffon|lightBlue|lightCoral|lightCyan|lightGoldenRodYellow|lightGray|lightGrey|lightGreen|lightPink|lightSalmon|lightSeaGreen|lightSkyBlue|lightSlateGray|lightSlateGrey|lightSteelBlue|lightYellow|lime|limeGreen|linen|magenta|maroon|mediumAquaMarine|mediumBlue|mediumOrchid|mediumPurple|mediusmSeaGreen|mediumSlateBlue|mediumSpringGreen|mediumTurquoise|mediumVioletRed|midnightBlue|mintCream|mistyRose|moccasin|navajoWhite|navy|oldLace|olive|oliveDrab|orange|orangeRed|orchid|paleGoldenRod|paleGreen|paleTurquiose|paleVioletRed|papayaWhip|peachPuff|peru|pink|plum|powderBlue|purple|rebeccaPurple|red|rosyBrown|royalBlue|saddleBrown|salmon|sandyBrown|seaGreen|seaSheel|sienna|silver|skyBlue|slateGray|slateGrey|snow|springGreen|steel|blue|tan|teal|thistle|tomato|turquoise|violet|wheat|white|whiteSmoke|yellow|yellowGreen)(?!.)')
 }
