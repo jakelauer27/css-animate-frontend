@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralInfo should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GeneralInfo />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="title"
+        >
+          CSS Ani
+          <span>
+            Mate
+          </span>
+        </h1>,
+        <p>
+          This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.
+        </p>,
+        <p>
+          If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit
+          <a
+            className="link"
+            href="https://www.w3schools.com/css/css3_animations.asp"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             W3schools 
+          </a>
+           or
+          <a
+            className="link"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             MDN 
+          </a>
+          .
+        </p>,
+        <p
+          className="howto-final-line"
+        >
+          Happy 
+          <span
+            className="animating-span"
+          >
+            animating
+          </span>
+          !
+        </p>,
+      ],
+      "className": "howto-info info-section",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "CSS Ani",
+            <span>
+              Mate
+            </span>,
+          ],
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": Array [
+          "CSS Ani",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Mate",
+            },
+            "ref": null,
+            "rendered": "Mate",
+            "type": "span",
+          },
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.",
+        },
+        "ref": null,
+        "rendered": "This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit",
+            <a
+              className="link"
+              href="https://www.w3schools.com/css/css3_animations.asp"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               W3schools 
+            </a>,
+            " or",
+            <a
+              className="link"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               MDN 
+            </a>,
+            ".",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " W3schools ",
+              "className": "link",
+              "href": "https://www.w3schools.com/css/css3_animations.asp",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": " W3schools ",
+            "type": "a",
+          },
+          " or",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " MDN ",
+              "className": "link",
+              "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": " MDN ",
+            "type": "a",
+          },
+          ".",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Happy ",
+            <span
+              className="animating-span"
+            >
+              animating
+            </span>,
+            "!",
+          ],
+          "className": "howto-final-line",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Happy ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "animating",
+              "className": "animating-span",
+            },
+            "ref": null,
+            "rendered": "animating",
+            "type": "span",
+          },
+          "!",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="title"
+          >
+            CSS Ani
+            <span>
+              Mate
+            </span>
+          </h1>,
+          <p>
+            This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.
+          </p>,
+          <p>
+            If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit
+            <a
+              className="link"
+              href="https://www.w3schools.com/css/css3_animations.asp"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               W3schools 
+            </a>
+             or
+            <a
+              className="link"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               MDN 
+            </a>
+            .
+          </p>,
+          <p
+            className="howto-final-line"
+          >
+            Happy 
+            <span
+              className="animating-span"
+            >
+              animating
+            </span>
+            !
+          </p>,
+        ],
+        "className": "howto-info info-section",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "CSS Ani",
+              <span>
+                Mate
+              </span>,
+            ],
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": Array [
+            "CSS Ani",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mate",
+              },
+              "ref": null,
+              "rendered": "Mate",
+              "type": "span",
+            },
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.",
+          },
+          "ref": null,
+          "rendered": "This is a place for you to learn and experiment with CSS animations. Browse through a library of prebuilt animations and tweak them however you please. Then, when you have found an animation you like, copy the code into your own project using the copy feature.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit",
+              <a
+                className="link"
+                href="https://www.w3schools.com/css/css3_animations.asp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                 W3schools 
+              </a>,
+              " or",
+              <a
+                className="link"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                 MDN 
+              </a>,
+              ".",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "If you aren’t familiar with how to use keyframes or the animation property, checkout the keyframes and animation property info sections by clicking the tabs on the top of this popup. This app is meant to give an introduction to CSS animations. For more detailed info, please visit",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " W3schools ",
+                "className": "link",
+                "href": "https://www.w3schools.com/css/css3_animations.asp",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": " W3schools ",
+              "type": "a",
+            },
+            " or",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " MDN ",
+                "className": "link",
+                "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": " MDN ",
+              "type": "a",
+            },
+            ".",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Happy ",
+              <span
+                className="animating-span"
+              >
+                animating
+              </span>,
+              "!",
+            ],
+            "className": "howto-final-line",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Happy ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "animating",
+                "className": "animating-span",
+              },
+              "ref": null,
+              "rendered": "animating",
+              "type": "span",
+            },
+            "!",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

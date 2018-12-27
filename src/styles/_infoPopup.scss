@@ -24,15 +24,32 @@
   header {
     justify-content: space-between;
 
-    button {
+    .header-button {
       font-family: 'Roboto slab', serrif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 3px;
       width: 100%;
+      background-color: #3b4a81;
+      border: none;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 1.3em;
+      padding: 6px 18px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      text-align: center;
+      text-decoration: none;
 
       &:hover {
         cursor: pointer;
         background-color: $mainBlue;
       }
+    }
+
+    .selected-section {
+      background-color: rgb(68, 139, 206);
     }
   }
 
@@ -53,10 +70,6 @@
     animation: slideFromRight .5s;
     color: white;
     padding: 10px 20px;
-  }
-
-  .selected-section {
-    background-color: rgb(68, 139, 206);
   }
 
   ///////////HOWTO//////////

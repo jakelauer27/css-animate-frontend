@@ -3,11 +3,11 @@ const animationsData = {
     'properties': {
       'name': 'slideInX',
       'duration': '1.5s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'slideInX',
@@ -39,11 +39,11 @@ const animationsData = {
     'properties': {
       'name': 'slideInY',
       'duration': '1.5s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'slideInY',
@@ -75,11 +75,11 @@ const animationsData = {
     'properties': {
       'name': 'fadeIn',
       'duration': '.9s',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'fadeIn',
@@ -112,11 +112,11 @@ const animationsData = {
     'properties': {
       'name': 'rotateIn',
       'duration': '1.8s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '.5s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'rotateIn',
@@ -148,11 +148,11 @@ const animationsData = {
     'properties': {
       'name': 'zoomIn',
       'duration': '.5s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'zoomIn',
@@ -205,11 +205,11 @@ const animationsData = {
     'properties': {
       'name': 'dropDown',
       'duration': '.5s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'dropDown',
@@ -250,11 +250,11 @@ const animationsData = {
     'properties': {
       'name': 'ySpinLoad',
       'duration': '2.6s',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '0s',
-      'iteration-count': 'infinite',
+      'iterationCount': 'infinite',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'ySpinLoad',
@@ -287,11 +287,11 @@ const animationsData = {
     'properties': {
       'name': 'cardFlip',
       'duration': '.9s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': '1',
+      'iterationCount': '1',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'cardFlip',
@@ -324,9 +324,9 @@ const animationsData = {
     'properties': {
       'name': 'bounceAppear',
       'duration': '450ms',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '.7s',
-      'iteration-count': 1,
+      'iterationCount': 1,
       'direction': 'normal',
       'fill-mode': 'both'
     },
@@ -397,9 +397,9 @@ const animationsData = {
     'properties': {
       'name': 'bounceDrop',
       'duration': '650ms',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '.2s',
-      'iteration-count': 1,
+      'iterationCount': 1,
       'direction': 'normal',
       'fill-mode': 'both'
     },
@@ -464,11 +464,11 @@ const animationsData = {
     'properties': {
       'name': 'wiggle',
       'duration': '.2s',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '0s',
-      'iteration-count': 3,
+      'iterationCount': 3,
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'wiggle',
@@ -511,11 +511,11 @@ const animationsData = {
     'properties': {
       'name': 'color',
       'duration': '4s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': 'infinite',
+      'iterationCount': 'infinite',
       'direction': 'alternate',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'color',
@@ -584,11 +584,11 @@ const animationsData = {
     'properties': {
       'name': 'path',
       'duration': '6.5s',
-      'timing-function': 'linear',
+      'timingFunction': 'linear',
       'delay': '0s',
-      'iteration-count': 'infinite',
+      'iterationCount': 'infinite',
       'direction': 'normal',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'path',
@@ -661,11 +661,11 @@ const animationsData = {
     'properties': {
       'name': 'abstract',
       'duration': '4s',
-      'timing-function': 'ease',
+      'timingFunction': 'ease',
       'delay': '0s',
-      'iteration-count': 'infinite',
+      'iterationCount': 'infinite',
       'direction': 'alternate',
-      'fill-mode': 'forwards'
+      'fillMode': 'forwards'
     },
     'keyframes': {
       'name': 'abstract',

@@ -1,0 +1,1815 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralInfo should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PropertiesInfo />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="ani-popup-property-container"
+        >
+          <h1
+            className="title"
+          >
+            Property
+          </h1>
+          <ul
+            className="ani-popup-prop-list"
+          >
+            <li>
+              animation-name:
+            </li>
+            <li>
+              animation-duration:
+            </li>
+            <li>
+              animation-timing-function:
+            </li>
+            <li>
+              animation-delay:
+            </li>
+            <li>
+              animation-iteration-count:
+            </li>
+            <li>
+              animation-direction:
+            </li>
+            <li>
+              animation-fill-mode:
+            </li>
+          </ul>
+        </div>,
+        <div
+          className="ani-popup-value-container"
+        >
+          <h1
+            className="title"
+          >
+            Value
+          </h1>
+          <ul
+            className="ani-popup-value-list"
+          >
+            <li>
+              name of keyframes animation
+            </li>
+            <li>
+              seconds
+              <span>
+                |
+              </span>
+              milliseconds - (.3s
+              <span>
+                |
+              </span>
+              300ms)
+            </li>
+            <li>
+              ease
+              <span>
+                |
+              </span>
+              linear
+              <span>
+                |
+              </span>
+              ease-in
+              <span>
+                |
+              </span>
+              ease-out
+              <span>
+                |
+              </span>
+              ease-in-out
+            </li>
+            <li>
+              seconds
+              <span>
+                |
+              </span>
+              milliseconds - (3s
+              <span>
+                |
+              </span>
+              500ms)
+            </li>
+            <li>
+              number
+              <span>
+                |
+              </span>
+              infinite - (3
+              <span>
+                |
+              </span>
+              infinite)
+            </li>
+            <li>
+              normal
+              <span>
+                |
+              </span>
+              reverse
+              <span>
+                |
+              </span>
+              alternate
+              <span>
+                |
+              </span>
+              alternate-reverse
+            </li>
+            <li>
+              none
+              <span>
+                |
+              </span>
+              forwards
+              <span>
+                |
+              </span>
+              backwards
+              <span>
+                |
+              </span>
+              both
+            </li>
+          </ul>
+        </div>,
+      ],
+      "className": "animation-info info-section",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+            >
+              Property
+            </h1>,
+            <ul
+              className="ani-popup-prop-list"
+            >
+              <li>
+                animation-name:
+              </li>
+              <li>
+                animation-duration:
+              </li>
+              <li>
+                animation-timing-function:
+              </li>
+              <li>
+                animation-delay:
+              </li>
+              <li>
+                animation-iteration-count:
+              </li>
+              <li>
+                animation-direction:
+              </li>
+              <li>
+                animation-fill-mode:
+              </li>
+            </ul>,
+          ],
+          "className": "ani-popup-property-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Property",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Property",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  animation-name:
+                </li>,
+                <li>
+                  animation-duration:
+                </li>,
+                <li>
+                  animation-timing-function:
+                </li>,
+                <li>
+                  animation-delay:
+                </li>,
+                <li>
+                  animation-iteration-count:
+                </li>,
+                <li>
+                  animation-direction:
+                </li>,
+                <li>
+                  animation-fill-mode:
+                </li>,
+              ],
+              "className": "ani-popup-prop-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-name:",
+                },
+                "ref": null,
+                "rendered": "animation-name:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-duration:",
+                },
+                "ref": null,
+                "rendered": "animation-duration:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-timing-function:",
+                },
+                "ref": null,
+                "rendered": "animation-timing-function:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-delay:",
+                },
+                "ref": null,
+                "rendered": "animation-delay:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-iteration-count:",
+                },
+                "ref": null,
+                "rendered": "animation-iteration-count:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-direction:",
+                },
+                "ref": null,
+                "rendered": "animation-direction:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "animation-fill-mode:",
+                },
+                "ref": null,
+                "rendered": "animation-fill-mode:",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+            >
+              Value
+            </h1>,
+            <ul
+              className="ani-popup-value-list"
+            >
+              <li>
+                name of keyframes animation
+              </li>
+              <li>
+                seconds
+                <span>
+                  |
+                </span>
+                milliseconds - (.3s
+                <span>
+                  |
+                </span>
+                300ms)
+              </li>
+              <li>
+                ease
+                <span>
+                  |
+                </span>
+                linear
+                <span>
+                  |
+                </span>
+                ease-in
+                <span>
+                  |
+                </span>
+                ease-out
+                <span>
+                  |
+                </span>
+                ease-in-out
+              </li>
+              <li>
+                seconds
+                <span>
+                  |
+                </span>
+                milliseconds - (3s
+                <span>
+                  |
+                </span>
+                500ms)
+              </li>
+              <li>
+                number
+                <span>
+                  |
+                </span>
+                infinite - (3
+                <span>
+                  |
+                </span>
+                infinite)
+              </li>
+              <li>
+                normal
+                <span>
+                  |
+                </span>
+                reverse
+                <span>
+                  |
+                </span>
+                alternate
+                <span>
+                  |
+                </span>
+                alternate-reverse
+              </li>
+              <li>
+                none
+                <span>
+                  |
+                </span>
+                forwards
+                <span>
+                  |
+                </span>
+                backwards
+                <span>
+                  |
+                </span>
+                both
+              </li>
+            </ul>,
+          ],
+          "className": "ani-popup-value-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Value",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Value",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  name of keyframes animation
+                </li>,
+                <li>
+                  seconds
+                  <span>
+                    |
+                  </span>
+                  milliseconds - (.3s
+                  <span>
+                    |
+                  </span>
+                  300ms)
+                </li>,
+                <li>
+                  ease
+                  <span>
+                    |
+                  </span>
+                  linear
+                  <span>
+                    |
+                  </span>
+                  ease-in
+                  <span>
+                    |
+                  </span>
+                  ease-out
+                  <span>
+                    |
+                  </span>
+                  ease-in-out
+                </li>,
+                <li>
+                  seconds
+                  <span>
+                    |
+                  </span>
+                  milliseconds - (3s
+                  <span>
+                    |
+                  </span>
+                  500ms)
+                </li>,
+                <li>
+                  number
+                  <span>
+                    |
+                  </span>
+                  infinite - (3
+                  <span>
+                    |
+                  </span>
+                  infinite)
+                </li>,
+                <li>
+                  normal
+                  <span>
+                    |
+                  </span>
+                  reverse
+                  <span>
+                    |
+                  </span>
+                  alternate
+                  <span>
+                    |
+                  </span>
+                  alternate-reverse
+                </li>,
+                <li>
+                  none
+                  <span>
+                    |
+                  </span>
+                  forwards
+                  <span>
+                    |
+                  </span>
+                  backwards
+                  <span>
+                    |
+                  </span>
+                  both
+                </li>,
+              ],
+              "className": "ani-popup-value-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "name of keyframes animation",
+                },
+                "ref": null,
+                "rendered": "name of keyframes animation",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "seconds",
+                    <span>
+                      |
+                    </span>,
+                    "milliseconds - (.3s",
+                    <span>
+                      |
+                    </span>,
+                    "300ms)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "seconds",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "milliseconds - (.3s",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "300ms)",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "ease",
+                    <span>
+                      |
+                    </span>,
+                    "linear",
+                    <span>
+                      |
+                    </span>,
+                    "ease-in",
+                    <span>
+                      |
+                    </span>,
+                    "ease-out",
+                    <span>
+                      |
+                    </span>,
+                    "ease-in-out",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "ease",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "linear",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "ease-in",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "ease-out",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "ease-in-out",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "seconds",
+                    <span>
+                      |
+                    </span>,
+                    "milliseconds - (3s",
+                    <span>
+                      |
+                    </span>,
+                    "500ms)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "seconds",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "milliseconds - (3s",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "500ms)",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "number",
+                    <span>
+                      |
+                    </span>,
+                    "infinite - (3",
+                    <span>
+                      |
+                    </span>,
+                    "infinite)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "number",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "infinite - (3",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "infinite)",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "normal",
+                    <span>
+                      |
+                    </span>,
+                    "reverse",
+                    <span>
+                      |
+                    </span>,
+                    "alternate",
+                    <span>
+                      |
+                    </span>,
+                    "alternate-reverse",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "normal",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "reverse",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "alternate",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "alternate-reverse",
+                ],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "none",
+                    <span>
+                      |
+                    </span>,
+                    "forwards",
+                    <span>
+                      |
+                    </span>,
+                    "backwards",
+                    <span>
+                      |
+                    </span>,
+                    "both",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "none",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "forwards",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "backwards",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "|",
+                    },
+                    "ref": null,
+                    "rendered": "|",
+                    "type": "span",
+                  },
+                  "both",
+                ],
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="ani-popup-property-container"
+          >
+            <h1
+              className="title"
+            >
+              Property
+            </h1>
+            <ul
+              className="ani-popup-prop-list"
+            >
+              <li>
+                animation-name:
+              </li>
+              <li>
+                animation-duration:
+              </li>
+              <li>
+                animation-timing-function:
+              </li>
+              <li>
+                animation-delay:
+              </li>
+              <li>
+                animation-iteration-count:
+              </li>
+              <li>
+                animation-direction:
+              </li>
+              <li>
+                animation-fill-mode:
+              </li>
+            </ul>
+          </div>,
+          <div
+            className="ani-popup-value-container"
+          >
+            <h1
+              className="title"
+            >
+              Value
+            </h1>
+            <ul
+              className="ani-popup-value-list"
+            >
+              <li>
+                name of keyframes animation
+              </li>
+              <li>
+                seconds
+                <span>
+                  |
+                </span>
+                milliseconds - (.3s
+                <span>
+                  |
+                </span>
+                300ms)
+              </li>
+              <li>
+                ease
+                <span>
+                  |
+                </span>
+                linear
+                <span>
+                  |
+                </span>
+                ease-in
+                <span>
+                  |
+                </span>
+                ease-out
+                <span>
+                  |
+                </span>
+                ease-in-out
+              </li>
+              <li>
+                seconds
+                <span>
+                  |
+                </span>
+                milliseconds - (3s
+                <span>
+                  |
+                </span>
+                500ms)
+              </li>
+              <li>
+                number
+                <span>
+                  |
+                </span>
+                infinite - (3
+                <span>
+                  |
+                </span>
+                infinite)
+              </li>
+              <li>
+                normal
+                <span>
+                  |
+                </span>
+                reverse
+                <span>
+                  |
+                </span>
+                alternate
+                <span>
+                  |
+                </span>
+                alternate-reverse
+              </li>
+              <li>
+                none
+                <span>
+                  |
+                </span>
+                forwards
+                <span>
+                  |
+                </span>
+                backwards
+                <span>
+                  |
+                </span>
+                both
+              </li>
+            </ul>
+          </div>,
+        ],
+        "className": "animation-info info-section",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+              >
+                Property
+              </h1>,
+              <ul
+                className="ani-popup-prop-list"
+              >
+                <li>
+                  animation-name:
+                </li>
+                <li>
+                  animation-duration:
+                </li>
+                <li>
+                  animation-timing-function:
+                </li>
+                <li>
+                  animation-delay:
+                </li>
+                <li>
+                  animation-iteration-count:
+                </li>
+                <li>
+                  animation-direction:
+                </li>
+                <li>
+                  animation-fill-mode:
+                </li>
+              </ul>,
+            ],
+            "className": "ani-popup-property-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Property",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Property",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    animation-name:
+                  </li>,
+                  <li>
+                    animation-duration:
+                  </li>,
+                  <li>
+                    animation-timing-function:
+                  </li>,
+                  <li>
+                    animation-delay:
+                  </li>,
+                  <li>
+                    animation-iteration-count:
+                  </li>,
+                  <li>
+                    animation-direction:
+                  </li>,
+                  <li>
+                    animation-fill-mode:
+                  </li>,
+                ],
+                "className": "ani-popup-prop-list",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-name:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-name:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-duration:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-duration:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-timing-function:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-timing-function:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-delay:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-delay:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-iteration-count:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-iteration-count:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-direction:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-direction:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "animation-fill-mode:",
+                  },
+                  "ref": null,
+                  "rendered": "animation-fill-mode:",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+              >
+                Value
+              </h1>,
+              <ul
+                className="ani-popup-value-list"
+              >
+                <li>
+                  name of keyframes animation
+                </li>
+                <li>
+                  seconds
+                  <span>
+                    |
+                  </span>
+                  milliseconds - (.3s
+                  <span>
+                    |
+                  </span>
+                  300ms)
+                </li>
+                <li>
+                  ease
+                  <span>
+                    |
+                  </span>
+                  linear
+                  <span>
+                    |
+                  </span>
+                  ease-in
+                  <span>
+                    |
+                  </span>
+                  ease-out
+                  <span>
+                    |
+                  </span>
+                  ease-in-out
+                </li>
+                <li>
+                  seconds
+                  <span>
+                    |
+                  </span>
+                  milliseconds - (3s
+                  <span>
+                    |
+                  </span>
+                  500ms)
+                </li>
+                <li>
+                  number
+                  <span>
+                    |
+                  </span>
+                  infinite - (3
+                  <span>
+                    |
+                  </span>
+                  infinite)
+                </li>
+                <li>
+                  normal
+                  <span>
+                    |
+                  </span>
+                  reverse
+                  <span>
+                    |
+                  </span>
+                  alternate
+                  <span>
+                    |
+                  </span>
+                  alternate-reverse
+                </li>
+                <li>
+                  none
+                  <span>
+                    |
+                  </span>
+                  forwards
+                  <span>
+                    |
+                  </span>
+                  backwards
+                  <span>
+                    |
+                  </span>
+                  both
+                </li>
+              </ul>,
+            ],
+            "className": "ani-popup-value-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Value",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Value",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    name of keyframes animation
+                  </li>,
+                  <li>
+                    seconds
+                    <span>
+                      |
+                    </span>
+                    milliseconds - (.3s
+                    <span>
+                      |
+                    </span>
+                    300ms)
+                  </li>,
+                  <li>
+                    ease
+                    <span>
+                      |
+                    </span>
+                    linear
+                    <span>
+                      |
+                    </span>
+                    ease-in
+                    <span>
+                      |
+                    </span>
+                    ease-out
+                    <span>
+                      |
+                    </span>
+                    ease-in-out
+                  </li>,
+                  <li>
+                    seconds
+                    <span>
+                      |
+                    </span>
+                    milliseconds - (3s
+                    <span>
+                      |
+                    </span>
+                    500ms)
+                  </li>,
+                  <li>
+                    number
+                    <span>
+                      |
+                    </span>
+                    infinite - (3
+                    <span>
+                      |
+                    </span>
+                    infinite)
+                  </li>,
+                  <li>
+                    normal
+                    <span>
+                      |
+                    </span>
+                    reverse
+                    <span>
+                      |
+                    </span>
+                    alternate
+                    <span>
+                      |
+                    </span>
+                    alternate-reverse
+                  </li>,
+                  <li>
+                    none
+                    <span>
+                      |
+                    </span>
+                    forwards
+                    <span>
+                      |
+                    </span>
+                    backwards
+                    <span>
+                      |
+                    </span>
+                    both
+                  </li>,
+                ],
+                "className": "ani-popup-value-list",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name of keyframes animation",
+                  },
+                  "ref": null,
+                  "rendered": "name of keyframes animation",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "seconds",
+                      <span>
+                        |
+                      </span>,
+                      "milliseconds - (.3s",
+                      <span>
+                        |
+                      </span>,
+                      "300ms)",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "seconds",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "milliseconds - (.3s",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "300ms)",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "ease",
+                      <span>
+                        |
+                      </span>,
+                      "linear",
+                      <span>
+                        |
+                      </span>,
+                      "ease-in",
+                      <span>
+                        |
+                      </span>,
+                      "ease-out",
+                      <span>
+                        |
+                      </span>,
+                      "ease-in-out",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "ease",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "linear",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "ease-in",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "ease-out",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "ease-in-out",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "seconds",
+                      <span>
+                        |
+                      </span>,
+                      "milliseconds - (3s",
+                      <span>
+                        |
+                      </span>,
+                      "500ms)",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "seconds",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "milliseconds - (3s",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "500ms)",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "number",
+                      <span>
+                        |
+                      </span>,
+                      "infinite - (3",
+                      <span>
+                        |
+                      </span>,
+                      "infinite)",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "number",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "infinite - (3",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "infinite)",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "normal",
+                      <span>
+                        |
+                      </span>,
+                      "reverse",
+                      <span>
+                        |
+                      </span>,
+                      "alternate",
+                      <span>
+                        |
+                      </span>,
+                      "alternate-reverse",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "normal",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "reverse",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "alternate",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "alternate-reverse",
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "none",
+                      <span>
+                        |
+                      </span>,
+                      "forwards",
+                      <span>
+                        |
+                      </span>,
+                      "backwards",
+                      <span>
+                        |
+                      </span>,
+                      "both",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "none",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "forwards",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "backwards",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "|",
+                      },
+                      "ref": null,
+                      "rendered": "|",
+                      "type": "span",
+                    },
+                    "both",
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
