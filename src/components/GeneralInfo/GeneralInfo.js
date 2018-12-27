@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './styles/app.scss';
 
-class HowToInfo extends Component {
+class GeneralInfo extends Component {
   
   render() {
     return (
@@ -18,8 +17,8 @@ class HowToInfo extends Component {
           sections by clicking the tabs on the top of this popup.
           This app is meant to give an introduction to CSS animations.
           For more detailed info, please visit 
-            <a className='link' target='_blank' href='https://www.w3schools.com/css/css3_animations.asp'> W3schools </a> or 
-            <a className='link' target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/animation'> MDN </a>.
+            <a className='link' target='_blank' rel="noopener noreferrer" href='https://www.w3schools.com/css/css3_animations.asp'> W3schools </a> or 
+            <a className='link' target='_blank' rel="noopener noreferrer" href='https://developer.mozilla.org/en-US/docs/Web/CSS/animation'> MDN </a>.
         </p>
          <p className='howto-final-line'>Happy <span className='animating-span'>animating</span>!</p>
       </div>
@@ -27,4 +26,4 @@ class HowToInfo extends Component {
   }
 }
 
-export default HowToInfo
+export default GeneralInfo

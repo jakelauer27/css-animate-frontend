@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowToPopup should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HowToPopup />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="info-popup"
+      >
+        <header
+          className="header"
+        >
+          <NavLink
+            activeClassName="selected-section"
+            aria-current="page"
+            className="howTo header-button"
+            to="/slideInX/properties/howto/general"
+          >
+            how to play
+          </NavLink>
+          <NavLink
+            activeClassName="selected-section"
+            aria-current="page"
+            className="keyframes header-button"
+            to="/slideInX/properties/howto/properties"
+          >
+            keyframes
+          </NavLink>
+          <NavLink
+            activeClassName="selected-section"
+            aria-current="page"
+            className="animation header-button"
+            to="/slideInX/properties/howto/keyframes"
+          >
+            animation properties
+          </NavLink>
+        </header>
+        <Switch>
+          <Route
+            component={[Function]}
+            path="/slideInX/properties/howto/general"
+          />
+          <Route
+            component={[Function]}
+            path="/slideInX/properties/howto/properties"
+          />
+          <Route
+            component={[Function]}
+            path="/slideInX/properties/howto/keyframes"
+          />
+        </Switch>
+        <Link
+          className="close-info-popup-btn"
+          replace={false}
+          to="/slideInX/properties"
+        >
+          <button
+            className="close-info-popup-btn"
+          >
+            Go!
+          </button>
+        </Link>
+      </div>,
+      "className": "infoPopup-overlay",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="header"
+          >
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="howTo header-button"
+              to="/slideInX/properties/howto/general"
+            >
+              how to play
+            </NavLink>
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="keyframes header-button"
+              to="/slideInX/properties/howto/properties"
+            >
+              keyframes
+            </NavLink>
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="animation header-button"
+              to="/slideInX/properties/howto/keyframes"
+            >
+              animation properties
+            </NavLink>
+          </header>,
+          <Switch>
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/general"
+            />
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/properties"
+            />
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/keyframes"
+            />
+          </Switch>,
+          <Link
+            className="close-info-popup-btn"
+            replace={false}
+            to="/slideInX/properties"
+          >
+            <button
+              className="close-info-popup-btn"
+            >
+              Go!
+            </button>
+          </Link>,
+        ],
+        "className": "info-popup",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="howTo header-button"
+                to="/slideInX/properties/howto/general"
+              >
+                how to play
+              </NavLink>,
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="keyframes header-button"
+                to="/slideInX/properties/howto/properties"
+              >
+                keyframes
+              </NavLink>,
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="animation header-button"
+                to="/slideInX/properties/howto/keyframes"
+              >
+                animation properties
+              </NavLink>,
+            ],
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected-section",
+                "aria-current": "page",
+                "children": "how to play",
+                "className": "howTo header-button",
+                "to": "/slideInX/properties/howto/general",
+              },
+              "ref": null,
+              "rendered": "how to play",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected-section",
+                "aria-current": "page",
+                "children": "keyframes",
+                "className": "keyframes header-button",
+                "to": "/slideInX/properties/howto/properties",
+              },
+              "ref": null,
+              "rendered": "keyframes",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "selected-section",
+                "aria-current": "page",
+                "children": "animation properties",
+                "className": "animation header-button",
+                "to": "/slideInX/properties/howto/keyframes",
+              },
+              "ref": null,
+              "rendered": "animation properties",
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/general"
+              />,
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/properties"
+              />,
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/keyframes"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/slideInX/properties/howto/general",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/slideInX/properties/howto/properties",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/slideInX/properties/howto/keyframes",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button
+              className="close-info-popup-btn"
+            >
+              Go!
+            </button>,
+            "className": "close-info-popup-btn",
+            "replace": false,
+            "to": "/slideInX/properties",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Go!",
+              "className": "close-info-popup-btn",
+            },
+            "ref": null,
+            "rendered": "Go!",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="info-popup"
+        >
+          <header
+            className="header"
+          >
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="howTo header-button"
+              to="/slideInX/properties/howto/general"
+            >
+              how to play
+            </NavLink>
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="keyframes header-button"
+              to="/slideInX/properties/howto/properties"
+            >
+              keyframes
+            </NavLink>
+            <NavLink
+              activeClassName="selected-section"
+              aria-current="page"
+              className="animation header-button"
+              to="/slideInX/properties/howto/keyframes"
+            >
+              animation properties
+            </NavLink>
+          </header>
+          <Switch>
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/general"
+            />
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/properties"
+            />
+            <Route
+              component={[Function]}
+              path="/slideInX/properties/howto/keyframes"
+            />
+          </Switch>
+          <Link
+            className="close-info-popup-btn"
+            replace={false}
+            to="/slideInX/properties"
+          >
+            <button
+              className="close-info-popup-btn"
+            >
+              Go!
+            </button>
+          </Link>
+        </div>,
+        "className": "infoPopup-overlay",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header
+              className="header"
+            >
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="howTo header-button"
+                to="/slideInX/properties/howto/general"
+              >
+                how to play
+              </NavLink>
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="keyframes header-button"
+                to="/slideInX/properties/howto/properties"
+              >
+                keyframes
+              </NavLink>
+              <NavLink
+                activeClassName="selected-section"
+                aria-current="page"
+                className="animation header-button"
+                to="/slideInX/properties/howto/keyframes"
+              >
+                animation properties
+              </NavLink>
+            </header>,
+            <Switch>
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/general"
+              />
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/properties"
+              />
+              <Route
+                component={[Function]}
+                path="/slideInX/properties/howto/keyframes"
+              />
+            </Switch>,
+            <Link
+              className="close-info-popup-btn"
+              replace={false}
+              to="/slideInX/properties"
+            >
+              <button
+                className="close-info-popup-btn"
+              >
+                Go!
+              </button>
+            </Link>,
+          ],
+          "className": "info-popup",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavLink
+                  activeClassName="selected-section"
+                  aria-current="page"
+                  className="howTo header-button"
+                  to="/slideInX/properties/howto/general"
+                >
+                  how to play
+                </NavLink>,
+                <NavLink
+                  activeClassName="selected-section"
+                  aria-current="page"
+                  className="keyframes header-button"
+                  to="/slideInX/properties/howto/properties"
+                >
+                  keyframes
+                </NavLink>,
+                <NavLink
+                  activeClassName="selected-section"
+                  aria-current="page"
+                  className="animation header-button"
+                  to="/slideInX/properties/howto/keyframes"
+                >
+                  animation properties
+                </NavLink>,
+              ],
+              "className": "header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected-section",
+                  "aria-current": "page",
+                  "children": "how to play",
+                  "className": "howTo header-button",
+                  "to": "/slideInX/properties/howto/general",
+                },
+                "ref": null,
+                "rendered": "how to play",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected-section",
+                  "aria-current": "page",
+                  "children": "keyframes",
+                  "className": "keyframes header-button",
+                  "to": "/slideInX/properties/howto/properties",
+                },
+                "ref": null,
+                "rendered": "keyframes",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected-section",
+                  "aria-current": "page",
+                  "children": "animation properties",
+                  "className": "animation header-button",
+                  "to": "/slideInX/properties/howto/keyframes",
+                },
+                "ref": null,
+                "rendered": "animation properties",
+                "type": [Function],
+              },
+            ],
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties/howto/general"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties/howto/properties"
+                />,
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties/howto/keyframes"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/slideInX/properties/howto/general",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/slideInX/properties/howto/properties",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "path": "/slideInX/properties/howto/keyframes",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="close-info-popup-btn"
+              >
+                Go!
+              </button>,
+              "className": "close-info-popup-btn",
+              "replace": false,
+              "to": "/slideInX/properties",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Go!",
+                "className": "close-info-popup-btn",
+              },
+              "ref": null,
+              "rendered": "Go!",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

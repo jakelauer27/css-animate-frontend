@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './styles/app.scss';
 
-class AnimationInfo extends Component {
+class PropertiesInfo extends Component {
   
   render() {
     return (
@@ -35,4 +34,4 @@ class AnimationInfo extends Component {
   }
 }
 
-export default AnimationInfo
+export default PropertiesInfo

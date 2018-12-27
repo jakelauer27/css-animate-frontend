@@ -90,8 +90,18 @@ header {
     display: block;
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:visited {
+      color: black
+    }
+  }
+
   li {
     padding: 4px;
+    text-decoration: none;
     font-size: 1.2em;
     text-align: center;
 

@@ -1,0 +1,3061 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header>
+          <Link
+            replace={false}
+            to="/slideInX/properties/howto/general"
+          >
+            <button
+              className="questions-btn"
+            >
+              Instructions
+            </button>
+          </Link>
+          <h1
+            className="main-title"
+          >
+            CSS ani
+            <span>
+              Mate
+            </span>
+          </h1>
+          <div
+            className="header-btn-container"
+          >
+            <button
+              className="load-example-btn"
+            >
+              Load Examples
+              <i
+                className="fas fa-caret-right"
+              />
+            </button>
+            <ul
+              className="examples-list"
+            >
+              <Link
+                replace={false}
+                to="/slideInX/properties"
+              >
+                <li
+                  className="keyframe-ex slideInX"
+                >
+                  slideInX
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/slideInY/properties"
+              >
+                <li
+                  className="keyframe-ex slideInY"
+                >
+                  slideInY
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/fadeIn/properties"
+              >
+                <li
+                  className="keyframe-ex fadeIn"
+                >
+                  fadeIn
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/rotateIn/properties"
+              >
+                <li
+                  className="keyframe-ex rotateIn"
+                >
+                  rotateIn
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/zoomIn/properties"
+              >
+                <li
+                  className="keyframe-ex zoomIn"
+                >
+                  zoomIn
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/dropDown/properties"
+              >
+                <li
+                  className="keyframe-ex dropDown"
+                >
+                  dropDown
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/ySpinLoad/properties"
+              >
+                <li
+                  className="keyframe-ex ySpinLoad"
+                >
+                  ySpinLoad
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/cardFlip/properties"
+              >
+                <li
+                  className="keyframe-ex cardFlip"
+                >
+                  cardFlip
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/bounceAppear/properties"
+              >
+                <li
+                  className="keyframe-ex bounceAppear"
+                >
+                  bounceAppear
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/bounceDrop/properties"
+              >
+                <li
+                  className="keyframe-ex bounceDrop"
+                >
+                  bounceDrop
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/wiggle/properties"
+              >
+                <li
+                  className="keyframe-ex wiggle"
+                >
+                  wiggle
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/color/properties"
+              >
+                <li
+                  className="keyframe-ex color"
+                >
+                  color
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/path/properties"
+              >
+                <li
+                  className="keyframe-ex path"
+                >
+                  path
+                </li>
+              </Link>
+              <Link
+                replace={false}
+                to="/abstract/properties"
+              >
+                <li
+                  className="keyframe-ex abstract"
+                >
+                  abstract
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </header>,
+        <Switch>
+          <Route
+            exact={true}
+            path="/"
+            render={[Function]}
+          />
+          <Route
+            path="/slideInX"
+            render={[Function]}
+          />
+          <Route
+            path="/slideInY"
+            render={[Function]}
+          />
+          <Route
+            path="/fadeIn"
+            render={[Function]}
+          />
+          <Route
+            path="/rotateIn"
+            render={[Function]}
+          />
+          <Route
+            path="/zoomIn"
+            render={[Function]}
+          />
+          <Route
+            path="/dropDown"
+            render={[Function]}
+          />
+          <Route
+            path="/ySpinLoad"
+            render={[Function]}
+          />
+          <Route
+            path="/cardFlip"
+            render={[Function]}
+          />
+          <Route
+            path="/bounceAppear"
+            render={[Function]}
+          />
+          <Route
+            path="/bounceDrop"
+            render={[Function]}
+          />
+          <Route
+            path="/wiggle"
+            render={[Function]}
+          />
+          <Route
+            path="/color"
+            render={[Function]}
+          />
+          <Route
+            path="/path"
+            render={[Function]}
+          />
+          <Route
+            path="/abstract"
+            render={[Function]}
+          />
+        </Switch>,
+        <Route
+          component={[MockFunction]}
+          path="/slideInX/properties/howto"
+        />,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              replace={false}
+              to="/slideInX/properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>,
+            <h1
+              className="main-title"
+            >
+              CSS ani
+              <span>
+                Mate
+              </span>
+            </h1>,
+            <div
+              className="header-btn-container"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Examples
+                <i
+                  className="fas fa-caret-right"
+                />
+              </button>
+              <ul
+                className="examples-list"
+              >
+                <Link
+                  replace={false}
+                  to="/slideInX/properties"
+                >
+                  <li
+                    className="keyframe-ex slideInX"
+                  >
+                    slideInX
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/slideInY/properties"
+                >
+                  <li
+                    className="keyframe-ex slideInY"
+                  >
+                    slideInY
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/fadeIn/properties"
+                >
+                  <li
+                    className="keyframe-ex fadeIn"
+                  >
+                    fadeIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/rotateIn/properties"
+                >
+                  <li
+                    className="keyframe-ex rotateIn"
+                  >
+                    rotateIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/zoomIn/properties"
+                >
+                  <li
+                    className="keyframe-ex zoomIn"
+                  >
+                    zoomIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/dropDown/properties"
+                >
+                  <li
+                    className="keyframe-ex dropDown"
+                  >
+                    dropDown
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/ySpinLoad/properties"
+                >
+                  <li
+                    className="keyframe-ex ySpinLoad"
+                  >
+                    ySpinLoad
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/cardFlip/properties"
+                >
+                  <li
+                    className="keyframe-ex cardFlip"
+                  >
+                    cardFlip
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/bounceAppear/properties"
+                >
+                  <li
+                    className="keyframe-ex bounceAppear"
+                  >
+                    bounceAppear
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/bounceDrop/properties"
+                >
+                  <li
+                    className="keyframe-ex bounceDrop"
+                  >
+                    bounceDrop
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/wiggle/properties"
+                >
+                  <li
+                    className="keyframe-ex wiggle"
+                  >
+                    wiggle
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/color/properties"
+                >
+                  <li
+                    className="keyframe-ex color"
+                  >
+                    color
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/path/properties"
+                >
+                  <li
+                    className="keyframe-ex path"
+                  >
+                    path
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/abstract/properties"
+                >
+                  <li
+                    className="keyframe-ex abstract"
+                  >
+                    abstract
+                  </li>
+                </Link>
+              </ul>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>,
+              "replace": false,
+              "to": "/slideInX/properties/howto/general",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Instructions",
+                "className": "questions-btn",
+              },
+              "ref": null,
+              "rendered": "Instructions",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "CSS ani",
+                <span>
+                  Mate
+                </span>,
+              ],
+              "className": "main-title",
+            },
+            "ref": null,
+            "rendered": Array [
+              "CSS ani",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Mate",
+                },
+                "ref": null,
+                "rendered": "Mate",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="load-example-btn"
+                >
+                  Load Examples
+                  <i
+                    className="fas fa-caret-right"
+                  />
+                </button>,
+                <ul
+                  className="examples-list"
+                >
+                  <Link
+                    replace={false}
+                    to="/slideInX/properties"
+                  >
+                    <li
+                      className="keyframe-ex slideInX"
+                    >
+                      slideInX
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/slideInY/properties"
+                  >
+                    <li
+                      className="keyframe-ex slideInY"
+                    >
+                      slideInY
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/fadeIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex fadeIn"
+                    >
+                      fadeIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/rotateIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex rotateIn"
+                    >
+                      rotateIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/zoomIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex zoomIn"
+                    >
+                      zoomIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/dropDown/properties"
+                  >
+                    <li
+                      className="keyframe-ex dropDown"
+                    >
+                      dropDown
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/ySpinLoad/properties"
+                  >
+                    <li
+                      className="keyframe-ex ySpinLoad"
+                    >
+                      ySpinLoad
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/cardFlip/properties"
+                  >
+                    <li
+                      className="keyframe-ex cardFlip"
+                    >
+                      cardFlip
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/bounceAppear/properties"
+                  >
+                    <li
+                      className="keyframe-ex bounceAppear"
+                    >
+                      bounceAppear
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/bounceDrop/properties"
+                  >
+                    <li
+                      className="keyframe-ex bounceDrop"
+                    >
+                      bounceDrop
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/wiggle/properties"
+                  >
+                    <li
+                      className="keyframe-ex wiggle"
+                    >
+                      wiggle
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/color/properties"
+                  >
+                    <li
+                      className="keyframe-ex color"
+                    >
+                      color
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/path/properties"
+                  >
+                    <li
+                      className="keyframe-ex path"
+                    >
+                      path
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/abstract/properties"
+                  >
+                    <li
+                      className="keyframe-ex abstract"
+                    >
+                      abstract
+                    </li>
+                  </Link>
+                </ul>,
+              ],
+              "className": "header-btn-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Load Examples",
+                    <i
+                      className="fas fa-caret-right"
+                    />,
+                  ],
+                  "className": "load-example-btn",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Load Examples",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-caret-right",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Link
+                      replace={false}
+                      to="/slideInX/properties"
+                    >
+                      <li
+                        className="keyframe-ex slideInX"
+                      >
+                        slideInX
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/slideInY/properties"
+                    >
+                      <li
+                        className="keyframe-ex slideInY"
+                      >
+                        slideInY
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/fadeIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex fadeIn"
+                      >
+                        fadeIn
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/rotateIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex rotateIn"
+                      >
+                        rotateIn
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/zoomIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex zoomIn"
+                      >
+                        zoomIn
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/dropDown/properties"
+                    >
+                      <li
+                        className="keyframe-ex dropDown"
+                      >
+                        dropDown
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/ySpinLoad/properties"
+                    >
+                      <li
+                        className="keyframe-ex ySpinLoad"
+                      >
+                        ySpinLoad
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/cardFlip/properties"
+                    >
+                      <li
+                        className="keyframe-ex cardFlip"
+                      >
+                        cardFlip
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/bounceAppear/properties"
+                    >
+                      <li
+                        className="keyframe-ex bounceAppear"
+                      >
+                        bounceAppear
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/bounceDrop/properties"
+                    >
+                      <li
+                        className="keyframe-ex bounceDrop"
+                      >
+                        bounceDrop
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/wiggle/properties"
+                    >
+                      <li
+                        className="keyframe-ex wiggle"
+                      >
+                        wiggle
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/color/properties"
+                    >
+                      <li
+                        className="keyframe-ex color"
+                      >
+                        color
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/path/properties"
+                    >
+                      <li
+                        className="keyframe-ex path"
+                      >
+                        path
+                      </li>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/abstract/properties"
+                    >
+                      <li
+                        className="keyframe-ex abstract"
+                      >
+                        abstract
+                      </li>
+                    </Link>,
+                  ],
+                  "className": "examples-list",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "val-slideInX",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex slideInX"
+                      >
+                        slideInX
+                      </li>,
+                      "replace": false,
+                      "to": "/slideInX/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "slideInX",
+                        "className": "keyframe-ex slideInX",
+                      },
+                      "ref": null,
+                      "rendered": "slideInX",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-slideInY",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex slideInY"
+                      >
+                        slideInY
+                      </li>,
+                      "replace": false,
+                      "to": "/slideInY/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "slideInY",
+                        "className": "keyframe-ex slideInY",
+                      },
+                      "ref": null,
+                      "rendered": "slideInY",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-fadeIn",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex fadeIn"
+                      >
+                        fadeIn
+                      </li>,
+                      "replace": false,
+                      "to": "/fadeIn/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "fadeIn",
+                        "className": "keyframe-ex fadeIn",
+                      },
+                      "ref": null,
+                      "rendered": "fadeIn",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-rotateIn",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex rotateIn"
+                      >
+                        rotateIn
+                      </li>,
+                      "replace": false,
+                      "to": "/rotateIn/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "rotateIn",
+                        "className": "keyframe-ex rotateIn",
+                      },
+                      "ref": null,
+                      "rendered": "rotateIn",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-zoomIn",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex zoomIn"
+                      >
+                        zoomIn
+                      </li>,
+                      "replace": false,
+                      "to": "/zoomIn/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "zoomIn",
+                        "className": "keyframe-ex zoomIn",
+                      },
+                      "ref": null,
+                      "rendered": "zoomIn",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-dropDown",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex dropDown"
+                      >
+                        dropDown
+                      </li>,
+                      "replace": false,
+                      "to": "/dropDown/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "dropDown",
+                        "className": "keyframe-ex dropDown",
+                      },
+                      "ref": null,
+                      "rendered": "dropDown",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-ySpinLoad",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex ySpinLoad"
+                      >
+                        ySpinLoad
+                      </li>,
+                      "replace": false,
+                      "to": "/ySpinLoad/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "ySpinLoad",
+                        "className": "keyframe-ex ySpinLoad",
+                      },
+                      "ref": null,
+                      "rendered": "ySpinLoad",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-cardFlip",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex cardFlip"
+                      >
+                        cardFlip
+                      </li>,
+                      "replace": false,
+                      "to": "/cardFlip/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "cardFlip",
+                        "className": "keyframe-ex cardFlip",
+                      },
+                      "ref": null,
+                      "rendered": "cardFlip",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-bounceAppear",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex bounceAppear"
+                      >
+                        bounceAppear
+                      </li>,
+                      "replace": false,
+                      "to": "/bounceAppear/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "bounceAppear",
+                        "className": "keyframe-ex bounceAppear",
+                      },
+                      "ref": null,
+                      "rendered": "bounceAppear",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-bounceDrop",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex bounceDrop"
+                      >
+                        bounceDrop
+                      </li>,
+                      "replace": false,
+                      "to": "/bounceDrop/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "bounceDrop",
+                        "className": "keyframe-ex bounceDrop",
+                      },
+                      "ref": null,
+                      "rendered": "bounceDrop",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-wiggle",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex wiggle"
+                      >
+                        wiggle
+                      </li>,
+                      "replace": false,
+                      "to": "/wiggle/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "wiggle",
+                        "className": "keyframe-ex wiggle",
+                      },
+                      "ref": null,
+                      "rendered": "wiggle",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-color",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex color"
+                      >
+                        color
+                      </li>,
+                      "replace": false,
+                      "to": "/color/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "color",
+                        "className": "keyframe-ex color",
+                      },
+                      "ref": null,
+                      "rendered": "color",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-path",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex path"
+                      >
+                        path
+                      </li>,
+                      "replace": false,
+                      "to": "/path/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "path",
+                        "className": "keyframe-ex path",
+                      },
+                      "ref": null,
+                      "rendered": "path",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "val-abstract",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="keyframe-ex abstract"
+                      >
+                        abstract
+                      </li>,
+                      "replace": false,
+                      "to": "/abstract/properties",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "abstract",
+                        "className": "keyframe-ex abstract",
+                      },
+                      "ref": null,
+                      "rendered": "abstract",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Route
+              exact={true}
+              path="/"
+              render={[Function]}
+            />,
+            Array [
+              <Route
+                path="/slideInX"
+                render={[Function]}
+              />,
+              <Route
+                path="/slideInY"
+                render={[Function]}
+              />,
+              <Route
+                path="/fadeIn"
+                render={[Function]}
+              />,
+              <Route
+                path="/rotateIn"
+                render={[Function]}
+              />,
+              <Route
+                path="/zoomIn"
+                render={[Function]}
+              />,
+              <Route
+                path="/dropDown"
+                render={[Function]}
+              />,
+              <Route
+                path="/ySpinLoad"
+                render={[Function]}
+              />,
+              <Route
+                path="/cardFlip"
+                render={[Function]}
+              />,
+              <Route
+                path="/bounceAppear"
+                render={[Function]}
+              />,
+              <Route
+                path="/bounceDrop"
+                render={[Function]}
+              />,
+              <Route
+                path="/wiggle"
+                render={[Function]}
+              />,
+              <Route
+                path="/color"
+                render={[Function]}
+              />,
+              <Route
+                path="/path"
+                render={[Function]}
+              />,
+              <Route
+                path="/abstract"
+                render={[Function]}
+              />,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-slideInX",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/slideInX",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-slideInY",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/slideInY",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-fadeIn",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/fadeIn",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-rotateIn",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/rotateIn",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-zoomIn",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/zoomIn",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-dropDown",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/dropDown",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-ySpinLoad",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/ySpinLoad",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-cardFlip",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/cardFlip",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-bounceAppear",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/bounceAppear",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-bounceDrop",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/bounceDrop",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-wiggle",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/wiggle",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-color",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/color",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-path",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/path",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "val-abstract",
+            "nodeType": "class",
+            "props": Object {
+              "path": "/abstract",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [MockFunction],
+          "path": "/slideInX/properties/howto",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <Link
+              replace={false}
+              to="/slideInX/properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>
+            <h1
+              className="main-title"
+            >
+              CSS ani
+              <span>
+                Mate
+              </span>
+            </h1>
+            <div
+              className="header-btn-container"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Examples
+                <i
+                  className="fas fa-caret-right"
+                />
+              </button>
+              <ul
+                className="examples-list"
+              >
+                <Link
+                  replace={false}
+                  to="/slideInX/properties"
+                >
+                  <li
+                    className="keyframe-ex slideInX"
+                  >
+                    slideInX
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/slideInY/properties"
+                >
+                  <li
+                    className="keyframe-ex slideInY"
+                  >
+                    slideInY
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/fadeIn/properties"
+                >
+                  <li
+                    className="keyframe-ex fadeIn"
+                  >
+                    fadeIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/rotateIn/properties"
+                >
+                  <li
+                    className="keyframe-ex rotateIn"
+                  >
+                    rotateIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/zoomIn/properties"
+                >
+                  <li
+                    className="keyframe-ex zoomIn"
+                  >
+                    zoomIn
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/dropDown/properties"
+                >
+                  <li
+                    className="keyframe-ex dropDown"
+                  >
+                    dropDown
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/ySpinLoad/properties"
+                >
+                  <li
+                    className="keyframe-ex ySpinLoad"
+                  >
+                    ySpinLoad
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/cardFlip/properties"
+                >
+                  <li
+                    className="keyframe-ex cardFlip"
+                  >
+                    cardFlip
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/bounceAppear/properties"
+                >
+                  <li
+                    className="keyframe-ex bounceAppear"
+                  >
+                    bounceAppear
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/bounceDrop/properties"
+                >
+                  <li
+                    className="keyframe-ex bounceDrop"
+                  >
+                    bounceDrop
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/wiggle/properties"
+                >
+                  <li
+                    className="keyframe-ex wiggle"
+                  >
+                    wiggle
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/color/properties"
+                >
+                  <li
+                    className="keyframe-ex color"
+                  >
+                    color
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/path/properties"
+                >
+                  <li
+                    className="keyframe-ex path"
+                  >
+                    path
+                  </li>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/abstract/properties"
+                >
+                  <li
+                    className="keyframe-ex abstract"
+                  >
+                    abstract
+                  </li>
+                </Link>
+              </ul>
+            </div>
+          </header>,
+          <Switch>
+            <Route
+              exact={true}
+              path="/"
+              render={[Function]}
+            />
+            <Route
+              path="/slideInX"
+              render={[Function]}
+            />
+            <Route
+              path="/slideInY"
+              render={[Function]}
+            />
+            <Route
+              path="/fadeIn"
+              render={[Function]}
+            />
+            <Route
+              path="/rotateIn"
+              render={[Function]}
+            />
+            <Route
+              path="/zoomIn"
+              render={[Function]}
+            />
+            <Route
+              path="/dropDown"
+              render={[Function]}
+            />
+            <Route
+              path="/ySpinLoad"
+              render={[Function]}
+            />
+            <Route
+              path="/cardFlip"
+              render={[Function]}
+            />
+            <Route
+              path="/bounceAppear"
+              render={[Function]}
+            />
+            <Route
+              path="/bounceDrop"
+              render={[Function]}
+            />
+            <Route
+              path="/wiggle"
+              render={[Function]}
+            />
+            <Route
+              path="/color"
+              render={[Function]}
+            />
+            <Route
+              path="/path"
+              render={[Function]}
+            />
+            <Route
+              path="/abstract"
+              render={[Function]}
+            />
+          </Switch>,
+          <Route
+            component={[MockFunction]}
+            path="/slideInX/properties/howto"
+          />,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                replace={false}
+                to="/slideInX/properties/howto/general"
+              >
+                <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>
+              </Link>,
+              <h1
+                className="main-title"
+              >
+                CSS ani
+                <span>
+                  Mate
+                </span>
+              </h1>,
+              <div
+                className="header-btn-container"
+              >
+                <button
+                  className="load-example-btn"
+                >
+                  Load Examples
+                  <i
+                    className="fas fa-caret-right"
+                  />
+                </button>
+                <ul
+                  className="examples-list"
+                >
+                  <Link
+                    replace={false}
+                    to="/slideInX/properties"
+                  >
+                    <li
+                      className="keyframe-ex slideInX"
+                    >
+                      slideInX
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/slideInY/properties"
+                  >
+                    <li
+                      className="keyframe-ex slideInY"
+                    >
+                      slideInY
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/fadeIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex fadeIn"
+                    >
+                      fadeIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/rotateIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex rotateIn"
+                    >
+                      rotateIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/zoomIn/properties"
+                  >
+                    <li
+                      className="keyframe-ex zoomIn"
+                    >
+                      zoomIn
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/dropDown/properties"
+                  >
+                    <li
+                      className="keyframe-ex dropDown"
+                    >
+                      dropDown
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/ySpinLoad/properties"
+                  >
+                    <li
+                      className="keyframe-ex ySpinLoad"
+                    >
+                      ySpinLoad
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/cardFlip/properties"
+                  >
+                    <li
+                      className="keyframe-ex cardFlip"
+                    >
+                      cardFlip
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/bounceAppear/properties"
+                  >
+                    <li
+                      className="keyframe-ex bounceAppear"
+                    >
+                      bounceAppear
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/bounceDrop/properties"
+                  >
+                    <li
+                      className="keyframe-ex bounceDrop"
+                    >
+                      bounceDrop
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/wiggle/properties"
+                  >
+                    <li
+                      className="keyframe-ex wiggle"
+                    >
+                      wiggle
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/color/properties"
+                  >
+                    <li
+                      className="keyframe-ex color"
+                    >
+                      color
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/path/properties"
+                  >
+                    <li
+                      className="keyframe-ex path"
+                    >
+                      path
+                    </li>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/abstract/properties"
+                  >
+                    <li
+                      className="keyframe-ex abstract"
+                    >
+                      abstract
+                    </li>
+                  </Link>
+                </ul>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>,
+                "replace": false,
+                "to": "/slideInX/properties/howto/general",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Instructions",
+                  "className": "questions-btn",
+                },
+                "ref": null,
+                "rendered": "Instructions",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "CSS ani",
+                  <span>
+                    Mate
+                  </span>,
+                ],
+                "className": "main-title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "CSS ani",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Mate",
+                  },
+                  "ref": null,
+                  "rendered": "Mate",
+                  "type": "span",
+                },
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="load-example-btn"
+                  >
+                    Load Examples
+                    <i
+                      className="fas fa-caret-right"
+                    />
+                  </button>,
+                  <ul
+                    className="examples-list"
+                  >
+                    <Link
+                      replace={false}
+                      to="/slideInX/properties"
+                    >
+                      <li
+                        className="keyframe-ex slideInX"
+                      >
+                        slideInX
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/slideInY/properties"
+                    >
+                      <li
+                        className="keyframe-ex slideInY"
+                      >
+                        slideInY
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/fadeIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex fadeIn"
+                      >
+                        fadeIn
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/rotateIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex rotateIn"
+                      >
+                        rotateIn
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/zoomIn/properties"
+                    >
+                      <li
+                        className="keyframe-ex zoomIn"
+                      >
+                        zoomIn
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/dropDown/properties"
+                    >
+                      <li
+                        className="keyframe-ex dropDown"
+                      >
+                        dropDown
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/ySpinLoad/properties"
+                    >
+                      <li
+                        className="keyframe-ex ySpinLoad"
+                      >
+                        ySpinLoad
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/cardFlip/properties"
+                    >
+                      <li
+                        className="keyframe-ex cardFlip"
+                      >
+                        cardFlip
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/bounceAppear/properties"
+                    >
+                      <li
+                        className="keyframe-ex bounceAppear"
+                      >
+                        bounceAppear
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/bounceDrop/properties"
+                    >
+                      <li
+                        className="keyframe-ex bounceDrop"
+                      >
+                        bounceDrop
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/wiggle/properties"
+                    >
+                      <li
+                        className="keyframe-ex wiggle"
+                      >
+                        wiggle
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/color/properties"
+                    >
+                      <li
+                        className="keyframe-ex color"
+                      >
+                        color
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/path/properties"
+                    >
+                      <li
+                        className="keyframe-ex path"
+                      >
+                        path
+                      </li>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/abstract/properties"
+                    >
+                      <li
+                        className="keyframe-ex abstract"
+                      >
+                        abstract
+                      </li>
+                    </Link>
+                  </ul>,
+                ],
+                "className": "header-btn-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Load Examples",
+                      <i
+                        className="fas fa-caret-right"
+                      />,
+                    ],
+                    "className": "load-example-btn",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Load Examples",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-caret-right",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Link
+                        replace={false}
+                        to="/slideInX/properties"
+                      >
+                        <li
+                          className="keyframe-ex slideInX"
+                        >
+                          slideInX
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/slideInY/properties"
+                      >
+                        <li
+                          className="keyframe-ex slideInY"
+                        >
+                          slideInY
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/fadeIn/properties"
+                      >
+                        <li
+                          className="keyframe-ex fadeIn"
+                        >
+                          fadeIn
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/rotateIn/properties"
+                      >
+                        <li
+                          className="keyframe-ex rotateIn"
+                        >
+                          rotateIn
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/zoomIn/properties"
+                      >
+                        <li
+                          className="keyframe-ex zoomIn"
+                        >
+                          zoomIn
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/dropDown/properties"
+                      >
+                        <li
+                          className="keyframe-ex dropDown"
+                        >
+                          dropDown
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/ySpinLoad/properties"
+                      >
+                        <li
+                          className="keyframe-ex ySpinLoad"
+                        >
+                          ySpinLoad
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/cardFlip/properties"
+                      >
+                        <li
+                          className="keyframe-ex cardFlip"
+                        >
+                          cardFlip
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/bounceAppear/properties"
+                      >
+                        <li
+                          className="keyframe-ex bounceAppear"
+                        >
+                          bounceAppear
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/bounceDrop/properties"
+                      >
+                        <li
+                          className="keyframe-ex bounceDrop"
+                        >
+                          bounceDrop
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/wiggle/properties"
+                      >
+                        <li
+                          className="keyframe-ex wiggle"
+                        >
+                          wiggle
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/color/properties"
+                      >
+                        <li
+                          className="keyframe-ex color"
+                        >
+                          color
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/path/properties"
+                      >
+                        <li
+                          className="keyframe-ex path"
+                        >
+                          path
+                        </li>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/abstract/properties"
+                      >
+                        <li
+                          className="keyframe-ex abstract"
+                        >
+                          abstract
+                        </li>
+                      </Link>,
+                    ],
+                    "className": "examples-list",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "val-slideInX",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex slideInX"
+                        >
+                          slideInX
+                        </li>,
+                        "replace": false,
+                        "to": "/slideInX/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "slideInX",
+                          "className": "keyframe-ex slideInX",
+                        },
+                        "ref": null,
+                        "rendered": "slideInX",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-slideInY",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex slideInY"
+                        >
+                          slideInY
+                        </li>,
+                        "replace": false,
+                        "to": "/slideInY/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "slideInY",
+                          "className": "keyframe-ex slideInY",
+                        },
+                        "ref": null,
+                        "rendered": "slideInY",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-fadeIn",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex fadeIn"
+                        >
+                          fadeIn
+                        </li>,
+                        "replace": false,
+                        "to": "/fadeIn/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "fadeIn",
+                          "className": "keyframe-ex fadeIn",
+                        },
+                        "ref": null,
+                        "rendered": "fadeIn",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-rotateIn",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex rotateIn"
+                        >
+                          rotateIn
+                        </li>,
+                        "replace": false,
+                        "to": "/rotateIn/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "rotateIn",
+                          "className": "keyframe-ex rotateIn",
+                        },
+                        "ref": null,
+                        "rendered": "rotateIn",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-zoomIn",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex zoomIn"
+                        >
+                          zoomIn
+                        </li>,
+                        "replace": false,
+                        "to": "/zoomIn/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "zoomIn",
+                          "className": "keyframe-ex zoomIn",
+                        },
+                        "ref": null,
+                        "rendered": "zoomIn",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-dropDown",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex dropDown"
+                        >
+                          dropDown
+                        </li>,
+                        "replace": false,
+                        "to": "/dropDown/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "dropDown",
+                          "className": "keyframe-ex dropDown",
+                        },
+                        "ref": null,
+                        "rendered": "dropDown",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-ySpinLoad",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex ySpinLoad"
+                        >
+                          ySpinLoad
+                        </li>,
+                        "replace": false,
+                        "to": "/ySpinLoad/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "ySpinLoad",
+                          "className": "keyframe-ex ySpinLoad",
+                        },
+                        "ref": null,
+                        "rendered": "ySpinLoad",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-cardFlip",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex cardFlip"
+                        >
+                          cardFlip
+                        </li>,
+                        "replace": false,
+                        "to": "/cardFlip/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "cardFlip",
+                          "className": "keyframe-ex cardFlip",
+                        },
+                        "ref": null,
+                        "rendered": "cardFlip",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-bounceAppear",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex bounceAppear"
+                        >
+                          bounceAppear
+                        </li>,
+                        "replace": false,
+                        "to": "/bounceAppear/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "bounceAppear",
+                          "className": "keyframe-ex bounceAppear",
+                        },
+                        "ref": null,
+                        "rendered": "bounceAppear",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-bounceDrop",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex bounceDrop"
+                        >
+                          bounceDrop
+                        </li>,
+                        "replace": false,
+                        "to": "/bounceDrop/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "bounceDrop",
+                          "className": "keyframe-ex bounceDrop",
+                        },
+                        "ref": null,
+                        "rendered": "bounceDrop",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-wiggle",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex wiggle"
+                        >
+                          wiggle
+                        </li>,
+                        "replace": false,
+                        "to": "/wiggle/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "wiggle",
+                          "className": "keyframe-ex wiggle",
+                        },
+                        "ref": null,
+                        "rendered": "wiggle",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-color",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex color"
+                        >
+                          color
+                        </li>,
+                        "replace": false,
+                        "to": "/color/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "color",
+                          "className": "keyframe-ex color",
+                        },
+                        "ref": null,
+                        "rendered": "color",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-path",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex path"
+                        >
+                          path
+                        </li>,
+                        "replace": false,
+                        "to": "/path/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "path",
+                          "className": "keyframe-ex path",
+                        },
+                        "ref": null,
+                        "rendered": "path",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "val-abstract",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <li
+                          className="keyframe-ex abstract"
+                        >
+                          abstract
+                        </li>,
+                        "replace": false,
+                        "to": "/abstract/properties",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "abstract",
+                          "className": "keyframe-ex abstract",
+                        },
+                        "ref": null,
+                        "rendered": "abstract",
+                        "type": "li",
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                exact={true}
+                path="/"
+                render={[Function]}
+              />,
+              Array [
+                <Route
+                  path="/slideInX"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/slideInY"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/fadeIn"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/rotateIn"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/zoomIn"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/dropDown"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/ySpinLoad"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/cardFlip"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/bounceAppear"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/bounceDrop"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/wiggle"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/color"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/path"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/abstract"
+                  render={[Function]}
+                />,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-slideInX",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/slideInX",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-slideInY",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/slideInY",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-fadeIn",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/fadeIn",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-rotateIn",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/rotateIn",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-zoomIn",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/zoomIn",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-dropDown",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/dropDown",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-ySpinLoad",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/ySpinLoad",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-cardFlip",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/cardFlip",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-bounceAppear",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/bounceAppear",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-bounceDrop",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/bounceDrop",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-wiggle",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/wiggle",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-color",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/color",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-path",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/path",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "val-abstract",
+              "nodeType": "class",
+              "props": Object {
+                "path": "/abstract",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [MockFunction],
+            "path": "/slideInX/properties/howto",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

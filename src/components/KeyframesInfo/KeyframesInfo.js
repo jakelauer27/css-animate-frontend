@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles/app.scss';
 
 class KeyframesInfo extends Component {
   

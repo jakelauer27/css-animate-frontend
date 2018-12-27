@@ -1,0 +1,3073 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralInfo should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <KeyframesInfo />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="main-keyframes-info"
+        >
+          <h1
+            className="title"
+          >
+            Keyframes
+          </h1>
+          <p
+            className="keyframes-body"
+          >
+            The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is 
+            <i>
+              transform.
+            </i>
+          </p>
+        </div>,
+        <div
+          className="keyframes-info-example"
+        >
+          <h1
+            className="title"
+          >
+            @keyframes
+          </h1>
+          <div
+            className="code-container"
+          >
+            <p
+              className="pink-code code"
+            >
+              @keyframes
+              <span>
+                example
+              </span>
+              <span
+                className="punctuation"
+              >
+                {
+              </span>
+            </p>
+            <p
+              className="yellow-code code indent1"
+            >
+              from
+              <span
+                className="punctuation"
+              >
+                {
+              </span>
+            </p>
+            <p
+              className="yellow-code code indent2"
+            >
+              color
+              <span
+                className="colon"
+              >
+                :
+              </span>
+              <span
+                className="blue-code"
+              >
+                blue
+              </span>
+            </p>
+            <p
+              className="code indent1"
+            >
+              }
+            </p>
+            <p
+              className="yellow-code code indent1"
+            >
+              to
+              <span
+                className="punctuation"
+              >
+                {
+              </span>
+            </p>
+            <p
+              className="yellow-code code indent2"
+            >
+              color
+              <span
+                className="colon"
+              >
+                :
+              </span>
+              <span
+                className="blue-code"
+              >
+                red
+              </span>
+            </p>
+            <p
+              className="code indent1"
+            >
+              }
+            </p>
+            <p
+              className="code"
+            >
+              }
+            </p>
+          </div>
+        </div>,
+        <div
+          className="transform-example"
+        >
+          <h1
+            className="title"
+          >
+            transform:
+          </h1>
+          <div
+            className="transformations-container"
+          >
+            <ul
+              className="transform-group"
+            >
+              <li>
+                translateX(
+                <span>
+                  px || %
+                </span>
+                )
+              </li>
+              <li>
+                translateY(
+                <span>
+                  px || %
+                </span>
+                )
+              </li>
+              <li>
+                translate(
+                <span>
+                  x, y
+                </span>
+                )
+              </li>
+            </ul>
+            <ul
+              className="transform-group"
+            >
+              <li>
+                skewX(
+                <span>
+                  deg
+                </span>
+                )
+              </li>
+              <li>
+                skewY(
+                <span>
+                  deg
+                </span>
+                )
+              </li>
+              <li>
+                skew(
+                <span>
+                  x-deg, y-deg
+                </span>
+                )
+              </li>
+            </ul>
+            <ul
+              className="transform-group"
+            >
+              <li>
+                rotateX(
+                <span>
+                  deg
+                </span>
+                )
+              </li>
+              <li>
+                rotateY(
+                <span>
+                  deg
+                </span>
+                )
+              </li>
+              <li>
+                rotate(
+                <span>
+                  x-deg, y-deg
+                </span>
+                )
+              </li>
+            </ul>
+            <ul
+              className="transform-group"
+            >
+              <li>
+                scaleX(
+                <span>
+                  num || %
+                </span>
+                )
+              </li>
+              <li>
+                scaleY(
+                <span>
+                  num || %
+                </span>
+                )
+              </li>
+              <li>
+                scale(
+                <span>
+                  num || %
+                </span>
+                )
+              </li>
+            </ul>
+          </div>
+        </div>,
+      ],
+      "className": "keyframes-info info-section",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+            >
+              Keyframes
+            </h1>,
+            <p
+              className="keyframes-body"
+            >
+              The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is 
+              <i>
+                transform.
+              </i>
+            </p>,
+          ],
+          "className": "main-keyframes-info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Keyframes",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "Keyframes",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is ",
+                <i>
+                  transform.
+                </i>,
+              ],
+              "className": "keyframes-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              "The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "transform.",
+                },
+                "ref": null,
+                "rendered": "transform.",
+                "type": "i",
+              },
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+            >
+              @keyframes
+            </h1>,
+            <div
+              className="code-container"
+            >
+              <p
+                className="pink-code code"
+              >
+                @keyframes
+                <span>
+                  example
+                </span>
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent1"
+              >
+                from
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent2"
+              >
+                color
+                <span
+                  className="colon"
+                >
+                  :
+                </span>
+                <span
+                  className="blue-code"
+                >
+                  blue
+                </span>
+              </p>
+              <p
+                className="code indent1"
+              >
+                }
+              </p>
+              <p
+                className="yellow-code code indent1"
+              >
+                to
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent2"
+              >
+                color
+                <span
+                  className="colon"
+                >
+                  :
+                </span>
+                <span
+                  className="blue-code"
+                >
+                  red
+                </span>
+              </p>
+              <p
+                className="code indent1"
+              >
+                }
+              </p>
+              <p
+                className="code"
+              >
+                }
+              </p>
+            </div>,
+          ],
+          "className": "keyframes-info-example",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "@keyframes",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "@keyframes",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="pink-code code"
+                >
+                  @keyframes
+                  <span>
+                    example
+                  </span>
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>,
+                <p
+                  className="yellow-code code indent1"
+                >
+                  from
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>,
+                <p
+                  className="yellow-code code indent2"
+                >
+                  color
+                  <span
+                    className="colon"
+                  >
+                    :
+                  </span>
+                  <span
+                    className="blue-code"
+                  >
+                    blue
+                  </span>
+                </p>,
+                <p
+                  className="code indent1"
+                >
+                  }
+                </p>,
+                <p
+                  className="yellow-code code indent1"
+                >
+                  to
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>,
+                <p
+                  className="yellow-code code indent2"
+                >
+                  color
+                  <span
+                    className="colon"
+                  >
+                    :
+                  </span>
+                  <span
+                    className="blue-code"
+                  >
+                    red
+                  </span>
+                </p>,
+                <p
+                  className="code indent1"
+                >
+                  }
+                </p>,
+                <p
+                  className="code"
+                >
+                  }
+                </p>,
+              ],
+              "className": "code-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "@keyframes",
+                    <span>
+                      example
+                    </span>,
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>,
+                  ],
+                  "className": "pink-code code",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "@keyframes",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "example",
+                    },
+                    "ref": null,
+                    "rendered": "example",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "{",
+                      "className": "punctuation",
+                    },
+                    "ref": null,
+                    "rendered": "{",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "from",
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>,
+                  ],
+                  "className": "yellow-code code indent1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "from",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "{",
+                      "className": "punctuation",
+                    },
+                    "ref": null,
+                    "rendered": "{",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "color",
+                    <span
+                      className="colon"
+                    >
+                      :
+                    </span>,
+                    <span
+                      className="blue-code"
+                    >
+                      blue
+                    </span>,
+                  ],
+                  "className": "yellow-code code indent2",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "color",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                      "className": "colon",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "blue",
+                      "className": "blue-code",
+                    },
+                    "ref": null,
+                    "rendered": "blue",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "}",
+                  "className": "code indent1",
+                },
+                "ref": null,
+                "rendered": "}",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "to",
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>,
+                  ],
+                  "className": "yellow-code code indent1",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "to",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "{",
+                      "className": "punctuation",
+                    },
+                    "ref": null,
+                    "rendered": "{",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "color",
+                    <span
+                      className="colon"
+                    >
+                      :
+                    </span>,
+                    <span
+                      className="blue-code"
+                    >
+                      red
+                    </span>,
+                  ],
+                  "className": "yellow-code code indent2",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "color",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                      "className": "colon",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "red",
+                      "className": "blue-code",
+                    },
+                    "ref": null,
+                    "rendered": "red",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "}",
+                  "className": "code indent1",
+                },
+                "ref": null,
+                "rendered": "}",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "}",
+                  "className": "code",
+                },
+                "ref": null,
+                "rendered": "}",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title"
+            >
+              transform:
+            </h1>,
+            <div
+              className="transformations-container"
+            >
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  translateX(
+                  <span>
+                    px || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  translateY(
+                  <span>
+                    px || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  translate(
+                  <span>
+                    x, y
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  skewX(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  skewY(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  skew(
+                  <span>
+                    x-deg, y-deg
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  rotateX(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  rotateY(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  rotate(
+                  <span>
+                    x-deg, y-deg
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  scaleX(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  scaleY(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  scale(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+              </ul>
+            </div>,
+          ],
+          "className": "transform-example",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "transform:",
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": "transform:",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    translateX(
+                    <span>
+                      px || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    translateY(
+                    <span>
+                      px || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    translate(
+                    <span>
+                      x, y
+                    </span>
+                    )
+                  </li>
+                </ul>,
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    skewX(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    skewY(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    skew(
+                    <span>
+                      x-deg, y-deg
+                    </span>
+                    )
+                  </li>
+                </ul>,
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    rotateX(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    rotateY(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    rotate(
+                    <span>
+                      x-deg, y-deg
+                    </span>
+                    )
+                  </li>
+                </ul>,
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    scaleX(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    scaleY(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    scale(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                </ul>,
+              ],
+              "className": "transformations-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      translateX(
+                      <span>
+                        px || %
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      translateY(
+                      <span>
+                        px || %
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      translate(
+                      <span>
+                        x, y
+                      </span>
+                      )
+                    </li>,
+                  ],
+                  "className": "transform-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "translateX(",
+                        <span>
+                          px || %
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "translateX(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "px || %",
+                        },
+                        "ref": null,
+                        "rendered": "px || %",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "translateY(",
+                        <span>
+                          px || %
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "translateY(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "px || %",
+                        },
+                        "ref": null,
+                        "rendered": "px || %",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "translate(",
+                        <span>
+                          x, y
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "translate(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "x, y",
+                        },
+                        "ref": null,
+                        "rendered": "x, y",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      skewX(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      skewY(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      skew(
+                      <span>
+                        x-deg, y-deg
+                      </span>
+                      )
+                    </li>,
+                  ],
+                  "className": "transform-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "skewX(",
+                        <span>
+                          deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "skewX(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "deg",
+                        },
+                        "ref": null,
+                        "rendered": "deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "skewY(",
+                        <span>
+                          deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "skewY(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "deg",
+                        },
+                        "ref": null,
+                        "rendered": "deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "skew(",
+                        <span>
+                          x-deg, y-deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "skew(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "x-deg, y-deg",
+                        },
+                        "ref": null,
+                        "rendered": "x-deg, y-deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      rotateX(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      rotateY(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      rotate(
+                      <span>
+                        x-deg, y-deg
+                      </span>
+                      )
+                    </li>,
+                  ],
+                  "className": "transform-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "rotateX(",
+                        <span>
+                          deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "rotateX(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "deg",
+                        },
+                        "ref": null,
+                        "rendered": "deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "rotateY(",
+                        <span>
+                          deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "rotateY(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "deg",
+                        },
+                        "ref": null,
+                        "rendered": "deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "rotate(",
+                        <span>
+                          x-deg, y-deg
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "rotate(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "x-deg, y-deg",
+                        },
+                        "ref": null,
+                        "rendered": "x-deg, y-deg",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      scaleX(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      scaleY(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>,
+                    <li>
+                      scale(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>,
+                  ],
+                  "className": "transform-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "scaleX(",
+                        <span>
+                          num || %
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "scaleX(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "num || %",
+                        },
+                        "ref": null,
+                        "rendered": "num || %",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "scaleY(",
+                        <span>
+                          num || %
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "scaleY(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "num || %",
+                        },
+                        "ref": null,
+                        "rendered": "num || %",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "scale(",
+                        <span>
+                          num || %
+                        </span>,
+                        ")",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "scale(",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "num || %",
+                        },
+                        "ref": null,
+                        "rendered": "num || %",
+                        "type": "span",
+                      },
+                      ")",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="main-keyframes-info"
+          >
+            <h1
+              className="title"
+            >
+              Keyframes
+            </h1>
+            <p
+              className="keyframes-body"
+            >
+              The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is 
+              <i>
+                transform.
+              </i>
+            </p>
+          </div>,
+          <div
+            className="keyframes-info-example"
+          >
+            <h1
+              className="title"
+            >
+              @keyframes
+            </h1>
+            <div
+              className="code-container"
+            >
+              <p
+                className="pink-code code"
+              >
+                @keyframes
+                <span>
+                  example
+                </span>
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent1"
+              >
+                from
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent2"
+              >
+                color
+                <span
+                  className="colon"
+                >
+                  :
+                </span>
+                <span
+                  className="blue-code"
+                >
+                  blue
+                </span>
+              </p>
+              <p
+                className="code indent1"
+              >
+                }
+              </p>
+              <p
+                className="yellow-code code indent1"
+              >
+                to
+                <span
+                  className="punctuation"
+                >
+                  {
+                </span>
+              </p>
+              <p
+                className="yellow-code code indent2"
+              >
+                color
+                <span
+                  className="colon"
+                >
+                  :
+                </span>
+                <span
+                  className="blue-code"
+                >
+                  red
+                </span>
+              </p>
+              <p
+                className="code indent1"
+              >
+                }
+              </p>
+              <p
+                className="code"
+              >
+                }
+              </p>
+            </div>
+          </div>,
+          <div
+            className="transform-example"
+          >
+            <h1
+              className="title"
+            >
+              transform:
+            </h1>
+            <div
+              className="transformations-container"
+            >
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  translateX(
+                  <span>
+                    px || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  translateY(
+                  <span>
+                    px || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  translate(
+                  <span>
+                    x, y
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  skewX(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  skewY(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  skew(
+                  <span>
+                    x-deg, y-deg
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  rotateX(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  rotateY(
+                  <span>
+                    deg
+                  </span>
+                  )
+                </li>
+                <li>
+                  rotate(
+                  <span>
+                    x-deg, y-deg
+                  </span>
+                  )
+                </li>
+              </ul>
+              <ul
+                className="transform-group"
+              >
+                <li>
+                  scaleX(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  scaleY(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+                <li>
+                  scale(
+                  <span>
+                    num || %
+                  </span>
+                  )
+                </li>
+              </ul>
+            </div>
+          </div>,
+        ],
+        "className": "keyframes-info info-section",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+              >
+                Keyframes
+              </h1>,
+              <p
+                className="keyframes-body"
+              >
+                The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is 
+                <i>
+                  transform.
+                </i>
+              </p>,
+            ],
+            "className": "main-keyframes-info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Keyframes",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "Keyframes",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is ",
+                  <i>
+                    transform.
+                  </i>,
+                ],
+                "className": "keyframes-body",
+              },
+              "ref": null,
+              "rendered": Array [
+                "The @keyframes rule defines the animation code. The animation is set by gradually changing any number of css styles.  While most css properties can be animated, the most common animatable property is ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "transform.",
+                  },
+                  "ref": null,
+                  "rendered": "transform.",
+                  "type": "i",
+                },
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+              >
+                @keyframes
+              </h1>,
+              <div
+                className="code-container"
+              >
+                <p
+                  className="pink-code code"
+                >
+                  @keyframes
+                  <span>
+                    example
+                  </span>
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>
+                <p
+                  className="yellow-code code indent1"
+                >
+                  from
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>
+                <p
+                  className="yellow-code code indent2"
+                >
+                  color
+                  <span
+                    className="colon"
+                  >
+                    :
+                  </span>
+                  <span
+                    className="blue-code"
+                  >
+                    blue
+                  </span>
+                </p>
+                <p
+                  className="code indent1"
+                >
+                  }
+                </p>
+                <p
+                  className="yellow-code code indent1"
+                >
+                  to
+                  <span
+                    className="punctuation"
+                  >
+                    {
+                  </span>
+                </p>
+                <p
+                  className="yellow-code code indent2"
+                >
+                  color
+                  <span
+                    className="colon"
+                  >
+                    :
+                  </span>
+                  <span
+                    className="blue-code"
+                  >
+                    red
+                  </span>
+                </p>
+                <p
+                  className="code indent1"
+                >
+                  }
+                </p>
+                <p
+                  className="code"
+                >
+                  }
+                </p>
+              </div>,
+            ],
+            "className": "keyframes-info-example",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "@keyframes",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "@keyframes",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="pink-code code"
+                  >
+                    @keyframes
+                    <span>
+                      example
+                    </span>
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>
+                  </p>,
+                  <p
+                    className="yellow-code code indent1"
+                  >
+                    from
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>
+                  </p>,
+                  <p
+                    className="yellow-code code indent2"
+                  >
+                    color
+                    <span
+                      className="colon"
+                    >
+                      :
+                    </span>
+                    <span
+                      className="blue-code"
+                    >
+                      blue
+                    </span>
+                  </p>,
+                  <p
+                    className="code indent1"
+                  >
+                    }
+                  </p>,
+                  <p
+                    className="yellow-code code indent1"
+                  >
+                    to
+                    <span
+                      className="punctuation"
+                    >
+                      {
+                    </span>
+                  </p>,
+                  <p
+                    className="yellow-code code indent2"
+                  >
+                    color
+                    <span
+                      className="colon"
+                    >
+                      :
+                    </span>
+                    <span
+                      className="blue-code"
+                    >
+                      red
+                    </span>
+                  </p>,
+                  <p
+                    className="code indent1"
+                  >
+                    }
+                  </p>,
+                  <p
+                    className="code"
+                  >
+                    }
+                  </p>,
+                ],
+                "className": "code-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "@keyframes",
+                      <span>
+                        example
+                      </span>,
+                      <span
+                        className="punctuation"
+                      >
+                        {
+                      </span>,
+                    ],
+                    "className": "pink-code code",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "@keyframes",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "example",
+                      },
+                      "ref": null,
+                      "rendered": "example",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "{",
+                        "className": "punctuation",
+                      },
+                      "ref": null,
+                      "rendered": "{",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "from",
+                      <span
+                        className="punctuation"
+                      >
+                        {
+                      </span>,
+                    ],
+                    "className": "yellow-code code indent1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "from",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "{",
+                        "className": "punctuation",
+                      },
+                      "ref": null,
+                      "rendered": "{",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "color",
+                      <span
+                        className="colon"
+                      >
+                        :
+                      </span>,
+                      <span
+                        className="blue-code"
+                      >
+                        blue
+                      </span>,
+                    ],
+                    "className": "yellow-code code indent2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "color",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": ":",
+                        "className": "colon",
+                      },
+                      "ref": null,
+                      "rendered": ":",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "blue",
+                        "className": "blue-code",
+                      },
+                      "ref": null,
+                      "rendered": "blue",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "}",
+                    "className": "code indent1",
+                  },
+                  "ref": null,
+                  "rendered": "}",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "to",
+                      <span
+                        className="punctuation"
+                      >
+                        {
+                      </span>,
+                    ],
+                    "className": "yellow-code code indent1",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "to",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "{",
+                        "className": "punctuation",
+                      },
+                      "ref": null,
+                      "rendered": "{",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "color",
+                      <span
+                        className="colon"
+                      >
+                        :
+                      </span>,
+                      <span
+                        className="blue-code"
+                      >
+                        red
+                      </span>,
+                    ],
+                    "className": "yellow-code code indent2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "color",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": ":",
+                        "className": "colon",
+                      },
+                      "ref": null,
+                      "rendered": ":",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "red",
+                        "className": "blue-code",
+                      },
+                      "ref": null,
+                      "rendered": "red",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "}",
+                    "className": "code indent1",
+                  },
+                  "ref": null,
+                  "rendered": "}",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "}",
+                    "className": "code",
+                  },
+                  "ref": null,
+                  "rendered": "}",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title"
+              >
+                transform:
+              </h1>,
+              <div
+                className="transformations-container"
+              >
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    translateX(
+                    <span>
+                      px || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    translateY(
+                    <span>
+                      px || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    translate(
+                    <span>
+                      x, y
+                    </span>
+                    )
+                  </li>
+                </ul>
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    skewX(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    skewY(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    skew(
+                    <span>
+                      x-deg, y-deg
+                    </span>
+                    )
+                  </li>
+                </ul>
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    rotateX(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    rotateY(
+                    <span>
+                      deg
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    rotate(
+                    <span>
+                      x-deg, y-deg
+                    </span>
+                    )
+                  </li>
+                </ul>
+                <ul
+                  className="transform-group"
+                >
+                  <li>
+                    scaleX(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    scaleY(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                  <li>
+                    scale(
+                    <span>
+                      num || %
+                    </span>
+                    )
+                  </li>
+                </ul>
+              </div>,
+            ],
+            "className": "transform-example",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "transform:",
+                "className": "title",
+              },
+              "ref": null,
+              "rendered": "transform:",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <ul
+                    className="transform-group"
+                  >
+                    <li>
+                      translateX(
+                      <span>
+                        px || %
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      translateY(
+                      <span>
+                        px || %
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      translate(
+                      <span>
+                        x, y
+                      </span>
+                      )
+                    </li>
+                  </ul>,
+                  <ul
+                    className="transform-group"
+                  >
+                    <li>
+                      skewX(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      skewY(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      skew(
+                      <span>
+                        x-deg, y-deg
+                      </span>
+                      )
+                    </li>
+                  </ul>,
+                  <ul
+                    className="transform-group"
+                  >
+                    <li>
+                      rotateX(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      rotateY(
+                      <span>
+                        deg
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      rotate(
+                      <span>
+                        x-deg, y-deg
+                      </span>
+                      )
+                    </li>
+                  </ul>,
+                  <ul
+                    className="transform-group"
+                  >
+                    <li>
+                      scaleX(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      scaleY(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>
+                    <li>
+                      scale(
+                      <span>
+                        num || %
+                      </span>
+                      )
+                    </li>
+                  </ul>,
+                ],
+                "className": "transformations-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        translateX(
+                        <span>
+                          px || %
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        translateY(
+                        <span>
+                          px || %
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        translate(
+                        <span>
+                          x, y
+                        </span>
+                        )
+                      </li>,
+                    ],
+                    "className": "transform-group",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "translateX(",
+                          <span>
+                            px || %
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "translateX(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "px || %",
+                          },
+                          "ref": null,
+                          "rendered": "px || %",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "translateY(",
+                          <span>
+                            px || %
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "translateY(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "px || %",
+                          },
+                          "ref": null,
+                          "rendered": "px || %",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "translate(",
+                          <span>
+                            x, y
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "translate(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "x, y",
+                          },
+                          "ref": null,
+                          "rendered": "x, y",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        skewX(
+                        <span>
+                          deg
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        skewY(
+                        <span>
+                          deg
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        skew(
+                        <span>
+                          x-deg, y-deg
+                        </span>
+                        )
+                      </li>,
+                    ],
+                    "className": "transform-group",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "skewX(",
+                          <span>
+                            deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "skewX(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "deg",
+                          },
+                          "ref": null,
+                          "rendered": "deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "skewY(",
+                          <span>
+                            deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "skewY(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "deg",
+                          },
+                          "ref": null,
+                          "rendered": "deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "skew(",
+                          <span>
+                            x-deg, y-deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "skew(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "x-deg, y-deg",
+                          },
+                          "ref": null,
+                          "rendered": "x-deg, y-deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        rotateX(
+                        <span>
+                          deg
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        rotateY(
+                        <span>
+                          deg
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        rotate(
+                        <span>
+                          x-deg, y-deg
+                        </span>
+                        )
+                      </li>,
+                    ],
+                    "className": "transform-group",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "rotateX(",
+                          <span>
+                            deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "rotateX(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "deg",
+                          },
+                          "ref": null,
+                          "rendered": "deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "rotateY(",
+                          <span>
+                            deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "rotateY(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "deg",
+                          },
+                          "ref": null,
+                          "rendered": "deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "rotate(",
+                          <span>
+                            x-deg, y-deg
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "rotate(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "x-deg, y-deg",
+                          },
+                          "ref": null,
+                          "rendered": "x-deg, y-deg",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        scaleX(
+                        <span>
+                          num || %
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        scaleY(
+                        <span>
+                          num || %
+                        </span>
+                        )
+                      </li>,
+                      <li>
+                        scale(
+                        <span>
+                          num || %
+                        </span>
+                        )
+                      </li>,
+                    ],
+                    "className": "transform-group",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "scaleX(",
+                          <span>
+                            num || %
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "scaleX(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "num || %",
+                          },
+                          "ref": null,
+                          "rendered": "num || %",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "scaleY(",
+                          <span>
+                            num || %
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "scaleY(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "num || %",
+                          },
+                          "ref": null,
+                          "rendered": "num || %",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "scale(",
+                          <span>
+                            num || %
+                          </span>,
+                          ")",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "scale(",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "num || %",
+                          },
+                          "ref": null,
+                          "rendered": "num || %",
+                          "type": "span",
+                        },
+                        ")",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
