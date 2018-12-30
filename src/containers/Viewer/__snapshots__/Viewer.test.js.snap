@@ -579,11 +579,7 @@ exports[`Viewer Should match the snapshot if no animation 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Viewer
-    animation={
-      Object {
-        "name": null,
-      }
-    }
+    animation=""
     currentAnimation="slideInX"
     loadNewAnimation={
       [MockFunction] {

@@ -13,7 +13,6 @@ const keyframeValueRegex= {
   'opacity': RegExp('^[0-1](\\.)[0-9]([0-9])?(?!.)'),
   'height': RegExp('^[1-9][0-9]{3}(px|%|em)(?!.)|^[1-9][0-9]{2}(px|%|em)(?!.)|^[1-9][0-9](px|%|em)(?!.)|^[0-9](px|%|em)(?!.)'),
   'display': RegExp('^none(?!.)|^block(?!.)|^inline(?!.)|^inline-block(?!.)'),
-  'background-color': RegExp(),
   'background-image': RegExp('^none(?!.)'),
 }
 

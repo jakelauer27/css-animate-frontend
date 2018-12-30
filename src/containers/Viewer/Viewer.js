@@ -49,7 +49,7 @@ export class Viewer extends Component {
 
   render() {
     const { animation } = this.props
-    if  (!animation.name) {
+    if  (!animation) {
       return <div></div>
     }
     return (
@@ -86,7 +86,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 Viewer.propTypes = {
-  animation: PropTypes.object.isRequired,
+  animation: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
   loadNewAnimation: PropTypes.func.isRequired,
   currentAnimation: PropTypes.string.isRequired
 }

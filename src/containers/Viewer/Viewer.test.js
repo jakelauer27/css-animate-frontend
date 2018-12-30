@@ -28,7 +28,7 @@ describe('Viewer', () => {
   })
 
   it('Should match the snapshot if no animation' , () => {
-    wrapper = shallow(<Viewer animation={{name: null}} loadNewAnimation={mockLoadNewAnimation} currentAnimation={'slideInX'} />)
+    wrapper = shallow(<Viewer animation={''} loadNewAnimation={mockLoadNewAnimation} currentAnimation={'slideInX'} />)
     expect(wrapper).toMatchSnapshot()
   })
 

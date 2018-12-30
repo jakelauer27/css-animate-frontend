@@ -28,7 +28,8 @@
       "!src/serviceWorker.js",
       "!src/reducers/index.js",
       "!src/setupTests.js",
-      "!src/utils/data.js"
+      "!src/utils/data.js",
+      "!src/utils/keyframesInsertion.js"
     ]
   },
   "eslintConfig": {
