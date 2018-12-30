@@ -3,8 +3,10 @@ import * as formValidation from '../../utils/formValidators'
 import { connect } from 'react-redux'
 import { loadAnimation } from '../../actions/actions'
 import { updateKeyframes } from '../../utils/keyframesInsertion'
+import { PropTypes } from 'prop-types'
+import { uid } from 'react-uid'
 
-class KeyframesEditor extends Component {
+export class KeyframesEditor extends Component {
 
   saveKeyframesStages(e) {
     formValidation.keyframeStage(e.target, e.target.value)
@@ -55,18 +57,18 @@ class KeyframesEditor extends Component {
         <div className='keyframe'>
           <p className='keyframes-name'><span>@keyframes </span>{animation.keyframes.name} <span> {'{'}</span></p>
           {
-            animation.keyframes.sections.map( (section, i) => {
+            animation.keyframes.sections.map( (section) => {
               return (
-                <div className='keyframes-section' key={i}>
+                <div className='keyframes-section' key={uid(section)}>
                   <input className={`keyframes-label ${section.name}`} 
                     value={section.label} 
                     type='text'
                     onChange={e => this.saveKeyframesStages(e)}/> 
                     <span> {'{'}</span>
                   {
-                    section.properties.map( (prop, i) => {
+                    section.properties.map( (prop) => {
                       return (
-                        <div className='props-container' key={i}>
+                        <div className='props-container' key={uid(prop)}>
                           <p className='keyframe-property'>{prop.name}<span>:</span></p>
                           <input className={`keyframe-prop-value ${prop.name}`} 
                             type='text' 
@@ -95,5 +97,10 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   updateAnimation: (animation) => dispatch(loadAnimation(animation))
 })
+
+KeyframesEditor.propTypes = {
+  animation: PropTypes.object.isRequired,
+  updateAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(KeyframesEditor)

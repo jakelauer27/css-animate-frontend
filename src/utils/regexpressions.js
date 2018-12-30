@@ -25,8 +25,8 @@ const transformRegex= {
   'none': RegExp('^none(?!.)'),
   'initial': RegExp('^initial(?!.)'),
   'inherit': RegExp('^inherit(?!.)'),
-  'matrix': RegExp(),
-  'perspective': RegExp()
+  'matrix': RegExp('^matrix[(](-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?[)](?!.)'),
+  'perspective': RegExp('^perspective[(][0-9][0-9]?[0-9]?[0-9]?(cm|rem|px)[)](?!.)')
 }
 
 const colorRegex= {

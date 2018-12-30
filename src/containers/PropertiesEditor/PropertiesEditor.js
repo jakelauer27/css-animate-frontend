@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { validateAnimationProp } from '../../utils/formValidators'
 import { loadAnimation } from '../../actions/actions'
-import { uid } from 'react-uid';
-
+import { uid } from 'react-uid'
+import { PropTypes } from 'prop-types'
 
 const aniPropsLabels = ['duration', 'timing-function', 'delay', 'iteration-count', 'direction', 'fill-mode']
 const aniProps = ['duration', 'timingFunction', 'delay', 'iterationCount', 'direction', 'fillMode']
 
-class PropertiesEditor extends Component {
+export class PropertiesEditor extends Component {
 
   saveForm(e) {
     document.querySelector('.stop-btn').click()
@@ -55,5 +55,10 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   updateAnimation: (animation) => dispatch(loadAnimation(animation))
 })
+
+PropertiesEditor.propTypes = {
+  animation: PropTypes.object.isRequired,
+  updateAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(PropertiesEditor)

@@ -7,6 +7,7 @@ import { loadAnimation } from '../../actions/actions'
 import * as CSSInsertion from '../../utils/keyframesInsertion'
 import animationsData from '../../utils/data'
 import CopyPopup from '../CopyPopup/CopyPopup'
+import { PropTypes } from 'prop-types'
 
 const animationKeys = Object.keys(animationsData)
 
@@ -86,5 +87,11 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   loadNewAnimation: (animation) => dispatch(loadAnimation(animation))
 })
+
+Editor.propTypes = {
+  animation: PropTypes.object.isRequired,
+  loadNewAnimation: PropTypes.func.isRequired,
+  currentAnimation: PropTypes.string.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Editor)

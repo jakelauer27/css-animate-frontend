@@ -1,0 +1,950 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Editor
+    animation={
+      Object {
+        "keyframes": Object {
+          "name": "slideInX",
+          "sections": Array [
+            Object {
+              "label": "0%",
+              "name": "0%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(-300px)",
+                },
+              ],
+            },
+            Object {
+              "label": "100%",
+              "name": "100%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(0px)",
+                },
+              ],
+            },
+          ],
+        },
+        "properties": Object {
+          "delay": "0s",
+          "direction": "normal",
+          "duration": "1.5s",
+          "fillMode": "forwards",
+          "iterationCount": "1",
+          "name": "slideInX",
+          "timingFunction": "ease",
+        },
+      }
+    }
+    currentAnimation="slideInX"
+    loadNewAnimation={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "keyframes": Object {
+                "name": "slideInX",
+                "sections": Array [
+                  Object {
+                    "label": "0%",
+                    "name": "0%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(-300px)",
+                      },
+                    ],
+                  },
+                  Object {
+                    "label": "100%",
+                    "name": "100%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(0px)",
+                      },
+                    ],
+                  },
+                ],
+              },
+              "properties": Object {
+                "delay": "0s",
+                "direction": "normal",
+                "duration": "1.5s",
+                "fillMode": "forwards",
+                "iterationCount": "1",
+                "name": "slideInX",
+                "timingFunction": "ease",
+              },
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="editor-container"
+        >
+          <div
+            className="editor-options"
+          >
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="animation-btn"
+              to="/slideInX/properties"
+            >
+              properties
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="keyframes-btn"
+              to="/slideInX/keyframes"
+            >
+              keyframes
+            </NavLink>
+          </div>
+          <div
+            className="editor"
+          >
+            <Switch>
+              <Route
+                component={[Function]}
+                path="/slideInX/keyframes"
+              />
+              <Route
+                component={[Function]}
+                path="/slideInX/properties"
+              />
+            </Switch>
+          </div>
+        </div>,
+        <div
+          className="editor-bottom-btns-container"
+        >
+          <Link
+            className="lower-btn copy-btn"
+            replace={false}
+            to="/slideInX/properties/copy"
+          >
+            copy code
+          </Link>
+          <Route
+            path="/slideInX/properties/copy"
+            render={[Function]}
+          />
+          <button
+            className="lower-btn reset-btn"
+            onClick={[Function]}
+          >
+            reset
+          </button>
+        </div>,
+      ],
+      "className": "editor-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="editor-options"
+            >
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="animation-btn"
+                to="/slideInX/properties"
+              >
+                properties
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="keyframes-btn"
+                to="/slideInX/keyframes"
+              >
+                keyframes
+              </NavLink>
+            </div>,
+            <div
+              className="editor"
+            >
+              <Switch>
+                <Route
+                  component={[Function]}
+                  path="/slideInX/keyframes"
+                />
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties"
+                />
+              </Switch>
+            </div>,
+          ],
+          "className": "editor-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="animation-btn"
+                  to="/slideInX/properties"
+                >
+                  properties
+                </NavLink>,
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="keyframes-btn"
+                  to="/slideInX/keyframes"
+                >
+                  keyframes
+                </NavLink>,
+              ],
+              "className": "editor-options",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "properties",
+                  "className": "animation-btn",
+                  "to": "/slideInX/properties",
+                },
+                "ref": null,
+                "rendered": "properties",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "keyframes",
+                  "className": "keyframes-btn",
+                  "to": "/slideInX/keyframes",
+                },
+                "ref": null,
+                "rendered": "keyframes",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Switch>
+                <Route
+                  component={[Function]}
+                  path="/slideInX/keyframes"
+                />
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties"
+                />
+              </Switch>,
+              "className": "editor",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/keyframes"
+                  />,
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/properties"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/slideInX/keyframes",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "path": "/slideInX/properties",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="lower-btn copy-btn"
+              replace={false}
+              to="/slideInX/properties/copy"
+            >
+              copy code
+            </Link>,
+            <Route
+              path="/slideInX/properties/copy"
+              render={[Function]}
+            />,
+            <button
+              className="lower-btn reset-btn"
+              onClick={[Function]}
+            >
+              reset
+            </button>,
+          ],
+          "className": "editor-bottom-btns-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "copy code",
+              "className": "lower-btn copy-btn",
+              "replace": false,
+              "to": "/slideInX/properties/copy",
+            },
+            "ref": null,
+            "rendered": "copy code",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/slideInX/properties/copy",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "reset",
+              "className": "lower-btn reset-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "reset",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="editor-container"
+          >
+            <div
+              className="editor-options"
+            >
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="animation-btn"
+                to="/slideInX/properties"
+              >
+                properties
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="keyframes-btn"
+                to="/slideInX/keyframes"
+              >
+                keyframes
+              </NavLink>
+            </div>
+            <div
+              className="editor"
+            >
+              <Switch>
+                <Route
+                  component={[Function]}
+                  path="/slideInX/keyframes"
+                />
+                <Route
+                  component={[Function]}
+                  path="/slideInX/properties"
+                />
+              </Switch>
+            </div>
+          </div>,
+          <div
+            className="editor-bottom-btns-container"
+          >
+            <Link
+              className="lower-btn copy-btn"
+              replace={false}
+              to="/slideInX/properties/copy"
+            >
+              copy code
+            </Link>
+            <Route
+              path="/slideInX/properties/copy"
+              render={[Function]}
+            />
+            <button
+              className="lower-btn reset-btn"
+              onClick={[Function]}
+            >
+              reset
+            </button>
+          </div>,
+        ],
+        "className": "editor-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="editor-options"
+              >
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="animation-btn"
+                  to="/slideInX/properties"
+                >
+                  properties
+                </NavLink>
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="keyframes-btn"
+                  to="/slideInX/keyframes"
+                >
+                  keyframes
+                </NavLink>
+              </div>,
+              <div
+                className="editor"
+              >
+                <Switch>
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/keyframes"
+                  />
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/properties"
+                  />
+                </Switch>
+              </div>,
+            ],
+            "className": "editor-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <NavLink
+                    activeClassName="selected"
+                    aria-current="page"
+                    className="animation-btn"
+                    to="/slideInX/properties"
+                  >
+                    properties
+                  </NavLink>,
+                  <NavLink
+                    activeClassName="selected"
+                    aria-current="page"
+                    className="keyframes-btn"
+                    to="/slideInX/keyframes"
+                  >
+                    keyframes
+                  </NavLink>,
+                ],
+                "className": "editor-options",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "selected",
+                    "aria-current": "page",
+                    "children": "properties",
+                    "className": "animation-btn",
+                    "to": "/slideInX/properties",
+                  },
+                  "ref": null,
+                  "rendered": "properties",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "selected",
+                    "aria-current": "page",
+                    "children": "keyframes",
+                    "className": "keyframes-btn",
+                    "to": "/slideInX/keyframes",
+                  },
+                  "ref": null,
+                  "rendered": "keyframes",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Switch>
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/keyframes"
+                  />
+                  <Route
+                    component={[Function]}
+                    path="/slideInX/properties"
+                  />
+                </Switch>,
+                "className": "editor",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Route
+                      component={[Function]}
+                      path="/slideInX/keyframes"
+                    />,
+                    <Route
+                      component={[Function]}
+                      path="/slideInX/properties"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "path": "/slideInX/keyframes",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "path": "/slideInX/properties",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="lower-btn copy-btn"
+                replace={false}
+                to="/slideInX/properties/copy"
+              >
+                copy code
+              </Link>,
+              <Route
+                path="/slideInX/properties/copy"
+                render={[Function]}
+              />,
+              <button
+                className="lower-btn reset-btn"
+                onClick={[Function]}
+              >
+                reset
+              </button>,
+            ],
+            "className": "editor-bottom-btns-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "copy code",
+                "className": "lower-btn copy-btn",
+                "replace": false,
+                "to": "/slideInX/properties/copy",
+              },
+              "ref": null,
+              "rendered": "copy code",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/slideInX/properties/copy",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "reset",
+                "className": "lower-btn reset-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "reset",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Editor should match the snapshot if there is no animation 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Editor
+    animation={
+      Object {
+        "keyframes": null,
+      }
+    }
+    currentAnimation="slideInX"
+    loadNewAnimation={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "keyframes": Object {
+                "name": "slideInX",
+                "sections": Array [
+                  Object {
+                    "label": "0%",
+                    "name": "0%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(-300px)",
+                      },
+                    ],
+                  },
+                  Object {
+                    "label": "100%",
+                    "name": "100%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(0px)",
+                      },
+                    ],
+                  },
+                ],
+              },
+              "properties": Object {
+                "delay": "0s",
+                "direction": "normal",
+                "duration": "1.5s",
+                "fillMode": "forwards",
+                "iterationCount": "1",
+                "name": "slideInX",
+                "timingFunction": "ease",
+              },
+            },
+          ],
+          Array [
+            Object {
+              "keyframes": Object {
+                "name": "slideInX",
+                "sections": Array [
+                  Object {
+                    "label": "0%",
+                    "name": "0%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(-300px)",
+                      },
+                    ],
+                  },
+                  Object {
+                    "label": "100%",
+                    "name": "100%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(0px)",
+                      },
+                    ],
+                  },
+                ],
+              },
+              "properties": Object {
+                "delay": "0s",
+                "direction": "normal",
+                "duration": "1.5s",
+                "fillMode": "forwards",
+                "iterationCount": "1",
+                "name": "slideInX",
+                "timingFunction": "ease",
+              },
+            },
+          ],
+          Array [
+            Object {
+              "keyframes": Object {
+                "name": "slideInX",
+                "sections": Array [
+                  Object {
+                    "label": "0%",
+                    "name": "0%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(-300px)",
+                      },
+                    ],
+                  },
+                  Object {
+                    "label": "100%",
+                    "name": "100%",
+                    "properties": Array [
+                      Object {
+                        "name": "transform",
+                        "value": "translateX(0px)",
+                      },
+                    ],
+                  },
+                ],
+              },
+              "properties": Object {
+                "delay": "0s",
+                "direction": "normal",
+                "duration": "1.5s",
+                "fillMode": "forwards",
+                "iterationCount": "1",
+                "name": "slideInX",
+                "timingFunction": "ease",
+              },
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

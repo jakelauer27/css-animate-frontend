@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-
+import { PropTypes } from 'prop-types'
+ 
 export class CopyPopup extends Component {
   constructor() {
     super()
@@ -115,5 +116,9 @@ animation-fill-mode: ${props['fill-mode']}`
 export const mapStateToProps = (state) => ({
   animation: state.animation
 })
+
+CopyPopup.propTypes = {
+  animation: PropTypes.object.isRequired
+}
 
 export default connect(mapStateToProps)(CopyPopup)
