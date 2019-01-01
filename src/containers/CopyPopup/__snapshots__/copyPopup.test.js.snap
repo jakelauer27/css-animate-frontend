@@ -7,8 +7,8 @@ exports[`CopyPopup copyPasteAnimation should return some jsx 1`] = `
   <textarea
     className="animation-text"
     readOnly={true}
-    value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+    value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
   />
 </div>
 `;
@@ -20,12 +20,22 @@ exports[`CopyPopup copyPasteKeyframes should return some jsx 1`] = `
   <textarea
     className="keyframe-text"
     readOnly={true}
-    value="@keyframes slideInX {
+    value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -40,15 +50,47 @@ ShallowWrapper {
     animation={
       Object {
         "keyframes": Object {
-          "name": "slideInX",
+          "name": "bounceAppear",
           "sections": Array [
             Object {
               "label": "0%",
               "name": "0%",
               "properties": Array [
                 Object {
+                  "name": "opacity",
+                  "value": "0",
+                },
+                Object {
                   "name": "transform",
-                  "value": "translateX(-300px)",
+                  "value": "scale(0.3)",
+                },
+              ],
+            },
+            Object {
+              "label": "50%",
+              "name": "50%",
+              "properties": Array [
+                Object {
+                  "name": "opacity",
+                  "value": "0.9",
+                },
+                Object {
+                  "name": "transform",
+                  "value": "scale(1.1)",
+                },
+              ],
+            },
+            Object {
+              "label": "80%",
+              "name": "80%",
+              "properties": Array [
+                Object {
+                  "name": "opacity",
+                  "value": "1",
+                },
+                Object {
+                  "name": "transform",
+                  "value": "scale(.89)",
                 },
               ],
             },
@@ -57,21 +99,25 @@ ShallowWrapper {
               "name": "100%",
               "properties": Array [
                 Object {
+                  "name": "opacity",
+                  "value": "1",
+                },
+                Object {
                   "name": "transform",
-                  "value": "translateX(0px)",
+                  "value": "scale(1)",
                 },
               ],
             },
           ],
         },
         "properties": Object {
-          "delay": "0s",
+          "delay": ".7s",
           "direction": "normal",
-          "duration": "1.5s",
-          "fillMode": "forwards",
-          "iterationCount": "1",
-          "name": "slideInX",
-          "timingFunction": "ease",
+          "duration": "450ms",
+          "fill-mode": "both",
+          "iterationCount": 1,
+          "name": "bounceAppear",
+          "timingFunction": "linear",
         },
       }
     }
@@ -104,12 +150,22 @@ ShallowWrapper {
             <textarea
               className="keyframe-text"
               readOnly={true}
-              value="@keyframes slideInX {
+              value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -137,8 +193,8 @@ ShallowWrapper {
             <textarea
               className="animation-text"
               readOnly={true}
-              value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+              value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
             />
           </div>
           <button
@@ -183,12 +239,22 @@ animation-fill-mode: undefined"
               <textarea
                 className="keyframe-text"
                 readOnly={true}
-                value="@keyframes slideInX {
+                value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -226,12 +292,22 @@ animation-fill-mode: undefined"
               "children": <textarea
                 className="keyframe-text"
                 readOnly={true}
-                value="@keyframes slideInX {
+                value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -246,12 +322,22 @@ animation-fill-mode: undefined"
               "props": Object {
                 "className": "keyframe-text",
                 "readOnly": true,
-                "value": "@keyframes slideInX {
+                "value": "@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }",
@@ -296,8 +382,8 @@ animation-fill-mode: undefined"
               <textarea
                 className="animation-text"
                 readOnly={true}
-                value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+                value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
               />
             </div>,
             <button
@@ -332,8 +418,8 @@ animation-fill-mode: undefined"
               "children": <textarea
                 className="animation-text"
                 readOnly={true}
-                value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+                value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
               />,
               "className": "animation-popup",
             },
@@ -345,8 +431,8 @@ animation-fill-mode: undefined"
               "props": Object {
                 "className": "animation-text",
                 "readOnly": true,
-                "value": "animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined",
+                "value": "animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;",
               },
               "ref": null,
               "rendered": null,
@@ -437,12 +523,22 @@ animation-fill-mode: undefined",
               <textarea
                 className="keyframe-text"
                 readOnly={true}
-                value="@keyframes slideInX {
+                value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -470,8 +566,8 @@ animation-fill-mode: undefined",
               <textarea
                 className="animation-text"
                 readOnly={true}
-                value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+                value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
               />
             </div>
             <button
@@ -516,12 +612,22 @@ animation-fill-mode: undefined"
                 <textarea
                   className="keyframe-text"
                   readOnly={true}
-                  value="@keyframes slideInX {
+                  value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -559,12 +665,22 @@ animation-fill-mode: undefined"
                 "children": <textarea
                   className="keyframe-text"
                   readOnly={true}
-                  value="@keyframes slideInX {
+                  value="@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }"
@@ -579,12 +695,22 @@ animation-fill-mode: undefined"
                 "props": Object {
                   "className": "keyframe-text",
                   "readOnly": true,
-                  "value": "@keyframes slideInX {
+                  "value": "@keyframes bounceAppear {
   0% {
-    transform: translateX(-300px)
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   
 }",
@@ -629,8 +755,8 @@ animation-fill-mode: undefined"
                 <textarea
                   className="animation-text"
                   readOnly={true}
-                  value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+                  value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
                 />
               </div>,
               <button
@@ -665,8 +791,8 @@ animation-fill-mode: undefined"
                 "children": <textarea
                   className="animation-text"
                   readOnly={true}
-                  value="animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined"
+                  value="animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;"
                 />,
                 "className": "animation-popup",
               },
@@ -678,8 +804,8 @@ animation-fill-mode: undefined"
                 "props": Object {
                   "className": "animation-text",
                   "readOnly": true,
-                  "value": "animation: slideInX 1.5s ease 0s 1 normal 
-animation-fill-mode: undefined",
+                  "value": "animation: bounceAppear 450ms linear .7s 1 normal; 
+animation-fill-mode: both;",
                 },
                 "ref": null,
                 "rendered": null,

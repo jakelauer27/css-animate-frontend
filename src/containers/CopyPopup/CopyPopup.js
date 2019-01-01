@@ -38,8 +38,8 @@ export class CopyPopup extends Component {
                     return ''
                   } 
                   return ` ${props[key]}`
-                }).join('')} 
-animation-fill-mode: ${props['fill-mode']}`
+                }).join('')}; 
+animation-fill-mode: ${props['fill-mode']};`
         }>
         </textarea>
       </div>
@@ -52,11 +52,14 @@ animation-fill-mode: ${props['fill-mode']}`
       return (
   `${section.label} {
     ${
-      section.properties.map( (prop) => {
-        return (
-          `${prop.name}: ${prop.value}`                
+      section.properties.map( (prop, i) => {
+        if (i === 0) {
+          return `${prop.name}: ${prop.value};`
+        } 
+        return (`
+    ${prop.name}: ${prop.value};`                
           )
-        })
+        }).join('')
       }
   }
   `

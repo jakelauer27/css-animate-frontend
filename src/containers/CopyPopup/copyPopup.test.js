@@ -4,27 +4,59 @@ import { shallow } from 'enzyme'
 
 describe('CopyPopup', () => {
   let wrapper
-  const mockAnimation = { 
+  const mockAnimation = {
     'properties': {
-      'name': 'slideInX',
-      'duration': '1.5s',
-      'timingFunction': 'ease',
-      'delay': '0s',
-      'iterationCount': '1',
+      'name': 'bounceAppear',
+      'duration': '450ms',
+      'timingFunction': 'linear',
+      'delay': '.7s',
+      'iterationCount': 1,
       'direction': 'normal',
-      'fillMode': 'forwards'
+      'fill-mode': 'both'
     },
     'keyframes': {
-      'name': 'slideInX',
+      'name': 'bounceAppear',
       'sections': [
         {
           'name': '0%',
           'label': '0%',
           'properties': [
             {
+              'name': 'opacity',
+              'value': '0'
+            },
+            {
               'name': 'transform',
-              'value': 'translateX(-300px)'
-            }
+              'value': 'scale(0.3)'
+            },
+          ]
+        },
+        {
+          'name': '50%',
+          'label': '50%',
+          'properties': [
+            {
+              'name': 'opacity',
+              'value': '0.9'
+            },
+            {
+              'name': 'transform',
+              'value': 'scale(1.1)'
+            },
+          ]
+        },
+        {
+          'name': '80%',
+          'label': '80%',
+          'properties': [
+            {
+              'name': 'opacity',
+              'value': '1'
+            },
+            {
+              'name': 'transform',
+              'value': 'scale(.89)'
+            },
           ]
         },
         {
@@ -32,11 +64,15 @@ describe('CopyPopup', () => {
           'label': '100%',
           'properties': [
             {
+              'name': 'opacity',
+              'value': '1'
+            },
+            {
               'name': 'transform',
-              'value': 'translateX(0px)'
-            }
+              'value': 'scale(1)'
+            },
           ]
-        },
+        }
       ]
     }
   }
@@ -80,11 +116,21 @@ describe('CopyPopup', () => {
 
     it('should return a stringified formatted keyframes object', () => {
       wrapper = shallow(<CopyPopup animation={mockAnimation} />, {disableLifecycleMethods: true})
-      const expected = (`0% {
-    transform: translateX(-300px)
+      const expected = (  `0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(.89);
   }
   100% {
-    transform: translateX(0px)
+    opacity: 1;
+    transform: scale(1);
   }
   `)
       const result = wrapper.instance().getKeyframeStages(mockAnimation.keyframes)
