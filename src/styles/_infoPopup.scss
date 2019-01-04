@@ -54,15 +54,25 @@
   }
 
   .close-info-popup-btn {
+    background-color: $darkBlue;
+    color: white;
+    text-decoration: none;
     border-radius: 12px;
     bottom: 10px; 
     position: absolute;
+    font-size: 1.4em;
     right: 10px;
-    width: 80px;
+    padding: 2px 26px 5px;
+    transition: all .3s;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
       background-color: $mainBlue;
+    }
+
+    &:visited {
+      color: white;
     }
   }
 

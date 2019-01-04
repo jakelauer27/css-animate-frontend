@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import * as formValidation from '../../utils/formValidators'
 import { connect } from 'react-redux'
-import { loadAnimation } from '../../actions/actions'
+import { updateCurrentAnimation } from '../../actions/actions'
 import { updateKeyframes } from '../../utils/keyframesInsertion'
 import { PropTypes } from 'prop-types'
 import { uid } from 'react-uid'
@@ -20,7 +20,7 @@ export class KeyframesEditor extends Component {
        }
     })
     newAnimation.keyframes.sections[stageIndex].label = e.target.value || '%'
-    this.props.updateAnimation(newAnimation)
+    this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
   }
 
@@ -43,7 +43,7 @@ export class KeyframesEditor extends Component {
        }
     })
     newAnimation.keyframes.sections[stageIndex].properties[propIndex].value = e.target.value
-    this.props.updateAnimation(newAnimation)
+    this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
   }
 
@@ -91,11 +91,11 @@ export class KeyframesEditor extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation
+  animation: state.currentAnimation
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  updateAnimation: (animation) => dispatch(loadAnimation(animation))
+  updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation))
 })
 
 KeyframesEditor.propTypes = {

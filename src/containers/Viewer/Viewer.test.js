@@ -103,7 +103,6 @@ describe('Viewer', () => {
       wrapper.instance().resetAnimation(1)
       expect(setTimeout).toHaveBeenCalled()
       expect(setTimeout).toHaveBeenCalledWith(wrapper.instance().setState(), 1)
-
     })
 
     it('should set animation to an empty object after waiting the specified time', () => {

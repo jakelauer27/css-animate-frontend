@@ -113,19 +113,38 @@ header {
   }
 }
 
-.questions-btn {
-  border-radius: 12px;
-  padding: 6px 14px;
+.inst-log-container {
   position: absolute;
   top: 5px;
   right: 20px;
-  
+}
+
+.questions-btn {
+  border-radius: 12px;
+  padding: 6px 14px; 
 
   &:hover {
     cursor: pointer;
     background-color: rgb(70, 90, 204);
     transform: scale(1.05);
   }
+}
+
+.login-btn {
+  border-radius: 12px;
+  padding: 6px 14px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(70, 90, 204);
+    transform: scale(1.05);
+  }
+}
+
+.user-greeting {
+  color: white;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 main {

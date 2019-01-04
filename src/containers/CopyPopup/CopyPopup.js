@@ -108,7 +108,7 @@ animation-fill-mode: ${props['fill-mode']};`
           onClick={this.copySelection}>{copyPropertiesText}
         </button>
       </div>
-      <Link to={`/${this.props.currentPage}/properties`}>
+      <Link to={`/properties`}>
         <button className='close-popup-btn'><i className="fas fa-times"></i></button>
       </Link>
     </div>
@@ -117,11 +117,11 @@ animation-fill-mode: ${props['fill-mode']};`
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation
+  animation: state.currentAnimation
 })
 
 CopyPopup.propTypes = {
-  animation: PropTypes.object.isRequired
+  animation: PropTypes.object
 }
 
 export default connect(mapStateToProps)(CopyPopup)
