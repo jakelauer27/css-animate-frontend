@@ -38,7 +38,7 @@ export class Login extends Component {
     const { user } = this.props
     if( user.name ) {
       return (
-        <Redirect to='/' />
+        <Redirect to='/properties' />
       )
     } 
     
@@ -69,8 +69,8 @@ export class Login extends Component {
           <div className='new-account-container'>
             <h3 className={`incorrect-login ${this.state.incorrect && 'incorrect'}`}>username or password is incorrect</h3>
             <h3>Don't have an account?</h3>
-            <Link className='form-link' to='/signup' >Create New Account</Link>
-            <Link className='form-link continue-as-guest' to='/' >Continue as Guest</Link>
+            <Link className='form-link' to='/properties/signup' >Create New Account</Link>
+            <Link className='form-link continue-as-guest' to='/properties' >Continue as Guest</Link>
           </div>
         </div>
       </div>

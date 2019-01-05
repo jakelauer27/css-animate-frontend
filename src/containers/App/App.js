@@ -25,7 +25,7 @@ export class App extends Component {
   loadInitialAnimation() {
     const { updateCurrentAnimation, prebuiltAnimations, saveOriginalAnimation } = this.props
     updateCurrentAnimation({...prebuiltAnimations[0]})
-    saveOriginalAnimation({...prebuiltAnimations[0]})
+    saveOriginalAnimation(JSON.stringify({...prebuiltAnimations[0]}))
     CSSInsertion.updateKeyframes({...prebuiltAnimations[0].keyframes}) 
   }
 
@@ -60,7 +60,7 @@ export class App extends Component {
         </Switch>
         <Route path={`/properties/howto`} component={HowToPopup}/>
         <Route path={`/properties/login`} component={Login}/>
-        <Route path={`/properties/signUp`} component={SignUp}/>
+        <Route path={`/properties/signup`} component={SignUp}/>
         <Route path={`/properties/selectAnimation`} component={AnimationMenu} />
       </div>
     );
@@ -78,7 +78,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 App.propTypes = {
-  animation: PropTypes.string,
+  prebuiltAnimation: PropTypes.array,
   getPrebuiltAnimations: PropTypes.func.isRequired
 }
 

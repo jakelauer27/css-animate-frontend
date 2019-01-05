@@ -11,6 +11,11 @@
   position: absolute;
   z-index: 16;
   color: rgb(0, 0, 0);
+  overflow: scroll;
+
+  input {
+    font-family: $OpenSans;
+  }
 
   h2 {
     width: 50%;
@@ -40,7 +45,7 @@
     width: 100%;
   }
 
-  input {
+  .ani-prop-input {
     display: inline-block;
     width: 100%;
     flex-grow: 1;
@@ -67,3 +72,51 @@
   }
 }
 
+///////KEYFRAMES SECTION
+
+.keyframes-section {
+  margin: 0;
+  width: 100%;
+
+  .section-label-container {
+    display: flex;
+    margin-top: 5px;
+
+    .section-label {
+      flex-grow: 0;
+      width: 50px;
+      margin-right: 3px;
+    }
+  }
+
+  .property-container {
+    display: flex;
+  }
+
+  .property-label {
+    margin: 5px 5px 0px 15px;
+    flex-grow: 0;
+  }
+
+  .property-value {
+    margin-top: 5px;
+    width: 100%
+  }
+
+  .add-property-btn {
+    margin-left: 8px;
+    font-size: .8em;
+  }
+
+  .add-section-btn {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .section-underline {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin-bottom: 10px;
+  }
+}

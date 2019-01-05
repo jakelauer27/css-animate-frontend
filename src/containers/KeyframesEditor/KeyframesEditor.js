@@ -11,7 +11,7 @@ export class KeyframesEditor extends Component {
   saveKeyframesStages(e) {
     formValidation.keyframeStage(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
-    let newAnimation = JSON.parse(JSON.stringify(this.props.animation))
+    let newAnimation = {...this.props.animation}
     let stageLabel = e.target.classList[1]
     let stageIndex = ''
     newAnimation.keyframes.sections.forEach( (stage, i) => {
@@ -100,7 +100,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 KeyframesEditor.propTypes = {
   animation: PropTypes.object.isRequired,
-  updateAnimation: PropTypes.func.isRequired
+  updateCurrentAnimation: PropTypes.func.isRequired
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(KeyframesEditor)

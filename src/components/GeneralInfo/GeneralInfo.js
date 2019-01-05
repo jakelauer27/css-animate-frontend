@@ -8,7 +8,7 @@ class GeneralInfo extends Component {
         <h1 className='title'>CSS Ani<span>Mate</span></h1>
         <p>This is a place for you to learn and experiment with CSS animations.  
           Browse through a library of prebuilt animations and tweak them 
-          however you please. Then, when you have found an animation you 
+          however you please or login and create you own. Then, when you have adjusted the animation as you
           like, copy the code into your own project using the copy feature. 
         </p> 
         <p>

@@ -11,6 +11,7 @@ import { PropTypes } from 'prop-types'
 export class Editor extends Component {
 
   resetAnimation(animation) {
+    animation = JSON.parse(animation)
     this.props.updateCurrentAnimation(animation)
     CSSInsertion.updateKeyframes(animation.keyframes)
     this.resetInputValidation()
@@ -76,7 +77,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 Editor.propTypes = {
- originalAnimation: PropTypes.object,
+ originalAnimation: PropTypes.string,
  currentAnimation: PropTypes.object,
  updateCurrentAnimation: PropTypes.func.isRequired
 }

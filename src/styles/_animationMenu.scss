@@ -93,3 +93,32 @@
   }
 }
 
+.selected-animation {
+  background-color: rgb(149, 207, 226);
+
+  &:hover {
+    background-color: rgb(149, 207, 226);
+  }
+}
+
+.fa-plus-circle {
+  padding: 7px;
+  color: rgb(27, 179, 115);
+  transition: all .2s ease;
+
+  p {
+    color: rgb(44, 44, 44);
+    font-family: $OpenSans;
+    font-weight: 500;
+    display: inline;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(26, 182, 122);
+    transform: scale(1.01) translateX(2px);
+  }
+}
+
+

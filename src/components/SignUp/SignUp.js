@@ -105,7 +105,7 @@ export default class SignUp extends Component {
               value={confirmPassword}
               />
             <button disabled={!formComplete}>Submit</button>
-            <Link className='form-link' to='/login' >Return to login</Link>
+            <Link className='form-link' to='/properties/login' >Return to login</Link>
           </form>
           <h3 className={`duplicate-user-message ${duplicateUser && 'create-user-error'}`}>An account already exists with that email</h3>
           <h3 className={`passwords-message ${!passwordsMatch && 'create-user-error'}`}>Passwords must match</h3>
