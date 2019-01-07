@@ -3,6 +3,7 @@ import { Redirect, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
 import { loginUser } from '../../thunks/login'
+import { getMyAnimations } from '../../thunks/getMyAnimations'
 
 export class Login extends Component {
   constructor() {
@@ -23,13 +24,13 @@ export class Login extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault()
-    const { user } = this.props
+    const { getMyAnimations, loginUser } = this.props
     const { email, password } = this.state
-    await this.props.loginUser({email, password})
-    if ( !user.name ) {
-      this.setState({
-        incorrect: true
-      })
+    const success = await loginUser({email, password})
+    if(success.status === 'success') {
+      await getMyAnimations(success.data.id)
+    } else {
+      this.setState({incorrect: true})
     }
   }
 
@@ -79,7 +80,8 @@ export class Login extends Component {
 }
 
 export const mapDispatchToProps = (dispatch) => ({ 
-  loginUser: (user) => dispatch(loginUser(user))
+  loginUser: (user) => dispatch(loginUser(user)),
+  getMyAnimations: (id) => dispatch(getMyAnimations(id))
 })
 
 export const mapStateToProps = (state) => ({ 

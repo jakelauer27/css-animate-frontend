@@ -14,15 +14,13 @@
     border-radius: 13px 13px 0px 0px;
     background-color: rgb(32, 88, 151);
     color: white;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-bottom: 3px solid black;
     padding: 0px;
 
     h2 {
-      flex-grow: 1;
       text-align: center;
-      width: 200px;
       padding: 6px;
     }
   }
@@ -32,10 +30,7 @@
     color: white;
     text-decoration: none;
     border-radius: 12px;
-    bottom: 10px; 
-    position: absolute;
     font-size: 1.4em;
-    right: 10px;
     padding: 2px 26px 5px;
     transition: all .3s;
     text-align: center;
@@ -47,8 +42,8 @@
   }
 
   .list-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     height: calc(100% - 40px);
 
@@ -121,4 +116,22 @@
   }
 }
 
+.menu-lower-btn-container {
+  bottom: 10px; 
+  position: absolute;
+  display: flex;
+  right: 10px
+}
 
+.select-animation-message {
+  color: rgb(197, 42, 42);
+  font-weight: 400;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: none
+}
+
+.incorrect {
+  display: block;
+  color: rgb(231, 40, 40)
+}

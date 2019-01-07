@@ -13,6 +13,9 @@
   padding: 2px 26px 5px;
   transition: all .3s;
   flex-grow: 1;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
@@ -29,6 +32,10 @@
     color: black;
     cursor: default;
     transform: scale(1.00);
+  }
+
+  &:visited {
+    color: white;
   }
 }
 

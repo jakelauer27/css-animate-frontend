@@ -12,14 +12,18 @@ import Login from '../Login/Login'
 import SignUp from '../../components/SignUp/SignUp'
 import Header from '../Header/Header'
 import { getPrebuiltAnimations } from '../../thunks/getPrebuiltAnimations'
+import { getMyAnimations } from '../../thunks/getMyAnimations'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
 
 export class App extends Component {
   
   async componentDidMount() {
-    const { getPrebuiltAnimations } = this.props
+    const { getPrebuiltAnimations, user_id, getMyAnimations } = this.props
     await getPrebuiltAnimations()
     this.loadInitialAnimation()
+    if(user_id) {
+      await getMyAnimations(user_id)
+    }
   }
 
   loadInitialAnimation() {
@@ -69,12 +73,14 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   prebuiltAnimations: state.prebuiltAnimations,
+  user_id: state.user.id
 })
 
 export const mapDispatchToProps = (dispatch) => ({
   getPrebuiltAnimations: () => dispatch(getPrebuiltAnimations()),
   updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
-  saveOriginalAnimation: (animation) => dispatch(saveOriginalAnimation(animation))
+  saveOriginalAnimation: (animation) => dispatch(saveOriginalAnimation(animation)),
+  getMyAnimations: (id) => dispatch(getMyAnimations(id))
 })
 
 App.propTypes = {

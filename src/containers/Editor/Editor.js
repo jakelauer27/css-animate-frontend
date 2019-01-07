@@ -7,6 +7,7 @@ import { updateCurrentAnimation } from '../../actions/actions'
 import * as CSSInsertion from '../../utils/keyframesInsertion'
 import CopyPopup from '../CopyPopup/CopyPopup'
 import { PropTypes } from 'prop-types'
+import Saveas from '../Saveas/Saveas';
 
 export class Editor extends Component {
 
@@ -56,10 +57,17 @@ export class Editor extends Component {
           <Link to={`/properties/copy`} className='lower-btn copy-btn'>
             copy code   
           </Link>
-          <Route path={`/properties/copy`} render={() => <CopyPopup currentPage={currentAnimation}/>} />
           <button className={`lower-btn reset-btn`} onClick={() => this.resetAnimation(this.props.originalAnimation)}>
             reset
           </button>
+          <Link to={`/properties/saveas`} className='lower-btn save-as-btn'>
+            save as  
+          </Link>
+          <button className={`lower-btn save-btn`}>
+            save
+          </button>
+          <Route path={`/properties/copy`} render={() => <CopyPopup />} />
+          <Route path={`/properties/saveas`} render={() => <Saveas/>} />
         </div>
       </div>
     )

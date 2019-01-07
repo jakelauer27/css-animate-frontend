@@ -39,7 +39,7 @@ export class CopyPopup extends Component {
                   } 
                   return ` ${props[key]}`
                 }).join('')}; 
-animation-fill-mode: ${props['fill-mode']};`
+animation-fill-mode: ${props['fillMode']};`
         }>
         </textarea>
       </div>

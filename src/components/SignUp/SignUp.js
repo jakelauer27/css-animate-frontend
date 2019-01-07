@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import { addUser } from '../../utils/apiCalls/apiCalls'
 import { Redirect, Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { loginUser } from '../../thunks/login'
+import { getMyAnimations } from '../../thunks/getMyAnimations'
 
 
-export default class SignUp extends Component {
+export class SignUp extends Component {
   constructor() {
     super()
     this.state = {
@@ -47,6 +50,7 @@ export default class SignUp extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault()
+    const { getMyAnimations, loginUser } = this.props 
     const { name, email, password, confirmPassword } = this.state
     const emailInputVal = email
     if (!this.emailValidation(emailInputVal)) {
@@ -58,9 +62,12 @@ export default class SignUp extends Component {
       return
     }
     const data = await addUser({ name, email, password }) 
+
     if (data.error) {
       this.setState({ duplicateUser: true, passwordsMatch: true, validEmail: true})
     } else {
+      const success = await loginUser({email, password})
+      await getMyAnimations(success.data.id)
       this.setState({ validUser: true})
     }
   }
@@ -68,7 +75,7 @@ export default class SignUp extends Component {
   render() {
     const { name, email, password, confirmPassword, validUser, formComplete, duplicateUser, passwordsMatch, validEmail} = this.state
     if (validUser) {
-     return <Redirect to='/login' />
+     return <Redirect to='/properties' />
     }
     return(
       <div className="sign-up-container">
@@ -115,3 +122,10 @@ export default class SignUp extends Component {
     )
   }
 }
+
+export const mapDispatchToProps = (dispatch) => ({ 
+  loginUser: (user) => dispatch(loginUser(user)),
+  getMyAnimations: (id) => dispatch(getMyAnimations(id))
+})
+
+export default connect(null, mapDispatchToProps)(SignUp)

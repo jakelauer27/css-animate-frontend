@@ -29,7 +29,7 @@ export class PropertiesEditor extends Component {
           <p className='class-selector'>.square <span>{'{'}</span></p>
           <div className='props-container'>
             <p className='ani-prop name'>name<span>:</span></p>
-            <p className='prop-input name' id='name'>{currentAnimation.ani_name}</p>
+            <p className='prop-input name' id='name'>{currentAnimation.properties.name}</p>
           </div>
           {
             aniPropsLabels.map( (prop, i) => {

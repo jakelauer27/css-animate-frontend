@@ -1,8 +1,3 @@
-export const loadAnimation = (animation) => ({
-  type: 'LOAD_ANIMATION',
-  animation
-})
-
 export const signIn = (user) => ({
   type: 'SIGN_IN',
   user
@@ -27,5 +22,23 @@ export const saveOriginalAnimation = (animation) => ({
   animation
 })
 
+export const loadMyAnimations = (myAnimations) => ({
+  type: 'LOAD_MY_ANIMATIONS',
+  myAnimations
+})
+
+export const deleteMyAnimation = (id) => ({
+  type: 'DELETE_MY_ANIMATION',
+  id
+})
+
+export const selectAnimationForEdit = (animation) => ({
+  type: 'SELECT_ANIMATION_FOR_EDIT',
+  animation
+})
+
+export const removeAnimationForEdit = () => ({
+  type: 'REMOVE_ANIMATION_FOR_EDIT'
+})
 
 
