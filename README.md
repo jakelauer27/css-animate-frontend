@@ -2,7 +2,7 @@
 
 A site for learning, and implementing CSS Animations. Login, Open a predesigned animation or create your own, adjust any of the properties or keyframes as you please, see the effects in real time, then copy the code for personal use!  
 
-![CSS-aniMate](main_page.png)
+![CSS-aniMate](cssmain.png)
 
 ### Set Up
 
@@ -39,5 +39,7 @@ css-animate.com
 
 ![Instructions](instructions.png)
 ![Copy-Option](copy_paste.png)
-![Copy-Option](keyframes.png)
+![cssmenu](cssmain.png)
+![cssform](cssmain.png)
+
 
