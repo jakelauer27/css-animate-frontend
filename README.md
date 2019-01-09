@@ -39,7 +39,7 @@ css-animate.com
 
 ![Instructions](instructions.png)
 ![Copy-Option](copy_paste.png)
-![cssmenu](cssmain.png)
-![cssform](cssmain.png)
+![Animation Menu](cssmenu.png)
+![Add Animation Form](cssform.png)
 
 
