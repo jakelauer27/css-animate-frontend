@@ -9,7 +9,7 @@ A site for learning, and implementing CSS Animations. Login, Open a predesigned 
 Clone this repo. 
 Run `npm install` in your terminal
 
-Clone down[BackEnd here](https://github.com/jakelauer27/css-animate-backend) (Must have postgress installed). Run backend at localhost:3000.  
+Clone down [BackEnd here](https://github.com/jakelauer27/css-animate-backend) (Must have postgress installed). Run backend at localhost:3000.  
 
 Run `npm start` and view app at localhost:3001. 
 
