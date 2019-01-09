@@ -1,0 +1,1 @@
+export const routes = [`/properties/selectAnimation`, `/properties/signup`, `/properties/login`, `/properties/howto/general`, `/keyframes`, `/properties`, '/', `/properties/howto/properties`,`/properties/howto/keyframes`, '/properties/selectAnimation/create', `/properties/copy`, '/error']

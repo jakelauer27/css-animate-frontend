@@ -74,6 +74,7 @@ export class Editor extends Component {
             <Route path={`/keyframes`} component={KeyframesEditor}/>
           </Switch>
           }
+          <Route path={`/properties/copy`} render={() => <CopyPopup />} />
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
@@ -92,7 +93,6 @@ export class Editor extends Component {
             }}>
             {this.state.saveText}
           </button>
-          <Route path={`/properties/copy`} render={() => <CopyPopup />} />
           {
             (this.state.saveas && <Saveas closePopup={this.toggleSaveas}/>)
           }

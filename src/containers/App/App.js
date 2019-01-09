@@ -5,6 +5,7 @@ import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 import { getPrebuiltAnimations } from '../../thunks/getPrebuiltAnimations'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
+import { routes } from '../../utils/routes'
 import * as CSSInsertion from '../../utils/keyframesInsertion'
 import AnimationMenu from '../AnimationMenu/AnimationMenu'
 import Editor from '../Editor/Editor'
@@ -61,12 +62,16 @@ export class App extends Component {
             )
             }}/>   
           <Route path={'/error'} component={Error} />
-          <Route exact path='*' render={() => <Redirect to='/error'/>} />
         </Switch>
         <Route path={`/properties/howto`} component={HowToPopup}/>
         <Route path={`/properties/login`} component={Login}/>
         <Route path={`/properties/signup`} component={SignUp}/>
         <Route path={`/properties/selectAnimation`} component={AnimationMenu} />
+        <Route exact path='*' render={() => {
+          if(!routes.find(route => route === this.props.location.pathname)) {
+            return <Redirect to='/error'/>  
+          } else return null
+        }} />
       </div>
     );
   }

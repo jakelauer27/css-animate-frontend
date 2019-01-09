@@ -1,0 +1,24 @@
+.error-page {
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+
+  .error-main-message {
+    font-family: $Roboto;
+    font-size: 5em;
+    margin: 5px;
+  }
+
+  .error-secondary-message {
+    font-family: $Roboto;
+    font-size: 1.6em;
+  }
+
+  .return-to-site-link {
+    padding: 5px 0px;
+    margin-top: 50px;
+  }
+}

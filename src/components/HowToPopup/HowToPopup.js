@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink, Route, Switch, Link, Redirect } from 'react-router-dom'
+import { NavLink, Route, Switch, Link } from 'react-router-dom'
 import GeneralInfo from '../GeneralInfo/GeneralInfo'
 import KeyframesInfo from '../KeyframesInfo/KeyframesInfo'
 import PropertiesInfo from '../PropertiesInfo/PropertiesInfo'

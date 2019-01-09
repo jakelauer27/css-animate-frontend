@@ -12,6 +12,10 @@
   z-index: 16;
   color: rgb(0, 0, 0);
 
+  .properties-form-container {
+    width: 100%
+  }
+
   input {
     font-family: $OpenSans;
   }
@@ -39,16 +43,18 @@
   }
 
   .form-item {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: 3px;
     width: 100%;
+    display: flex;
+    margin: 3px;
+    height: 30px;
   }
 
   .ani-prop-input {
-    display: inline-block;
     width: 100%;
     flex-grow: 1;
+    margin-left: 7px;
+    margin-top: 2px;
+    padding: 3px;
   }
 
   label {
@@ -70,7 +76,7 @@
     flex-direction: column;
     align-items: center;
     overflow: scroll;
-    height: 80%
+    height: 90%;
   }
 }
 
@@ -80,7 +86,21 @@
   width: 100%;
 }
 
+@keyframes myFadeIn {
+  0% {
+    opacity: 0;
+    background-color: rgba(44, 224, 149, 0.664);
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+}
+
 .keyframes-section {
+  animation: myFadeIn .3s linear 0s 1 normal; 
+  animation-fill-mode: forwards;
   margin: 0;
   width: 100%;
 
@@ -184,10 +204,10 @@
   right: 10px;
 }
 
-.cancel-form-btn {
+#cancel-form-btn, .cancel-form-btn {
   color: white;
   display: block;
-  padding: 5px 6px;
+  padding: 5px 0px;
   border-radius: 8px;
   margin: 4px;
   text-decoration: none;

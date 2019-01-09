@@ -11,6 +11,7 @@
   background-color: #292929;
   height: 66vh;
   min-height: 400px;
+  position: relative;
   width: 100%;
 }
 
@@ -64,6 +65,7 @@
     transition: all .3s;
     bottom:6px;
     text-decoration: none;
+    z-index: 3;
 
     &:visited {
       color: black;

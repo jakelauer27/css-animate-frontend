@@ -53,7 +53,6 @@ export class CreateAnimationForm extends Component {
       updateCurrentAnimation({id: animationToEdit.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
       cancelEdit()
       await getMyAnimations(user_id)
-      this.setState({redirect: true})
       return
     }
 
@@ -115,7 +114,8 @@ export class CreateAnimationForm extends Component {
     const { classList } = e.target
     const keyframes = [...this.state.keyframes]
     const newSection = {label: '%', name: '%', properties: [{name: '', value: ''}]}
-    keyframes.splice([parseInt(classList[0])] + 1, 0, newSection)
+    const insertionIndex = parseInt(classList[0]) + 1
+    keyframes.splice(insertionIndex, 0, newSection)
     this.setState({keyframes, disabled: this.checkFormCompletion()})
   }
 
@@ -148,13 +148,13 @@ export class CreateAnimationForm extends Component {
 
   render() {
     let title = 'Create Animation'
-    let exitButton = <Link to='/properties/selectAnimation' className='cancel-form-btn'>Cancel</Link>
+    let exitButton = <Link to='/properties/selectAnimation' id='cancel-form-btn'>Cancel</Link>
     const { animationToEdit } = this.props
     const { keyframes, redirect } = this.state
 
     if(animationToEdit.properties) {
       title= 'Edit Animation'
-      exitButton = <button className='cancel-form-btn' onClick={() => this.cancelEdit()}>Cancel</button>
+      exitButton = <button id='cancel-form-btn' onClick={() => this.cancelEdit()}>Cancel</button>
     }
 
     if(redirect) {return <Redirect to='/properties/selectAnimation' />}
@@ -165,6 +165,7 @@ export class CreateAnimationForm extends Component {
         <form className='create-animation-form'>
         <label className='secondary-label'>Properties</label>
         <div className='underline'></div>
+        <div className='properties-form-container'>
           {
             Object.keys(this.state.properties).map( property => {
               return (
@@ -181,6 +182,7 @@ export class CreateAnimationForm extends Component {
               )
             })
           }
+          </div>
         <label className='secondary-label'>Keyframes</label>
         <div className='underline'></div>
         <div className='keyframes-form'>

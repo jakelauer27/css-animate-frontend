@@ -11,7 +11,7 @@ const animationPropRegex = {
 const keyframeStageRegex= RegExp('^[1-9][0-9]{2}%(?!.)|^[1-9][0-9]%(?!.)|^[0-9]%(?!.)')
 
 const colorRegex= {
-  'rgb': RegExp('^rgb[(]([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9])[)](?!.)'),
+  'rgb': RegExp('^rgb(a)?[(]([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9]), ([-.s])?([0-9]|[1-9][0-9]|[1-2][0-9][0-9])(, [0-1](\\.)?[0-9]?[0-9]?[0-9]?)?[)](?!.)'),
   '#': RegExp('^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$(?!.)'),
   'color': RegExp(`^(aliceBlue|antiqueWhite|aqua|aquamarine|azure|beige|bisque|black|blanchedAlmond|blue|blueViolet|brown|burly|wood|cadetBlue|chartreuse|chocolate|coral|cornflowerBlue|cornsilk|crimson|cyan|darkBlue|darkCyan
     |darkGoldenRod|darkGray|darkGrey|darkGreen|darkKhaki|darkMagenta|darkOliveGreen|darkOrange|darkOrchid|darkRed|darkSalmon|darkSeaGreen|darkSlateBlue|darkSlateGray|darkSlateGrey|darkTurquoise|darkViolet|deepPink|deepSkyBlue|dimGray|dimGrey|dodgerBlue|

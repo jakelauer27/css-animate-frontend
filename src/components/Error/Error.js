@@ -6,9 +6,10 @@ class Error extends Component {
   render() {
     return (
       <div className='error-page'>
-      <h2>page not found</h2>
-      <Link to='/'>return to site</Link>
-    </div>
+        <h1 className='error-main-message'>OOPS!</h1>
+        <h2 className='error-secondary-message'>page not found</h2>
+        <Link to='/' className='return-to-site-link lower-btn'>return to site</Link>
+      </div>
     )
   }
 }
