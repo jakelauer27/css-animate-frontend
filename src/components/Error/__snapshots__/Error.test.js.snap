@@ -18,10 +18,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <h1
+          className="error-main-message"
+        >
+          OOPS!
+        </h1>,
+        <h2
+          className="error-secondary-message"
+        >
           page not found
         </h2>,
         <Link
+          className="return-to-site-link lower-btn"
           replace={false}
           to="/"
         >
@@ -37,7 +45,20 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "OOPS!",
+          "className": "error-main-message",
+        },
+        "ref": null,
+        "rendered": "OOPS!",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": "page not found",
+          "className": "error-secondary-message",
         },
         "ref": null,
         "rendered": "page not found",
@@ -49,6 +70,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "return to site",
+          "className": "return-to-site-link lower-btn",
           "replace": false,
           "to": "/",
         },
@@ -66,10 +88,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <h1
+            className="error-main-message"
+          >
+            OOPS!
+          </h1>,
+          <h2
+            className="error-secondary-message"
+          >
             page not found
           </h2>,
           <Link
+            className="return-to-site-link lower-btn"
             replace={false}
             to="/"
           >
@@ -85,7 +115,20 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "OOPS!",
+            "className": "error-main-message",
+          },
+          "ref": null,
+          "rendered": "OOPS!",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": "page not found",
+            "className": "error-secondary-message",
           },
           "ref": null,
           "rendered": "page not found",
@@ -97,6 +140,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "return to site",
+            "className": "return-to-site-link lower-btn",
             "replace": false,
             "to": "/",
           },

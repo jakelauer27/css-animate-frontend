@@ -98,6 +98,10 @@ ShallowWrapper {
                 path="/keyframes"
               />
             </Switch>
+            <Route
+              path="/properties/copy"
+              render={[Function]}
+            />
           </div>
         </div>,
         <div
@@ -116,13 +120,12 @@ ShallowWrapper {
           >
             reset
           </button>
-          <Link
+          <button
             className="lower-btn save-as-btn"
-            replace={false}
-            to="/properties/saveas"
+            onClick={[Function]}
           >
             save as
-          </Link>
+          </button>
           <button
             className="lower-btn save-btn"
             disabled={true}
@@ -130,16 +133,6 @@ ShallowWrapper {
           >
             save
           </button>
-          <Switch>
-            <Route
-              path="/properties/copy"
-              render={[Function]}
-            />
-            <Route
-              path="/properties/saveas"
-              render={[Function]}
-            />
-          </Switch>
         </div>,
       ],
       "className": "editor-component",
@@ -185,6 +178,10 @@ ShallowWrapper {
                   path="/keyframes"
                 />
               </Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
             </div>,
           ],
           "className": "editor-container",
@@ -256,64 +253,84 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <Switch>
-                <Route
-                  component={[Function]}
-                  path="/properties"
-                />
-                <Route
-                  component={[Function]}
-                  path="/keyframes"
-                />
-              </Switch>,
-              "className": "editor",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
+              "children": Array [
+                <Switch>
                   <Route
                     component={[Function]}
                     path="/properties"
-                  />,
+                  />
                   <Route
                     component={[Function]}
                     path="/keyframes"
-                  />,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "component": [Function],
-                    "path": "/properties",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "component": [Function],
-                    "path": "/keyframes",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
+                  />
+                </Switch>,
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />,
               ],
-              "type": [Function],
+              "className": "editor",
             },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Route
+                      component={[Function]}
+                      path="/properties"
+                    />,
+                    <Route
+                      component={[Function]}
+                      path="/keyframes"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "path": "/properties",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [Function],
+                      "path": "/keyframes",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "path": "/properties/copy",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": "div",
           },
         ],
@@ -338,13 +355,12 @@ ShallowWrapper {
             >
               reset
             </button>,
-            <Link
+            <button
               className="lower-btn save-as-btn"
-              replace={false}
-              to="/properties/saveas"
+              onClick={[Function]}
             >
               save as
-            </Link>,
+            </button>,
             <button
               className="lower-btn save-btn"
               disabled={true}
@@ -352,16 +368,7 @@ ShallowWrapper {
             >
               save
             </button>,
-            <Switch>
-              <Route
-                path="/properties/copy"
-                render={[Function]}
-              />
-              <Route
-                path="/properties/saveas"
-                render={[Function]}
-              />
-            </Switch>,
+            false,
           ],
           "className": "editor-bottom-btns-container",
         },
@@ -397,16 +404,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": "save as",
               "className": "lower-btn save-as-btn",
-              "replace": false,
-              "to": "/properties/saveas",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "save as",
-            "type": [Function],
+            "type": "button",
           },
           Object {
             "instance": null,
@@ -422,51 +428,7 @@ ShallowWrapper {
             "rendered": "save",
             "type": "button",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": Array [
-                <Route
-                  path="/properties/copy"
-                  render={[Function]}
-                />,
-                <Route
-                  path="/properties/saveas"
-                  render={[Function]}
-                />,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "path": "/properties/copy",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "path": "/properties/saveas",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
+          false,
         ],
         "type": "div",
       },
@@ -516,6 +478,10 @@ ShallowWrapper {
                   path="/keyframes"
                 />
               </Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
             </div>
           </div>,
           <div
@@ -534,13 +500,12 @@ ShallowWrapper {
             >
               reset
             </button>
-            <Link
+            <button
               className="lower-btn save-as-btn"
-              replace={false}
-              to="/properties/saveas"
+              onClick={[Function]}
             >
               save as
-            </Link>
+            </button>
             <button
               className="lower-btn save-btn"
               disabled={true}
@@ -548,16 +513,6 @@ ShallowWrapper {
             >
               save
             </button>
-            <Switch>
-              <Route
-                path="/properties/copy"
-                render={[Function]}
-              />
-              <Route
-                path="/properties/saveas"
-                render={[Function]}
-              />
-            </Switch>
           </div>,
         ],
         "className": "editor-component",
@@ -603,6 +558,10 @@ ShallowWrapper {
                     path="/keyframes"
                   />
                 </Switch>
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />
               </div>,
             ],
             "className": "editor-container",
@@ -674,64 +633,84 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <Switch>
-                  <Route
-                    component={[Function]}
-                    path="/properties"
-                  />
-                  <Route
-                    component={[Function]}
-                    path="/keyframes"
-                  />
-                </Switch>,
-                "className": "editor",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
+                "children": Array [
+                  <Switch>
                     <Route
                       component={[Function]}
                       path="/properties"
-                    />,
+                    />
                     <Route
                       component={[Function]}
                       path="/keyframes"
-                    />,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "component": [Function],
-                      "path": "/properties",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "component": [Function],
-                      "path": "/keyframes",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
+                    />
+                  </Switch>,
+                  <Route
+                    path="/properties/copy"
+                    render={[Function]}
+                  />,
                 ],
-                "type": [Function],
+                "className": "editor",
               },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <Route
+                        component={[Function]}
+                        path="/properties"
+                      />,
+                      <Route
+                        component={[Function]}
+                        path="/keyframes"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "component": [Function],
+                        "path": "/properties",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "component": [Function],
+                        "path": "/keyframes",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "path": "/properties/copy",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
               "type": "div",
             },
           ],
@@ -756,13 +735,12 @@ ShallowWrapper {
               >
                 reset
               </button>,
-              <Link
+              <button
                 className="lower-btn save-as-btn"
-                replace={false}
-                to="/properties/saveas"
+                onClick={[Function]}
               >
                 save as
-              </Link>,
+              </button>,
               <button
                 className="lower-btn save-btn"
                 disabled={true}
@@ -770,16 +748,7 @@ ShallowWrapper {
               >
                 save
               </button>,
-              <Switch>
-                <Route
-                  path="/properties/copy"
-                  render={[Function]}
-                />
-                <Route
-                  path="/properties/saveas"
-                  render={[Function]}
-                />
-              </Switch>,
+              false,
             ],
             "className": "editor-bottom-btns-container",
           },
@@ -815,16 +784,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": "save as",
                 "className": "lower-btn save-as-btn",
-                "replace": false,
-                "to": "/properties/saveas",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "save as",
-              "type": [Function],
+              "type": "button",
             },
             Object {
               "instance": null,
@@ -840,51 +808,7 @@ ShallowWrapper {
               "rendered": "save",
               "type": "button",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": Array [
-                  <Route
-                    path="/properties/copy"
-                    render={[Function]}
-                  />,
-                  <Route
-                    path="/properties/saveas"
-                    render={[Function]}
-                  />,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "path": "/properties/copy",
-                    "render": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "path": "/properties/saveas",
-                    "render": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
-              "type": [Function],
-            },
+            false,
           ],
           "type": "div",
         },

@@ -108,11 +108,6 @@ ShallowWrapper {
             component={[MockFunction]}
             path="/error"
           />
-          <Route
-            exact={true}
-            path="*"
-            render={[Function]}
-          />
         </Switch>,
         <Route
           component={[MockFunction]}
@@ -129,6 +124,11 @@ ShallowWrapper {
         <Route
           component={[MockFunction]}
           path="/properties/selectAnimation"
+        />,
+        <Route
+          exact={true}
+          path="*"
+          render={[Function]}
         />,
       ],
       "className": "App",
@@ -166,11 +166,6 @@ ShallowWrapper {
             <Route
               component={[MockFunction]}
               path="/error"
-            />,
-            <Route
-              exact={true}
-              path="*"
-              render={[Function]}
             />,
           ],
         },
@@ -220,19 +215,6 @@ ShallowWrapper {
             "props": Object {
               "component": [MockFunction],
               "path": "/error",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "*",
-              "render": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -289,6 +271,19 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
+          "path": "*",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -318,11 +313,6 @@ ShallowWrapper {
               component={[MockFunction]}
               path="/error"
             />
-            <Route
-              exact={true}
-              path="*"
-              render={[Function]}
-            />
           </Switch>,
           <Route
             component={[MockFunction]}
@@ -339,6 +329,11 @@ ShallowWrapper {
           <Route
             component={[MockFunction]}
             path="/properties/selectAnimation"
+          />,
+          <Route
+            exact={true}
+            path="*"
+            render={[Function]}
           />,
         ],
         "className": "App",
@@ -376,11 +371,6 @@ ShallowWrapper {
               <Route
                 component={[MockFunction]}
                 path="/error"
-              />,
-              <Route
-                exact={true}
-                path="*"
-                render={[Function]}
               />,
             ],
           },
@@ -435,19 +425,6 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "*",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
           ],
           "type": [Function],
         },
@@ -494,6 +471,19 @@ ShallowWrapper {
           "props": Object {
             "component": [MockFunction],
             "path": "/properties/selectAnimation",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "*",
+            "render": [Function],
           },
           "ref": null,
           "rendered": null,
