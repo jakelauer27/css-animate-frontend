@@ -4,16 +4,14 @@ import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
 import { signOut } from '../../actions/actions'
 
-
-
 export class Header extends Component {
 
   render() {
     const { user, signOut } = this.props
     let greeting = ''
-    let login = 'login'
+    let login = 'Login'
     if (user.name) {
-      login = 'logout'
+      login = 'Logout'
       greeting = `Hi ${user.name}!`
     }
 

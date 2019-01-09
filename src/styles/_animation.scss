@@ -76,3 +76,11 @@ p {
   background-color: $stopRed;
   color: white;
 }
+
+.red:-webkit-autofill,
+.red:-webkit-autofill:hover, 
+.red:-webkit-autofill:focus, 
+.red:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px $stopRed inset !important;
+    -webkit-text-fill-color: white;
+}

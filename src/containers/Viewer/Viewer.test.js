@@ -8,8 +8,7 @@ jest.mock('../../utils/keyframesInsertion')
 
 describe('Viewer', () => {
   let wrapper
-  const mockLoadNewAnimation = jest.fn()
-  const mockAnimation = { 
+  const mockAnimation = {
       'name': 'slideInX',
       'duration': '1.5s',
       'timingFunction': 'ease',
@@ -20,7 +19,7 @@ describe('Viewer', () => {
   }
 
   beforeEach(() => {
-    wrapper = shallow(<Viewer animation={mockAnimation} loadNewAnimation={mockLoadNewAnimation} currentAnimation={'slideInX'} />)
+    wrapper = shallow(<Viewer currentAnimation={mockAnimation} />)
   })
 
   it('Should match the snapshot' , () => {
@@ -28,7 +27,7 @@ describe('Viewer', () => {
   })
 
   it('Should match the snapshot if no animation' , () => {
-    wrapper = shallow(<Viewer animation={''} loadNewAnimation={mockLoadNewAnimation} currentAnimation={'slideInX'} />)
+    wrapper = shallow(<Viewer currentAnimation={null} />)
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -48,30 +47,6 @@ describe('Viewer', () => {
     const spy = jest.spyOn(wrapper.instance(), 'resetAnimation')
     wrapper.find('.square').simulate('animationEnd')
     expect(spy).toHaveBeenCalledWith(1000)
-  })
-
-  describe('ComponentDidMount', () => {    
-
-    it('should call loadNewAnimation' , () => {
-      wrapper = shallow(<Viewer animation={mockAnimation} loadNewAnimation={mockLoadNewAnimation} currentAnimation={'slideInX'} />, {disableLifecycleMethods: true})
-      const spy = jest.spyOn(wrapper.instance(), 'loadNewAnimation')
-      wrapper.instance().componentDidMount()
-      expect(spy).toHaveBeenCalledWith('slideInX')
-    })
-  })
-
-  describe('loadNewAnimation', () => {
-    it('should call loadNewAnimation from props', () => {
-      const expected = {"keyframes": {"name": "slideInX", "sections": [{"label": "0%", "name": "0%", "properties": [{"name": "transform", "value": "translateX(-300px)"}]}, {"label": "100%", "name": "100%", "properties": [{"name": "transform", "value": "translateX(0px)"}]}]}, "properties": {"delay": "0s", "direction": "normal", "duration": "1.5s", "fillMode": "forwards", "iterationCount": "1", "name": "slideInX", "timingFunction": "ease"}}
-      wrapper.instance().loadNewAnimation('slideInX')
-      expect(mockLoadNewAnimation).toHaveBeenCalledWith(expected);
-    })
-
-    it('should call updateKeyframes', () => {
-      const expected = {"name": "slideInX", "sections": [{"label": "0%", "name": "0%", "properties": [{"name": "transform", "value": "translateX(-300px)"}]}, {"label": "100%", "name": "100%", "properties": [{"name": "transform", "value": "translateX(0px)"}]}]}
-      wrapper.instance().loadNewAnimation('slideInX')
-      expect(CSSInsertion.updateKeyframes).toHaveBeenCalledWith(expected);
-    })
   })
 
   describe('playAnimation', () => {
@@ -115,20 +90,10 @@ describe('Viewer', () => {
   describe('mapStateToProps', () => {
 
     it('should return a props object with an animation property', () => {
-      const mockState = {animation: mockAnimation}
-      const expected = {animation: mockAnimation.properties}
+      const mockState = {currentAnimation: mockAnimation}
+      const expected = {currentAnimation: mockAnimation.properties}
       expect(mapStateToProps(mockState)).toEqual(expected)
     })
   })
 
-  describe('mapDispatchToProps', () => {
-
-    it('should return a props object with a loadNewAnimation property', () => {
-        const mockDispatch = jest.fn()
-        const actionToDispatch = loadAnimation(mockAnimation)
-        const mappedProps = mapDispatchToProps(mockDispatch)
-        mappedProps.loadNewAnimation(mockAnimation)
-        expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
-    })
-  })
 })

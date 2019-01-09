@@ -4,10 +4,8 @@ import PreBuiltAnimationList from '../../containers/AnimationList/PreBuiltAnimat
 import CreateAnimationForm from '../CreateAnimationForm/CreateAnimationForm'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
 import { connect } from 'react-redux'
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 import * as CSSInsertion from '../../utils/keyframesInsertion'
-import { addAnimation } from '../../utils/apiCalls/apiCalls';
-
 
 export class AnimationMenu extends Component {
   constructor() {
@@ -63,7 +61,9 @@ export class AnimationMenu extends Component {
             </button>
           </div>
         </div>
-        <Route path='/properties/selectAnimation/create' component={CreateAnimationForm} />
+        <Switch>
+          <Route path='/properties/selectAnimation/create' component={CreateAnimationForm} />
+        </Switch>
         {editAnimation}
       </div>
     )

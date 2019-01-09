@@ -1,0 +1,795 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyAnimationList should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MyAnimationList
+    currentAnimation={
+      Object {
+        "ani-name": "rotateIn",
+        "id": 2,
+      }
+    }
+    deleteAnimation={[MockFunction]}
+    myAnimations={
+      Array [
+        Object {
+          "ani-name": "slideIn",
+          "id": 1,
+        },
+        Object {
+          "ani-name": "rotateIn",
+          "id": 2,
+        },
+      ]
+    }
+    selectAnimationForEdit={[MockFunction]}
+    user={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ul
+        className="animation-list"
+      >
+        <li
+          className="animation-li 1 "
+          onClick={[Function]}
+        >
+          <div
+            className="icon-container fas"
+          >
+            <i
+              className="1 fas fa-edit"
+              onClick={[Function]}
+            />
+            <i
+              className="1 fas fa-trash-alt"
+              onClick={[Function]}
+            />
+          </div>
+        </li>
+        <li
+          className="animation-li 2 selected-animation"
+          onClick={[Function]}
+        >
+          <div
+            className="icon-container fas"
+          >
+            <i
+              className="2 fas fa-edit"
+              onClick={[Function]}
+            />
+            <i
+              className="2 fas fa-trash-alt"
+              onClick={[Function]}
+            />
+          </div>
+        </li>
+        <Link
+          replace={false}
+          to="/properties/selectAnimation/create"
+        >
+          <i
+            className="fas fa-plus-circle"
+          >
+            <p>
+              Add New
+            </p>
+          </i>
+        </Link>
+      </ul>,
+      "className": "my-animation-section",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [
+            <li
+              className="animation-li 1 "
+              onClick={[Function]}
+            >
+              <div
+                className="icon-container fas"
+              >
+                <i
+                  className="1 fas fa-edit"
+                  onClick={[Function]}
+                />
+                <i
+                  className="1 fas fa-trash-alt"
+                  onClick={[Function]}
+                />
+              </div>
+            </li>,
+            <li
+              className="animation-li 2 selected-animation"
+              onClick={[Function]}
+            >
+              <div
+                className="icon-container fas"
+              >
+                <i
+                  className="2 fas fa-edit"
+                  onClick={[Function]}
+                />
+                <i
+                  className="2 fas fa-trash-alt"
+                  onClick={[Function]}
+                />
+              </div>
+            </li>,
+          ],
+          <Link
+            replace={false}
+            to="/properties/selectAnimation/create"
+          >
+            <i
+              className="fas fa-plus-circle"
+            >
+              <p>
+                Add New
+              </p>
+            </i>
+          </Link>,
+        ],
+        "className": "animation-list",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <div
+                className="icon-container fas"
+              >
+                <i
+                  className="1 fas fa-edit"
+                  onClick={[Function]}
+                />
+                <i
+                  className="1 fas fa-trash-alt"
+                  onClick={[Function]}
+                />
+              </div>,
+            ],
+            "className": "animation-li 1 ",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="1 fas fa-edit"
+                    onClick={[Function]}
+                  />,
+                  <i
+                    className="1 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "icon-container fas",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "1 fas fa-edit",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "1 fas fa-trash-alt",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": "uid2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              undefined,
+              <div
+                className="icon-container fas"
+              >
+                <i
+                  className="2 fas fa-edit"
+                  onClick={[Function]}
+                />
+                <i
+                  className="2 fas fa-trash-alt"
+                  onClick={[Function]}
+                />
+              </div>,
+            ],
+            "className": "animation-li 2 selected-animation",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="2 fas fa-edit"
+                    onClick={[Function]}
+                  />,
+                  <i
+                    className="2 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />,
+                ],
+                "className": "icon-container fas",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "2 fas fa-edit",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "2 fas fa-trash-alt",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "li",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <i
+              className="fas fa-plus-circle"
+            >
+              <p>
+                Add New
+              </p>
+            </i>,
+            "replace": false,
+            "to": "/properties/selectAnimation/create",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                Add New
+              </p>,
+              "className": "fas fa-plus-circle",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add New",
+              },
+              "ref": null,
+              "rendered": "Add New",
+              "type": "p",
+            },
+            "type": "i",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "ul",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="animation-list"
+        >
+          <li
+            className="animation-li 1 "
+            onClick={[Function]}
+          >
+            <div
+              className="icon-container fas"
+            >
+              <i
+                className="1 fas fa-edit"
+                onClick={[Function]}
+              />
+              <i
+                className="1 fas fa-trash-alt"
+                onClick={[Function]}
+              />
+            </div>
+          </li>
+          <li
+            className="animation-li 2 selected-animation"
+            onClick={[Function]}
+          >
+            <div
+              className="icon-container fas"
+            >
+              <i
+                className="2 fas fa-edit"
+                onClick={[Function]}
+              />
+              <i
+                className="2 fas fa-trash-alt"
+                onClick={[Function]}
+              />
+            </div>
+          </li>
+          <Link
+            replace={false}
+            to="/properties/selectAnimation/create"
+          >
+            <i
+              className="fas fa-plus-circle"
+            >
+              <p>
+                Add New
+              </p>
+            </i>
+          </Link>
+        </ul>,
+        "className": "my-animation-section",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <li
+                className="animation-li 1 "
+                onClick={[Function]}
+              >
+                <div
+                  className="icon-container fas"
+                >
+                  <i
+                    className="1 fas fa-edit"
+                    onClick={[Function]}
+                  />
+                  <i
+                    className="1 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />
+                </div>
+              </li>,
+              <li
+                className="animation-li 2 selected-animation"
+                onClick={[Function]}
+              >
+                <div
+                  className="icon-container fas"
+                >
+                  <i
+                    className="2 fas fa-edit"
+                    onClick={[Function]}
+                  />
+                  <i
+                    className="2 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />
+                </div>
+              </li>,
+            ],
+            <Link
+              replace={false}
+              to="/properties/selectAnimation/create"
+            >
+              <i
+                className="fas fa-plus-circle"
+              >
+                <p>
+                  Add New
+                </p>
+              </i>
+            </Link>,
+          ],
+          "className": "animation-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "uid1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                <div
+                  className="icon-container fas"
+                >
+                  <i
+                    className="1 fas fa-edit"
+                    onClick={[Function]}
+                  />
+                  <i
+                    className="1 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />
+                </div>,
+              ],
+              "className": "animation-li 1 ",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="1 fas fa-edit"
+                      onClick={[Function]}
+                    />,
+                    <i
+                      className="1 fas fa-trash-alt"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "icon-container fas",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "1 fas fa-edit",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "1 fas fa-trash-alt",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "uid2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                <div
+                  className="icon-container fas"
+                >
+                  <i
+                    className="2 fas fa-edit"
+                    onClick={[Function]}
+                  />
+                  <i
+                    className="2 fas fa-trash-alt"
+                    onClick={[Function]}
+                  />
+                </div>,
+              ],
+              "className": "animation-li 2 selected-animation",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="2 fas fa-edit"
+                      onClick={[Function]}
+                    />,
+                    <i
+                      className="2 fas fa-trash-alt"
+                      onClick={[Function]}
+                    />,
+                  ],
+                  "className": "icon-container fas",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "2 fas fa-edit",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "2 fas fa-trash-alt",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <i
+                className="fas fa-plus-circle"
+              >
+                <p>
+                  Add New
+                </p>
+              </i>,
+              "replace": false,
+              "to": "/properties/selectAnimation/create",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p>
+                  Add New
+                </p>,
+                "className": "fas fa-plus-circle",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add New",
+                },
+                "ref": null,
+                "rendered": "Add New",
+                "type": "p",
+              },
+              "type": "i",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`MyAnimationList should match the snapshot if no user is logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MyAnimationList
+    currentAnimation={
+      Object {
+        "ani-name": "rotateIn",
+        "id": 2,
+      }
+    }
+    deleteAnimation={[MockFunction]}
+    myAnimations={
+      Array [
+        Object {
+          "ani-name": "slideIn",
+          "id": 1,
+        },
+        Object {
+          "ani-name": "rotateIn",
+          "id": 2,
+        },
+      ]
+    }
+    selectAnimationForEdit={[MockFunction]}
+    user={null}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <h2
+        className="must-be-loggedin-message"
+      >
+        You must be logged in to create/save animations
+      </h2>,
+      "className": "my-animation-section",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "You must be logged in to create/save animations",
+        "className": "must-be-loggedin-message",
+      },
+      "ref": null,
+      "rendered": "You must be logged in to create/save animations",
+      "type": "h2",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <h2
+          className="must-be-loggedin-message"
+        >
+          You must be logged in to create/save animations
+        </h2>,
+        "className": "my-animation-section",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "You must be logged in to create/save animations",
+          "className": "must-be-loggedin-message",
+        },
+        "ref": null,
+        "rendered": "You must be logged in to create/save animations",
+        "type": "h2",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

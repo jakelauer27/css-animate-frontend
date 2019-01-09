@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
-import '../../styles/app.scss'
-import Editor from '../Editor/Editor'
-import Viewer from '../Viewer/Viewer'
-import HowToPopup from '../../components/HowToPopup/HowToPopup'
-import AnimationMenu from '../../components/AnimationMenu/AnimationMenu'
-import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
-import * as CSSInsertion from '../../utils/keyframesInsertion'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
-import Login from '../Login/Login'
-import SignUp from '../../components/SignUp/SignUp'
-import Header from '../Header/Header'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 import { getPrebuiltAnimations } from '../../thunks/getPrebuiltAnimations'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
+import AnimationMenu from '../AnimationMenu/AnimationMenu'
+import Editor from '../Editor/Editor'
+import Error from '../../components/Error/Error'
+import Header from '../Header/Header'
+import HowToPopup from '../../components/HowToPopup/HowToPopup'
+import Login from '../Login/Login'
+import SignUp from '../SignUp/SignUp'
+import Viewer from '../Viewer/Viewer'
+import '../../styles/app.scss'
 
 export class App extends Component {
   
@@ -34,8 +35,6 @@ export class App extends Component {
   }
 
   render() {
-    let { animation } = this.props
-    if (!animation) {animation = 'slideInX'}
     return (
       <div className="App">
         <Header />
@@ -61,6 +60,8 @@ export class App extends Component {
               </main>
             )
             }}/>   
+          <Route path={'/error'} component={Error} />
+          <Route exact path='*' render={() => <Redirect to='/error'/>} />
         </Switch>
         <Route path={`/properties/howto`} component={HowToPopup}/>
         <Route path={`/properties/login`} component={Login}/>
@@ -84,8 +85,12 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 App.propTypes = {
-  prebuiltAnimation: PropTypes.array,
-  getPrebuiltAnimations: PropTypes.func.isRequired
+  prebuiltAnimations: PropTypes.array,
+  user_id: PropTypes.number,
+  getPrebuiltAnimations: PropTypes.func.isRequired,
+  updateCurrentAnimation: PropTypes.func.isRequired,
+  saveOriginalAnimation: PropTypes.func.isRequired,
+  getMyAnimations: PropTypes.func.isRequired
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

@@ -4,7 +4,7 @@ exports[`Editor should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Editor
-    animation={
+    currentAnimation={
       Object {
         "keyframes": Object {
           "name": "slideInX",
@@ -42,57 +42,11 @@ ShallowWrapper {
         },
       }
     }
-    currentAnimation="slideInX"
-    loadNewAnimation={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    editAnimation={[MockFunction]}
+    originalAnimation="{}"
+    saveOriginalAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
+    user_id={1}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -118,7 +72,7 @@ ShallowWrapper {
               activeClassName="selected"
               aria-current="page"
               className="animation-btn"
-              to="/slideInX/properties"
+              to="/properties"
             >
               properties
             </NavLink>
@@ -126,7 +80,7 @@ ShallowWrapper {
               activeClassName="selected"
               aria-current="page"
               className="keyframes-btn"
-              to="/slideInX/keyframes"
+              to="/keyframes"
             >
               keyframes
             </NavLink>
@@ -137,11 +91,11 @@ ShallowWrapper {
             <Switch>
               <Route
                 component={[Function]}
-                path="/slideInX/keyframes"
+                path="/properties"
               />
               <Route
                 component={[Function]}
-                path="/slideInX/properties"
+                path="/keyframes"
               />
             </Switch>
           </div>
@@ -152,20 +106,40 @@ ShallowWrapper {
           <Link
             className="lower-btn copy-btn"
             replace={false}
-            to="/slideInX/properties/copy"
+            to="/properties/copy"
           >
             copy code
           </Link>
-          <Route
-            path="/slideInX/properties/copy"
-            render={[Function]}
-          />
           <button
             className="lower-btn reset-btn"
             onClick={[Function]}
           >
             reset
           </button>
+          <Link
+            className="lower-btn save-as-btn"
+            replace={false}
+            to="/properties/saveas"
+          >
+            save as
+          </Link>
+          <button
+            className="lower-btn save-btn"
+            disabled={true}
+            onClick={[Function]}
+          >
+            save
+          </button>
+          <Switch>
+            <Route
+              path="/properties/copy"
+              render={[Function]}
+            />
+            <Route
+              path="/properties/saveas"
+              render={[Function]}
+            />
+          </Switch>
         </div>,
       ],
       "className": "editor-component",
@@ -185,7 +159,7 @@ ShallowWrapper {
                 activeClassName="selected"
                 aria-current="page"
                 className="animation-btn"
-                to="/slideInX/properties"
+                to="/properties"
               >
                 properties
               </NavLink>
@@ -193,7 +167,7 @@ ShallowWrapper {
                 activeClassName="selected"
                 aria-current="page"
                 className="keyframes-btn"
-                to="/slideInX/keyframes"
+                to="/keyframes"
               >
                 keyframes
               </NavLink>
@@ -204,11 +178,11 @@ ShallowWrapper {
               <Switch>
                 <Route
                   component={[Function]}
-                  path="/slideInX/keyframes"
+                  path="/properties"
                 />
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties"
+                  path="/keyframes"
                 />
               </Switch>
             </div>,
@@ -227,7 +201,7 @@ ShallowWrapper {
                   activeClassName="selected"
                   aria-current="page"
                   className="animation-btn"
-                  to="/slideInX/properties"
+                  to="/properties"
                 >
                   properties
                 </NavLink>,
@@ -235,7 +209,7 @@ ShallowWrapper {
                   activeClassName="selected"
                   aria-current="page"
                   className="keyframes-btn"
-                  to="/slideInX/keyframes"
+                  to="/keyframes"
                 >
                   keyframes
                 </NavLink>,
@@ -253,7 +227,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "properties",
                   "className": "animation-btn",
-                  "to": "/slideInX/properties",
+                  "to": "/properties",
                 },
                 "ref": null,
                 "rendered": "properties",
@@ -268,7 +242,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "keyframes",
                   "className": "keyframes-btn",
-                  "to": "/slideInX/keyframes",
+                  "to": "/keyframes",
                 },
                 "ref": null,
                 "rendered": "keyframes",
@@ -285,11 +259,11 @@ ShallowWrapper {
               "children": <Switch>
                 <Route
                   component={[Function]}
-                  path="/slideInX/keyframes"
+                  path="/properties"
                 />
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties"
+                  path="/keyframes"
                 />
               </Switch>,
               "className": "editor",
@@ -303,11 +277,11 @@ ShallowWrapper {
                 "children": Array [
                   <Route
                     component={[Function]}
-                    path="/slideInX/keyframes"
+                    path="/properties"
                   />,
                   <Route
                     component={[Function]}
-                    path="/slideInX/properties"
+                    path="/keyframes"
                   />,
                 ],
               },
@@ -319,7 +293,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "component": [Function],
-                    "path": "/slideInX/keyframes",
+                    "path": "/properties",
                   },
                   "ref": null,
                   "rendered": null,
@@ -331,7 +305,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "component": [Function],
-                    "path": "/slideInX/properties",
+                    "path": "/keyframes",
                   },
                   "ref": null,
                   "rendered": null,
@@ -354,20 +328,40 @@ ShallowWrapper {
             <Link
               className="lower-btn copy-btn"
               replace={false}
-              to="/slideInX/properties/copy"
+              to="/properties/copy"
             >
               copy code
             </Link>,
-            <Route
-              path="/slideInX/properties/copy"
-              render={[Function]}
-            />,
             <button
               className="lower-btn reset-btn"
               onClick={[Function]}
             >
               reset
             </button>,
+            <Link
+              className="lower-btn save-as-btn"
+              replace={false}
+              to="/properties/saveas"
+            >
+              save as
+            </Link>,
+            <button
+              className="lower-btn save-btn"
+              disabled={true}
+              onClick={[Function]}
+            >
+              save
+            </button>,
+            <Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
+              <Route
+                path="/properties/saveas"
+                render={[Function]}
+              />
+            </Switch>,
           ],
           "className": "editor-bottom-btns-container",
         },
@@ -381,22 +375,10 @@ ShallowWrapper {
               "children": "copy code",
               "className": "lower-btn copy-btn",
               "replace": false,
-              "to": "/slideInX/properties/copy",
+              "to": "/properties/copy",
             },
             "ref": null,
             "rendered": "copy code",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "path": "/slideInX/properties/copy",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
             "type": [Function],
           },
           Object {
@@ -411,6 +393,79 @@ ShallowWrapper {
             "ref": null,
             "rendered": "reset",
             "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "save as",
+              "className": "lower-btn save-as-btn",
+              "replace": false,
+              "to": "/properties/saveas",
+            },
+            "ref": null,
+            "rendered": "save as",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "save",
+              "className": "lower-btn save-btn",
+              "disabled": true,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "save",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />,
+                <Route
+                  path="/properties/saveas"
+                  render={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "path": "/properties/copy",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "path": "/properties/saveas",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -435,7 +490,7 @@ ShallowWrapper {
                 activeClassName="selected"
                 aria-current="page"
                 className="animation-btn"
-                to="/slideInX/properties"
+                to="/properties"
               >
                 properties
               </NavLink>
@@ -443,7 +498,7 @@ ShallowWrapper {
                 activeClassName="selected"
                 aria-current="page"
                 className="keyframes-btn"
-                to="/slideInX/keyframes"
+                to="/keyframes"
               >
                 keyframes
               </NavLink>
@@ -454,11 +509,11 @@ ShallowWrapper {
               <Switch>
                 <Route
                   component={[Function]}
-                  path="/slideInX/keyframes"
+                  path="/properties"
                 />
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties"
+                  path="/keyframes"
                 />
               </Switch>
             </div>
@@ -469,20 +524,40 @@ ShallowWrapper {
             <Link
               className="lower-btn copy-btn"
               replace={false}
-              to="/slideInX/properties/copy"
+              to="/properties/copy"
             >
               copy code
             </Link>
-            <Route
-              path="/slideInX/properties/copy"
-              render={[Function]}
-            />
             <button
               className="lower-btn reset-btn"
               onClick={[Function]}
             >
               reset
             </button>
+            <Link
+              className="lower-btn save-as-btn"
+              replace={false}
+              to="/properties/saveas"
+            >
+              save as
+            </Link>
+            <button
+              className="lower-btn save-btn"
+              disabled={true}
+              onClick={[Function]}
+            >
+              save
+            </button>
+            <Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
+              <Route
+                path="/properties/saveas"
+                render={[Function]}
+              />
+            </Switch>
           </div>,
         ],
         "className": "editor-component",
@@ -502,7 +577,7 @@ ShallowWrapper {
                   activeClassName="selected"
                   aria-current="page"
                   className="animation-btn"
-                  to="/slideInX/properties"
+                  to="/properties"
                 >
                   properties
                 </NavLink>
@@ -510,7 +585,7 @@ ShallowWrapper {
                   activeClassName="selected"
                   aria-current="page"
                   className="keyframes-btn"
-                  to="/slideInX/keyframes"
+                  to="/keyframes"
                 >
                   keyframes
                 </NavLink>
@@ -521,11 +596,11 @@ ShallowWrapper {
                 <Switch>
                   <Route
                     component={[Function]}
-                    path="/slideInX/keyframes"
+                    path="/properties"
                   />
                   <Route
                     component={[Function]}
-                    path="/slideInX/properties"
+                    path="/keyframes"
                   />
                 </Switch>
               </div>,
@@ -544,7 +619,7 @@ ShallowWrapper {
                     activeClassName="selected"
                     aria-current="page"
                     className="animation-btn"
-                    to="/slideInX/properties"
+                    to="/properties"
                   >
                     properties
                   </NavLink>,
@@ -552,7 +627,7 @@ ShallowWrapper {
                     activeClassName="selected"
                     aria-current="page"
                     className="keyframes-btn"
-                    to="/slideInX/keyframes"
+                    to="/keyframes"
                   >
                     keyframes
                   </NavLink>,
@@ -570,7 +645,7 @@ ShallowWrapper {
                     "aria-current": "page",
                     "children": "properties",
                     "className": "animation-btn",
-                    "to": "/slideInX/properties",
+                    "to": "/properties",
                   },
                   "ref": null,
                   "rendered": "properties",
@@ -585,7 +660,7 @@ ShallowWrapper {
                     "aria-current": "page",
                     "children": "keyframes",
                     "className": "keyframes-btn",
-                    "to": "/slideInX/keyframes",
+                    "to": "/keyframes",
                   },
                   "ref": null,
                   "rendered": "keyframes",
@@ -602,11 +677,11 @@ ShallowWrapper {
                 "children": <Switch>
                   <Route
                     component={[Function]}
-                    path="/slideInX/keyframes"
+                    path="/properties"
                   />
                   <Route
                     component={[Function]}
-                    path="/slideInX/properties"
+                    path="/keyframes"
                   />
                 </Switch>,
                 "className": "editor",
@@ -620,11 +695,11 @@ ShallowWrapper {
                   "children": Array [
                     <Route
                       component={[Function]}
-                      path="/slideInX/keyframes"
+                      path="/properties"
                     />,
                     <Route
                       component={[Function]}
-                      path="/slideInX/properties"
+                      path="/keyframes"
                     />,
                   ],
                 },
@@ -636,7 +711,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "component": [Function],
-                      "path": "/slideInX/keyframes",
+                      "path": "/properties",
                     },
                     "ref": null,
                     "rendered": null,
@@ -648,7 +723,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "component": [Function],
-                      "path": "/slideInX/properties",
+                      "path": "/keyframes",
                     },
                     "ref": null,
                     "rendered": null,
@@ -671,20 +746,40 @@ ShallowWrapper {
               <Link
                 className="lower-btn copy-btn"
                 replace={false}
-                to="/slideInX/properties/copy"
+                to="/properties/copy"
               >
                 copy code
               </Link>,
-              <Route
-                path="/slideInX/properties/copy"
-                render={[Function]}
-              />,
               <button
                 className="lower-btn reset-btn"
                 onClick={[Function]}
               >
                 reset
               </button>,
+              <Link
+                className="lower-btn save-as-btn"
+                replace={false}
+                to="/properties/saveas"
+              >
+                save as
+              </Link>,
+              <button
+                className="lower-btn save-btn"
+                disabled={true}
+                onClick={[Function]}
+              >
+                save
+              </button>,
+              <Switch>
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />
+                <Route
+                  path="/properties/saveas"
+                  render={[Function]}
+                />
+              </Switch>,
             ],
             "className": "editor-bottom-btns-container",
           },
@@ -698,22 +793,10 @@ ShallowWrapper {
                 "children": "copy code",
                 "className": "lower-btn copy-btn",
                 "replace": false,
-                "to": "/slideInX/properties/copy",
+                "to": "/properties/copy",
               },
               "ref": null,
               "rendered": "copy code",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "path": "/slideInX/properties/copy",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
               "type": [Function],
             },
             Object {
@@ -729,203 +812,83 @@ ShallowWrapper {
               "rendered": "reset",
               "type": "button",
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "save as",
+                "className": "lower-btn save-as-btn",
+                "replace": false,
+                "to": "/properties/saveas",
+              },
+              "ref": null,
+              "rendered": "save as",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "save",
+                "className": "lower-btn save-btn",
+                "disabled": true,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "save",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Route
+                    path="/properties/copy"
+                    render={[Function]}
+                  />,
+                  <Route
+                    path="/properties/saveas"
+                    render={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "path": "/properties/copy",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "path": "/properties/saveas",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
           ],
           "type": "div",
         },
       ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
-exports[`Editor should match the snapshot if there is no animation 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Editor
-    animation={
-      Object {
-        "keyframes": null,
-      }
-    }
-    currentAnimation="slideInX"
-    loadNewAnimation={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {},
-    "ref": null,
-    "rendered": null,
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
       "type": "div",
     },
   ],

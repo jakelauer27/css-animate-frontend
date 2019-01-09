@@ -11,7 +11,6 @@
   position: absolute;
   z-index: 16;
   color: rgb(0, 0, 0);
-  overflow: scroll;
 
   input {
     font-family: $OpenSans;
@@ -40,7 +39,8 @@
   }
 
   .form-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     margin: 3px;
     width: 100%;
   }
@@ -69,6 +69,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: scroll;
+    height: 80%
   }
 }
 
@@ -109,7 +111,11 @@
 
   .property-value {
     margin-top: 5px;
-    width: 100%
+    width: 100%;
+
+    &:disabled {
+      background-color: rgb(179, 179, 179);
+    }
   }
 
   .add-property-btn {
@@ -214,6 +220,16 @@
   &:hover {
     background-color: rgb(45, 199, 122);
     cursor: pointer;
+  }
+
+  &:disabled {
+   opacity: .5;
+  }
+
+  &:disabled:hover {
+   opacity: .5;
+   background-color: $goGreen;
+   cursor: default;
   }
 }
 

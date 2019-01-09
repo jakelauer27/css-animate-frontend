@@ -1,0 +1,1095 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    signOut={[MockFunction]}
+    user={
+      Object {
+        "name": null,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="main-title"
+        >
+          CSS ani
+          <span>
+            Mate
+          </span>
+        </h1>,
+        <div
+          className="header-btn-container"
+        >
+          <Link
+            replace={false}
+            to="properties/selectAnimation"
+          >
+            <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>
+          </Link>
+        </div>,
+        <div
+          className="inst-log-container"
+        >
+          <h3
+            className="user-greeting"
+          >
+            
+          </h3>
+          <Link
+            replace={false}
+            to="properties/howto/general"
+          >
+            <button
+              className="questions-btn"
+            >
+              Instructions
+            </button>
+          </Link>
+          <Link
+            replace={false}
+            to="properties/login"
+          >
+            <button
+              className="login-btn"
+              onClick={[Function]}
+            >
+              Login
+            </button>
+          </Link>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "CSS ani",
+            <span>
+              Mate
+            </span>,
+          ],
+          "className": "main-title",
+        },
+        "ref": null,
+        "rendered": Array [
+          "CSS ani",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Mate",
+            },
+            "ref": null,
+            "rendered": "Mate",
+            "type": "span",
+          },
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="properties/selectAnimation"
+          >
+            <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>
+          </Link>,
+          "className": "header-btn-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>,
+            "replace": false,
+            "to": "properties/selectAnimation",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Load Animation",
+              "className": "load-example-btn",
+            },
+            "ref": null,
+            "rendered": "Load Animation",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="user-greeting"
+            >
+              
+            </h3>,
+            <Link
+              replace={false}
+              to="properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>,
+            <Link
+              replace={false}
+              to="properties/login"
+            >
+              <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Login
+              </button>
+            </Link>,
+          ],
+          "className": "inst-log-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "user-greeting",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>,
+              "replace": false,
+              "to": "properties/howto/general",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Instructions",
+                "className": "questions-btn",
+              },
+              "ref": null,
+              "rendered": "Instructions",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Login
+              </button>,
+              "replace": false,
+              "to": "properties/login",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login",
+                "className": "login-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Login",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="main-title"
+          >
+            CSS ani
+            <span>
+              Mate
+            </span>
+          </h1>,
+          <div
+            className="header-btn-container"
+          >
+            <Link
+              replace={false}
+              to="properties/selectAnimation"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>
+            </Link>
+          </div>,
+          <div
+            className="inst-log-container"
+          >
+            <h3
+              className="user-greeting"
+            >
+              
+            </h3>
+            <Link
+              replace={false}
+              to="properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="properties/login"
+            >
+              <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Login
+              </button>
+            </Link>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "CSS ani",
+              <span>
+                Mate
+              </span>,
+            ],
+            "className": "main-title",
+          },
+          "ref": null,
+          "rendered": Array [
+            "CSS ani",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mate",
+              },
+              "ref": null,
+              "rendered": "Mate",
+              "type": "span",
+            },
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="properties/selectAnimation"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>
+            </Link>,
+            "className": "header-btn-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>,
+              "replace": false,
+              "to": "properties/selectAnimation",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Load Animation",
+                "className": "load-example-btn",
+              },
+              "ref": null,
+              "rendered": "Load Animation",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="user-greeting"
+              >
+                
+              </h3>,
+              <Link
+                replace={false}
+                to="properties/howto/general"
+              >
+                <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>
+              </Link>,
+              <Link
+                replace={false}
+                to="properties/login"
+              >
+                <button
+                  className="login-btn"
+                  onClick={[Function]}
+                >
+                  Login
+                </button>
+              </Link>,
+            ],
+            "className": "inst-log-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "user-greeting",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>,
+                "replace": false,
+                "to": "properties/howto/general",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Instructions",
+                  "className": "questions-btn",
+                },
+                "ref": null,
+                "rendered": "Instructions",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="login-btn"
+                  onClick={[Function]}
+                >
+                  Login
+                </button>,
+                "replace": false,
+                "to": "properties/login",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Login",
+                  "className": "login-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Login",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`header should match the snapshot if a user is logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    signOut={[MockFunction]}
+    user={
+      Object {
+        "name": "jake",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="main-title"
+        >
+          CSS ani
+          <span>
+            Mate
+          </span>
+        </h1>,
+        <div
+          className="header-btn-container"
+        >
+          <Link
+            replace={false}
+            to="properties/selectAnimation"
+          >
+            <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>
+          </Link>
+        </div>,
+        <div
+          className="inst-log-container"
+        >
+          <h3
+            className="user-greeting"
+          >
+            Hi jake!
+          </h3>
+          <Link
+            replace={false}
+            to="properties/howto/general"
+          >
+            <button
+              className="questions-btn"
+            >
+              Instructions
+            </button>
+          </Link>
+          <Link
+            replace={false}
+            to="properties/login"
+          >
+            <button
+              className="login-btn"
+              onClick={[Function]}
+            >
+              Logout
+            </button>
+          </Link>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "CSS ani",
+            <span>
+              Mate
+            </span>,
+          ],
+          "className": "main-title",
+        },
+        "ref": null,
+        "rendered": Array [
+          "CSS ani",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Mate",
+            },
+            "ref": null,
+            "rendered": "Mate",
+            "type": "span",
+          },
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="properties/selectAnimation"
+          >
+            <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>
+          </Link>,
+          "className": "header-btn-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button
+              className="load-example-btn"
+            >
+              Load Animation
+            </button>,
+            "replace": false,
+            "to": "properties/selectAnimation",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Load Animation",
+              "className": "load-example-btn",
+            },
+            "ref": null,
+            "rendered": "Load Animation",
+            "type": "button",
+          },
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="user-greeting"
+            >
+              Hi jake!
+            </h3>,
+            <Link
+              replace={false}
+              to="properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>,
+            <Link
+              replace={false}
+              to="properties/login"
+            >
+              <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Logout
+              </button>
+            </Link>,
+          ],
+          "className": "inst-log-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Hi jake!",
+              "className": "user-greeting",
+            },
+            "ref": null,
+            "rendered": "Hi jake!",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>,
+              "replace": false,
+              "to": "properties/howto/general",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Instructions",
+                "className": "questions-btn",
+              },
+              "ref": null,
+              "rendered": "Instructions",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Logout
+              </button>,
+              "replace": false,
+              "to": "properties/login",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Logout",
+                "className": "login-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Logout",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="main-title"
+          >
+            CSS ani
+            <span>
+              Mate
+            </span>
+          </h1>,
+          <div
+            className="header-btn-container"
+          >
+            <Link
+              replace={false}
+              to="properties/selectAnimation"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>
+            </Link>
+          </div>,
+          <div
+            className="inst-log-container"
+          >
+            <h3
+              className="user-greeting"
+            >
+              Hi jake!
+            </h3>
+            <Link
+              replace={false}
+              to="properties/howto/general"
+            >
+              <button
+                className="questions-btn"
+              >
+                Instructions
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="properties/login"
+            >
+              <button
+                className="login-btn"
+                onClick={[Function]}
+              >
+                Logout
+              </button>
+            </Link>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "CSS ani",
+              <span>
+                Mate
+              </span>,
+            ],
+            "className": "main-title",
+          },
+          "ref": null,
+          "rendered": Array [
+            "CSS ani",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mate",
+              },
+              "ref": null,
+              "rendered": "Mate",
+              "type": "span",
+            },
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="properties/selectAnimation"
+            >
+              <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>
+            </Link>,
+            "className": "header-btn-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="load-example-btn"
+              >
+                Load Animation
+              </button>,
+              "replace": false,
+              "to": "properties/selectAnimation",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Load Animation",
+                "className": "load-example-btn",
+              },
+              "ref": null,
+              "rendered": "Load Animation",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="user-greeting"
+              >
+                Hi jake!
+              </h3>,
+              <Link
+                replace={false}
+                to="properties/howto/general"
+              >
+                <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>
+              </Link>,
+              <Link
+                replace={false}
+                to="properties/login"
+              >
+                <button
+                  className="login-btn"
+                  onClick={[Function]}
+                >
+                  Logout
+                </button>
+              </Link>,
+            ],
+            "className": "inst-log-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hi jake!",
+                "className": "user-greeting",
+              },
+              "ref": null,
+              "rendered": "Hi jake!",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="questions-btn"
+                >
+                  Instructions
+                </button>,
+                "replace": false,
+                "to": "properties/howto/general",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Instructions",
+                  "className": "questions-btn",
+                },
+                "ref": null,
+                "rendered": "Instructions",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="login-btn"
+                  onClick={[Function]}
+                >
+                  Logout
+                </button>,
+                "replace": false,
+                "to": "properties/login",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Logout",
+                  "className": "login-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Logout",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

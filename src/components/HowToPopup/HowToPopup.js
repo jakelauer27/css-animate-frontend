@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
+import { NavLink, Route, Switch, Link, Redirect } from 'react-router-dom'
 import GeneralInfo from '../GeneralInfo/GeneralInfo'
-import PropertiesInfo from '../PropertiesInfo/PropertiesInfo'
 import KeyframesInfo from '../KeyframesInfo/KeyframesInfo'
-import { NavLink, Route, Switch, Link } from 'react-router-dom'
+import PropertiesInfo from '../PropertiesInfo/PropertiesInfo'
 
 
 export default class HowToPopup extends Component {
 
   render() {
-    let { animation } = this.props
-    if (!animation) {animation = 'slideInX'}
     return (
       <div className="infoPopup-overlay">
         <div className="info-popup">

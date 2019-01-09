@@ -22,7 +22,7 @@ export class Login extends Component {
     })
   }
 
-  handleSubmit = async (e) => {
+  async handleSubmit(e) {
     e.preventDefault()
     const { getMyAnimations, loginUser } = this.props
     const { email, password } = this.state
@@ -48,7 +48,7 @@ export class Login extends Component {
         <div className='infoPopup-overlay'></div>
         <div className='form-container'>
           <h2 className='login-title'>Login</h2>
-          <form className='login-form' onSubmit={this.handleSubmit}>
+          <form className='login-form' onSubmit={(e) => this.handleSubmit(e)}>
             <input 
               className='form-input email'
               type='text' 
@@ -89,7 +89,9 @@ export const mapStateToProps = (state) => ({
 })
 
 Login.propTypes = {
-  loginUser: PropTypes.func.isRequired
+  loginUser: PropTypes.func.isRequired,
+  user: PropTypes.object,
+  getMyAnimations: PropTypes.func.isRequired
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login)

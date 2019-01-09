@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { validateAnimationProp } from '../../utils/formValidators'
+import { validateAnimationProp } from '../../utils/formValidators/formValidators'
 import { updateCurrentAnimation } from '../../actions/actions'
 import { uid } from 'react-uid'
 import { PropTypes } from 'prop-types'
+import { prebuiltButtonDisabler, buttonDisabler } from '../../utils/buttondisablers'
 
 const aniPropsLabels = ['duration', 'timingFunction', 'delay', 'iterationCount', 'direction', 'fillMode']
 const aniProps = ['duration', 'timingFunction', 'delay', 'iterationCount', 'direction', 'fillMode']
@@ -12,10 +13,16 @@ export class PropertiesEditor extends Component {
 
   saveForm(e) {
     document.querySelector('.stop-btn').click()
-    validateAnimationProp(e.target, e.target.value)
     let newAnimation = JSON.parse(JSON.stringify(this.props.currentAnimation))
     newAnimation.properties[e.target.classList[1]] = e.target.value
     this.props.updateCurrentAnimation(newAnimation)
+    const valid = validateAnimationProp(e.target, e.target.value)
+
+    if(this.props.currentAnimation.user_id) {
+      buttonDisabler(valid)
+    } else {
+      prebuiltButtonDisabler(valid)
+    }
   }
 
   render() {

@@ -4,7 +4,7 @@ exports[`Viewer Should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Viewer
-    animation={
+    currentAnimation={
       Object {
         "delay": "0s",
         "direction": "normal",
@@ -13,57 +13,6 @@ ShallowWrapper {
         "iterationCount": "1",
         "name": "slideInX",
         "timingFunction": "ease",
-      }
-    }
-    currentAnimation="slideInX"
-    loadNewAnimation={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
       }
     }
   />,
@@ -579,142 +528,7 @@ exports[`Viewer Should match the snapshot if no animation 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Viewer
-    animation=""
-    currentAnimation="slideInX"
-    loadNewAnimation={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-          Array [
-            Object {
-              "keyframes": Object {
-                "name": "slideInX",
-                "sections": Array [
-                  Object {
-                    "label": "0%",
-                    "name": "0%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(-300px)",
-                      },
-                    ],
-                  },
-                  Object {
-                    "label": "100%",
-                    "name": "100%",
-                    "properties": Array [
-                      Object {
-                        "name": "transform",
-                        "value": "translateX(0px)",
-                      },
-                    ],
-                  },
-                ],
-              },
-              "properties": Object {
-                "delay": "0s",
-                "direction": "normal",
-                "duration": "1.5s",
-                "fillMode": "forwards",
-                "iterationCount": "1",
-                "name": "slideInX",
-                "timingFunction": "ease",
-              },
-            },
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    currentAnimation={null}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

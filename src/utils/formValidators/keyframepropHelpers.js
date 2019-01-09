@@ -6,26 +6,27 @@ export const colorInput = (target, inputValue) => {
   if (inputValue.slice(0, 3) === 'rgb') {
     if (!colorRegex.rgb.test(inputValue)) {
       invalidInput(target)
-      return
+      return false
     } else { 
       validInput(target)
-      return
+      return true
     }
   }
   if (inputValue[0] === '#') {
     if (!colorRegex['#'].test(inputValue)) {
       invalidInput(target)
-      return
+      return false
     } else {
       validInput(target)
-      return
+      return true
     }
   }
   if (!colorRegex.color.test(inputValue)) {
     invalidInput(target)
-    return
+    return false
   }
   validInput(target)
+  return true
 }
 
 export const transformInput = (target, inputValue) => {
@@ -37,12 +38,13 @@ export const transformInput = (target, inputValue) => {
     }
     if (!transformRegex[type[0]]) {
       invalidInput(target)
-      break
+      return false
     }
     if (!transformRegex[type[0]].test(args[i])) {
       invalidInput(target)
-      break
+      return false
     }
-      validInput(target)
   }
+  validInput(target)
+  return true
 }

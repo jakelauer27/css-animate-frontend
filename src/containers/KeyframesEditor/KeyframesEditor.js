@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import * as formValidation from '../../utils/formValidators'
+import * as formValidation from '../../utils/formValidators/formValidators'
 import { connect } from 'react-redux'
 import { updateCurrentAnimation } from '../../actions/actions'
 import { updateKeyframes } from '../../utils/keyframesInsertion'

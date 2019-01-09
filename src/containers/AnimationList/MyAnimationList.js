@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { uid } from 'react-uid'
+import { PropTypes } from 'prop-types'
 import { deleteAnimation } from '../../thunks/deleteAnimation'
 import { selectAnimationForEdit } from '../../actions/actions'
 
@@ -74,5 +75,13 @@ export const mapDispatchToProps = (dispatch) => ({
   deleteAnimation: (user_id, animation_id) => dispatch(deleteAnimation(user_id, animation_id)),
   selectAnimationForEdit: (animation) => dispatch(selectAnimationForEdit(animation))
 })
+
+MyAnimationList.propTypes = {
+  myAnimations: PropTypes.array,
+  currentAnimation: PropTypes.object.isRequired,
+  user: PropTypes.number,
+  deleteAnimation: PropTypes.func.isRequired,
+  selectAnimationForEdit: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(MyAnimationList)

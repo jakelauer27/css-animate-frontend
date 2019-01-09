@@ -4,7 +4,7 @@ import { Redirect, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { loginUser } from '../../thunks/login'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
-
+import { PropTypes } from 'prop-types'
 
 export class SignUp extends Component {
   constructor() {
@@ -23,8 +23,7 @@ export class SignUp extends Component {
   }
 
   emailValidation = (email) => {
-    var expression = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
-    var regex = new RegExp(expression);
+    var regex = new RegExp('^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+(.)[a-zA-Z]{2,4}$');
     var emailInput = email;
     if (emailInput.match(regex)) {
       return true
@@ -127,5 +126,10 @@ export const mapDispatchToProps = (dispatch) => ({
   loginUser: (user) => dispatch(loginUser(user)),
   getMyAnimations: (id) => dispatch(getMyAnimations(id))
 })
+
+SignUp.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  getMyAnimations: PropTypes.func.isRequired
+}
 
 export default connect(null, mapDispatchToProps)(SignUp)

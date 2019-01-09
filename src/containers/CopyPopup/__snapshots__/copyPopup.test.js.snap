@@ -8,7 +8,7 @@ exports[`CopyPopup copyPasteAnimation should return some jsx 1`] = `
     className="animation-text"
     readOnly={true}
     value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
   />
 </div>
 `;
@@ -194,7 +194,7 @@ ShallowWrapper {
               className="animation-text"
               readOnly={true}
               value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
             />
           </div>
           <button
@@ -207,7 +207,7 @@ animation-fill-mode: both;"
         </div>,
         <Link
           replace={false}
-          to="/undefined/properties"
+          to="/properties"
         >
           <button
             className="close-popup-btn"
@@ -383,7 +383,7 @@ animation-fill-mode: both;"
                 className="animation-text"
                 readOnly={true}
                 value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
               />
             </div>,
             <button
@@ -419,7 +419,7 @@ animation-fill-mode: both;"
                 className="animation-text"
                 readOnly={true}
                 value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
               />,
               "className": "animation-popup",
             },
@@ -432,7 +432,7 @@ animation-fill-mode: both;"
                 "className": "animation-text",
                 "readOnly": true,
                 "value": "animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;",
+animation-fill-mode: undefined;",
               },
               "ref": null,
               "rendered": null,
@@ -470,7 +470,7 @@ animation-fill-mode: both;",
             />
           </button>,
           "replace": false,
-          "to": "/undefined/properties",
+          "to": "/properties",
         },
         "ref": null,
         "rendered": Object {
@@ -567,7 +567,7 @@ animation-fill-mode: both;",
                 className="animation-text"
                 readOnly={true}
                 value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
               />
             </div>
             <button
@@ -580,7 +580,7 @@ animation-fill-mode: both;"
           </div>,
           <Link
             replace={false}
-            to="/undefined/properties"
+            to="/properties"
           >
             <button
               className="close-popup-btn"
@@ -756,7 +756,7 @@ animation-fill-mode: both;"
                   className="animation-text"
                   readOnly={true}
                   value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
                 />
               </div>,
               <button
@@ -792,7 +792,7 @@ animation-fill-mode: both;"
                   className="animation-text"
                   readOnly={true}
                   value="animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;"
+animation-fill-mode: undefined;"
                 />,
                 "className": "animation-popup",
               },
@@ -805,7 +805,7 @@ animation-fill-mode: both;"
                   "className": "animation-text",
                   "readOnly": true,
                   "value": "animation: bounceAppear 450ms linear .7s 1 normal; 
-animation-fill-mode: both;",
+animation-fill-mode: undefined;",
                 },
                 "ref": null,
                 "rendered": null,
@@ -843,7 +843,7 @@ animation-fill-mode: both;",
               />
             </button>,
             "replace": false,
-            "to": "/undefined/properties",
+            "to": "/properties",
           },
           "ref": null,
           "rendered": Object {

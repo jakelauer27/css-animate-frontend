@@ -5,12 +5,10 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import * as API from '../../utils/apiCalls/apiCalls'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
-import { removeAnimationForEdit } from '../../actions/actions'
-import { editAnimation } from '../../thunks/editAnimation'
+import { removeAnimationForEdit, updateCurrentAnimation } from '../../actions/actions'
+import { editAnimation } from '../../utils/apiCalls/apiCalls'
+import * as formValidation from '../../utils/formValidators/formValidators'
 
-const animatableProperties = ['background','background-color','background-position','background-size','border','border-color','border-width','border-bottom','border-bottom-color','border-bottom-left-radius','border-bottom-right-radius','border-bottom-width','border-left','border-left-color','border-left-width','border-radius','border-right','border-right-color','border-right-width','border-spacing','border-top','border-top-color','border-top-left-radius','border-top-right-radius','border-top-width','bottom',
-'box-shadow','caret-color','clip','color','column-count','column-gap','column-rule','column-rule-color','column-rule-width','column-width','columns','content','filter','flex','flex-basis','flex-grow','flex-shrink','font','font-size','font-size-adjust','font-stretch','font-weight','grid-area','grid-auto-columns','grid-auto-flow','grid-auto-rows','grid-column-end','grid-column-gap','grid-column-start','grid-column','grid-gap','grid-row-end','grid-row-gap','grid-row-start','grid-row','grid-template-areas','grid-template-columns','grid-template-rows','grid-template','grid','height','left','letter-spacing','line-height','margin','margin-bottom','margin-left','margin-right','margin-top','max-height','max-width','min-height','min-width','opacity','order','outline','outline-color','outline-offset','outline-width','padding','padding-bottom','padding-left','padding-right','padding-top',
-'perspective','perspective-origin','quotes','right','tab-size','text-decoration','text-decoration-color','text-indent','text-shadow','top','transform','vertical-align','visibility','width','word-spacing','z-index']
 
 export class CreateAnimationForm extends Component {
   constructor() {
@@ -32,7 +30,8 @@ export class CreateAnimationForm extends Component {
           ]
         },
         { label: '100%', name: '100%', properties: [{name: '', value: ''}]}],
-      redirect: false
+      redirect: false,
+      disabled: true
     }
   }
 
@@ -44,50 +43,57 @@ export class CreateAnimationForm extends Component {
   }
 
   handleSubmit = async () => {
-    const { user_id, getMyAnimations, animationToEdit, editAnimation, cancelEdit } = this.props
+    const { user_id, getMyAnimations, animationToEdit, cancelEdit, updateCurrentAnimation } = this.props
     const { properties, keyframes } = this.state
     let savedkeyframes = { name: properties.name, sections: keyframes}
+    document.querySelector('.selected-animation').classList.remove('selected-animation')
 
     if (animationToEdit.properties) {
       await editAnimation(user_id, animationToEdit.id, {name: properties.name, user_id, id: animationToEdit.id, properties, keyframes: savedkeyframes})
+      updateCurrentAnimation({id: animationToEdit.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
       cancelEdit()
       await getMyAnimations(user_id)
       this.setState({redirect: true})
       return
     }
 
-    await API.addAnimation(user_id, properties.name, JSON.stringify(properties), JSON.stringify(savedkeyframes))
+    const saved = await API.addAnimation(user_id, properties.name, JSON.stringify(properties), JSON.stringify(savedkeyframes))
+    updateCurrentAnimation({id: saved.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
     await getMyAnimations(user_id)
     this.setState({redirect: true})
   }
 
-  handleChange = (e) => {
+  handlePropertyChange = (e) => {
     const { value, name } = e.target
+    const valid = formValidation.validateAnimationProp(e.target, value)
     const properties = {...this.state.properties}
     properties[name] = value
-    this.setState({properties})
+    this.setState({properties, disabled: (this.checkFormCompletion() || !valid)})
   }
 
   handleStageChange = (e) => {
     const { value, name } = e.target
+    const valid = formValidation.keyframeStage(e.target, value)
     const keyframes = [...this.state.keyframes]
     keyframes[name].label = value
     keyframes[name].name = value
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: (this.checkFormCompletion() || !valid)})
   }
 
   handlePropLabelChange = (e) => {
     const { value, name } = e.target
+    const valid = formValidation.keyframeProperty(e.target, value)
     const keyframes = [...this.state.keyframes]
     keyframes[name[0]].properties[name[2]].name = value
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: (this.checkFormCompletion() || !valid)})
   }
 
   handlePropValueChange = (e) => {
     const { value, name } = e.target
+    const valid = formValidation.keyframeValue(e.target, value)
     const keyframes = [...this.state.keyframes]
     keyframes[name[0]].properties[name[2]].value = value
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: (this.checkFormCompletion() || !valid)})
   }
 
   addProperty = (e) => {
@@ -95,14 +101,14 @@ export class CreateAnimationForm extends Component {
     const keyframes = [...this.state.keyframes]
     const newProperty = {name: '', value: ''}
     keyframes[classList[0]].properties.push(newProperty)
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: this.checkFormCompletion()})
   }
 
   removeProperty = (e) => {
     const { classList } = e.target
     const keyframes = [...this.state.keyframes]
     keyframes[classList[0]].properties.splice(classList[1], 1)
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: this.checkFormCompletion()})
   }
 
   addStage = (e) => {
@@ -110,18 +116,34 @@ export class CreateAnimationForm extends Component {
     const keyframes = [...this.state.keyframes]
     const newSection = {label: '%', name: '%', properties: [{name: '', value: ''}]}
     keyframes.splice([parseInt(classList[0])] + 1, 0, newSection)
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: this.checkFormCompletion()})
   }
 
   removeStage = (e) => {
     const { classList } = e.target
     const keyframes = [...this.state.keyframes]
     keyframes.splice([parseInt(classList[0])], 1)
-    this.setState({keyframes})
+    this.setState({keyframes, disabled: this.checkFormCompletion()})
   }
 
-  cancelEdit() {
+  async cancelEdit() {
+    await this.props.getMyAnimations(this.props.user_id)
     this.props.cancelEdit()
+  }
+
+  checkFormCompletion() {
+    const { properties, keyframes } = this.state
+    let incomplete = false
+    Object.keys(properties).forEach(property => {
+      if (!properties[property]) {return incomplete = true}
+    })
+    Object.keys(keyframes).forEach((section, i) => {
+      if(!keyframes[i].name || !keyframes[i].label) {return incomplete = true}
+      keyframes[i].properties.forEach((property, j) => {
+        if (!keyframes[i].properties[j].name || !keyframes[i].properties[j].value ) {return incomplete = true}
+      })
+    })
+    return incomplete
   }
 
   render() {
@@ -140,77 +162,75 @@ export class CreateAnimationForm extends Component {
     return (
       <div className='create-animation-form-container'>
         <h2>{title}</h2>
+        <form className='create-animation-form'>
         <label className='secondary-label'>Properties</label>
         <div className='underline'></div>
-        <form className='create-animation-form'>
           {
             Object.keys(this.state.properties).map( property => {
-              if(property !== 'keyframes' && property !== 'redirect') {
-                return (
-                  <div className='form-item' key={uid(property)}>
-                    <label htmlFor='property' className='create-label'>{property}</label>
-                    <input
-                      className='ani-prop-input' 
-                      type='text' 
-                      value={this.state.properties[property]} 
-                      name={property}
-                      onChange={this.handleChange}>
-                    </input>
-                  </div>
-                )
-              }
+              return (
+                <div className='form-item' key={uid(property)}>
+                  <label htmlFor='property' className='create-label'>{property}</label>
+                  <input
+                    className={`ani-prop-input ${property}`}
+                    type='text' 
+                    value={this.state.properties[property]} 
+                    name={property}
+                    onChange={this.handlePropertyChange}>
+                  </input>
+                </div>
+              )
             })
           }
         <label className='secondary-label'>Keyframes</label>
         <div className='underline'></div>
         <div className='keyframes-form'>
         {
-          this.state.keyframes.map((section, i, arr) => {
-            let minus = <p className={`${i} btn-text`} onClick={this.removeStage}><i className={`${i} fas fa-minus-circle remove-section-btn`}></i>remove section</p>
+          this.state.keyframes.map((section, sectionIndex, arr) => {
+            let minus = <p className={`${sectionIndex} btn-text`} onClick={this.removeStage}><i className={`${sectionIndex} fas fa-minus-circle remove-section-btn`}></i>remove section</p>
             if (arr.length <= 2) {minus = null}
             return (
-            <div className='keyframes-section' key={uid(section)}><i>section {i + 1}</i>
+            <div className='keyframes-section' key={uid(section)}><i>section {sectionIndex + 1}</i>
               <div className='section-underline'></div>
               <div className='section-label-container'>
                 <input 
                   type='text'
                   className='section-label'
-                  name={i}
-                  value={keyframes[i].label}
+                  name={sectionIndex}
+                  value={keyframes[sectionIndex].label}
                   onChange={this.handleStageChange}/>
-                <p>%</p>
               </div>
               <div className='properties-container'>
               {
-                section.properties.map((property, i2, arr) => {
-                  let minus = <i className={`${i} ${i2} fas fa-minus-circle delete-property`} onClick={this.removeProperty}></i>
+                section.properties.map((property, propertyIndex, arr) => {
+                  let minus = <i className={`${sectionIndex} ${propertyIndex} fas fa-minus-circle delete-property`} onClick={this.removeProperty}></i>
                   if (arr.length === 1) {minus = null}
                   return (
                   <div className='property-container' key={uid(property)}>
                     <input 
                       placeholder='property' 
                       className='property-label'
-                      name={[i, i2]}
-                      value={keyframes[i].properties[i2].name}
+                      name={[sectionIndex, propertyIndex]}
+                      value={keyframes[sectionIndex].properties[propertyIndex].name}
                       onChange={this.handlePropLabelChange}>
                     </input>
                     <input 
                       type='text' 
-                      className='property-value'
+                      className={`property-value ${keyframes[sectionIndex].properties[propertyIndex].name}`}
                       placeholder='value'
-                      name={[i, i2]}
-                      value={keyframes[i].properties[i2].value}
-                      onChange={this.handlePropValueChange}/>
+                      name={[sectionIndex, propertyIndex]}
+                      value={keyframes[sectionIndex].properties[propertyIndex].value}
+                      onChange={this.handlePropValueChange}
+                      disabled={(!formValidation.keyframeProperty(null, keyframes[sectionIndex].properties[propertyIndex].name))}/>
                     {minus}
                   </div>
                   )
                 })
               }
               </div>
-              <p className={`${i} btn-text`} onClick={this.addProperty}><i className={`${i} fas fa-plus-circle add-property-btn`}></i>add property</p>
+              <p className={`${sectionIndex} btn-text`} onClick={this.addProperty}><i className={`${sectionIndex} fas fa-plus-circle add-property-btn`}></i>add property</p>
               <div className='section-underline'></div>
               <div className='add-remove-container'>
-                <p className={`${i} btn-text`} onClick={this.addStage}><i className={`${i} fas fa-plus-circle add-section-btn`}></i>add section</p>
+                <p className={`${sectionIndex} btn-text`} onClick={this.addStage}><i className={`${sectionIndex} fas fa-plus-circle add-section-btn`}></i>add section</p>
                 {minus}
               </div>
             </div>
@@ -221,7 +241,7 @@ export class CreateAnimationForm extends Component {
         </form>
         <div className='bottom-form-btn-container'>
           {exitButton}
-          <button onClick={() => this.handleSubmit()} className='save-form-btn'>Save</button>
+          <button onClick={() => this.handleSubmit()} className='save-form-btn' disabled={this.state.disabled}>Save</button>
         </div>
       </div>
     )
@@ -236,7 +256,7 @@ export const mapStateToProps = (state) => ({
 export const mapDispatchToProps = (dispatch) => ({
   getMyAnimations: (user_id) => dispatch(getMyAnimations(user_id)),
   cancelEdit: () => dispatch(removeAnimationForEdit()),
-  editAnimation: (user_id, animation_id, animation) => dispatch(editAnimation(user_id, animation_id, animation))
+  updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
 })
 
 
