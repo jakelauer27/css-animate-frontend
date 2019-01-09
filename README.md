@@ -9,9 +9,9 @@ A site for learning, and implementing CSS Animations. Login, Open a predesigned 
 Clone this repo. 
 Run `npm install` in your terminal
 
-Run the app in the development mode:
-Open [http://localhost:3000](http://localhost:3000) to view in the browser.
-Run`npm start` in your terminal
+Clone down[BackEnd here](https://github.com/jakelauer27/css-animate-backend) (Must have postgress installed). Run backend at localhost:3000.  
+
+Run `npm start` and view app at localhost:3001. 
 
 ### Background / About
 
@@ -26,6 +26,7 @@ css-animate.com
 
 - ReactJS
 - Redux
+- Redux-Thunks
 - React-Router
 - Jest/Enzyme
 - JSX
