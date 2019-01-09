@@ -27,7 +27,7 @@ ShallowWrapper {
             activeClassName="selected-section"
             aria-current="page"
             className="howTo header-button"
-            to="/slideInX/properties/howto/general"
+            to="/properties/howto/general"
           >
             how to play
           </NavLink>
@@ -35,7 +35,7 @@ ShallowWrapper {
             activeClassName="selected-section"
             aria-current="page"
             className="keyframes header-button"
-            to="/slideInX/properties/howto/properties"
+            to="/properties/howto/properties"
           >
             keyframes
           </NavLink>
@@ -43,7 +43,7 @@ ShallowWrapper {
             activeClassName="selected-section"
             aria-current="page"
             className="animation header-button"
-            to="/slideInX/properties/howto/keyframes"
+            to="/properties/howto/keyframes"
           >
             animation properties
           </NavLink>
@@ -51,27 +51,23 @@ ShallowWrapper {
         <Switch>
           <Route
             component={[Function]}
-            path="/slideInX/properties/howto/general"
+            path="/properties/howto/general"
           />
           <Route
             component={[Function]}
-            path="/slideInX/properties/howto/properties"
+            path="/properties/howto/properties"
           />
           <Route
             component={[Function]}
-            path="/slideInX/properties/howto/keyframes"
+            path="/properties/howto/keyframes"
           />
         </Switch>
         <Link
           className="close-info-popup-btn"
           replace={false}
-          to="/slideInX/properties"
+          to="/properties"
         >
-          <button
-            className="close-info-popup-btn"
-          >
-            Go!
-          </button>
+          Go!
         </Link>
       </div>,
       "className": "infoPopup-overlay",
@@ -90,7 +86,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="howTo header-button"
-              to="/slideInX/properties/howto/general"
+              to="/properties/howto/general"
             >
               how to play
             </NavLink>
@@ -98,7 +94,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="keyframes header-button"
-              to="/slideInX/properties/howto/properties"
+              to="/properties/howto/properties"
             >
               keyframes
             </NavLink>
@@ -106,7 +102,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="animation header-button"
-              to="/slideInX/properties/howto/keyframes"
+              to="/properties/howto/keyframes"
             >
               animation properties
             </NavLink>
@@ -114,27 +110,23 @@ ShallowWrapper {
           <Switch>
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/general"
+              path="/properties/howto/general"
             />
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/properties"
+              path="/properties/howto/properties"
             />
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/keyframes"
+              path="/properties/howto/keyframes"
             />
           </Switch>,
           <Link
             className="close-info-popup-btn"
             replace={false}
-            to="/slideInX/properties"
+            to="/properties"
           >
-            <button
-              className="close-info-popup-btn"
-            >
-              Go!
-            </button>
+            Go!
           </Link>,
         ],
         "className": "info-popup",
@@ -151,7 +143,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="howTo header-button"
-                to="/slideInX/properties/howto/general"
+                to="/properties/howto/general"
               >
                 how to play
               </NavLink>,
@@ -159,7 +151,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="keyframes header-button"
-                to="/slideInX/properties/howto/properties"
+                to="/properties/howto/properties"
               >
                 keyframes
               </NavLink>,
@@ -167,7 +159,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="animation header-button"
-                to="/slideInX/properties/howto/keyframes"
+                to="/properties/howto/keyframes"
               >
                 animation properties
               </NavLink>,
@@ -185,7 +177,7 @@ ShallowWrapper {
                 "aria-current": "page",
                 "children": "how to play",
                 "className": "howTo header-button",
-                "to": "/slideInX/properties/howto/general",
+                "to": "/properties/howto/general",
               },
               "ref": null,
               "rendered": "how to play",
@@ -200,7 +192,7 @@ ShallowWrapper {
                 "aria-current": "page",
                 "children": "keyframes",
                 "className": "keyframes header-button",
-                "to": "/slideInX/properties/howto/properties",
+                "to": "/properties/howto/properties",
               },
               "ref": null,
               "rendered": "keyframes",
@@ -215,7 +207,7 @@ ShallowWrapper {
                 "aria-current": "page",
                 "children": "animation properties",
                 "className": "animation header-button",
-                "to": "/slideInX/properties/howto/keyframes",
+                "to": "/properties/howto/keyframes",
               },
               "ref": null,
               "rendered": "animation properties",
@@ -232,15 +224,15 @@ ShallowWrapper {
             "children": Array [
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/general"
+                path="/properties/howto/general"
               />,
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/properties"
+                path="/properties/howto/properties"
               />,
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/keyframes"
+                path="/properties/howto/keyframes"
               />,
             ],
           },
@@ -252,7 +244,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "component": [Function],
-                "path": "/slideInX/properties/howto/general",
+                "path": "/properties/howto/general",
               },
               "ref": null,
               "rendered": null,
@@ -264,7 +256,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "component": [Function],
-                "path": "/slideInX/properties/howto/properties",
+                "path": "/properties/howto/properties",
               },
               "ref": null,
               "rendered": null,
@@ -276,7 +268,7 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "component": [Function],
-                "path": "/slideInX/properties/howto/keyframes",
+                "path": "/properties/howto/keyframes",
               },
               "ref": null,
               "rendered": null,
@@ -290,28 +282,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <button
-              className="close-info-popup-btn"
-            >
-              Go!
-            </button>,
+            "children": "Go!",
             "className": "close-info-popup-btn",
             "replace": false,
-            "to": "/slideInX/properties",
+            "to": "/properties",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Go!",
-              "className": "close-info-popup-btn",
-            },
-            "ref": null,
-            "rendered": "Go!",
-            "type": "button",
-          },
+          "rendered": "Go!",
           "type": [Function],
         },
       ],
@@ -335,7 +312,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="howTo header-button"
-              to="/slideInX/properties/howto/general"
+              to="/properties/howto/general"
             >
               how to play
             </NavLink>
@@ -343,7 +320,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="keyframes header-button"
-              to="/slideInX/properties/howto/properties"
+              to="/properties/howto/properties"
             >
               keyframes
             </NavLink>
@@ -351,7 +328,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="animation header-button"
-              to="/slideInX/properties/howto/keyframes"
+              to="/properties/howto/keyframes"
             >
               animation properties
             </NavLink>
@@ -359,27 +336,23 @@ ShallowWrapper {
           <Switch>
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/general"
+              path="/properties/howto/general"
             />
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/properties"
+              path="/properties/howto/properties"
             />
             <Route
               component={[Function]}
-              path="/slideInX/properties/howto/keyframes"
+              path="/properties/howto/keyframes"
             />
           </Switch>
           <Link
             className="close-info-popup-btn"
             replace={false}
-            to="/slideInX/properties"
+            to="/properties"
           >
-            <button
-              className="close-info-popup-btn"
-            >
-              Go!
-            </button>
+            Go!
           </Link>
         </div>,
         "className": "infoPopup-overlay",
@@ -398,7 +371,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="howTo header-button"
-                to="/slideInX/properties/howto/general"
+                to="/properties/howto/general"
               >
                 how to play
               </NavLink>
@@ -406,7 +379,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="keyframes header-button"
-                to="/slideInX/properties/howto/properties"
+                to="/properties/howto/properties"
               >
                 keyframes
               </NavLink>
@@ -414,7 +387,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="animation header-button"
-                to="/slideInX/properties/howto/keyframes"
+                to="/properties/howto/keyframes"
               >
                 animation properties
               </NavLink>
@@ -422,27 +395,23 @@ ShallowWrapper {
             <Switch>
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/general"
+                path="/properties/howto/general"
               />
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/properties"
+                path="/properties/howto/properties"
               />
               <Route
                 component={[Function]}
-                path="/slideInX/properties/howto/keyframes"
+                path="/properties/howto/keyframes"
               />
             </Switch>,
             <Link
               className="close-info-popup-btn"
               replace={false}
-              to="/slideInX/properties"
+              to="/properties"
             >
-              <button
-                className="close-info-popup-btn"
-              >
-                Go!
-              </button>
+              Go!
             </Link>,
           ],
           "className": "info-popup",
@@ -459,7 +428,7 @@ ShallowWrapper {
                   activeClassName="selected-section"
                   aria-current="page"
                   className="howTo header-button"
-                  to="/slideInX/properties/howto/general"
+                  to="/properties/howto/general"
                 >
                   how to play
                 </NavLink>,
@@ -467,7 +436,7 @@ ShallowWrapper {
                   activeClassName="selected-section"
                   aria-current="page"
                   className="keyframes header-button"
-                  to="/slideInX/properties/howto/properties"
+                  to="/properties/howto/properties"
                 >
                   keyframes
                 </NavLink>,
@@ -475,7 +444,7 @@ ShallowWrapper {
                   activeClassName="selected-section"
                   aria-current="page"
                   className="animation header-button"
-                  to="/slideInX/properties/howto/keyframes"
+                  to="/properties/howto/keyframes"
                 >
                   animation properties
                 </NavLink>,
@@ -493,7 +462,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "how to play",
                   "className": "howTo header-button",
-                  "to": "/slideInX/properties/howto/general",
+                  "to": "/properties/howto/general",
                 },
                 "ref": null,
                 "rendered": "how to play",
@@ -508,7 +477,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "keyframes",
                   "className": "keyframes header-button",
-                  "to": "/slideInX/properties/howto/properties",
+                  "to": "/properties/howto/properties",
                 },
                 "ref": null,
                 "rendered": "keyframes",
@@ -523,7 +492,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "animation properties",
                   "className": "animation header-button",
-                  "to": "/slideInX/properties/howto/keyframes",
+                  "to": "/properties/howto/keyframes",
                 },
                 "ref": null,
                 "rendered": "animation properties",
@@ -540,15 +509,15 @@ ShallowWrapper {
               "children": Array [
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties/howto/general"
+                  path="/properties/howto/general"
                 />,
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties/howto/properties"
+                  path="/properties/howto/properties"
                 />,
                 <Route
                   component={[Function]}
-                  path="/slideInX/properties/howto/keyframes"
+                  path="/properties/howto/keyframes"
                 />,
               ],
             },
@@ -560,7 +529,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "component": [Function],
-                  "path": "/slideInX/properties/howto/general",
+                  "path": "/properties/howto/general",
                 },
                 "ref": null,
                 "rendered": null,
@@ -572,7 +541,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "component": [Function],
-                  "path": "/slideInX/properties/howto/properties",
+                  "path": "/properties/howto/properties",
                 },
                 "ref": null,
                 "rendered": null,
@@ -584,7 +553,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "component": [Function],
-                  "path": "/slideInX/properties/howto/keyframes",
+                  "path": "/properties/howto/keyframes",
                 },
                 "ref": null,
                 "rendered": null,
@@ -598,28 +567,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <button
-                className="close-info-popup-btn"
-              >
-                Go!
-              </button>,
+              "children": "Go!",
               "className": "close-info-popup-btn",
               "replace": false,
-              "to": "/slideInX/properties",
+              "to": "/properties",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Go!",
-                "className": "close-info-popup-btn",
-              },
-              "ref": null,
-              "rendered": "Go!",
-              "type": "button",
-            },
+            "rendered": "Go!",
             "type": [Function],
           },
         ],

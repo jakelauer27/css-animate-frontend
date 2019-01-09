@@ -1,35 +1,31 @@
 import React, { Component } from 'react'
+import { NavLink, Route, Switch, Link, Redirect } from 'react-router-dom'
 import GeneralInfo from '../GeneralInfo/GeneralInfo'
-import PropertiesInfo from '../PropertiesInfo/PropertiesInfo'
 import KeyframesInfo from '../KeyframesInfo/KeyframesInfo'
-import { NavLink, Route, Switch, Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { PropTypes } from 'prop-types'
+import PropertiesInfo from '../PropertiesInfo/PropertiesInfo'
 
 
-export class HowToPopup extends Component {
+export default class HowToPopup extends Component {
 
   render() {
-    let { animation } = this.props
-    if (!animation) {animation = 'slideInX'}
     return (
       <div className="infoPopup-overlay">
         <div className="info-popup">
           <header className="header">
               <NavLink 
-                to={`/${animation}/properties/howto/general`}
+                to={`/properties/howto/general`}
                 activeClassName='selected-section'
                 className='howTo header-button'>
                 how to play
               </NavLink>
               <NavLink 
-                to={`/${animation}/properties/howto/properties`}
+                to={`/properties/howto/properties`}
                 activeClassName='selected-section'
                 className='keyframes header-button'>
                 keyframes
               </NavLink>
               <NavLink 
-                to={`/${animation}/properties/howto/keyframes`}
+                to={`/properties/howto/keyframes`}
                 activeClassName='selected-section'
                 className='animation header-button'>
                 animation properties
@@ -37,29 +33,19 @@ export class HowToPopup extends Component {
           </header>
           {
             <Switch>
-              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/general`}
+              <Route path={`/properties/howto/general`}
                 component={GeneralInfo} />
-              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/properties`}
+              <Route path={`/properties/howto/properties`}
                 component={PropertiesInfo} />
-              <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto/keyframes`}
+              <Route path={`/properties/howto/keyframes`}
                 component={KeyframesInfo} />
             </Switch>
           }
-        <Link to={`/${animation}/properties`} className='close-info-popup-btn'>
-          <button className='close-info-popup-btn'>Go!</button>
+        <Link to={`/properties`} className='close-info-popup-btn'>
+          Go!
         </Link>
         </div>
       </div>
     )
   }
 }
-
-export const mapStateToProps = (state) => ({
-  animation: state.animation.keyframes.name 
-})
-
-HowToPopup.propTypes = {
-  animation: PropTypes.string
-}
-
-export default connect(mapStateToProps)(HowToPopup)

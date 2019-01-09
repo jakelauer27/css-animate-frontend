@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-import * as formValidation from '../../utils/formValidators'
+import * as formValidation from '../../utils/formValidators/formValidators'
 import { connect } from 'react-redux'
-import { loadAnimation } from '../../actions/actions'
+import { updateCurrentAnimation } from '../../actions/actions'
 import { updateKeyframes } from '../../utils/keyframesInsertion'
+import { PropTypes } from 'prop-types'
+import { uid } from 'react-uid'
 
-class KeyframesEditor extends Component {
+export class KeyframesEditor extends Component {
 
   saveKeyframesStages(e) {
     formValidation.keyframeStage(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
-    let newAnimation = JSON.parse(JSON.stringify(this.props.animation))
+    let newAnimation = {...this.props.animation}
     let stageLabel = e.target.classList[1]
     let stageIndex = ''
     newAnimation.keyframes.sections.forEach( (stage, i) => {
@@ -18,7 +20,7 @@ class KeyframesEditor extends Component {
        }
     })
     newAnimation.keyframes.sections[stageIndex].label = e.target.value || '%'
-    this.props.updateAnimation(newAnimation)
+    this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
   }
 
@@ -41,7 +43,7 @@ class KeyframesEditor extends Component {
        }
     })
     newAnimation.keyframes.sections[stageIndex].properties[propIndex].value = e.target.value
-    this.props.updateAnimation(newAnimation)
+    this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
   }
 
@@ -55,18 +57,18 @@ class KeyframesEditor extends Component {
         <div className='keyframe'>
           <p className='keyframes-name'><span>@keyframes </span>{animation.keyframes.name} <span> {'{'}</span></p>
           {
-            animation.keyframes.sections.map( (section, i) => {
+            animation.keyframes.sections.map( (section) => {
               return (
-                <div className='keyframes-section' key={i}>
+                <div className='keyframes-section' key={uid(section)}>
                   <input className={`keyframes-label ${section.name}`} 
                     value={section.label} 
                     type='text'
                     onChange={e => this.saveKeyframesStages(e)}/> 
                     <span> {'{'}</span>
                   {
-                    section.properties.map( (prop, i) => {
+                    section.properties.map( (prop) => {
                       return (
-                        <div className='props-container' key={i}>
+                        <div className='props-container' key={uid(prop)}>
                           <p className='keyframe-property'>{prop.name}<span>:</span></p>
                           <input className={`keyframe-prop-value ${prop.name}`} 
                             type='text' 
@@ -89,11 +91,16 @@ class KeyframesEditor extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation
+  animation: state.currentAnimation
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  updateAnimation: (animation) => dispatch(loadAnimation(animation))
+  updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation))
 })
+
+KeyframesEditor.propTypes = {
+  animation: PropTypes.object.isRequired,
+  updateCurrentAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(KeyframesEditor)

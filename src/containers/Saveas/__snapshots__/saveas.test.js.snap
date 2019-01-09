@@ -1,0 +1,617 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Saveas should match the snapshot if there is a user logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Saveas
+    closePopup={[MockFunction]}
+    currentAnimation={
+      Object {
+        "ani_name": "slideInY",
+        "id": 1,
+        "keyframes": Object {
+          "name": "slideInY",
+          "sections": Array [
+            Object {
+              "label": "0%",
+              "name": "0%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(-300px)",
+                },
+              ],
+            },
+            Object {
+              "label": "100%",
+              "name": "100%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(0px)",
+                },
+              ],
+            },
+          ],
+        },
+        "properties": Object {
+          "delay": "0s",
+          "direction": "normal",
+          "duration": "1.5s",
+          "fillMode": "forwards",
+          "iterationCount": "1",
+          "name": "slideInY",
+          "timingFunction": "ease",
+        },
+        "user_id": 1,
+      }
+    }
+    getMyAnimations={[MockFunction]}
+    saveOriginalAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
+    user_id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <form
+          className="saveas-form"
+        >
+          <h2>
+            Save Animation As
+          </h2>
+          <input
+            onChange={[Function]}
+            placeholder="name"
+            type="text"
+            value=""
+          />
+          <button
+            className="save-form-btn"
+            onClick={[Function]}
+          >
+            Save
+          </button>
+          <button
+            className="cancel-form-btn cancel-saveas"
+            onClick={[Function]}
+          >
+            cancel
+          </button>
+        </form>,
+      ],
+      "className": "form-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Save Animation As
+            </h2>,
+            <input
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value=""
+            />,
+            <button
+              className="save-form-btn"
+              onClick={[Function]}
+            >
+              Save
+            </button>,
+            <button
+              className="cancel-form-btn cancel-saveas"
+              onClick={[Function]}
+            >
+              cancel
+            </button>,
+          ],
+          "className": "saveas-form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save Animation As",
+            },
+            "ref": null,
+            "rendered": "Save Animation As",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "onChange": [Function],
+              "placeholder": "name",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Save",
+              "className": "save-form-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Save",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "cancel",
+              "className": "cancel-form-btn cancel-saveas",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "cancel",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <form
+            className="saveas-form"
+          >
+            <h2>
+              Save Animation As
+            </h2>
+            <input
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value=""
+            />
+            <button
+              className="save-form-btn"
+              onClick={[Function]}
+            >
+              Save
+            </button>
+            <button
+              className="cancel-form-btn cancel-saveas"
+              onClick={[Function]}
+            >
+              cancel
+            </button>
+          </form>,
+        ],
+        "className": "form-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Save Animation As
+              </h2>,
+              <input
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+              />,
+              <button
+                className="save-form-btn"
+                onClick={[Function]}
+              >
+                Save
+              </button>,
+              <button
+                className="cancel-form-btn cancel-saveas"
+                onClick={[Function]}
+              >
+                cancel
+              </button>,
+            ],
+            "className": "saveas-form",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save Animation As",
+              },
+              "ref": null,
+              "rendered": "Save Animation As",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "onChange": [Function],
+                "placeholder": "name",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Save",
+                "className": "save-form-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Save",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "cancel",
+                "className": "cancel-form-btn cancel-saveas",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "cancel",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Saveas should match the snapshot if there is no user logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Saveas
+    closePopup={[MockFunction]}
+    currentAnimation={
+      Object {
+        "ani_name": "slideInY",
+        "id": 1,
+        "keyframes": Object {
+          "name": "slideInY",
+          "sections": Array [
+            Object {
+              "label": "0%",
+              "name": "0%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(-300px)",
+                },
+              ],
+            },
+            Object {
+              "label": "100%",
+              "name": "100%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(0px)",
+                },
+              ],
+            },
+          ],
+        },
+        "properties": Object {
+          "delay": "0s",
+          "direction": "normal",
+          "duration": "1.5s",
+          "fillMode": "forwards",
+          "iterationCount": "1",
+          "name": "slideInY",
+          "timingFunction": "ease",
+        },
+        "user_id": 1,
+      }
+    }
+    getMyAnimations={[MockFunction]}
+    saveOriginalAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
+    user_id={null}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <form
+          className="saveas-form"
+        >
+          <h2>
+            Access this feature by logging in
+          </h2>
+          <button
+            className="cancel-form-btn cancel-saveas"
+            onClick={[Function]}
+          >
+            Ok
+          </button>
+        </form>,
+      ],
+      "className": "form-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Access this feature by logging in
+            </h2>,
+            <button
+              className="cancel-form-btn cancel-saveas"
+              onClick={[Function]}
+            >
+              Ok
+            </button>,
+          ],
+          "className": "saveas-form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Access this feature by logging in",
+            },
+            "ref": null,
+            "rendered": "Access this feature by logging in",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Ok",
+              "className": "cancel-form-btn cancel-saveas",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Ok",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <form
+            className="saveas-form"
+          >
+            <h2>
+              Access this feature by logging in
+            </h2>
+            <button
+              className="cancel-form-btn cancel-saveas"
+              onClick={[Function]}
+            >
+              Ok
+            </button>
+          </form>,
+        ],
+        "className": "form-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Access this feature by logging in
+              </h2>,
+              <button
+                className="cancel-form-btn cancel-saveas"
+                onClick={[Function]}
+              >
+                Ok
+              </button>,
+            ],
+            "className": "saveas-form",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Access this feature by logging in",
+              },
+              "ref": null,
+              "rendered": "Access this feature by logging in",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ok",
+                "className": "cancel-form-btn cancel-saveas",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Ok",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

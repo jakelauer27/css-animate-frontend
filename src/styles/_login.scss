@@ -1,0 +1,127 @@
+.login-container, 
+.sign-up-container {
+  color: white;
+  
+  .form-container {
+    background-color: rgb(27, 27, 27);
+    border: 4px solid black;
+    border-radius: 18px;
+    box-shadow: 0px 0px 8px 3px #ffffffbd;
+    position: absolute;
+    top: 100px;
+    right: calc(50% - 210px);
+    z-index: 15;
+    width: 420px;
+    margin: 20px auto;
+  }  
+
+  .login-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: white;
+    font-size: 4em;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    margin: 10px auto;
+  
+    input {
+      color: black;
+      margin: 10px;
+      height: 30px;
+      border: 2px solid $darkBlue;
+      border-radius: 6px;
+      font-size: 1.3em;
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .incorrect {
+      background-color: rgb(187, 95, 95);
+      color: white;
+    }
+  
+    button {
+      background-color: $darkBlue;
+      color: white;
+      border: 2px solid rgb(68, 68, 68);
+      border-radius: 4px;
+      height: 40px;
+      margin: 15px auto 0px;
+      font-size: 1.3em;
+      width: 101%;
+      transition: all .4s ease;
+  
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(80, 136, 209);
+        transform: scale(1.01)
+      }
+    }
+  }
+  
+  .new-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 320px;
+    margin: 20px auto;
+  
+    h3 {
+      text-align: center;
+      color: white;
+      margin: 5px;
+    }
+  
+    .incorrect-login {
+      display: none;
+      font-weight: 300;
+      font-size: 1em;
+      margin: 15px auto;
+    }
+    
+    .incorrect {
+      display: block;
+      color: rgb(231, 40, 40)
+    }
+  }
+  
+  .form-link {
+    color: $codeBlue;
+    text-align: center;
+    transition: all .4s ease;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 320px;
+    margin: 20px auto;
+  
+    &:visited {
+      color: $codeBlue;
+    }
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .continue-as-guest {
+    font-size: 1em;
+    color: grey;
+    margin: 0px;
+
+    &:visited {
+      color: grey;
+    }
+  }
+}

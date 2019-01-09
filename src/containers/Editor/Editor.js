@@ -1,26 +1,29 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Route, Switch, NavLink, Link } from 'react-router-dom'
+import { PropTypes } from 'prop-types'
+import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
+import { editAnimation } from '../../utils/apiCalls/apiCalls'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
+import CopyPopup from '../CopyPopup/CopyPopup'
 import KeyframesEditor from '../KeyframesEditor/KeyframesEditor'
 import PropertiesEditor from '../PropertiesEditor/PropertiesEditor'
-import { loadAnimation } from '../../actions/actions'
-import * as CSSInsertion from '../../utils/keyframesInsertion'
-import animationsData from '../../utils/data'
-import CopyPopup from '../CopyPopup/CopyPopup'
-
-const animationKeys = Object.keys(animationsData)
+import Saveas from '../Saveas/Saveas'
 
 export class Editor extends Component {
-
-  componentDidMount() {
-    this.loadNewAnimation(this.props.currentAnimation)
+  constructor() {
+    super()
+    this.state = {
+      saveText: 'save',
+      saveas: false
+    }
   }
 
-  loadNewAnimation(animationName) {
-    const animationKey = animationKeys.find( key => key === animationName)
-    const newAnimation = JSON.parse(JSON.stringify(animationsData[animationKey]))
-    this.props.loadNewAnimation(newAnimation)
-    CSSInsertion.updateKeyframes(newAnimation.keyframes)
+  resetAnimation(animation) {
+    animation = JSON.parse(animation)
+    this.props.updateCurrentAnimation(animation)
+    CSSInsertion.updateKeyframes(animation.keyframes)
+    this.resetInputValidation()
   }
   
   resetInputValidation() {
@@ -30,48 +33,69 @@ export class Editor extends Component {
     document.querySelector('.play-btn').removeAttribute('disabled');
   }
 
+  async saveAnimation() {
+    this.setState({saveText: 'saved!'})
+    const { saveOriginalAnimation, currentAnimation, user_id } = this.props
+    saveOriginalAnimation(JSON.stringify({...currentAnimation}))
+    await editAnimation(user_id, currentAnimation.id, currentAnimation)
+    setTimeout(this.resetSaveText, 2000)
+  }
+
+  resetSaveText = () => {
+    this.setState({saveText: 'save'})
+  }
+
+  toggleSaveas = () => {
+    this.setState({saveas: !this.state.saveas})
+  }
 
   render() {
-    const { animation, currentAnimation } = this.props
-    if (!animation.keyframes) {
-      return <div></div>
-    }
+    const { currentAnimation } = this.props
+
     return (
       <div className='editor-component'>
         <div className='editor-container'>
           <div className='editor-options'>
             <NavLink 
-              to={`/${animation.keyframes.name}/properties`}
+              to={`/properties`}
               className='animation-btn'
               activeClassName='selected'>properties
             </NavLink>
             <NavLink 
-              to={`/${animation.keyframes.name}/keyframes`}
+              to={`/keyframes`}
               className='keyframes-btn'
               activeClassName='selected'>keyframes
             </NavLink>
           </div>
           <div className='editor'>
           {
-            <Switch>
-              <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/keyframes`} component={KeyframesEditor} />
-              <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/properties`} component={PropertiesEditor}/>
-            </Switch>
+          <Switch>
+            <Route path={`/properties`} component={PropertiesEditor}/>
+            <Route path={`/keyframes`} component={KeyframesEditor}/>
+          </Switch>
           }
           </div>
         </div>
         <div className='editor-bottom-btns-container'>
-          <Link to={`/${animation.keyframes.name}/properties/copy`} className='lower-btn copy-btn'>
+          <Link to={`/properties/copy`} className='lower-btn copy-btn'>
             copy code   
           </Link>
-          <Route path={`${process.env.PUBLIC_URL}/${animation.keyframes.name}/properties/copy`} render={() => <CopyPopup currentPage={currentAnimation}/>} />
-          <button className={`lower-btn reset-btn`} onClick={() => {
-              this.loadNewAnimation(this.props.currentAnimation)
-              this.resetInputValidation()  
-            }
-            }>
+          <button className={`lower-btn reset-btn`} onClick={() => this.resetAnimation(this.props.originalAnimation)}>
             reset
+          </button>  
+            <button className='lower-btn save-as-btn' onClick={this.toggleSaveas}>save as</button>
+          <button 
+            className={`lower-btn save-btn`} 
+            disabled={!currentAnimation.user_id}
+            onClick={() => {
+              this.saveAnimation()
+            }}>
+            {this.state.saveText}
           </button>
+          <Route path={`/properties/copy`} render={() => <CopyPopup />} />
+          {
+            (this.state.saveas && <Saveas closePopup={this.toggleSaveas}/>)
+          }
         </div>
       </div>
     )
@@ -80,11 +104,22 @@ export class Editor extends Component {
 
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation
+  user_id: state.user.id,
+  originalAnimation: state.originalAnimation,
+  currentAnimation: state.currentAnimation
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  loadNewAnimation: (animation) => dispatch(loadAnimation(animation))
+  updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
+  saveOriginalAnimation: (animation) => dispatch(saveOriginalAnimation(animation)),
 })
+
+Editor.propTypes = {
+ user_id: PropTypes.number,
+ originalAnimation: PropTypes.string,
+ currentAnimation: PropTypes.object,
+ updateCurrentAnimation: PropTypes.func.isRequired,
+ saveOriginalAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(Editor)

@@ -12,7 +12,9 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-uid": "^2.2.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",
@@ -28,7 +30,7 @@
       "!src/serviceWorker.js",
       "!src/reducers/index.js",
       "!src/setupTests.js",
-      "!src/utils/data.js"
+      "!src/utils/keyframesInsertion.js"
     ]
   },
   "eslintConfig": {

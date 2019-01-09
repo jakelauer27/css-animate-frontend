@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-
+import { PropTypes } from 'prop-types'
+ 
 export class CopyPopup extends Component {
   constructor() {
     super()
@@ -37,8 +38,8 @@ export class CopyPopup extends Component {
                     return ''
                   } 
                   return ` ${props[key]}`
-                }).join('')} 
-animation-fill-mode: ${props['fill-mode']}`
+                }).join('')}; 
+animation-fill-mode: ${props['fillMode']};`
         }>
         </textarea>
       </div>
@@ -51,11 +52,14 @@ animation-fill-mode: ${props['fill-mode']}`
       return (
   `${section.label} {
     ${
-      section.properties.map( (prop) => {
-        return (
-          `${prop.name}: ${prop.value}`                
+      section.properties.map( (prop, i) => {
+        if (i === 0) {
+          return `${prop.name}: ${prop.value};`
+        } 
+        return (`
+    ${prop.name}: ${prop.value};`                
           )
-        })
+        }).join('')
       }
   }
   `
@@ -104,7 +108,7 @@ animation-fill-mode: ${props['fill-mode']}`
           onClick={this.copySelection}>{copyPropertiesText}
         </button>
       </div>
-      <Link to={`/${this.props.currentPage}/properties`}>
+      <Link to={`/properties`}>
         <button className='close-popup-btn'><i className="fas fa-times"></i></button>
       </Link>
     </div>
@@ -113,7 +117,11 @@ animation-fill-mode: ${props['fill-mode']}`
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation
+  animation: state.currentAnimation
 })
+
+CopyPopup.propTypes = {
+  animation: PropTypes.object
+}
 
 export default connect(mapStateToProps)(CopyPopup)

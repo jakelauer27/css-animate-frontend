@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import animationsData from '../../utils/data'
-import { loadAnimation } from '../../actions/actions'
-import * as CSSInsertion from '../../utils/keyframesInsertion'
-
-const animationKeys = Object.keys(animationsData);
+import { PropTypes } from 'prop-types'
 
 export class Viewer extends Component {
   constructor() {
@@ -14,46 +10,35 @@ export class Viewer extends Component {
       play: true
     }
   }
-
-  componentDidMount() {
-    this.loadNewAnimation(this.props.currentAnimation)
-  }
-
-  loadNewAnimation(animationName) {
-    const animationKey = animationKeys.find( key => key === animationName)
-    const newAnimation = JSON.parse(JSON.stringify(animationsData[animationKey]))
-    this.props.loadNewAnimation(newAnimation)
-    CSSInsertion.updateKeyframes(newAnimation.keyframes)
-  }
-
+  
   playAnimation() {
-    const { animation } = this.props
+    const { currentAnimation } = this.props
     this.setState({
       animation: {
-        animation: `${animation.name} ${animation.duration} ${animation.timingFunction} ${animation.delay} ${animation.iterationCount} ${animation.direction}`,
-        animationFillMode: `${animation.fillMode}`
+        animation: `${currentAnimation.name} ${currentAnimation.duration} ${currentAnimation.timingFunction} ${currentAnimation.delay} ${currentAnimation.iterationCount} ${currentAnimation.direction}`,
+        animationFillMode: `${currentAnimation.fillMode}`
       },
       play: false
     })
   }
 
   resetAnimation(waitTime) {
-    setTimeout( () => {
+    setTimeout( 
       this.setState({
         animation: {},
         play: true
       })
-    }, waitTime)
+    , waitTime)
   }
 
   render() {
-    const { animation } = this.props
-    if  (!animation) {
+    const { currentAnimation } = this.props
+    if  (!currentAnimation) {
       return <div></div>
     }
     return (
       <div className='viewer-component'>
-        <h2 className='current-animation-label'>*{animation.name}*</h2>
+        <h2 className='current-animation-label'>*{currentAnimation.name}*</h2>
         <div className='viewer-container'>
           <div className='viewer'>
             <div className='square square-0'
@@ -77,11 +62,11 @@ export class Viewer extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation.properties,
+  currentAnimation: state.currentAnimation.properties
 })
 
-export const mapDispatchToProps = (dispatch) => ({
-  loadNewAnimation: (animation) => dispatch(loadAnimation(animation))
-})
+Viewer.propTypes = {
+  currentAnimation: PropTypes.object
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Viewer)
+export default connect(mapStateToProps)(Viewer)

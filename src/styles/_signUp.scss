@@ -1,0 +1,29 @@
+.create-new-user-form {
+  button {
+    &:disabled {
+      opacity: 0.5;
+    } 
+
+    &:disabled:hover {
+      cursor: default;
+      transform: scale(1);
+      background-color: rgb(42, 133, 168);
+      color: white;
+    }
+  }
+}
+
+.duplicate-user-message,
+.passwords-message {
+  color: rgb(207, 43, 43);
+  display: none;
+  font-weight: 300;
+  font-size: 1em;
+  margin: 15px auto;
+  text-align: center;
+  width: 350px; 
+}
+
+.create-user-error {
+  display: block;
+}

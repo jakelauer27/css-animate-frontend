@@ -1,0 +1,773 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component matches the snapshot  1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login
+    getMyAnimations={[MockFunction]}
+    loginUser={[MockFunction]}
+    user={
+      Object {
+        "name": null,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="form-container"
+        >
+          <h2
+            className="login-title"
+          >
+            Login
+          </h2>
+          <form
+            className="login-form"
+            onSubmit={[Function]}
+          >
+            <input
+              className="form-input email"
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              type="text"
+              value=""
+            />
+            <input
+              className="form-input password"
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />
+            <button>
+              Login
+            </button>
+          </form>
+          <div
+            className="new-account-container"
+          >
+            <h3
+              className="incorrect-login false"
+            >
+              username or password is incorrect
+            </h3>
+            <h3>
+              Don't have an account?
+            </h3>
+            <Link
+              className="form-link"
+              replace={false}
+              to="/properties/signup"
+            >
+              Create New Account
+            </Link>
+            <Link
+              className="form-link continue-as-guest"
+              replace={false}
+              to="/properties"
+            >
+              Continue as Guest
+            </Link>
+          </div>
+        </div>,
+      ],
+      "className": "login-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="login-title"
+            >
+              Login
+            </h2>,
+            <form
+              className="login-form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="form-input email"
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                className="form-input password"
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <button>
+                Login
+              </button>
+            </form>,
+            <div
+              className="new-account-container"
+            >
+              <h3
+                className="incorrect-login false"
+              >
+                username or password is incorrect
+              </h3>
+              <h3>
+                Don't have an account?
+              </h3>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/signup"
+              >
+                Create New Account
+              </Link>
+              <Link
+                className="form-link continue-as-guest"
+                replace={false}
+                to="/properties"
+              >
+                Continue as Guest
+              </Link>
+            </div>,
+          ],
+          "className": "form-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login",
+              "className": "login-title",
+            },
+            "ref": null,
+            "rendered": "Login",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="form-input email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />,
+                <input
+                  className="form-input password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />,
+                <button>
+                  Login
+                </button>,
+              ],
+              "className": "login-form",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "form-input email",
+                  "name": "email",
+                  "onChange": [Function],
+                  "placeholder": "email",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "form-input password",
+                  "name": "password",
+                  "onChange": [Function],
+                  "placeholder": "password",
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Login",
+                },
+                "ref": null,
+                "rendered": "Login",
+                "type": "button",
+              },
+            ],
+            "type": "form",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="incorrect-login false"
+                >
+                  username or password is incorrect
+                </h3>,
+                <h3>
+                  Don't have an account?
+                </h3>,
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/signup"
+                >
+                  Create New Account
+                </Link>,
+                <Link
+                  className="form-link continue-as-guest"
+                  replace={false}
+                  to="/properties"
+                >
+                  Continue as Guest
+                </Link>,
+              ],
+              "className": "new-account-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "username or password is incorrect",
+                  "className": "incorrect-login false",
+                },
+                "ref": null,
+                "rendered": "username or password is incorrect",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Don't have an account?",
+                },
+                "ref": null,
+                "rendered": "Don't have an account?",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Create New Account",
+                  "className": "form-link",
+                  "replace": false,
+                  "to": "/properties/signup",
+                },
+                "ref": null,
+                "rendered": "Create New Account",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Continue as Guest",
+                  "className": "form-link continue-as-guest",
+                  "replace": false,
+                  "to": "/properties",
+                },
+                "ref": null,
+                "rendered": "Continue as Guest",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="form-container"
+          >
+            <h2
+              className="login-title"
+            >
+              Login
+            </h2>
+            <form
+              className="login-form"
+              onSubmit={[Function]}
+            >
+              <input
+                className="form-input email"
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                className="form-input password"
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <button>
+                Login
+              </button>
+            </form>
+            <div
+              className="new-account-container"
+            >
+              <h3
+                className="incorrect-login false"
+              >
+                username or password is incorrect
+              </h3>
+              <h3>
+                Don't have an account?
+              </h3>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/signup"
+              >
+                Create New Account
+              </Link>
+              <Link
+                className="form-link continue-as-guest"
+                replace={false}
+                to="/properties"
+              >
+                Continue as Guest
+              </Link>
+            </div>
+          </div>,
+        ],
+        "className": "login-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="login-title"
+              >
+                Login
+              </h2>,
+              <form
+                className="login-form"
+                onSubmit={[Function]}
+              >
+                <input
+                  className="form-input email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />
+                <input
+                  className="form-input password"
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />
+                <button>
+                  Login
+                </button>
+              </form>,
+              <div
+                className="new-account-container"
+              >
+                <h3
+                  className="incorrect-login false"
+                >
+                  username or password is incorrect
+                </h3>
+                <h3>
+                  Don't have an account?
+                </h3>
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/signup"
+                >
+                  Create New Account
+                </Link>
+                <Link
+                  className="form-link continue-as-guest"
+                  replace={false}
+                  to="/properties"
+                >
+                  Continue as Guest
+                </Link>
+              </div>,
+            ],
+            "className": "form-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login",
+                "className": "login-title",
+              },
+              "ref": null,
+              "rendered": "Login",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="form-input email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="email"
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    className="form-input password"
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="password"
+                    type="password"
+                    value=""
+                  />,
+                  <button>
+                    Login
+                  </button>,
+                ],
+                "className": "login-form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-input email",
+                    "name": "email",
+                    "onChange": [Function],
+                    "placeholder": "email",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-input password",
+                    "name": "password",
+                    "onChange": [Function],
+                    "placeholder": "password",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Login",
+                  },
+                  "ref": null,
+                  "rendered": "Login",
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="incorrect-login false"
+                  >
+                    username or password is incorrect
+                  </h3>,
+                  <h3>
+                    Don't have an account?
+                  </h3>,
+                  <Link
+                    className="form-link"
+                    replace={false}
+                    to="/properties/signup"
+                  >
+                    Create New Account
+                  </Link>,
+                  <Link
+                    className="form-link continue-as-guest"
+                    replace={false}
+                    to="/properties"
+                  >
+                    Continue as Guest
+                  </Link>,
+                ],
+                "className": "new-account-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "username or password is incorrect",
+                    "className": "incorrect-login false",
+                  },
+                  "ref": null,
+                  "rendered": "username or password is incorrect",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Don't have an account?",
+                  },
+                  "ref": null,
+                  "rendered": "Don't have an account?",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Create New Account",
+                    "className": "form-link",
+                    "replace": false,
+                    "to": "/properties/signup",
+                  },
+                  "ref": null,
+                  "rendered": "Create New Account",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Continue as Guest",
+                    "className": "form-link continue-as-guest",
+                    "replace": false,
+                    "to": "/properties",
+                  },
+                  "ref": null,
+                  "rendered": "Continue as Guest",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Login Component should match the snapshot when user is logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login
+    getMyAnimations={[MockFunction]}
+    loginUser={[MockFunction]}
+    user={
+      Object {
+        "name": "jake",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "push": false,
+      "to": "/properties",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "push": false,
+        "to": "/properties",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

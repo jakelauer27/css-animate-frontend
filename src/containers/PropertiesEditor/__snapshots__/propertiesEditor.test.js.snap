@@ -1,0 +1,1781 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertiesEditor should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PropertiesEditor
+    animation={
+      Object {
+        "keyframes": Object {
+          "name": "slideInX",
+          "sections": Array [
+            Object {
+              "label": "0%",
+              "name": "0%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(-300px)",
+                },
+              ],
+            },
+            Object {
+              "label": "100%",
+              "name": "100%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(0px)",
+                },
+              ],
+            },
+          ],
+        },
+        "properties": Object {
+          "delay": "0s",
+          "direction": "normal",
+          "duration": "1.5s",
+          "fillMode": "forwards",
+          "iterationCount": "1",
+          "name": "slideInX",
+          "timingFunction": "ease",
+        },
+      }
+    }
+    updateAnimation={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="class-container"
+      >
+        <p
+          className="class-selector"
+        >
+          .square 
+          <span>
+            {
+          </span>
+        </p>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop name"
+          >
+            name
+            <span>
+              :
+            </span>
+          </p>
+          <p
+            className="prop-input name"
+            id="name"
+          >
+            slideInX
+          </p>
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop duration"
+          >
+            duration
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input duration"
+            onChange={[Function]}
+            type="text"
+            value="1.5s"
+          />
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop timingFunction"
+          >
+            timing-function
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input timingFunction"
+            onChange={[Function]}
+            type="text"
+            value="ease"
+          />
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop delay"
+          >
+            delay
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input delay"
+            onChange={[Function]}
+            type="text"
+            value="0s"
+          />
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop iterationCount"
+          >
+            iteration-count
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input iterationCount"
+            onChange={[Function]}
+            type="text"
+            value="1"
+          />
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop direction"
+          >
+            direction
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input direction"
+            onChange={[Function]}
+            type="text"
+            value="normal"
+          />
+        </div>
+        <div
+          className="props-container"
+        >
+          <p
+            className="ani-prop fillMode"
+          >
+            fill-mode
+            <span>
+              :
+            </span>
+          </p>
+          <input
+            className="prop-input fillMode"
+            onChange={[Function]}
+            type="text"
+            value="forwards"
+          />
+        </div>
+        <p
+          className="close-curly"
+        >
+          }
+        </p>
+      </div>,
+      "className": "animation-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="class-selector"
+          >
+            .square 
+            <span>
+              {
+            </span>
+          </p>,
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop name"
+            >
+              name
+              <span>
+                :
+              </span>
+            </p>
+            <p
+              className="prop-input name"
+              id="name"
+            >
+              slideInX
+            </p>
+          </div>,
+          Array [
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop duration"
+              >
+                duration
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input duration"
+                onChange={[Function]}
+                type="text"
+                value="1.5s"
+              />
+            </div>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop timingFunction"
+              >
+                timing-function
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input timingFunction"
+                onChange={[Function]}
+                type="text"
+                value="ease"
+              />
+            </div>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop delay"
+              >
+                delay
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input delay"
+                onChange={[Function]}
+                type="text"
+                value="0s"
+              />
+            </div>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop iterationCount"
+              >
+                iteration-count
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input iterationCount"
+                onChange={[Function]}
+                type="text"
+                value="1"
+              />
+            </div>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop direction"
+              >
+                direction
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input direction"
+                onChange={[Function]}
+                type="text"
+                value="normal"
+              />
+            </div>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop fillMode"
+              >
+                fill-mode
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="prop-input fillMode"
+                onChange={[Function]}
+                type="text"
+                value="forwards"
+              />
+            </div>,
+          ],
+          <p
+            className="close-curly"
+          >
+            }
+          </p>,
+        ],
+        "className": "class-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              ".square ",
+              <span>
+                {
+              </span>,
+            ],
+            "className": "class-selector",
+          },
+          "ref": null,
+          "rendered": Array [
+            ".square ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "{",
+              },
+              "ref": null,
+              "rendered": "{",
+              "type": "span",
+            },
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop name"
+              >
+                name
+                <span>
+                  :
+                </span>
+              </p>,
+              <p
+                className="prop-input name"
+                id="name"
+              >
+                slideInX
+              </p>,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "name",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop name",
+              },
+              "ref": null,
+              "rendered": Array [
+                "name",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "slideInX",
+                "className": "prop-input name",
+                "id": "name",
+              },
+              "ref": null,
+              "rendered": "slideInX",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-duration",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop duration"
+              >
+                duration
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input duration"
+                onChange={[Function]}
+                type="text"
+                value="1.5s"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "duration",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop duration",
+              },
+              "ref": null,
+              "rendered": Array [
+                "duration",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input duration",
+                "onChange": [Function],
+                "type": "text",
+                "value": "1.5s",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-timing-function",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop timingFunction"
+              >
+                timing-function
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input timingFunction"
+                onChange={[Function]}
+                type="text"
+                value="ease"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "timing-function",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop timingFunction",
+              },
+              "ref": null,
+              "rendered": Array [
+                "timing-function",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input timingFunction",
+                "onChange": [Function],
+                "type": "text",
+                "value": "ease",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-delay",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop delay"
+              >
+                delay
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input delay"
+                onChange={[Function]}
+                type="text"
+                value="0s"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "delay",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop delay",
+              },
+              "ref": null,
+              "rendered": Array [
+                "delay",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input delay",
+                "onChange": [Function],
+                "type": "text",
+                "value": "0s",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-iteration-count",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop iterationCount"
+              >
+                iteration-count
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input iterationCount"
+                onChange={[Function]}
+                type="text"
+                value="1"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "iteration-count",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop iterationCount",
+              },
+              "ref": null,
+              "rendered": Array [
+                "iteration-count",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input iterationCount",
+                "onChange": [Function],
+                "type": "text",
+                "value": "1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-direction",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop direction"
+              >
+                direction
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input direction"
+                onChange={[Function]}
+                type="text"
+                value="normal"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "direction",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop direction",
+              },
+              "ref": null,
+              "rendered": Array [
+                "direction",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input direction",
+                "onChange": [Function],
+                "type": "text",
+                "value": "normal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-fill-mode",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="ani-prop fillMode"
+              >
+                fill-mode
+                <span>
+                  :
+                </span>
+              </p>,
+              <input
+                className="prop-input fillMode"
+                onChange={[Function]}
+                type="text"
+                value="forwards"
+              />,
+            ],
+            "className": "props-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "fill-mode",
+                  <span>
+                    :
+                  </span>,
+                ],
+                "className": "ani-prop fillMode",
+              },
+              "ref": null,
+              "rendered": Array [
+                "fill-mode",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": ":",
+                  },
+                  "ref": null,
+                  "rendered": ":",
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "prop-input fillMode",
+                "onChange": [Function],
+                "type": "text",
+                "value": "forwards",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "}",
+            "className": "close-curly",
+          },
+          "ref": null,
+          "rendered": "}",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="class-container"
+        >
+          <p
+            className="class-selector"
+          >
+            .square 
+            <span>
+              {
+            </span>
+          </p>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop name"
+            >
+              name
+              <span>
+                :
+              </span>
+            </p>
+            <p
+              className="prop-input name"
+              id="name"
+            >
+              slideInX
+            </p>
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop duration"
+            >
+              duration
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input duration"
+              onChange={[Function]}
+              type="text"
+              value="1.5s"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop timingFunction"
+            >
+              timing-function
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input timingFunction"
+              onChange={[Function]}
+              type="text"
+              value="ease"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop delay"
+            >
+              delay
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input delay"
+              onChange={[Function]}
+              type="text"
+              value="0s"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop iterationCount"
+            >
+              iteration-count
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input iterationCount"
+              onChange={[Function]}
+              type="text"
+              value="1"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop direction"
+            >
+              direction
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input direction"
+              onChange={[Function]}
+              type="text"
+              value="normal"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="ani-prop fillMode"
+            >
+              fill-mode
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="prop-input fillMode"
+              onChange={[Function]}
+              type="text"
+              value="forwards"
+            />
+          </div>
+          <p
+            className="close-curly"
+          >
+            }
+          </p>
+        </div>,
+        "className": "animation-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="class-selector"
+            >
+              .square 
+              <span>
+                {
+              </span>
+            </p>,
+            <div
+              className="props-container"
+            >
+              <p
+                className="ani-prop name"
+              >
+                name
+                <span>
+                  :
+                </span>
+              </p>
+              <p
+                className="prop-input name"
+                id="name"
+              >
+                slideInX
+              </p>
+            </div>,
+            Array [
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop duration"
+                >
+                  duration
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input duration"
+                  onChange={[Function]}
+                  type="text"
+                  value="1.5s"
+                />
+              </div>,
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop timingFunction"
+                >
+                  timing-function
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input timingFunction"
+                  onChange={[Function]}
+                  type="text"
+                  value="ease"
+                />
+              </div>,
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop delay"
+                >
+                  delay
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input delay"
+                  onChange={[Function]}
+                  type="text"
+                  value="0s"
+                />
+              </div>,
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop iterationCount"
+                >
+                  iteration-count
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input iterationCount"
+                  onChange={[Function]}
+                  type="text"
+                  value="1"
+                />
+              </div>,
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop direction"
+                >
+                  direction
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input direction"
+                  onChange={[Function]}
+                  type="text"
+                  value="normal"
+                />
+              </div>,
+              <div
+                className="props-container"
+              >
+                <p
+                  className="ani-prop fillMode"
+                >
+                  fill-mode
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="prop-input fillMode"
+                  onChange={[Function]}
+                  type="text"
+                  value="forwards"
+                />
+              </div>,
+            ],
+            <p
+              className="close-curly"
+            >
+              }
+            </p>,
+          ],
+          "className": "class-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                ".square ",
+                <span>
+                  {
+                </span>,
+              ],
+              "className": "class-selector",
+            },
+            "ref": null,
+            "rendered": Array [
+              ".square ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "{",
+                },
+                "ref": null,
+                "rendered": "{",
+                "type": "span",
+              },
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop name"
+                >
+                  name
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <p
+                  className="prop-input name"
+                  id="name"
+                >
+                  slideInX
+                </p>,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "name",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop name",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "name",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "slideInX",
+                  "className": "prop-input name",
+                  "id": "name",
+                },
+                "ref": null,
+                "rendered": "slideInX",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-duration",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop duration"
+                >
+                  duration
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input duration"
+                  onChange={[Function]}
+                  type="text"
+                  value="1.5s"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "duration",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop duration",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "duration",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input duration",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "1.5s",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-timing-function",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop timingFunction"
+                >
+                  timing-function
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input timingFunction"
+                  onChange={[Function]}
+                  type="text"
+                  value="ease"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "timing-function",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop timingFunction",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "timing-function",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input timingFunction",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "ease",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-delay",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop delay"
+                >
+                  delay
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input delay"
+                  onChange={[Function]}
+                  type="text"
+                  value="0s"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "delay",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop delay",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "delay",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input delay",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "0s",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-iteration-count",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop iterationCount"
+                >
+                  iteration-count
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input iterationCount"
+                  onChange={[Function]}
+                  type="text"
+                  value="1"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "iteration-count",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop iterationCount",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "iteration-count",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input iterationCount",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "1",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-direction",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop direction"
+                >
+                  direction
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input direction"
+                  onChange={[Function]}
+                  type="text"
+                  value="normal"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "direction",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop direction",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "direction",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input direction",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "normal",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "val-fill-mode",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="ani-prop fillMode"
+                >
+                  fill-mode
+                  <span>
+                    :
+                  </span>
+                </p>,
+                <input
+                  className="prop-input fillMode"
+                  onChange={[Function]}
+                  type="text"
+                  value="forwards"
+                />,
+              ],
+              "className": "props-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "fill-mode",
+                    <span>
+                      :
+                    </span>,
+                  ],
+                  "className": "ani-prop fillMode",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "fill-mode",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": ":",
+                    },
+                    "ref": null,
+                    "rendered": ":",
+                    "type": "span",
+                  },
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "prop-input fillMode",
+                  "onChange": [Function],
+                  "type": "text",
+                  "value": "forwards",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "}",
+              "className": "close-curly",
+            },
+            "ref": null,
+            "rendered": "}",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

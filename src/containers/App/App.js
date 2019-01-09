@@ -1,75 +1,97 @@
-import React, { Component } from 'react';
-import '../../styles/app.scss';
-import Editor from '../Editor/Editor';
-import Viewer from '../Viewer/Viewer';
-import HowToPopup from '../../components/HowToPopup/HowToPopup'
-import animationsData from '../../utils/data'
-import { Route, Switch, Link, withRouter, Redirect} from 'react-router-dom'
-import { uid } from 'react-uid'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
-
-const animationKeys = Object.keys(animationsData);
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
+import { getPrebuiltAnimations } from '../../thunks/getPrebuiltAnimations'
+import { getMyAnimations } from '../../thunks/getMyAnimations'
+import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
+import AnimationMenu from '../AnimationMenu/AnimationMenu'
+import Editor from '../Editor/Editor'
+import Error from '../../components/Error/Error'
+import Header from '../Header/Header'
+import HowToPopup from '../../components/HowToPopup/HowToPopup'
+import Login from '../Login/Login'
+import SignUp from '../SignUp/SignUp'
+import Viewer from '../Viewer/Viewer'
+import '../../styles/app.scss'
 
 export class App extends Component {
+  
+  async componentDidMount() {
+    const { getPrebuiltAnimations, user_id, getMyAnimations } = this.props
+    await getPrebuiltAnimations()
+    this.loadInitialAnimation()
+    if(user_id) {
+      await getMyAnimations(user_id)
+    }
+  }
+
+  loadInitialAnimation() {
+    const { updateCurrentAnimation, prebuiltAnimations, saveOriginalAnimation } = this.props
+    updateCurrentAnimation({...prebuiltAnimations[0]})
+    saveOriginalAnimation(JSON.stringify({...prebuiltAnimations[0]}))
+    CSSInsertion.updateKeyframes({...prebuiltAnimations[0].keyframes}) 
+  }
 
   render() {
-    let { animation } = this.props
-    if (!animation) {animation = 'slideInX'}
     return (
       <div className="App">
-        <header>
-          <Link to={`/${animation}/properties/howto/general`}>
-            <button className='questions-btn'>Instructions</button>
-          </Link>
-          <h1 className='main-title'>CSS ani<span>Mate</span></h1>
-          <div className='header-btn-container'>
-            <button className='load-example-btn'>Load Examples
-              <i className="fas fa-caret-right"></i>
-            </button>
-            <ul className='examples-list'>
-              {
-                animationKeys.map( keyframe => {
-                  return (
-                    <Link to={`/${keyframe}/properties`} key={uid(keyframe)}>
-                      <li className={`keyframe-ex ${keyframe}`} >{keyframe}</li>
-                    </Link>
-                  )
-                })
-              }
-            </ul>
-          </div>
-        </header>
+        <Header />
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}/`}
-          render={() => <Redirect to='/slideInX/properties'/>}
-          />
-          {
-            animationKeys.map( keyframe => {
-              return (
-                <Route path={`${process.env.PUBLIC_URL}/${keyframe}`} key={uid(keyframe)} render={() => (
-                  <main>
-                    <Editor currentAnimation={keyframe} location={this.props.location}/>
-                    <Viewer currentAnimation={keyframe}/> 
-                  </main>
-                )}/>
-              )
-            })
-          }     
+          <Route exact path='/' render={() => {
+            return <Redirect to='/properties'/>
+          }} />
+          <Route path={`/properties`}
+          render={() => {
+            return ( 
+              <main>
+                <Editor location={this.props.location}/>
+                <Viewer /> 
+              </main>
+            )
+            }}/>   
+          <Route path={`/keyframes`}
+          render={() => {
+            return ( 
+              <main>
+                <Editor location={this.props.location}/>
+                <Viewer /> 
+              </main>
+            )
+            }}/>   
+          <Route path={'/error'} component={Error} />
+          <Route exact path='*' render={() => <Redirect to='/error'/>} />
         </Switch>
-        <Route path={`${process.env.PUBLIC_URL}/${animation}/properties/howto`} component={HowToPopup}/>
+        <Route path={`/properties/howto`} component={HowToPopup}/>
+        <Route path={`/properties/login`} component={Login}/>
+        <Route path={`/properties/signup`} component={SignUp}/>
+        <Route path={`/properties/selectAnimation`} component={AnimationMenu} />
       </div>
     );
   }
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.animation.keyframes.name 
+  prebuiltAnimations: state.prebuiltAnimations,
+  user_id: state.user.id
+})
+
+export const mapDispatchToProps = (dispatch) => ({
+  getPrebuiltAnimations: () => dispatch(getPrebuiltAnimations()),
+  updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
+  saveOriginalAnimation: (animation) => dispatch(saveOriginalAnimation(animation)),
+  getMyAnimations: (id) => dispatch(getMyAnimations(id))
 })
 
 App.propTypes = {
-  animation: PropTypes.string
+  prebuiltAnimations: PropTypes.array,
+  user_id: PropTypes.number,
+  getPrebuiltAnimations: PropTypes.func.isRequired,
+  updateCurrentAnimation: PropTypes.func.isRequired,
+  saveOriginalAnimation: PropTypes.func.isRequired,
+  getMyAnimations: PropTypes.func.isRequired
 }
 
-export default withRouter(connect(mapStateToProps)(App))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
 

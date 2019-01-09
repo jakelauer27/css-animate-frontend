@@ -1,0 +1,1535 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUp Component Should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignUp
+    getMyAnimations={[MockFunction]}
+    loginUser={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="form-container"
+        >
+          <h2
+            className="login-title"
+          >
+            Sign Up
+          </h2>
+          <form
+            className="login-form create-new-user-form"
+            onSubmit={[Function]}
+          >
+            <input
+              name="name"
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value=""
+            />
+            <input
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              type="text"
+              value=""
+            />
+            <input
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />
+            <input
+              name="confirmPassword"
+              onChange={[Function]}
+              placeholder="confirm password"
+              type="password"
+              value=""
+            />
+            <button
+              disabled={true}
+            >
+              Submit
+            </button>
+            <Link
+              className="form-link"
+              replace={false}
+              to="/properties/login"
+            >
+              Return to login
+            </Link>
+          </form>
+          <h3
+            className="duplicate-user-message false"
+          >
+            An account already exists with that email
+          </h3>
+          <h3
+            className="passwords-message false"
+          >
+            Passwords must match
+          </h3>
+          <h3
+            className="passwords-message false"
+          >
+            Please enter a valid e-mail
+          </h3>
+        </div>,
+      ],
+      "className": "sign-up-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="login-title"
+            >
+              Sign Up
+            </h2>,
+            <form
+              className="login-form create-new-user-form"
+              onSubmit={[Function]}
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+              />
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <input
+                name="confirmPassword"
+                onChange={[Function]}
+                placeholder="confirm password"
+                type="password"
+                value=""
+              />
+              <button
+                disabled={true}
+              >
+                Submit
+              </button>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/login"
+              >
+                Return to login
+              </Link>
+            </form>,
+            <h3
+              className="duplicate-user-message false"
+            >
+              An account already exists with that email
+            </h3>,
+            <h3
+              className="passwords-message false"
+            >
+              Passwords must match
+            </h3>,
+            <h3
+              className="passwords-message false"
+            >
+              Please enter a valid e-mail
+            </h3>,
+          ],
+          "className": "form-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sign Up",
+              "className": "login-title",
+            },
+            "ref": null,
+            "rendered": "Sign Up",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="name"
+                  type="text"
+                  value=""
+                />,
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />,
+                <input
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />,
+                <input
+                  name="confirmPassword"
+                  onChange={[Function]}
+                  placeholder="confirm password"
+                  type="password"
+                  value=""
+                />,
+                <button
+                  disabled={true}
+                >
+                  Submit
+                </button>,
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/login"
+                >
+                  Return to login
+                </Link>,
+              ],
+              "className": "login-form create-new-user-form",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "name",
+                  "onChange": [Function],
+                  "placeholder": "name",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "email",
+                  "onChange": [Function],
+                  "placeholder": "email",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "password",
+                  "onChange": [Function],
+                  "placeholder": "password",
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "confirmPassword",
+                  "onChange": [Function],
+                  "placeholder": "confirm password",
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "disabled": true,
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Return to login",
+                  "className": "form-link",
+                  "replace": false,
+                  "to": "/properties/login",
+                },
+                "ref": null,
+                "rendered": "Return to login",
+                "type": [Function],
+              },
+            ],
+            "type": "form",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "An account already exists with that email",
+              "className": "duplicate-user-message false",
+            },
+            "ref": null,
+            "rendered": "An account already exists with that email",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Passwords must match",
+              "className": "passwords-message false",
+            },
+            "ref": null,
+            "rendered": "Passwords must match",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please enter a valid e-mail",
+              "className": "passwords-message false",
+            },
+            "ref": null,
+            "rendered": "Please enter a valid e-mail",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="form-container"
+          >
+            <h2
+              className="login-title"
+            >
+              Sign Up
+            </h2>
+            <form
+              className="login-form create-new-user-form"
+              onSubmit={[Function]}
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+              />
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <input
+                name="confirmPassword"
+                onChange={[Function]}
+                placeholder="confirm password"
+                type="password"
+                value=""
+              />
+              <button
+                disabled={true}
+              >
+                Submit
+              </button>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/login"
+              >
+                Return to login
+              </Link>
+            </form>
+            <h3
+              className="duplicate-user-message false"
+            >
+              An account already exists with that email
+            </h3>
+            <h3
+              className="passwords-message false"
+            >
+              Passwords must match
+            </h3>
+            <h3
+              className="passwords-message false"
+            >
+              Please enter a valid e-mail
+            </h3>
+          </div>,
+        ],
+        "className": "sign-up-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="login-title"
+              >
+                Sign Up
+              </h2>,
+              <form
+                className="login-form create-new-user-form"
+                onSubmit={[Function]}
+              >
+                <input
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="name"
+                  type="text"
+                  value=""
+                />
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />
+                <input
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />
+                <input
+                  name="confirmPassword"
+                  onChange={[Function]}
+                  placeholder="confirm password"
+                  type="password"
+                  value=""
+                />
+                <button
+                  disabled={true}
+                >
+                  Submit
+                </button>
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/login"
+                >
+                  Return to login
+                </Link>
+              </form>,
+              <h3
+                className="duplicate-user-message false"
+              >
+                An account already exists with that email
+              </h3>,
+              <h3
+                className="passwords-message false"
+              >
+                Passwords must match
+              </h3>,
+              <h3
+                className="passwords-message false"
+              >
+                Please enter a valid e-mail
+              </h3>,
+            ],
+            "className": "form-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign Up",
+                "className": "login-title",
+              },
+              "ref": null,
+              "rendered": "Sign Up",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="name"
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="email"
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="password"
+                    type="password"
+                    value=""
+                  />,
+                  <input
+                    name="confirmPassword"
+                    onChange={[Function]}
+                    placeholder="confirm password"
+                    type="password"
+                    value=""
+                  />,
+                  <button
+                    disabled={true}
+                  >
+                    Submit
+                  </button>,
+                  <Link
+                    className="form-link"
+                    replace={false}
+                    to="/properties/login"
+                  >
+                    Return to login
+                  </Link>,
+                ],
+                "className": "login-form create-new-user-form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "name",
+                    "onChange": [Function],
+                    "placeholder": "name",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "email",
+                    "onChange": [Function],
+                    "placeholder": "email",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "password",
+                    "onChange": [Function],
+                    "placeholder": "password",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "confirmPassword",
+                    "onChange": [Function],
+                    "placeholder": "confirm password",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "disabled": true,
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Return to login",
+                    "className": "form-link",
+                    "replace": false,
+                    "to": "/properties/login",
+                  },
+                  "ref": null,
+                  "rendered": "Return to login",
+                  "type": [Function],
+                },
+              ],
+              "type": "form",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "An account already exists with that email",
+                "className": "duplicate-user-message false",
+              },
+              "ref": null,
+              "rendered": "An account already exists with that email",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Passwords must match",
+                "className": "passwords-message false",
+              },
+              "ref": null,
+              "rendered": "Passwords must match",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please enter a valid e-mail",
+                "className": "passwords-message false",
+              },
+              "ref": null,
+              "rendered": "Please enter a valid e-mail",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`SignUp Component Should match the snapshot if it renders the redirect 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignUp
+    getMyAnimations={[MockFunction]}
+    loginUser={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="form-container"
+        >
+          <h2
+            className="login-title"
+          >
+            Sign Up
+          </h2>
+          <form
+            className="login-form create-new-user-form"
+            onSubmit={[Function]}
+          >
+            <input
+              name="name"
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value=""
+            />
+            <input
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              type="text"
+              value=""
+            />
+            <input
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              type="password"
+              value=""
+            />
+            <input
+              name="confirmPassword"
+              onChange={[Function]}
+              placeholder="confirm password"
+              type="password"
+              value=""
+            />
+            <button
+              disabled={true}
+            >
+              Submit
+            </button>
+            <Link
+              className="form-link"
+              replace={false}
+              to="/properties/login"
+            >
+              Return to login
+            </Link>
+          </form>
+          <h3
+            className="duplicate-user-message false"
+          >
+            An account already exists with that email
+          </h3>
+          <h3
+            className="passwords-message false"
+          >
+            Passwords must match
+          </h3>
+          <h3
+            className="passwords-message false"
+          >
+            Please enter a valid e-mail
+          </h3>
+        </div>,
+      ],
+      "className": "sign-up-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="login-title"
+            >
+              Sign Up
+            </h2>,
+            <form
+              className="login-form create-new-user-form"
+              onSubmit={[Function]}
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+              />
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <input
+                name="confirmPassword"
+                onChange={[Function]}
+                placeholder="confirm password"
+                type="password"
+                value=""
+              />
+              <button
+                disabled={true}
+              >
+                Submit
+              </button>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/login"
+              >
+                Return to login
+              </Link>
+            </form>,
+            <h3
+              className="duplicate-user-message false"
+            >
+              An account already exists with that email
+            </h3>,
+            <h3
+              className="passwords-message false"
+            >
+              Passwords must match
+            </h3>,
+            <h3
+              className="passwords-message false"
+            >
+              Please enter a valid e-mail
+            </h3>,
+          ],
+          "className": "form-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Sign Up",
+              "className": "login-title",
+            },
+            "ref": null,
+            "rendered": "Sign Up",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="name"
+                  type="text"
+                  value=""
+                />,
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />,
+                <input
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />,
+                <input
+                  name="confirmPassword"
+                  onChange={[Function]}
+                  placeholder="confirm password"
+                  type="password"
+                  value=""
+                />,
+                <button
+                  disabled={true}
+                >
+                  Submit
+                </button>,
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/login"
+                >
+                  Return to login
+                </Link>,
+              ],
+              "className": "login-form create-new-user-form",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "name",
+                  "onChange": [Function],
+                  "placeholder": "name",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "email",
+                  "onChange": [Function],
+                  "placeholder": "email",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "password",
+                  "onChange": [Function],
+                  "placeholder": "password",
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "name": "confirmPassword",
+                  "onChange": [Function],
+                  "placeholder": "confirm password",
+                  "type": "password",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "disabled": true,
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Return to login",
+                  "className": "form-link",
+                  "replace": false,
+                  "to": "/properties/login",
+                },
+                "ref": null,
+                "rendered": "Return to login",
+                "type": [Function],
+              },
+            ],
+            "type": "form",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "An account already exists with that email",
+              "className": "duplicate-user-message false",
+            },
+            "ref": null,
+            "rendered": "An account already exists with that email",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Passwords must match",
+              "className": "passwords-message false",
+            },
+            "ref": null,
+            "rendered": "Passwords must match",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please enter a valid e-mail",
+              "className": "passwords-message false",
+            },
+            "ref": null,
+            "rendered": "Please enter a valid e-mail",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="form-container"
+          >
+            <h2
+              className="login-title"
+            >
+              Sign Up
+            </h2>
+            <form
+              className="login-form create-new-user-form"
+              onSubmit={[Function]}
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+              />
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="email"
+                type="text"
+                value=""
+              />
+              <input
+                name="password"
+                onChange={[Function]}
+                placeholder="password"
+                type="password"
+                value=""
+              />
+              <input
+                name="confirmPassword"
+                onChange={[Function]}
+                placeholder="confirm password"
+                type="password"
+                value=""
+              />
+              <button
+                disabled={true}
+              >
+                Submit
+              </button>
+              <Link
+                className="form-link"
+                replace={false}
+                to="/properties/login"
+              >
+                Return to login
+              </Link>
+            </form>
+            <h3
+              className="duplicate-user-message false"
+            >
+              An account already exists with that email
+            </h3>
+            <h3
+              className="passwords-message false"
+            >
+              Passwords must match
+            </h3>
+            <h3
+              className="passwords-message false"
+            >
+              Please enter a valid e-mail
+            </h3>
+          </div>,
+        ],
+        "className": "sign-up-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="login-title"
+              >
+                Sign Up
+              </h2>,
+              <form
+                className="login-form create-new-user-form"
+                onSubmit={[Function]}
+              >
+                <input
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="name"
+                  type="text"
+                  value=""
+                />
+                <input
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="email"
+                  type="text"
+                  value=""
+                />
+                <input
+                  name="password"
+                  onChange={[Function]}
+                  placeholder="password"
+                  type="password"
+                  value=""
+                />
+                <input
+                  name="confirmPassword"
+                  onChange={[Function]}
+                  placeholder="confirm password"
+                  type="password"
+                  value=""
+                />
+                <button
+                  disabled={true}
+                >
+                  Submit
+                </button>
+                <Link
+                  className="form-link"
+                  replace={false}
+                  to="/properties/login"
+                >
+                  Return to login
+                </Link>
+              </form>,
+              <h3
+                className="duplicate-user-message false"
+              >
+                An account already exists with that email
+              </h3>,
+              <h3
+                className="passwords-message false"
+              >
+                Passwords must match
+              </h3>,
+              <h3
+                className="passwords-message false"
+              >
+                Please enter a valid e-mail
+              </h3>,
+            ],
+            "className": "form-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sign Up",
+                "className": "login-title",
+              },
+              "ref": null,
+              "rendered": "Sign Up",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="name"
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="email"
+                    type="text"
+                    value=""
+                  />,
+                  <input
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="password"
+                    type="password"
+                    value=""
+                  />,
+                  <input
+                    name="confirmPassword"
+                    onChange={[Function]}
+                    placeholder="confirm password"
+                    type="password"
+                    value=""
+                  />,
+                  <button
+                    disabled={true}
+                  >
+                    Submit
+                  </button>,
+                  <Link
+                    className="form-link"
+                    replace={false}
+                    to="/properties/login"
+                  >
+                    Return to login
+                  </Link>,
+                ],
+                "className": "login-form create-new-user-form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "name",
+                    "onChange": [Function],
+                    "placeholder": "name",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "email",
+                    "onChange": [Function],
+                    "placeholder": "email",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "password",
+                    "onChange": [Function],
+                    "placeholder": "password",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "name": "confirmPassword",
+                    "onChange": [Function],
+                    "placeholder": "confirm password",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "disabled": true,
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Return to login",
+                    "className": "form-link",
+                    "replace": false,
+                    "to": "/properties/login",
+                  },
+                  "ref": null,
+                  "rendered": "Return to login",
+                  "type": [Function],
+                },
+              ],
+              "type": "form",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "An account already exists with that email",
+                "className": "duplicate-user-message false",
+              },
+              "ref": null,
+              "rendered": "An account already exists with that email",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Passwords must match",
+                "className": "passwords-message false",
+              },
+              "ref": null,
+              "rendered": "Passwords must match",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please enter a valid e-mail",
+                "className": "passwords-message false",
+              },
+              "ref": null,
+              "rendered": "Please enter a valid e-mail",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
