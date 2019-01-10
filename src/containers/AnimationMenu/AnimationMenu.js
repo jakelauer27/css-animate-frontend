@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
+import { connect } from 'react-redux'
+import { Route, Redirect } from 'react-router-dom'
+import { PropTypes } from 'prop-types'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
 import MyAnimationList from '../../containers/AnimationList/MyAnimationList'
 import PreBuiltAnimationList from '../../containers/AnimationList/PreBuiltAnimationList'
 import CreateAnimationForm from '../CreateAnimationForm/CreateAnimationForm'
-import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
-import { connect } from 'react-redux'
-import { Route, Redirect, Switch } from 'react-router-dom'
-import * as CSSInsertion from '../../utils/keyframesInsertion'
 
 export class AnimationMenu extends Component {
   constructor() {
@@ -16,10 +17,11 @@ export class AnimationMenu extends Component {
   }
 
   loadAnimation() {
-    const { templates, loadAnimation, saveOriginalAnimation, myAnimations } = this.props
+    const { prebuiltAnimations, loadAnimation, saveOriginalAnimation, myAnimations } = this.props
     if(!this.checkSelected()) {return false}
     const selectedId = document.querySelector('.selected-animation').classList[1]
-    const selectedAnimation= templates.find(template => template.id === parseInt(selectedId)) || myAnimations.find(animation => animation.id === parseInt(selectedId))
+    const selectedAnimation= prebuiltAnimations.find(animation => animation.id === parseInt(selectedId)) 
+      || myAnimations.find(animation => animation.id === parseInt(selectedId))
     
     loadAnimation(selectedAnimation)
     saveOriginalAnimation(JSON.stringify(selectedAnimation))
@@ -47,7 +49,7 @@ export class AnimationMenu extends Component {
         <div className='select-ani-popup'>
           <header className='select-ani-container-header'>
             <h2 className='my-ani-header'>My Animations</h2>
-            <h2 className='prebuilt-ani-header'>Prebuilt Templates</h2>
+            <h2 className='prebuilt-ani-header'>Prebuilt prebuiltAnimations</h2>
           </header>
           <div className='list-container'>
             <MyAnimationList />
@@ -61,9 +63,7 @@ export class AnimationMenu extends Component {
             </button>
           </div>
         </div>
-        <Switch>
-          <Route path='/properties/selectAnimation/create' component={CreateAnimationForm} />
-        </Switch>
+        <Route path='/properties/selectAnimation/create' component={CreateAnimationForm} />
         {editAnimation}
       </div>
     )
@@ -73,7 +73,7 @@ export class AnimationMenu extends Component {
 
 export const mapStateToProps = (state) => ({
   myAnimations: state.myAnimations,
-  templates: state.prebuiltAnimations,
+  prebuiltAnimations: state.prebuiltAnimations,
   currentAnimation: state.currentAnimation,
   animationForEdit: state.animationForEdit
 })
@@ -82,5 +82,14 @@ export const mapDispatchToProps = (dispatch) => ({
   loadAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
   saveOriginalAnimation: (animation) => dispatch(saveOriginalAnimation(animation))
 })
+
+AnimationMenu.propTypes = {
+  myAnimations: PropTypes.array,
+  prebuiltAnimations: PropTypes.array,
+  currentAnimation: PropTypes.object,
+  animationForEdit: PropTypes.object,
+  loadAnimation: PropTypes.func.isRequired,
+  saveOriginalAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(AnimationMenu)

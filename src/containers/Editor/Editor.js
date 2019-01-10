@@ -19,10 +19,10 @@ export class Editor extends Component {
     }
   }
 
-  resetAnimation(animation) {
-    animation = JSON.parse(animation)
-    this.props.updateCurrentAnimation(animation)
-    CSSInsertion.updateKeyframes(animation.keyframes)
+  resetAnimation() {
+    const newAnimation = JSON.parse(this.props.originalAnimation)
+    this.props.updateCurrentAnimation(newAnimation)
+    CSSInsertion.updateKeyframes(newAnimation.keyframes)
     this.resetInputValidation()
   }
   
@@ -81,7 +81,7 @@ export class Editor extends Component {
           <Link to={`/properties/copy`} className='lower-btn copy-btn'>
             copy code   
           </Link>
-          <button className={`lower-btn reset-btn`} onClick={() => this.resetAnimation(this.props.originalAnimation)}>
+          <button className={`lower-btn reset-btn`} onClick={() => this.resetAnimation()}>
             reset
           </button>  
             <button className='lower-btn save-as-btn' onClick={this.toggleSaveas}>save as</button>

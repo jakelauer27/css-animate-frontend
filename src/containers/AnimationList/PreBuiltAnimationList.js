@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { uid } from 'react-uid'
-
+import { PropTypes } from 'prop-types'
 
 export class PreBuiltAnimationList extends Component {
 
@@ -12,12 +12,12 @@ export class PreBuiltAnimationList extends Component {
   }
 
   render() {
-    const { templates, currentAnimation } = this.props
+    const { prebuiltAnimations, currentAnimation } = this.props
     return (
       <section className='prebuilt-animation-section'>
         <ul className= 'prebuilt-animation-list'>
         {
-          templates.map(animation => {
+          prebuiltAnimations.map(animation => {
             let selected = ''
             if (animation.id === currentAnimation.id) {selected = 'selected-animation'}
             return (
@@ -37,8 +37,13 @@ export class PreBuiltAnimationList extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  templates: state.prebuiltAnimations,
+  prebuiltAnimations: state.prebuiltAnimations,
   currentAnimation: state.currentAnimation
 })
+
+PreBuiltAnimationList.propTypes = {
+  prebuiltAnimations: PropTypes.array,
+  currentAnimation: PropTypes.object
+}
 
 export default connect(mapStateToProps)(PreBuiltAnimationList)

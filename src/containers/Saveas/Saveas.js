@@ -1,20 +1,24 @@
 import React, { Component } from 'react'
 import * as API from '../../utils/apiCalls/apiCalls'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
+import { animationPropRegex } from '../../utils/formValidators/regexpressions' 
 
 export class Saveas extends Component {
   constructor() {
     super()
     this.state = {
       name: '',
+      disabled: true
     }
   }
 
   async handleChange(e) {
-    this.setState({name: e.target.value})
+    let disabled = !animationPropRegex.name.test(e.target.value)
+    this.setState({name: e.target.value, disabled})
   }
 
   async handleSubmit(e) {
@@ -30,6 +34,7 @@ export class Saveas extends Component {
     await getMyAnimations(user_id)
     saveOriginalAnimation(JSON.stringify(newAnimation))
     updateCurrentAnimation(newAnimation)
+    CSSInsertion.updateKeyframes({...newAnimation.keyframes}) 
     closePopup()
   }
 
@@ -57,7 +62,7 @@ export class Saveas extends Component {
           <h2>Save Animation As</h2>
           <input type='text' value={this.state.name} placeholder='name' onChange={(e) => this.handleChange(e)}>
           </input>
-          <button onClick={(e) => this.handleSubmit(e)} className='save-form-btn'>Save</button>
+          <button onClick={(e) => this.handleSubmit(e)} className='save-form-btn' disabled={this.state.disabled}>Save</button>
           <button onClick={(e) => this.cancel(e)} className='cancel-form-btn cancel-saveas'>cancel</button>
         </form>
       </div>

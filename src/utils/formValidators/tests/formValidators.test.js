@@ -35,18 +35,16 @@ describe('FormValidators', () => {
         
     it('should call invalidInput if it fails validation', () => {
       mockTarget = {classList: ['', 'opacity']}
-      const result = formValidators.keyframeValue(mockTarget, '6jsjke%')
+      formValidators.keyframeValue(mockTarget, '6jsjke%')
 
       expect(helpers.invalidInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(false)
     })
 
     it('should call validInput if it passes validation', () => {
       mockTarget = {classList: ['', 'height']}
-      const result = formValidators.keyframeValue(mockTarget, '600px')
+      formValidators.keyframeValue(mockTarget, '600px')
 
       expect(helpers.validInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(true)
     })
 
   })
@@ -61,17 +59,15 @@ describe('FormValidators', () => {
     })
     
     it('should call invalidInput if it fails validation', () => {
-      const result = formValidators.validateAnimationProp(mockTarget, '6jsjke%')
+      formValidators.validateAnimationProp(mockTarget, '6jsjke%')
 
       expect(helpers.invalidInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(false)
     })
 
     it('should call validInput if it passes validation', () => {
-      const result = formValidators.validateAnimationProp(mockTarget, '.6s')
+      formValidators.validateAnimationProp(mockTarget, '.6s')
 
       expect(helpers.validInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(true)
     })
   })
 
@@ -85,17 +81,15 @@ describe('FormValidators', () => {
     })
 
     it('should call invalidInput if it fails validation', () => {
-      const result = formValidators.keyframeStage(mockTarget, '6jsjke%')
+      formValidators.keyframeStage(mockTarget, '6jsjke%')
 
       expect(helpers.invalidInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(false)
     })
 
     it('should call validInput if it passes validation', () => {
-      const result = formValidators.keyframeStage(mockTarget, '66%')
+      formValidators.keyframeStage(mockTarget, '66%')
 
       expect(helpers.validInput).toHaveBeenCalledWith(mockTarget)
-      expect(result).toBe(true)
     })
   })
 
@@ -127,15 +121,17 @@ describe('FormValidators', () => {
     })
 
     it('should return true and call validInput() if it passes validation', () => {
-      const result = formValidators.keyframeProperty(mockTarget, 'transform')
+      formValidators.keyframeProperty(mockTarget, 'transform')
 
-      expect(result).toBe(true)
+      expect(helpers.validInput).toHaveBeenCalledWith(mockTarget)
+
     })
 
     it('should return false and call invalidInput() if it fails validation', () => {
-      const result = formValidators.keyframeProperty(mockTarget, 'tranffssform')
+      formValidators.keyframeProperty(mockTarget, 'tranffssform')
 
-      expect(result).toBe(false)
+      expect(helpers.invalidInput).toHaveBeenCalledWith(mockTarget)
+
     })
   })
 })

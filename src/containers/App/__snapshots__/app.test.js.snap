@@ -105,20 +105,20 @@ ShallowWrapper {
             render={[Function]}
           />
           <Route
-            component={[MockFunction]}
+            component={[Function]}
             path="/error"
           />
         </Switch>,
         <Route
-          component={[MockFunction]}
+          component={[Function]}
           path="/properties/howto"
         />,
         <Route
-          component={[MockFunction]}
+          component={[Function]}
           path="/properties/login"
         />,
         <Route
-          component={[MockFunction]}
+          component={[Function]}
           path="/properties/signup"
         />,
         <Route
@@ -142,7 +142,7 @@ ShallowWrapper {
         "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": [MockFunction],
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -164,7 +164,7 @@ ShallowWrapper {
               render={[Function]}
             />,
             <Route
-              component={[MockFunction]}
+              component={[Function]}
               path="/error"
             />,
           ],
@@ -213,7 +213,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [MockFunction],
+              "component": [Function],
               "path": "/error",
             },
             "ref": null,
@@ -228,7 +228,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [MockFunction],
+          "component": [Function],
           "path": "/properties/howto",
         },
         "ref": null,
@@ -240,7 +240,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [MockFunction],
+          "component": [Function],
           "path": "/properties/login",
         },
         "ref": null,
@@ -252,7 +252,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "component": [MockFunction],
+          "component": [Function],
           "path": "/properties/signup",
         },
         "ref": null,
@@ -310,20 +310,20 @@ ShallowWrapper {
               render={[Function]}
             />
             <Route
-              component={[MockFunction]}
+              component={[Function]}
               path="/error"
             />
           </Switch>,
           <Route
-            component={[MockFunction]}
+            component={[Function]}
             path="/properties/howto"
           />,
           <Route
-            component={[MockFunction]}
+            component={[Function]}
             path="/properties/login"
           />,
           <Route
-            component={[MockFunction]}
+            component={[Function]}
             path="/properties/signup"
           />,
           <Route
@@ -347,7 +347,7 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": [MockFunction],
+          "type": [Function],
         },
         Object {
           "instance": null,
@@ -369,7 +369,7 @@ ShallowWrapper {
                 render={[Function]}
               />,
               <Route
-                component={[MockFunction]}
+                component={[Function]}
                 path="/error"
               />,
             ],
@@ -418,7 +418,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "component": [MockFunction],
+                "component": [Function],
                 "path": "/error",
               },
               "ref": null,
@@ -433,7 +433,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [MockFunction],
+            "component": [Function],
             "path": "/properties/howto",
           },
           "ref": null,
@@ -445,7 +445,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [MockFunction],
+            "component": [Function],
             "path": "/properties/login",
           },
           "ref": null,
@@ -457,7 +457,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [MockFunction],
+            "component": [Function],
             "path": "/properties/signup",
           },
           "ref": null,

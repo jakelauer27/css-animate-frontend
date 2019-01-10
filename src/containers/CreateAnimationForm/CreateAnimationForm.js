@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { uid } from 'react-uid'
-import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
-import * as API from '../../utils/apiCalls/apiCalls'
+import { PropTypes } from 'prop-types'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
 import { removeAnimationForEdit, updateCurrentAnimation } from '../../actions/actions'
-import { editAnimation } from '../../utils/apiCalls/apiCalls'
+import * as API from '../../utils/apiCalls/apiCalls'
 import * as formValidation from '../../utils/formValidators/formValidators'
-
 
 export class CreateAnimationForm extends Component {
   constructor() {
@@ -43,19 +41,28 @@ export class CreateAnimationForm extends Component {
   }
 
   handleSubmit = async () => {
-    const { user_id, getMyAnimations, animationToEdit, cancelEdit, updateCurrentAnimation } = this.props
+    const { animationToEdit } = this.props
     const { properties, keyframes } = this.state
     let savedkeyframes = { name: properties.name, sections: keyframes}
-    document.querySelector('.selected-animation').classList.remove('selected-animation')
+    const currentSelected = document.querySelector('.selected-animation')
+    if (currentSelected) {currentSelected.classList.remove('selected-animation')}
+    animationToEdit.properties ? 
+      this.submitEditedAnimation(savedkeyframes) : 
+      this.submitNewAnimation(savedkeyframes)
+  }
 
-    if (animationToEdit.properties) {
-      await editAnimation(user_id, animationToEdit.id, {name: properties.name, user_id, id: animationToEdit.id, properties, keyframes: savedkeyframes})
-      updateCurrentAnimation({id: animationToEdit.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
-      cancelEdit()
-      await getMyAnimations(user_id)
-      return
-    }
+  submitEditedAnimation = async (savedkeyframes) => {
+    const { user_id, getMyAnimations, animationToEdit, cancelEdit, updateCurrentAnimation } = this.props
+    const { properties } = this.state
+    await API.editAnimation(user_id, animationToEdit.id, {name: properties.name, user_id, id: animationToEdit.id, properties, keyframes: savedkeyframes})
+    updateCurrentAnimation({id: animationToEdit.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
+    cancelEdit()
+    await getMyAnimations(user_id)
+  }
 
+  submitNewAnimation = async (savedkeyframes) => {
+    const { user_id, getMyAnimations, updateCurrentAnimation } = this.props
+    const { properties } = this.state
     const saved = await API.addAnimation(user_id, properties.name, JSON.stringify(properties), JSON.stringify(savedkeyframes))
     updateCurrentAnimation({id: saved.id, user_id, ani_name: properties.name, properties, keyframes: savedkeyframes})
     await getMyAnimations(user_id)
@@ -137,10 +144,12 @@ export class CreateAnimationForm extends Component {
     Object.keys(properties).forEach(property => {
       if (!properties[property]) {return incomplete = true}
     })
-    Object.keys(keyframes).forEach((section, i) => {
-      if(!keyframes[i].name || !keyframes[i].label) {return incomplete = true}
-      keyframes[i].properties.forEach((property, j) => {
-        if (!keyframes[i].properties[j].name || !keyframes[i].properties[j].value ) {return incomplete = true}
+    Object.keys(keyframes).forEach((section, sectionIndex) => {
+      if(!keyframes[sectionIndex].name || !keyframes[sectionIndex].label) {return incomplete = true}
+      keyframes[sectionIndex].properties.forEach((property, propertyIndex) => {
+        if (!keyframes[sectionIndex].properties[propertyIndex].name || !keyframes[sectionIndex].properties[propertyIndex].value ) {
+          return incomplete = true
+        }
       })
     })
     return incomplete
@@ -261,5 +270,12 @@ export const mapDispatchToProps = (dispatch) => ({
   updateCurrentAnimation: (animation) => dispatch(updateCurrentAnimation(animation)),
 })
 
+CreateAnimationForm.propTypes = {
+  user_id: PropTypes.number,
+  animationToEdit: PropTypes.object,
+  getMyAnimations: PropTypes.func.isRequired,
+  cancelEdit: PropTypes.func.isRequired,
+  updateCurrentAnimation: PropTypes.func.isRequired
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateAnimationForm)

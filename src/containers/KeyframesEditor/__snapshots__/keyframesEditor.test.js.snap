@@ -4,8 +4,10 @@ exports[`keyframesEditor should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <KeyframesEditor
-    animation={
+    currentAnimation={
       Object {
+        "ani_name": "slideInX",
+        "id": 1,
         "keyframes": Object {
           "name": "slideInX",
           "sections": Array [
@@ -17,6 +19,10 @@ ShallowWrapper {
                   "name": "transform",
                   "value": "translateX(-300px)",
                 },
+                Object {
+                  "name": "color",
+                  "value": "blue",
+                },
               ],
             },
             Object {
@@ -26,6 +32,10 @@ ShallowWrapper {
                 Object {
                   "name": "transform",
                   "value": "translateX(0px)",
+                },
+                Object {
+                  "name": "color",
+                  "value": "blue",
                 },
               ],
             },
@@ -40,9 +50,10 @@ ShallowWrapper {
           "name": "slideInX",
           "timingFunction": "ease",
         },
+        "user_id": 1,
       }
     }
-    updateAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -104,6 +115,24 @@ ShallowWrapper {
               value="translateX(-300px)"
             />
           </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="keyframe-property"
+            >
+              color
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="keyframe-prop-value color"
+              onChange={[Function]}
+              type="text"
+              value="blue"
+            />
+          </div>
           <p
             className="close-curly"
           >
@@ -139,6 +168,24 @@ ShallowWrapper {
               onChange={[Function]}
               type="text"
               value="translateX(0px)"
+            />
+          </div>
+          <div
+            className="props-container"
+          >
+            <p
+              className="keyframe-property"
+            >
+              color
+              <span>
+                :
+              </span>
+            </p>
+            <input
+              className="keyframe-prop-value color"
+              onChange={[Function]}
+              type="text"
+              value="blue"
             />
           </div>
           <p
@@ -207,6 +254,24 @@ ShallowWrapper {
                   value="translateX(-300px)"
                 />
               </div>
+              <div
+                className="props-container"
+              >
+                <p
+                  className="keyframe-property"
+                >
+                  color
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="keyframe-prop-value color"
+                  onChange={[Function]}
+                  type="text"
+                  value="blue"
+                />
+              </div>
               <p
                 className="close-curly"
               >
@@ -242,6 +307,24 @@ ShallowWrapper {
                   onChange={[Function]}
                   type="text"
                   value="translateX(0px)"
+                />
+              </div>
+              <div
+                className="props-container"
+              >
+                <p
+                  className="keyframe-property"
+                >
+                  color
+                  <span>
+                    :
+                  </span>
+                </p>
+                <input
+                  className="keyframe-prop-value color"
+                  onChange={[Function]}
+                  type="text"
+                  value="blue"
                 />
               </div>
               <p
@@ -347,6 +430,24 @@ ShallowWrapper {
                     onChange={[Function]}
                     type="text"
                     value="translateX(-300px)"
+                  />
+                </div>,
+                <div
+                  className="props-container"
+                >
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
                   />
                 </div>,
               ],
@@ -465,6 +566,78 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
+              "key": "uid3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>,
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
+                  />,
+                ],
+                "className": "props-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "color",
+                      <span>
+                        :
+                      </span>,
+                    ],
+                    "className": "keyframe-property",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "color",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": ":",
+                      },
+                      "ref": null,
+                      "rendered": ":",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "keyframe-prop-value color",
+                    "onChange": [Function],
+                    "type": "text",
+                    "value": "blue",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
@@ -480,7 +653,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "uid3",
+          "key": "uid4",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -511,6 +684,24 @@ ShallowWrapper {
                     onChange={[Function]}
                     type="text"
                     value="translateX(0px)"
+                  />
+                </div>,
+                <div
+                  className="props-container"
+                >
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
                   />
                 </div>,
               ],
@@ -557,7 +748,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "uid4",
+              "key": "uid5",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
@@ -619,6 +810,78 @@ ShallowWrapper {
                     "onChange": [Function],
                     "type": "text",
                     "value": "translateX(0px)",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "uid6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>,
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
+                  />,
+                ],
+                "className": "props-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "color",
+                      <span>
+                        :
+                      </span>,
+                    ],
+                    "className": "keyframe-property",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "color",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": ":",
+                      },
+                      "ref": null,
+                      "rendered": ":",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "keyframe-prop-value color",
+                    "onChange": [Function],
+                    "type": "text",
+                    "value": "blue",
                   },
                   "ref": null,
                   "rendered": null,
@@ -712,6 +975,24 @@ ShallowWrapper {
                 value="translateX(-300px)"
               />
             </div>
+            <div
+              className="props-container"
+            >
+              <p
+                className="keyframe-property"
+              >
+                color
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="keyframe-prop-value color"
+                onChange={[Function]}
+                type="text"
+                value="blue"
+              />
+            </div>
             <p
               className="close-curly"
             >
@@ -747,6 +1028,24 @@ ShallowWrapper {
                 onChange={[Function]}
                 type="text"
                 value="translateX(0px)"
+              />
+            </div>
+            <div
+              className="props-container"
+            >
+              <p
+                className="keyframe-property"
+              >
+                color
+                <span>
+                  :
+                </span>
+              </p>
+              <input
+                className="keyframe-prop-value color"
+                onChange={[Function]}
+                type="text"
+                value="blue"
               />
             </div>
             <p
@@ -815,6 +1114,24 @@ ShallowWrapper {
                     value="translateX(-300px)"
                   />
                 </div>
+                <div
+                  className="props-container"
+                >
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
+                  />
+                </div>
                 <p
                   className="close-curly"
                 >
@@ -850,6 +1167,24 @@ ShallowWrapper {
                     onChange={[Function]}
                     type="text"
                     value="translateX(0px)"
+                  />
+                </div>
+                <div
+                  className="props-container"
+                >
+                  <p
+                    className="keyframe-property"
+                  >
+                    color
+                    <span>
+                      :
+                    </span>
+                  </p>
+                  <input
+                    className="keyframe-prop-value color"
+                    onChange={[Function]}
+                    type="text"
+                    value="blue"
                   />
                 </div>
                 <p
@@ -955,6 +1290,24 @@ ShallowWrapper {
                       onChange={[Function]}
                       type="text"
                       value="translateX(-300px)"
+                    />
+                  </div>,
+                  <div
+                    className="props-container"
+                  >
+                    <p
+                      className="keyframe-property"
+                    >
+                      color
+                      <span>
+                        :
+                      </span>
+                    </p>
+                    <input
+                      className="keyframe-prop-value color"
+                      onChange={[Function]}
+                      type="text"
+                      value="blue"
                     />
                   </div>,
                 ],
@@ -1073,6 +1426,78 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
+                "key": "uid3",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="keyframe-property"
+                    >
+                      color
+                      <span>
+                        :
+                      </span>
+                    </p>,
+                    <input
+                      className="keyframe-prop-value color"
+                      onChange={[Function]}
+                      type="text"
+                      value="blue"
+                    />,
+                  ],
+                  "className": "props-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "color",
+                        <span>
+                          :
+                        </span>,
+                      ],
+                      "className": "keyframe-property",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "color",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": ":",
+                        },
+                        "ref": null,
+                        "rendered": ":",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "keyframe-prop-value color",
+                      "onChange": [Function],
+                      "type": "text",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
@@ -1088,7 +1513,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "uid3",
+            "key": "uid4",
             "nodeType": "host",
             "props": Object {
               "children": Array [
@@ -1119,6 +1544,24 @@ ShallowWrapper {
                       onChange={[Function]}
                       type="text"
                       value="translateX(0px)"
+                    />
+                  </div>,
+                  <div
+                    className="props-container"
+                  >
+                    <p
+                      className="keyframe-property"
+                    >
+                      color
+                      <span>
+                        :
+                      </span>
+                    </p>
+                    <input
+                      className="keyframe-prop-value color"
+                      onChange={[Function]}
+                      type="text"
+                      value="blue"
                     />
                   </div>,
                 ],
@@ -1165,7 +1608,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "uid4",
+                "key": "uid5",
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
@@ -1237,6 +1680,78 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
+                "key": "uid6",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="keyframe-property"
+                    >
+                      color
+                      <span>
+                        :
+                      </span>
+                    </p>,
+                    <input
+                      className="keyframe-prop-value color"
+                      onChange={[Function]}
+                      type="text"
+                      value="blue"
+                    />,
+                  ],
+                  "className": "props-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "color",
+                        <span>
+                          :
+                        </span>,
+                      ],
+                      "className": "keyframe-property",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "color",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": ":",
+                        },
+                        "ref": null,
+                        "rendered": ":",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "keyframe-prop-value color",
+                      "onChange": [Function],
+                      "type": "text",
+                      "value": "blue",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
@@ -1292,13 +1807,12 @@ exports[`keyframesEditor should match the snapshot if there is no animation 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <KeyframesEditor
-    animation={
+    currentAnimation={
       Object {
         "keyframes": null,
       }
     }
-    currentAnimation="slideInX"
-    updateAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

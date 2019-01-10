@@ -5,28 +5,22 @@ import { transformRegex, colorRegex } from './regexpressions'
 export const colorInput = (target, inputValue) => {
   if (inputValue.slice(0, 3) === 'rgb') {
     if (!colorRegex.rgb.test(inputValue)) {
-      invalidInput(target)
-      return false
+      return invalidInput(target)
     } else { 
-      validInput(target)
-      return true
+      return validInput(target)
     }
   }
   if (inputValue[0] === '#') {
     if (!colorRegex['#'].test(inputValue)) {
-      invalidInput(target)
-      return false
+      return invalidInput(target)
     } else {
-      validInput(target)
-      return true
+      return validInput(target)
     }
   }
   if (!colorRegex.color.test(inputValue)) {
-    invalidInput(target)
-    return false
+    return invalidInput(target)
   }
-  validInput(target)
-  return true
+  return validInput(target)
 }
 
 export const transformInput = (target, inputValue) => {
@@ -37,14 +31,11 @@ export const transformInput = (target, inputValue) => {
       type[0] = type[0].slice(0, -1)
     }
     if (!transformRegex[type[0]]) {
-      invalidInput(target)
-      return false
+      return invalidInput(target)
     }
     if (!transformRegex[type[0]].test(args[i])) {
-      invalidInput(target)
-      return false
+      return invalidInput(target)
     }
   }
-  validInput(target)
-  return true
+  return validInput(target)
 }

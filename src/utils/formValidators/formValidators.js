@@ -4,30 +4,22 @@ import { colorInput, transformInput } from './keyframepropHelpers.js'
 
 export const validateAnimationProp = (target, inputValue) => {
   if (!animationPropRegex[target.classList[1]].test(inputValue)) {
-    invalidInput(target)
-    return false
+    return invalidInput(target)
   } else {
-    validInput(target)
-    return true
+    return validInput(target)
   }
 }
 
 export const keyframeProperty = ( target, inputValue) => {
   if(!inputValue) {return false}
   if(!target) {
-    if (!keyframesPropertyRegex.test(inputValue)) {
-      return false
-    } else { 
-      return true
-    }
+    return keyframesPropertyRegex.test(inputValue)
   }
 
   if (!keyframesPropertyRegex.test(inputValue)) {
-    invalidInput(target)
-    return false
+    return invalidInput(target)
   } else {
-    validInput(target)
-    return true
+    return validInput(target)
   }
 }
 
@@ -40,21 +32,17 @@ export const keyframeValue = (target, inputValue) => {
     return colorInput(target, inputValue)
   }
   if (!keyframeValueRegex[target.classList[1]].test(inputValue)) {
-    invalidInput(target)
-    return false
+    return invalidInput(target)
   } else {  
-    validInput(target)
-    return true
+    return validInput(target)
   }
 }
 
 export const keyframeStage = (target, inputValue) => {
   if (!keyframeStageRegex.test(inputValue)) {
-    invalidInput(target)
-    return false
+    return invalidInput(target)
   } else {
-    validInput(target)
-    return true
+    return validInput(target)
   }
 }
 

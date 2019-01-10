@@ -19,7 +19,7 @@ describe('userReducer', () => {
   }) 
 
   it('should sign user out', () => {
-    const expected = {name: null}
+    const expected = {}
     const result = userReducer(undefined, signOut())
 
     expect(result).toEqual(expected)

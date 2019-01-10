@@ -1,16 +1,22 @@
 import React from 'react'
 import { PropertiesEditor, mapStateToProps, mapDispatchToProps } from './PropertiesEditor'
 import { shallow } from 'enzyme'
-import { loadAnimation } from '../../actions/actions'
-import * as formValidation from '../../utils/formValidators'
+import { updateCurrentAnimation } from '../../actions/actions'
+import * as formValidation from '../../utils/formValidators/formValidators'
+import * as buttonDisablers from '../../utils/buttondisablers'
 
-jest.mock('../../utils/formValidators')
+jest.mock('../../utils/formValidators/formValidators')
+jest.mock('../../utils/buttondisablers')
 
+formValidation.validateAnimationProp.mockImplementation(() => true)
 
 describe('PropertiesEditor', () => {
+  let mockUpdateCurrentAnimation
   let wrapper
-  const mockUpdateAnimation = jest.fn()
   const mockAnimation = { 
+    ani_name: 'slideInX',
+    id: 1,
+    user_id: 1,
     'properties': {
       'name': 'slideInX',
       'duration': '1.5s',
@@ -48,13 +54,20 @@ describe('PropertiesEditor', () => {
   }
 
   beforeEach(() => {
+    mockUpdateCurrentAnimation = jest.fn()
     document.querySelector = jest.fn().mockImplementation(() => ({
       click: jest.fn()
     }))
-    wrapper = shallow(<PropertiesEditor animation={mockAnimation} updateAnimation={mockUpdateAnimation} />)
+    wrapper = shallow(<PropertiesEditor currentAnimation={mockAnimation} updateCurrentAnimation={mockUpdateCurrentAnimation} />)
   })
   
   it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the snapshot if there is no animation', () => {
+    wrapper = shallow(<PropertiesEditor currentAnimation={{}} updateCurrentAnimation={mockUpdateCurrentAnimation} />)
+
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -81,17 +94,32 @@ describe('PropertiesEditor', () => {
     })
 
     it('should call updateAnimation with the updated Animation', () => {
-      const expected = {"keyframes": {"name": "slideInX", "sections": [{"label": "0%", "name": "0%", "properties": [{"name": "transform", "value": "translateX(-300px)"}]}, {"label": "100%", "name": "100%", "properties": [{"name": "transform", "value": "translateX(0px)"}]}]}, "properties": {"delay": "0s", "direction": "alternate", "duration": "1.5s", "fillMode": "forwards", "iterationCount": "1", "name": "slideInX", "timingFunction": "ease"}}
+      const expected =  {"ani_name": "slideInX", "id": 1, "keyframes": {"name": "slideInX", "sections": [{"label": "0%", "name": "0%", "properties": [{"name": "transform", "value": "translateX(-300px)"}]}, {"label": "100%", "name": "100%", "properties": [{"name": "transform", "value": "translateX(0px)"}]}]}, "properties": {"delay": "0s", "direction": "alternate", "duration":"1.5s", "fillMode": "forwards", "iterationCount": "1", "name": "slideInX", "timingFunction": "ease"}, "user_id": 1}
       wrapper.instance().saveForm(mockEvent)
-      expect(mockUpdateAnimation).toHaveBeenCalledWith(expected)
+      expect(mockUpdateCurrentAnimation).toHaveBeenCalledWith(expected)
+    })
+
+    it('should disable buttons if it is a custom animation', () => {
+      const spy = jest.spyOn(buttonDisablers, 'buttonDisabler')
+      wrapper.instance().saveForm(mockEvent)
+      expect(spy).toHaveBeenCalledWith(true)
+    })
+
+    it('should disable buttons if it is a prebuilt animation', () => {
+      mockAnimation.user_id = null
+      wrapper = shallow(<PropertiesEditor currentAnimation={mockAnimation} updateCurrentAnimation={mockUpdateCurrentAnimation} />)
+
+      const spy = jest.spyOn(buttonDisablers, 'prebuiltButtonDisabler')
+      wrapper.instance().saveForm(mockEvent)
+      expect(spy).toHaveBeenCalledWith(true)
     })
   })
 
   describe('mapStateToProps', () => {
 
     it('should return a props object with an animation property', () => {
-      const mockState = {animation: mockAnimation}
-      const expected = {animation: mockAnimation}
+      const mockState = {currentAnimation: mockAnimation}
+      const expected = {currentAnimation: mockAnimation}
       expect(mapStateToProps(mockState)).toEqual(expected)
     })
   })
@@ -100,9 +128,9 @@ describe('PropertiesEditor', () => {
 
     it('should return a props object with a loadNewAnimation property', () => {
         const mockDispatch = jest.fn()
-        const actionToDispatch = loadAnimation(mockAnimation)
+        const actionToDispatch = updateCurrentAnimation(mockAnimation)
         const mappedProps = mapDispatchToProps(mockDispatch)
-        mappedProps.updateAnimation(mockAnimation)
+        mappedProps.updateCurrentAnimation(mockAnimation)
         expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
     })
   })

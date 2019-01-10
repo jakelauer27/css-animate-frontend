@@ -1,0 +1,1854 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimationMenu should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AnimationMenu
+    animationForEdit={Object {}}
+    currentAnimation={
+      Object {
+        "id": 1,
+        "keyframes": Array [],
+        "properties": Array [],
+        "user_id": 2,
+      }
+    }
+    loadAnimation={[MockFunction]}
+    myAnimations={
+      Array [
+        Object {
+          "id": 1,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+        Object {
+          "id": 2,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+      ]
+    }
+    prebuiltAnimations={
+      Array [
+        Object {
+          "id": 3,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+        Object {
+          "id": 4,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+      ]
+    }
+    saveOriginalAnimation={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="select-ani-popup"
+        >
+          <header
+            className="select-ani-container-header"
+          >
+            <h2
+              className="my-ani-header"
+            >
+              My Animations
+            </h2>
+            <h2
+              className="prebuilt-ani-header"
+            >
+              Prebuilt prebuiltAnimations
+            </h2>
+          </header>
+          <div
+            className="list-container"
+          >
+            <Connect(MyAnimationList) />
+            <Connect(PreBuiltAnimationList) />
+          </div>
+          <div
+            className="menu-lower-btn-container"
+          >
+            <h3
+              className="select-animation-message"
+            >
+              Please select an animation
+            </h3>
+            <button
+              className="close-select-ani-btn"
+              onClick={[Function]}
+            >
+              Go!
+            </button>
+          </div>
+        </div>,
+        <Route
+          component={[Function]}
+          path="/properties/selectAnimation/create"
+        />,
+        null,
+      ],
+      "className": "select-ani-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>,
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>,
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>,
+          ],
+          "className": "select-ani-popup",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>,
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>,
+              ],
+              "className": "select-ani-container-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "My Animations",
+                  "className": "my-ani-header",
+                },
+                "ref": null,
+                "rendered": "My Animations",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Prebuilt prebuiltAnimations",
+                  "className": "prebuilt-ani-header",
+                },
+                "ref": null,
+                "rendered": "Prebuilt prebuiltAnimations",
+                "type": "h2",
+              },
+            ],
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Connect(MyAnimationList) />,
+                <Connect(PreBuiltAnimationList) />,
+              ],
+              "className": "list-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>,
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>,
+              ],
+              "className": "menu-lower-btn-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Please select an animation",
+                  "className": "select-animation-message",
+                },
+                "ref": null,
+                "rendered": "Please select an animation",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Go!",
+                  "className": "close-select-ani-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Go!",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/properties/selectAnimation/create",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="select-ani-popup"
+          >
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>
+          </div>,
+          <Route
+            component={[Function]}
+            path="/properties/selectAnimation/create"
+          />,
+          null,
+        ],
+        "className": "select-ani-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <header
+                className="select-ani-container-header"
+              >
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>
+              </header>,
+              <div
+                className="list-container"
+              >
+                <Connect(MyAnimationList) />
+                <Connect(PreBuiltAnimationList) />
+              </div>,
+              <div
+                className="menu-lower-btn-container"
+              >
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>
+              </div>,
+            ],
+            "className": "select-ani-popup",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="my-ani-header"
+                  >
+                    My Animations
+                  </h2>,
+                  <h2
+                    className="prebuilt-ani-header"
+                  >
+                    Prebuilt prebuiltAnimations
+                  </h2>,
+                ],
+                "className": "select-ani-container-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "My Animations",
+                    "className": "my-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "My Animations",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Prebuilt prebuiltAnimations",
+                    "className": "prebuilt-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "Prebuilt prebuiltAnimations",
+                  "type": "h2",
+                },
+              ],
+              "type": "header",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Connect(MyAnimationList) />,
+                  <Connect(PreBuiltAnimationList) />,
+                ],
+                "className": "list-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="select-animation-message"
+                  >
+                    Please select an animation
+                  </h3>,
+                  <button
+                    className="close-select-ani-btn"
+                    onClick={[Function]}
+                  >
+                    Go!
+                  </button>,
+                ],
+                "className": "menu-lower-btn-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Please select an animation",
+                    "className": "select-animation-message",
+                  },
+                  "ref": null,
+                  "rendered": "Please select an animation",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Go!",
+                    "className": "close-select-ani-btn",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Go!",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/properties/selectAnimation/create",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`AnimationMenu should match the snapshot if redirect is true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AnimationMenu
+    animationForEdit={Object {}}
+    currentAnimation={
+      Object {
+        "id": 1,
+        "keyframes": Array [],
+        "properties": Array [],
+        "user_id": 2,
+      }
+    }
+    loadAnimation={[MockFunction]}
+    myAnimations={
+      Array [
+        Object {
+          "id": 1,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+        Object {
+          "id": 2,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+      ]
+    }
+    prebuiltAnimations={
+      Array [
+        Object {
+          "id": 3,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+        Object {
+          "id": 4,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+      ]
+    }
+    saveOriginalAnimation={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="select-ani-popup"
+        >
+          <header
+            className="select-ani-container-header"
+          >
+            <h2
+              className="my-ani-header"
+            >
+              My Animations
+            </h2>
+            <h2
+              className="prebuilt-ani-header"
+            >
+              Prebuilt prebuiltAnimations
+            </h2>
+          </header>
+          <div
+            className="list-container"
+          >
+            <Connect(MyAnimationList) />
+            <Connect(PreBuiltAnimationList) />
+          </div>
+          <div
+            className="menu-lower-btn-container"
+          >
+            <h3
+              className="select-animation-message"
+            >
+              Please select an animation
+            </h3>
+            <button
+              className="close-select-ani-btn"
+              onClick={[Function]}
+            >
+              Go!
+            </button>
+          </div>
+        </div>,
+        <Route
+          component={[Function]}
+          path="/properties/selectAnimation/create"
+        />,
+        null,
+      ],
+      "className": "select-ani-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>,
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>,
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>,
+          ],
+          "className": "select-ani-popup",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>,
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>,
+              ],
+              "className": "select-ani-container-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "My Animations",
+                  "className": "my-ani-header",
+                },
+                "ref": null,
+                "rendered": "My Animations",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Prebuilt prebuiltAnimations",
+                  "className": "prebuilt-ani-header",
+                },
+                "ref": null,
+                "rendered": "Prebuilt prebuiltAnimations",
+                "type": "h2",
+              },
+            ],
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Connect(MyAnimationList) />,
+                <Connect(PreBuiltAnimationList) />,
+              ],
+              "className": "list-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>,
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>,
+              ],
+              "className": "menu-lower-btn-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Please select an animation",
+                  "className": "select-animation-message",
+                },
+                "ref": null,
+                "rendered": "Please select an animation",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Go!",
+                  "className": "close-select-ani-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Go!",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/properties/selectAnimation/create",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="select-ani-popup"
+          >
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>
+          </div>,
+          <Route
+            component={[Function]}
+            path="/properties/selectAnimation/create"
+          />,
+          null,
+        ],
+        "className": "select-ani-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <header
+                className="select-ani-container-header"
+              >
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>
+              </header>,
+              <div
+                className="list-container"
+              >
+                <Connect(MyAnimationList) />
+                <Connect(PreBuiltAnimationList) />
+              </div>,
+              <div
+                className="menu-lower-btn-container"
+              >
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>
+              </div>,
+            ],
+            "className": "select-ani-popup",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="my-ani-header"
+                  >
+                    My Animations
+                  </h2>,
+                  <h2
+                    className="prebuilt-ani-header"
+                  >
+                    Prebuilt prebuiltAnimations
+                  </h2>,
+                ],
+                "className": "select-ani-container-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "My Animations",
+                    "className": "my-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "My Animations",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Prebuilt prebuiltAnimations",
+                    "className": "prebuilt-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "Prebuilt prebuiltAnimations",
+                  "type": "h2",
+                },
+              ],
+              "type": "header",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Connect(MyAnimationList) />,
+                  <Connect(PreBuiltAnimationList) />,
+                ],
+                "className": "list-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="select-animation-message"
+                  >
+                    Please select an animation
+                  </h3>,
+                  <button
+                    className="close-select-ani-btn"
+                    onClick={[Function]}
+                  >
+                    Go!
+                  </button>,
+                ],
+                "className": "menu-lower-btn-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Please select an animation",
+                    "className": "select-animation-message",
+                  },
+                  "ref": null,
+                  "rendered": "Please select an animation",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Go!",
+                    "className": "close-select-ani-btn",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Go!",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/properties/selectAnimation/create",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`AnimationMenu should match the snapshot if there is an animation staged for edits 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AnimationMenu
+    animationForEdit={
+      Object {
+        "id": 1,
+        "keyframes": Array [],
+        "properties": Array [],
+        "user_id": 2,
+      }
+    }
+    currentAnimation={
+      Object {
+        "id": 1,
+        "keyframes": Array [],
+        "properties": Array [],
+        "user_id": 2,
+      }
+    }
+    loadAnimation={[MockFunction]}
+    myAnimations={
+      Array [
+        Object {
+          "id": 1,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+        Object {
+          "id": 2,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": 2,
+        },
+      ]
+    }
+    prebuiltAnimations={
+      Array [
+        Object {
+          "id": 3,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+        Object {
+          "id": 4,
+          "keyframes": Array [],
+          "properties": Array [],
+          "user_id": null,
+        },
+      ]
+    }
+    saveOriginalAnimation={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="infoPopup-overlay"
+        />,
+        <div
+          className="select-ani-popup"
+        >
+          <header
+            className="select-ani-container-header"
+          >
+            <h2
+              className="my-ani-header"
+            >
+              My Animations
+            </h2>
+            <h2
+              className="prebuilt-ani-header"
+            >
+              Prebuilt prebuiltAnimations
+            </h2>
+          </header>
+          <div
+            className="list-container"
+          >
+            <Connect(MyAnimationList) />
+            <Connect(PreBuiltAnimationList) />
+          </div>
+          <div
+            className="menu-lower-btn-container"
+          >
+            <h3
+              className="select-animation-message"
+            >
+              Please select an animation
+            </h3>
+            <button
+              className="close-select-ani-btn"
+              onClick={[Function]}
+            >
+              Go!
+            </button>
+          </div>
+        </div>,
+        <Route
+          component={[Function]}
+          path="/properties/selectAnimation/create"
+        />,
+        <Connect(CreateAnimationForm) />,
+      ],
+      "className": "select-ani-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "infoPopup-overlay",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>,
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>,
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>,
+          ],
+          "className": "select-ani-popup",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>,
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>,
+              ],
+              "className": "select-ani-container-header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "My Animations",
+                  "className": "my-ani-header",
+                },
+                "ref": null,
+                "rendered": "My Animations",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Prebuilt prebuiltAnimations",
+                  "className": "prebuilt-ani-header",
+                },
+                "ref": null,
+                "rendered": "Prebuilt prebuiltAnimations",
+                "type": "h2",
+              },
+            ],
+            "type": "header",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Connect(MyAnimationList) />,
+                <Connect(PreBuiltAnimationList) />,
+              ],
+              "className": "list-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>,
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>,
+              ],
+              "className": "menu-lower-btn-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Please select an animation",
+                  "className": "select-animation-message",
+                },
+                "ref": null,
+                "rendered": "Please select an animation",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Go!",
+                  "className": "close-select-ani-btn",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Go!",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/properties/selectAnimation/create",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="infoPopup-overlay"
+          />,
+          <div
+            className="select-ani-popup"
+          >
+            <header
+              className="select-ani-container-header"
+            >
+              <h2
+                className="my-ani-header"
+              >
+                My Animations
+              </h2>
+              <h2
+                className="prebuilt-ani-header"
+              >
+                Prebuilt prebuiltAnimations
+              </h2>
+            </header>
+            <div
+              className="list-container"
+            >
+              <Connect(MyAnimationList) />
+              <Connect(PreBuiltAnimationList) />
+            </div>
+            <div
+              className="menu-lower-btn-container"
+            >
+              <h3
+                className="select-animation-message"
+              >
+                Please select an animation
+              </h3>
+              <button
+                className="close-select-ani-btn"
+                onClick={[Function]}
+              >
+                Go!
+              </button>
+            </div>
+          </div>,
+          <Route
+            component={[Function]}
+            path="/properties/selectAnimation/create"
+          />,
+          <Connect(CreateAnimationForm) />,
+        ],
+        "className": "select-ani-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "infoPopup-overlay",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <header
+                className="select-ani-container-header"
+              >
+                <h2
+                  className="my-ani-header"
+                >
+                  My Animations
+                </h2>
+                <h2
+                  className="prebuilt-ani-header"
+                >
+                  Prebuilt prebuiltAnimations
+                </h2>
+              </header>,
+              <div
+                className="list-container"
+              >
+                <Connect(MyAnimationList) />
+                <Connect(PreBuiltAnimationList) />
+              </div>,
+              <div
+                className="menu-lower-btn-container"
+              >
+                <h3
+                  className="select-animation-message"
+                >
+                  Please select an animation
+                </h3>
+                <button
+                  className="close-select-ani-btn"
+                  onClick={[Function]}
+                >
+                  Go!
+                </button>
+              </div>,
+            ],
+            "className": "select-ani-popup",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="my-ani-header"
+                  >
+                    My Animations
+                  </h2>,
+                  <h2
+                    className="prebuilt-ani-header"
+                  >
+                    Prebuilt prebuiltAnimations
+                  </h2>,
+                ],
+                "className": "select-ani-container-header",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "My Animations",
+                    "className": "my-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "My Animations",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Prebuilt prebuiltAnimations",
+                    "className": "prebuilt-ani-header",
+                  },
+                  "ref": null,
+                  "rendered": "Prebuilt prebuiltAnimations",
+                  "type": "h2",
+                },
+              ],
+              "type": "header",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Connect(MyAnimationList) />,
+                  <Connect(PreBuiltAnimationList) />,
+                ],
+                "className": "list-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="select-animation-message"
+                  >
+                    Please select an animation
+                  </h3>,
+                  <button
+                    className="close-select-ani-btn"
+                    onClick={[Function]}
+                  >
+                    Go!
+                  </button>,
+                ],
+                "className": "menu-lower-btn-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Please select an animation",
+                    "className": "select-animation-message",
+                  },
+                  "ref": null,
+                  "rendered": "Please select an animation",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Go!",
+                    "className": "close-select-ani-btn",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Go!",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/properties/selectAnimation/create",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

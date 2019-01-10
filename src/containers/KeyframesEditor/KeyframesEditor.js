@@ -5,13 +5,15 @@ import { updateCurrentAnimation } from '../../actions/actions'
 import { updateKeyframes } from '../../utils/keyframesInsertion'
 import { PropTypes } from 'prop-types'
 import { uid } from 'react-uid'
+import { prebuiltButtonDisabler, buttonDisabler } from '../../utils/buttondisablers'
+
 
 export class KeyframesEditor extends Component {
 
   saveKeyframesStages(e) {
-    formValidation.keyframeStage(e.target, e.target.value)
+    const valid = formValidation.keyframeStage(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
-    let newAnimation = {...this.props.animation}
+    let newAnimation = {...this.props.currentAnimation}
     let stageLabel = e.target.classList[1]
     let stageIndex = ''
     newAnimation.keyframes.sections.forEach( (stage, i) => {
@@ -22,12 +24,17 @@ export class KeyframesEditor extends Component {
     newAnimation.keyframes.sections[stageIndex].label = e.target.value || '%'
     this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
+    if(this.props.currentAnimation.user_id) {
+      buttonDisabler(valid)
+    } else {
+      prebuiltButtonDisabler(valid)
+    }
   }
 
   saveKeyframesProps(e) {
-    formValidation.keyframeValue(e.target, e.target.value)
+    const valid = formValidation.keyframeValue(e.target, e.target.value)
     document.querySelector('.stop-btn').click()
-    let newAnimation = {...this.props.animation}
+    let newAnimation = {...this.props.currentAnimation}
     let stageLabel = e.target.parentElement.parentElement.childNodes[0].classList[1]
     let propLabel = e.target.classList[1]
     let stageIndex = ''
@@ -45,19 +52,24 @@ export class KeyframesEditor extends Component {
     newAnimation.keyframes.sections[stageIndex].properties[propIndex].value = e.target.value
     this.props.updateCurrentAnimation(newAnimation)
     updateKeyframes(newAnimation.keyframes)
+    if(this.props.currentAnimation.user_id) {
+      buttonDisabler(valid)
+    } else {
+      prebuiltButtonDisabler(valid)
+    }
   }
 
   render() {
-    const { animation } = this.props
-    if (!animation.keyframes) {
+    const { currentAnimation } = this.props
+    if (!currentAnimation.keyframes) {
       return <div></div>
     }
     return (
       <div className='keyframes-container'>
         <div className='keyframe'>
-          <p className='keyframes-name'><span>@keyframes </span>{animation.keyframes.name} <span> {'{'}</span></p>
+          <p className='keyframes-name'><span>@keyframes </span>{currentAnimation.keyframes.name} <span> {'{'}</span></p>
           {
-            animation.keyframes.sections.map( (section) => {
+            currentAnimation.keyframes.sections.map( (section) => {
               return (
                 <div className='keyframes-section' key={uid(section)}>
                   <input className={`keyframes-label ${section.name}`} 
@@ -91,7 +103,7 @@ export class KeyframesEditor extends Component {
 }
 
 export const mapStateToProps = (state) => ({
-  animation: state.currentAnimation
+  currentAnimation: state.currentAnimation
 })
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -99,7 +111,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 KeyframesEditor.propTypes = {
-  animation: PropTypes.object.isRequired,
+  currentAnimation: PropTypes.object.isRequired,
   updateCurrentAnimation: PropTypes.func.isRequired
 }
 

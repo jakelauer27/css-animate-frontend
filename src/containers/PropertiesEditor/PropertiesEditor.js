@@ -17,7 +17,6 @@ export class PropertiesEditor extends Component {
     newAnimation.properties[e.target.classList[1]] = e.target.value
     this.props.updateCurrentAnimation(newAnimation)
     const valid = validateAnimationProp(e.target, e.target.value)
-
     if(this.props.currentAnimation.user_id) {
       buttonDisabler(valid)
     } else {
@@ -51,6 +50,7 @@ export class PropertiesEditor extends Component {
               )
             })
           }
+          <p className='fill-mode-disclaimer'>*fillMode has no effect in this app*</p>
           <p className='close-curly'>{'}'}</p>
         </div>
       </div>
@@ -67,7 +67,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 PropertiesEditor.propTypes = {
-  animation: PropTypes.object,
+  currentAnimation: PropTypes.object,
   updateCurrentAnimation: PropTypes.func.isRequired
 }
 

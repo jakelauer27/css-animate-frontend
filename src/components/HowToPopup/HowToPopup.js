@@ -19,13 +19,13 @@ export default class HowToPopup extends Component {
                 how to play
               </NavLink>
               <NavLink 
-                to={`/properties/howto/properties`}
+                to={`/properties/howto/keyframes`}
                 activeClassName='selected-section'
                 className='keyframes header-button'>
                 keyframes
               </NavLink>
               <NavLink 
-                to={`/properties/howto/keyframes`}
+                to={`/properties/howto/properties`}
                 activeClassName='selected-section'
                 className='animation header-button'>
                 animation properties

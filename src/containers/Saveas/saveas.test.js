@@ -4,7 +4,9 @@ import React from 'react'
 import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/actions'
 import { getMyAnimations } from '../../thunks/getMyAnimations'
 import * as API from '../../utils/apiCalls/apiCalls'
+import * as CSSInsertion from '../../utils/keyframesInsertion'
 
+jest.mock('../../utils/keyframesInsertion')
 jest.mock('../../utils/apiCalls/apiCalls')
 jest.mock('../../thunks/getMyAnimations')
 
@@ -134,7 +136,7 @@ describe('Saveas', () => {
   })
 
   it('should have a default state', () => {
-    const expected = {name: ''}
+    const expected = {name: '', disabled: true}
     expect(wrapper.state()).toEqual(expected)
   })
 
@@ -142,10 +144,10 @@ describe('Saveas', () => {
 
     it('should update name in state', () => {
       const mockEvent = {target: {value: 'jake'}}
-      const expected = { name: 'jake'}
+      const expected = 'jake'
       wrapper.instance().handleChange(mockEvent)
 
-      expect(wrapper.state()).toEqual(expected)
+      expect(wrapper.state().name).toEqual(expected)
     })
   })
 
@@ -192,6 +194,14 @@ describe('Saveas', () => {
       await wrapper.instance().handleSubmit(mockEvent)
 
       expect(mockUpdateCurrentAnimation).toHaveBeenCalledWith(expected)
+    })
+
+    it('should call CSS.insertion', async () => {
+      const expected = {"name": "test", "sections": [{"label": "0%", "name": "0%", "properties": [{"name": "transform", "value": "translateX(-300px)"}]}, {"label": "100%", "name": "100%", "properties": [{"name": "transform", "value": "translateX(0px)"}]}]}
+      const spy = jest.spyOn(CSSInsertion, 'updateKeyframes')
+      await wrapper.instance().handleSubmit(mockEvent)
+
+      expect(spy).toHaveBeenCalledWith(expected)
     })
 
     it('should call closePopup', async () => {

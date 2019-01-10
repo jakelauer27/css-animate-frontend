@@ -82,6 +82,7 @@ ShallowWrapper {
           />
           <button
             className="save-form-btn"
+            disabled={true}
             onClick={[Function]}
           >
             Save
@@ -126,6 +127,7 @@ ShallowWrapper {
             />,
             <button
               className="save-form-btn"
+              disabled={true}
               onClick={[Function]}
             >
               Save
@@ -173,6 +175,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Save",
               "className": "save-form-btn",
+              "disabled": true,
               "onClick": [Function],
             },
             "ref": null,
@@ -222,6 +225,7 @@ ShallowWrapper {
             />
             <button
               className="save-form-btn"
+              disabled={true}
               onClick={[Function]}
             >
               Save
@@ -266,6 +270,7 @@ ShallowWrapper {
               />,
               <button
                 className="save-form-btn"
+                disabled={true}
                 onClick={[Function]}
               >
                 Save
@@ -313,6 +318,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Save",
                 "className": "save-form-btn",
+                "disabled": true,
                 "onClick": [Function],
               },
               "ref": null,

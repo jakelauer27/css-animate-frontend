@@ -18,13 +18,6 @@ import SignUp from '../SignUp/SignUp'
 import Viewer from '../Viewer/Viewer'
 import { createStore } from 'redux'
 
-jest.mock('../../components/HowToPopup/HowToPopup')
-jest.mock('../Viewer/Viewer')
-jest.mock('../../components/Error/Error')
-jest.mock('../Header/Header')
-jest.mock('../Editor/Editor')
-jest.mock('../Login/Login')
-jest.mock('../SignUp/SignUp')
 jest.mock('../AnimationMenu/AnimationMenu')
 jest.mock('../../utils/keyframesInsertion')
 jest.mock('../../thunks/getMyAnimations')
@@ -77,6 +70,21 @@ describe('App', () => {
     })
 
     it('should call getMyAnimations if a user is logged in', async () => {
+      wrapper = shallow( 
+        <App 
+          prebuiltAnimations={mockPrebuiltAnimations}
+          user_id={null}
+          getPrebuiltAnimations={mockGetPrebuiltAnimations}
+          updateCurrentAnimation={mockUpdateCurrentAnimation}
+          saveOriginalAnimation={mockSaveOriginalAnimation}
+          getMyAnimations={mockGetMyAnimations}
+        />)
+      await wrapper.instance().componentDidMount()
+
+      expect(mockGetMyAnimations).toHaveBeenCalled()
+    })
+
+    it('should not call getMyAnimations if a user is not logged in', async () => {
       await wrapper.instance().componentDidMount()
 
       expect(mockGetMyAnimations).toHaveBeenCalled()
@@ -104,7 +112,7 @@ describe('App', () => {
   
   describe('mapStateToProps', () => {
 
-    it('shoudld return a props object with a user_id and prebuiltanimations property', () => {
+    it('should return a props object with a user_id and prebuiltanimations property', () => {
       const mockState = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user:{id: 1}}
       const expected = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user_id: 1}
       const result = mapStateToProps(mockState)
@@ -149,46 +157,122 @@ describe('App', () => {
 
   describe('routes', () => {
 
-    // it('should redirect to properties if at the base route', () => {
-    //   let wrapper = mount(
-    //     <Provider store={createStore(() => ({name: 'mockAnimation', keyframes: {}}))}>
-    //       <MemoryRouter initialEntries={['/']}>
-    //         <App 
-    //           prebuiltAnimations={mockPrebuiltAnimations}
-    //           user_id={1}
-    //           getPrebuiltAnimations={mockGetPrebuiltAnimations}
-    //           updateCurrentAnimation={mockUpdateCurrentAnimation}
-    //           saveOriginalAnimation={mockSaveOriginalAnimation}
-    //           getMyAnimations={mockGetMyAnimations}
-    //         />
-    //       </MemoryRouter>
-    //     </Provider>
-    //     )
-    //     expect(wrapper.find(Editor)).toHaveLength(1)
-    //     expect(wrapper.find(Viewer)).toHaveLength(1)
-    // })
+    it('should redirect to properties if at the base route', () => {
+      let wrapper = mount(
+        <Provider store={createStore(() => ({
+            user: {name: 'jake', id: 1},
+            currentAnimation: {user_id: 1}
+          }))
+          }>
+          <MemoryRouter initialEntries={['/']}>
+            <App 
+              prebuiltAnimations={mockPrebuiltAnimations}
+              user_id={1}
+              getPrebuiltAnimations={mockGetPrebuiltAnimations}
+              updateCurrentAnimation={mockUpdateCurrentAnimation}
+              saveOriginalAnimation={mockSaveOriginalAnimation}
+              getMyAnimations={mockGetMyAnimations}
+              location={{pathname: '/'}}
+            />
+          </MemoryRouter>
+        </Provider>
+        )
+        expect(wrapper.find(Editor)).toHaveLength(1)
+        expect(wrapper.find(Viewer)).toHaveLength(1)
+    })
 
-    // it('should render Editor and Viewer with the correct animation', () => {
-    //   let wrapper = mount(
-    //     <Provider store={createStore(() => ({animation: mockAnimation}))}>
-    //       <MemoryRouter initialEntries={['/slideInY/properties']}>
-    //         <App />
-    //       </MemoryRouter>
-    //     </Provider>
-    //     )
-    //     expect(wrapper.find(Editor)).toHaveLength(1)
-    //     expect(wrapper.find(Viewer)).toHaveLength(1)
-    // })
+    it('should render Editor and Viewer at the properties route', () => {
+      let wrapper = mount(
+        <Provider store={createStore(() => ({
+            user: {name: 'jake', id: 1},
+            currentAnimation: {user_id: 1}
+          }))
+          }>
+          <MemoryRouter initialEntries={['/properties']}>
+            <App 
+              prebuiltAnimations={mockPrebuiltAnimations}
+              user_id={1}
+              getPrebuiltAnimations={mockGetPrebuiltAnimations}
+              updateCurrentAnimation={mockUpdateCurrentAnimation}
+              saveOriginalAnimation={mockSaveOriginalAnimation}
+              getMyAnimations={mockGetMyAnimations}
+              location={{pathname: '/properties'}}
+            />
+          </MemoryRouter>
+        </Provider>
+        )
+        expect(wrapper.find(Editor)).toHaveLength(1)
+        expect(wrapper.find(Viewer)).toHaveLength(1)
+    })
 
-    // it('should render the howToPopup if at the howto route', () => {
-    //   let wrapper = mount(
-    //     <Provider store={createStore(() => ({animation: mockAnimation}))}>
-    //       <MemoryRouter initialEntries={['/slideInX/properties/howto']}>
-    //         <App  />
-    //       </MemoryRouter>
-    //     </Provider>
-    //     )
-    //     expect(wrapper.find(HowToPopup)).toHaveLength(1)
-    // })
+    it('should render Editor and Viewer at the keyframes route', () => {
+      let wrapper = mount(
+        <Provider store={createStore(() => ({
+            user: {name: 'jake', id: 1},
+            currentAnimation: {user_id: 1}
+          }))
+          }>
+          <MemoryRouter initialEntries={['/keyframes']}>
+            <App 
+              prebuiltAnimations={mockPrebuiltAnimations}
+              user_id={1}
+              getPrebuiltAnimations={mockGetPrebuiltAnimations}
+              updateCurrentAnimation={mockUpdateCurrentAnimation}
+              saveOriginalAnimation={mockSaveOriginalAnimation}
+              getMyAnimations={mockGetMyAnimations}
+              location={{pathname: '/keyframes'}}
+            />
+          </MemoryRouter>
+        </Provider>
+        )
+        expect(wrapper.find(Editor)).toHaveLength(1)
+        expect(wrapper.find(Viewer)).toHaveLength(1)
+    })
+
+    it('should render Error at the error route', () => {
+      let wrapper = mount(
+        <Provider store={createStore(() => ({
+            user: {name: 'jake', id: 1},
+            currentAnimation: {user_id: 1}
+          }))
+          }>
+          <MemoryRouter initialEntries={['/error']}>
+            <App 
+              prebuiltAnimations={mockPrebuiltAnimations}
+              user_id={1}
+              getPrebuiltAnimations={mockGetPrebuiltAnimations}
+              updateCurrentAnimation={mockUpdateCurrentAnimation}
+              saveOriginalAnimation={mockSaveOriginalAnimation}
+              getMyAnimations={mockGetMyAnimations}
+              location={{pathname: '/error'}}
+            />
+          </MemoryRouter>
+        </Provider>
+        )
+        expect(wrapper.find(Error)).toHaveLength(1)
+    })
+
+    it('should redirect to Error at incorrect route', () => {
+      let wrapper = mount(
+        <Provider store={createStore(() => ({
+            user: {name: 'jake', id: 1},
+            currentAnimation: {user_id: 1}
+          }))
+          }>
+          <MemoryRouter initialEntries={['/errsdfor']}>
+            <App 
+              prebuiltAnimations={mockPrebuiltAnimations}
+              user_id={1}
+              getPrebuiltAnimations={mockGetPrebuiltAnimations}
+              updateCurrentAnimation={mockUpdateCurrentAnimation}
+              saveOriginalAnimation={mockSaveOriginalAnimation}
+              getMyAnimations={mockGetMyAnimations}
+              location={{pathname: '/erasdfror'}}
+            />
+          </MemoryRouter>
+        </Provider>
+        )
+        expect(wrapper.find(Error)).toHaveLength(1)
+    })
   })
 })

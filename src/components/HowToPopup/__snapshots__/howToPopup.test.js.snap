@@ -35,7 +35,7 @@ ShallowWrapper {
             activeClassName="selected-section"
             aria-current="page"
             className="keyframes header-button"
-            to="/properties/howto/properties"
+            to="/properties/howto/keyframes"
           >
             keyframes
           </NavLink>
@@ -43,7 +43,7 @@ ShallowWrapper {
             activeClassName="selected-section"
             aria-current="page"
             className="animation header-button"
-            to="/properties/howto/keyframes"
+            to="/properties/howto/properties"
           >
             animation properties
           </NavLink>
@@ -94,7 +94,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="keyframes header-button"
-              to="/properties/howto/properties"
+              to="/properties/howto/keyframes"
             >
               keyframes
             </NavLink>
@@ -102,7 +102,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="animation header-button"
-              to="/properties/howto/keyframes"
+              to="/properties/howto/properties"
             >
               animation properties
             </NavLink>
@@ -151,7 +151,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="keyframes header-button"
-                to="/properties/howto/properties"
+                to="/properties/howto/keyframes"
               >
                 keyframes
               </NavLink>,
@@ -159,7 +159,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="animation header-button"
-                to="/properties/howto/keyframes"
+                to="/properties/howto/properties"
               >
                 animation properties
               </NavLink>,
@@ -192,7 +192,7 @@ ShallowWrapper {
                 "aria-current": "page",
                 "children": "keyframes",
                 "className": "keyframes header-button",
-                "to": "/properties/howto/properties",
+                "to": "/properties/howto/keyframes",
               },
               "ref": null,
               "rendered": "keyframes",
@@ -207,7 +207,7 @@ ShallowWrapper {
                 "aria-current": "page",
                 "children": "animation properties",
                 "className": "animation header-button",
-                "to": "/properties/howto/keyframes",
+                "to": "/properties/howto/properties",
               },
               "ref": null,
               "rendered": "animation properties",
@@ -320,7 +320,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="keyframes header-button"
-              to="/properties/howto/properties"
+              to="/properties/howto/keyframes"
             >
               keyframes
             </NavLink>
@@ -328,7 +328,7 @@ ShallowWrapper {
               activeClassName="selected-section"
               aria-current="page"
               className="animation header-button"
-              to="/properties/howto/keyframes"
+              to="/properties/howto/properties"
             >
               animation properties
             </NavLink>
@@ -379,7 +379,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="keyframes header-button"
-                to="/properties/howto/properties"
+                to="/properties/howto/keyframes"
               >
                 keyframes
               </NavLink>
@@ -387,7 +387,7 @@ ShallowWrapper {
                 activeClassName="selected-section"
                 aria-current="page"
                 className="animation header-button"
-                to="/properties/howto/keyframes"
+                to="/properties/howto/properties"
               >
                 animation properties
               </NavLink>
@@ -436,7 +436,7 @@ ShallowWrapper {
                   activeClassName="selected-section"
                   aria-current="page"
                   className="keyframes header-button"
-                  to="/properties/howto/properties"
+                  to="/properties/howto/keyframes"
                 >
                   keyframes
                 </NavLink>,
@@ -444,7 +444,7 @@ ShallowWrapper {
                   activeClassName="selected-section"
                   aria-current="page"
                   className="animation header-button"
-                  to="/properties/howto/keyframes"
+                  to="/properties/howto/properties"
                 >
                   animation properties
                 </NavLink>,
@@ -477,7 +477,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "keyframes",
                   "className": "keyframes header-button",
-                  "to": "/properties/howto/properties",
+                  "to": "/properties/howto/keyframes",
                 },
                 "ref": null,
                 "rendered": "keyframes",
@@ -492,7 +492,7 @@ ShallowWrapper {
                   "aria-current": "page",
                   "children": "animation properties",
                   "className": "animation header-button",
-                  "to": "/properties/howto/keyframes",
+                  "to": "/properties/howto/properties",
                 },
                 "ref": null,
                 "rendered": "animation properties",

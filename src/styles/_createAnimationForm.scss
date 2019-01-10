@@ -76,15 +76,11 @@
     flex-direction: column;
     align-items: center;
     overflow: scroll;
-    height: 90%;
+    height: 86%;
   }
 }
 
 ///////KEYFRAMES SECTION
-
-.keyframes-form {
-  width: 100%;
-}
 
 @keyframes myFadeIn {
   0% {
@@ -98,102 +94,106 @@
   
 }
 
-.keyframes-section {
-  animation: myFadeIn .3s linear 0s 1 normal; 
-  animation-fill-mode: forwards;
-  margin: 0;
+.keyframes-form {
   width: 100%;
 
-  .section-label-container {
-    display: flex;
-    margin-top: 5px;
-
-    .section-label {
+  .keyframes-section {
+    animation: myFadeIn .3s linear 0s 1 normal; 
+    animation-fill-mode: forwards;
+    margin: 0;
+    width: 100%;
+  
+    .section-label-container {
+      display: flex;
+      margin-top: 5px;
+  
+      .section-label {
+        flex-grow: 0;
+        width: 50px;
+        margin-right: 3px;
+      }
+    }
+  
+    .property-container {
+      display: flex;
+  
+      select {
+        width: 180px;
+        color: black;
+      }
+    }
+  
+    .property-label {
+      margin: 5px 5px 0px 15px;
       flex-grow: 0;
-      width: 50px;
-      margin-right: 3px;
     }
-  }
-
-  .property-container {
-    display: flex;
-
-    select {
-      width: 180px;
-      color: black;
+  
+    .property-value {
+      margin-top: 5px;
+      width: 100%;
+  
+      &:disabled {
+        background-color: rgb(179, 179, 179);
+      }
     }
-  }
-
-  .property-label {
-    margin: 5px 5px 0px 15px;
-    flex-grow: 0;
-  }
-
-  .property-value {
-    margin-top: 5px;
-    width: 100%;
-
-    &:disabled {
-      background-color: rgb(179, 179, 179);
+  
+    .add-property-btn {
+      margin-left: 8px;
+      font-size: .8em;
+  
+      &:hover {
+        transform: translateX(0) scale(1);
+      }
     }
-  }
-
-  .add-property-btn {
-    margin-left: 8px;
-    font-size: .8em;
-
-    &:hover {
-      transform: translateX(0) scale(1);
+  
+    .add-remove-container {
+      display: flex;
     }
-  }
-
-  .add-remove-container {
-    display: flex;
-  }
-
-  .add-section-btn {
-    padding: 0px 4px;
-    margin-bottom: 15px;
-
-    &:hover {
-      transform: translateX(0) scale(1);
+  
+    .add-section-btn {
+      padding: 0px 4px;
+      margin-bottom: 15px;
+  
+      &:hover {
+        transform: translateX(0) scale(1);
+      }
     }
-  }
-
-  .btn-text {
-    color: rgb(56, 56, 56);
-    font-weight: 300;
-    font-size: .8em;
-    
-    &:hover {
-      text-decoration: underline;
-      cursor: pointer;
+  
+    .btn-text {
+      color: rgb(56, 56, 56);
+      font-weight: 300;
+      font-size: .8em;
+      
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
-  }
-
-  .remove-section-btn {
-    padding: 0px 4px;
-    margin-bottom: 15px;
-    margin-left: 6px;
-  }
-
-  .section-underline {
-    width: 100%;
-    height: 1px;
-    background-color: grey;
-    margin-bottom: 10px;
-  }
-
-  .delete-property {
-    padding-top: 7px;
-    margin-left: 4px;
-  }
-
-  .fa-minus-circle {
-    color: rgb(214, 78, 78);
-
-    &:hover {
-      transform: translateX(0) scale(1);
+  
+    .remove-section-btn {
+      padding: 0px 4px;
+      margin-bottom: 15px;
+      margin-left: 6px;
+    }
+  
+    .section-underline {
+      width: 100%;
+      height: 1px;
+      background-color: grey;
+      margin-bottom: 10px;
+    }
+  
+    .delete-property {
+      padding-top: 7px;
+      margin-left: 4px;
+    }
+  
+    .fa-minus-circle {
+      color: rgb(214, 78, 78);
+  
+      &:hover {
+        transform: translateX(0) scale(1);
+      }
     }
   }
 }

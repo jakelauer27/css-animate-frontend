@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+html {
+  min-width: 1180px;
+}
+
 body {
   background-image: url('./images/space.jpg');
   background-blend-mode: darken;
@@ -11,6 +15,8 @@ body {
   background-size: cover;
   height: 100%;
   padding: 0px;
+  min-width: 1180px;
+  position: relative;
 }
 
 .main-title {

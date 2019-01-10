@@ -178,7 +178,7 @@ describe('CopyPopup', () => {
   describe('mapStateToProps', () => {
 
     it('should return a props object with the animation', () => {
-      const mockState = {animation: mockAnimation}
+      const mockState = {currentAnimation: mockAnimation}
       const expected = {animation: mockAnimation}
       const result = mapStateToProps(mockState)
       expect(result).toEqual(expected)

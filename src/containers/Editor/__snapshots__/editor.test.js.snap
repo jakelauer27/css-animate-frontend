@@ -6,6 +6,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Editor
     currentAnimation={
       Object {
+        "ani_name": "slideInX",
+        "id": 1,
         "keyframes": Object {
           "name": "slideInX",
           "sections": Array [
@@ -40,10 +42,11 @@ ShallowWrapper {
           "name": "slideInX",
           "timingFunction": "ease",
         },
+        "user_id": 2,
       }
     }
     editAnimation={[MockFunction]}
-    originalAnimation="{}"
+    originalAnimation="{\\"keyframes\\": \\"test\\"}"
     saveOriginalAnimation={[MockFunction]}
     updateCurrentAnimation={[MockFunction]}
     user_id={1}
@@ -90,11 +93,11 @@ ShallowWrapper {
           >
             <Switch>
               <Route
-                component={[Function]}
+                component={[MockFunction]}
                 path="/properties"
               />
               <Route
-                component={[Function]}
+                component={[MockFunction]}
                 path="/keyframes"
               />
             </Switch>
@@ -128,7 +131,7 @@ ShallowWrapper {
           </button>
           <button
             className="lower-btn save-btn"
-            disabled={true}
+            disabled={false}
             onClick={[Function]}
           >
             save
@@ -170,11 +173,11 @@ ShallowWrapper {
             >
               <Switch>
                 <Route
-                  component={[Function]}
+                  component={[MockFunction]}
                   path="/properties"
                 />
                 <Route
-                  component={[Function]}
+                  component={[MockFunction]}
                   path="/keyframes"
                 />
               </Switch>
@@ -256,11 +259,11 @@ ShallowWrapper {
               "children": Array [
                 <Switch>
                   <Route
-                    component={[Function]}
+                    component={[MockFunction]}
                     path="/properties"
                   />
                   <Route
-                    component={[Function]}
+                    component={[MockFunction]}
                     path="/keyframes"
                   />
                 </Switch>,
@@ -280,11 +283,11 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <Route
-                      component={[Function]}
+                      component={[MockFunction]}
                       path="/properties"
                     />,
                     <Route
-                      component={[Function]}
+                      component={[MockFunction]}
                       path="/keyframes"
                     />,
                   ],
@@ -296,7 +299,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "component": [Function],
+                      "component": [MockFunction],
                       "path": "/properties",
                     },
                     "ref": null,
@@ -308,7 +311,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "component": [Function],
+                      "component": [MockFunction],
                       "path": "/keyframes",
                     },
                     "ref": null,
@@ -363,7 +366,7 @@ ShallowWrapper {
             </button>,
             <button
               className="lower-btn save-btn"
-              disabled={true}
+              disabled={false}
               onClick={[Function]}
             >
               save
@@ -421,7 +424,7 @@ ShallowWrapper {
             "props": Object {
               "children": "save",
               "className": "lower-btn save-btn",
-              "disabled": true,
+              "disabled": false,
               "onClick": [Function],
             },
             "ref": null,
@@ -470,11 +473,11 @@ ShallowWrapper {
             >
               <Switch>
                 <Route
-                  component={[Function]}
+                  component={[MockFunction]}
                   path="/properties"
                 />
                 <Route
-                  component={[Function]}
+                  component={[MockFunction]}
                   path="/keyframes"
                 />
               </Switch>
@@ -508,7 +511,7 @@ ShallowWrapper {
             </button>
             <button
               className="lower-btn save-btn"
-              disabled={true}
+              disabled={false}
               onClick={[Function]}
             >
               save
@@ -550,11 +553,11 @@ ShallowWrapper {
               >
                 <Switch>
                   <Route
-                    component={[Function]}
+                    component={[MockFunction]}
                     path="/properties"
                   />
                   <Route
-                    component={[Function]}
+                    component={[MockFunction]}
                     path="/keyframes"
                   />
                 </Switch>
@@ -636,11 +639,11 @@ ShallowWrapper {
                 "children": Array [
                   <Switch>
                     <Route
-                      component={[Function]}
+                      component={[MockFunction]}
                       path="/properties"
                     />
                     <Route
-                      component={[Function]}
+                      component={[MockFunction]}
                       path="/keyframes"
                     />
                   </Switch>,
@@ -660,11 +663,11 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <Route
-                        component={[Function]}
+                        component={[MockFunction]}
                         path="/properties"
                       />,
                       <Route
-                        component={[Function]}
+                        component={[MockFunction]}
                         path="/keyframes"
                       />,
                     ],
@@ -676,7 +679,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "component": [Function],
+                        "component": [MockFunction],
                         "path": "/properties",
                       },
                       "ref": null,
@@ -688,7 +691,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "class",
                       "props": Object {
-                        "component": [Function],
+                        "component": [MockFunction],
                         "path": "/keyframes",
                       },
                       "ref": null,
@@ -743,7 +746,7 @@ ShallowWrapper {
               </button>,
               <button
                 className="lower-btn save-btn"
-                disabled={true}
+                disabled={false}
                 onClick={[Function]}
               >
                 save
@@ -801,7 +804,846 @@ ShallowWrapper {
               "props": Object {
                 "children": "save",
                 "className": "lower-btn save-btn",
-                "disabled": true,
+                "disabled": false,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "save",
+              "type": "button",
+            },
+            false,
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Editor should match the snapshot when rendering saveAs 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Editor
+    currentAnimation={
+      Object {
+        "ani_name": "slideInX",
+        "id": 1,
+        "keyframes": Object {
+          "name": "slideInX",
+          "sections": Array [
+            Object {
+              "label": "0%",
+              "name": "0%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(-300px)",
+                },
+              ],
+            },
+            Object {
+              "label": "100%",
+              "name": "100%",
+              "properties": Array [
+                Object {
+                  "name": "transform",
+                  "value": "translateX(0px)",
+                },
+              ],
+            },
+          ],
+        },
+        "properties": Object {
+          "delay": "0s",
+          "direction": "normal",
+          "duration": "1.5s",
+          "fillMode": "forwards",
+          "iterationCount": "1",
+          "name": "slideInX",
+          "timingFunction": "ease",
+        },
+        "user_id": 2,
+      }
+    }
+    editAnimation={[MockFunction]}
+    originalAnimation="{\\"keyframes\\": \\"test\\"}"
+    saveOriginalAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
+    user_id={1}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="editor-container"
+        >
+          <div
+            className="editor-options"
+          >
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="animation-btn"
+              to="/properties"
+            >
+              properties
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              aria-current="page"
+              className="keyframes-btn"
+              to="/keyframes"
+            >
+              keyframes
+            </NavLink>
+          </div>
+          <div
+            className="editor"
+          >
+            <Switch>
+              <Route
+                component={[MockFunction]}
+                path="/properties"
+              />
+              <Route
+                component={[MockFunction]}
+                path="/keyframes"
+              />
+            </Switch>
+            <Route
+              path="/properties/copy"
+              render={[Function]}
+            />
+          </div>
+        </div>,
+        <div
+          className="editor-bottom-btns-container"
+        >
+          <Link
+            className="lower-btn copy-btn"
+            replace={false}
+            to="/properties/copy"
+          >
+            copy code
+          </Link>
+          <button
+            className="lower-btn reset-btn"
+            onClick={[Function]}
+          >
+            reset
+          </button>
+          <button
+            className="lower-btn save-as-btn"
+            onClick={[Function]}
+          >
+            save as
+          </button>
+          <button
+            className="lower-btn save-btn"
+            disabled={false}
+            onClick={[Function]}
+          >
+            save
+          </button>
+        </div>,
+      ],
+      "className": "editor-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="editor-options"
+            >
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="animation-btn"
+                to="/properties"
+              >
+                properties
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="keyframes-btn"
+                to="/keyframes"
+              >
+                keyframes
+              </NavLink>
+            </div>,
+            <div
+              className="editor"
+            >
+              <Switch>
+                <Route
+                  component={[MockFunction]}
+                  path="/properties"
+                />
+                <Route
+                  component={[MockFunction]}
+                  path="/keyframes"
+                />
+              </Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
+            </div>,
+          ],
+          "className": "editor-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="animation-btn"
+                  to="/properties"
+                >
+                  properties
+                </NavLink>,
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="keyframes-btn"
+                  to="/keyframes"
+                >
+                  keyframes
+                </NavLink>,
+              ],
+              "className": "editor-options",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "properties",
+                  "className": "animation-btn",
+                  "to": "/properties",
+                },
+                "ref": null,
+                "rendered": "properties",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "selected",
+                  "aria-current": "page",
+                  "children": "keyframes",
+                  "className": "keyframes-btn",
+                  "to": "/keyframes",
+                },
+                "ref": null,
+                "rendered": "keyframes",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Switch>
+                  <Route
+                    component={[MockFunction]}
+                    path="/properties"
+                  />
+                  <Route
+                    component={[MockFunction]}
+                    path="/keyframes"
+                  />
+                </Switch>,
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />,
+              ],
+              "className": "editor",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Route
+                      component={[MockFunction]}
+                      path="/properties"
+                    />,
+                    <Route
+                      component={[MockFunction]}
+                      path="/keyframes"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [MockFunction],
+                      "path": "/properties",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "component": [MockFunction],
+                      "path": "/keyframes",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "path": "/properties/copy",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              className="lower-btn copy-btn"
+              replace={false}
+              to="/properties/copy"
+            >
+              copy code
+            </Link>,
+            <button
+              className="lower-btn reset-btn"
+              onClick={[Function]}
+            >
+              reset
+            </button>,
+            <button
+              className="lower-btn save-as-btn"
+              onClick={[Function]}
+            >
+              save as
+            </button>,
+            <button
+              className="lower-btn save-btn"
+              disabled={false}
+              onClick={[Function]}
+            >
+              save
+            </button>,
+            false,
+          ],
+          "className": "editor-bottom-btns-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "copy code",
+              "className": "lower-btn copy-btn",
+              "replace": false,
+              "to": "/properties/copy",
+            },
+            "ref": null,
+            "rendered": "copy code",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "reset",
+              "className": "lower-btn reset-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "reset",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "save as",
+              "className": "lower-btn save-as-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "save as",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "save",
+              "className": "lower-btn save-btn",
+              "disabled": false,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "save",
+            "type": "button",
+          },
+          false,
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="editor-container"
+          >
+            <div
+              className="editor-options"
+            >
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="animation-btn"
+                to="/properties"
+              >
+                properties
+              </NavLink>
+              <NavLink
+                activeClassName="selected"
+                aria-current="page"
+                className="keyframes-btn"
+                to="/keyframes"
+              >
+                keyframes
+              </NavLink>
+            </div>
+            <div
+              className="editor"
+            >
+              <Switch>
+                <Route
+                  component={[MockFunction]}
+                  path="/properties"
+                />
+                <Route
+                  component={[MockFunction]}
+                  path="/keyframes"
+                />
+              </Switch>
+              <Route
+                path="/properties/copy"
+                render={[Function]}
+              />
+            </div>
+          </div>,
+          <div
+            className="editor-bottom-btns-container"
+          >
+            <Link
+              className="lower-btn copy-btn"
+              replace={false}
+              to="/properties/copy"
+            >
+              copy code
+            </Link>
+            <button
+              className="lower-btn reset-btn"
+              onClick={[Function]}
+            >
+              reset
+            </button>
+            <button
+              className="lower-btn save-as-btn"
+              onClick={[Function]}
+            >
+              save as
+            </button>
+            <button
+              className="lower-btn save-btn"
+              disabled={false}
+              onClick={[Function]}
+            >
+              save
+            </button>
+          </div>,
+        ],
+        "className": "editor-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="editor-options"
+              >
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="animation-btn"
+                  to="/properties"
+                >
+                  properties
+                </NavLink>
+                <NavLink
+                  activeClassName="selected"
+                  aria-current="page"
+                  className="keyframes-btn"
+                  to="/keyframes"
+                >
+                  keyframes
+                </NavLink>
+              </div>,
+              <div
+                className="editor"
+              >
+                <Switch>
+                  <Route
+                    component={[MockFunction]}
+                    path="/properties"
+                  />
+                  <Route
+                    component={[MockFunction]}
+                    path="/keyframes"
+                  />
+                </Switch>
+                <Route
+                  path="/properties/copy"
+                  render={[Function]}
+                />
+              </div>,
+            ],
+            "className": "editor-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <NavLink
+                    activeClassName="selected"
+                    aria-current="page"
+                    className="animation-btn"
+                    to="/properties"
+                  >
+                    properties
+                  </NavLink>,
+                  <NavLink
+                    activeClassName="selected"
+                    aria-current="page"
+                    className="keyframes-btn"
+                    to="/keyframes"
+                  >
+                    keyframes
+                  </NavLink>,
+                ],
+                "className": "editor-options",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "selected",
+                    "aria-current": "page",
+                    "children": "properties",
+                    "className": "animation-btn",
+                    "to": "/properties",
+                  },
+                  "ref": null,
+                  "rendered": "properties",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "selected",
+                    "aria-current": "page",
+                    "children": "keyframes",
+                    "className": "keyframes-btn",
+                    "to": "/keyframes",
+                  },
+                  "ref": null,
+                  "rendered": "keyframes",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Switch>
+                    <Route
+                      component={[MockFunction]}
+                      path="/properties"
+                    />
+                    <Route
+                      component={[MockFunction]}
+                      path="/keyframes"
+                    />
+                  </Switch>,
+                  <Route
+                    path="/properties/copy"
+                    render={[Function]}
+                  />,
+                ],
+                "className": "editor",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <Route
+                        component={[MockFunction]}
+                        path="/properties"
+                      />,
+                      <Route
+                        component={[MockFunction]}
+                        path="/keyframes"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "component": [MockFunction],
+                        "path": "/properties",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "component": [MockFunction],
+                        "path": "/keyframes",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "path": "/properties/copy",
+                    "render": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                className="lower-btn copy-btn"
+                replace={false}
+                to="/properties/copy"
+              >
+                copy code
+              </Link>,
+              <button
+                className="lower-btn reset-btn"
+                onClick={[Function]}
+              >
+                reset
+              </button>,
+              <button
+                className="lower-btn save-as-btn"
+                onClick={[Function]}
+              >
+                save as
+              </button>,
+              <button
+                className="lower-btn save-btn"
+                disabled={false}
+                onClick={[Function]}
+              >
+                save
+              </button>,
+              false,
+            ],
+            "className": "editor-bottom-btns-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "copy code",
+                "className": "lower-btn copy-btn",
+                "replace": false,
+                "to": "/properties/copy",
+              },
+              "ref": null,
+              "rendered": "copy code",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "reset",
+                "className": "lower-btn reset-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "reset",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "save as",
+                "className": "lower-btn save-as-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "save as",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "save",
+                "className": "lower-btn save-btn",
+                "disabled": false,
                 "onClick": [Function],
               },
               "ref": null,

@@ -4,8 +4,10 @@ exports[`PropertiesEditor should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PropertiesEditor
-    animation={
+    currentAnimation={
       Object {
+        "ani_name": "slideInX",
+        "id": 1,
         "keyframes": Object {
           "name": "slideInX",
           "sections": Array [
@@ -40,9 +42,10 @@ ShallowWrapper {
           "name": "slideInX",
           "timingFunction": "ease",
         },
+        "user_id": 1,
       }
     }
-    updateAnimation={[MockFunction]}
+    updateCurrentAnimation={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -110,7 +113,7 @@ ShallowWrapper {
           <p
             className="ani-prop timingFunction"
           >
-            timing-function
+            timingFunction
             <span>
               :
             </span>
@@ -146,7 +149,7 @@ ShallowWrapper {
           <p
             className="ani-prop iterationCount"
           >
-            iteration-count
+            iterationCount
             <span>
               :
             </span>
@@ -182,7 +185,7 @@ ShallowWrapper {
           <p
             className="ani-prop fillMode"
           >
-            fill-mode
+            fillMode
             <span>
               :
             </span>
@@ -194,6 +197,11 @@ ShallowWrapper {
             value="forwards"
           />
         </div>
+        <p
+          className="fill-mode-disclaimer"
+        >
+          *fillMode has no effect in this app*
+        </p>
         <p
           className="close-curly"
         >
@@ -260,7 +268,7 @@ ShallowWrapper {
               <p
                 className="ani-prop timingFunction"
               >
-                timing-function
+                timingFunction
                 <span>
                   :
                 </span>
@@ -296,7 +304,7 @@ ShallowWrapper {
               <p
                 className="ani-prop iterationCount"
               >
-                iteration-count
+                iterationCount
                 <span>
                   :
                 </span>
@@ -332,7 +340,7 @@ ShallowWrapper {
               <p
                 className="ani-prop fillMode"
               >
-                fill-mode
+                fillMode
                 <span>
                   :
                 </span>
@@ -345,6 +353,11 @@ ShallowWrapper {
               />
             </div>,
           ],
+          <p
+            className="fill-mode-disclaimer"
+          >
+            *fillMode has no effect in this app*
+          </p>,
           <p
             className="close-curly"
           >
@@ -530,14 +543,14 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "val-timing-function",
+          "key": "val-timingFunction",
           "nodeType": "host",
           "props": Object {
             "children": Array [
               <p
                 className="ani-prop timingFunction"
               >
-                timing-function
+                timingFunction
                 <span>
                   :
                 </span>
@@ -559,7 +572,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "timing-function",
+                  "timingFunction",
                   <span>
                     :
                   </span>,
@@ -568,7 +581,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
-                "timing-function",
+                "timingFunction",
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -674,14 +687,14 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "val-iteration-count",
+          "key": "val-iterationCount",
           "nodeType": "host",
           "props": Object {
             "children": Array [
               <p
                 className="ani-prop iterationCount"
               >
-                iteration-count
+                iterationCount
                 <span>
                   :
                 </span>
@@ -703,7 +716,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "iteration-count",
+                  "iterationCount",
                   <span>
                     :
                   </span>,
@@ -712,7 +725,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
-                "iteration-count",
+                "iterationCount",
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -818,14 +831,14 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "val-fill-mode",
+          "key": "val-fillMode",
           "nodeType": "host",
           "props": Object {
             "children": Array [
               <p
                 className="ani-prop fillMode"
               >
-                fill-mode
+                fillMode
                 <span>
                   :
                 </span>
@@ -847,7 +860,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "fill-mode",
+                  "fillMode",
                   <span>
                     :
                   </span>,
@@ -856,7 +869,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
-                "fill-mode",
+                "fillMode",
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -887,6 +900,18 @@ ShallowWrapper {
             },
           ],
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "*fillMode has no effect in this app*",
+            "className": "fill-mode-disclaimer",
+          },
+          "ref": null,
+          "rendered": "*fillMode has no effect in this app*",
+          "type": "p",
         },
         Object {
           "instance": null,
@@ -964,7 +989,7 @@ ShallowWrapper {
             <p
               className="ani-prop timingFunction"
             >
-              timing-function
+              timingFunction
               <span>
                 :
               </span>
@@ -1000,7 +1025,7 @@ ShallowWrapper {
             <p
               className="ani-prop iterationCount"
             >
-              iteration-count
+              iterationCount
               <span>
                 :
               </span>
@@ -1036,7 +1061,7 @@ ShallowWrapper {
             <p
               className="ani-prop fillMode"
             >
-              fill-mode
+              fillMode
               <span>
                 :
               </span>
@@ -1048,6 +1073,11 @@ ShallowWrapper {
               value="forwards"
             />
           </div>
+          <p
+            className="fill-mode-disclaimer"
+          >
+            *fillMode has no effect in this app*
+          </p>
           <p
             className="close-curly"
           >
@@ -1114,7 +1144,7 @@ ShallowWrapper {
                 <p
                   className="ani-prop timingFunction"
                 >
-                  timing-function
+                  timingFunction
                   <span>
                     :
                   </span>
@@ -1150,7 +1180,7 @@ ShallowWrapper {
                 <p
                   className="ani-prop iterationCount"
                 >
-                  iteration-count
+                  iterationCount
                   <span>
                     :
                   </span>
@@ -1186,7 +1216,7 @@ ShallowWrapper {
                 <p
                   className="ani-prop fillMode"
                 >
-                  fill-mode
+                  fillMode
                   <span>
                     :
                   </span>
@@ -1199,6 +1229,11 @@ ShallowWrapper {
                 />
               </div>,
             ],
+            <p
+              className="fill-mode-disclaimer"
+            >
+              *fillMode has no effect in this app*
+            </p>,
             <p
               className="close-curly"
             >
@@ -1384,14 +1419,14 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "val-timing-function",
+            "key": "val-timingFunction",
             "nodeType": "host",
             "props": Object {
               "children": Array [
                 <p
                   className="ani-prop timingFunction"
                 >
-                  timing-function
+                  timingFunction
                   <span>
                     :
                   </span>
@@ -1413,7 +1448,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "timing-function",
+                    "timingFunction",
                     <span>
                       :
                     </span>,
@@ -1422,7 +1457,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  "timing-function",
+                  "timingFunction",
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -1528,14 +1563,14 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "val-iteration-count",
+            "key": "val-iterationCount",
             "nodeType": "host",
             "props": Object {
               "children": Array [
                 <p
                   className="ani-prop iterationCount"
                 >
-                  iteration-count
+                  iterationCount
                   <span>
                     :
                   </span>
@@ -1557,7 +1592,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "iteration-count",
+                    "iterationCount",
                     <span>
                       :
                     </span>,
@@ -1566,7 +1601,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  "iteration-count",
+                  "iterationCount",
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -1672,14 +1707,14 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "val-fill-mode",
+            "key": "val-fillMode",
             "nodeType": "host",
             "props": Object {
               "children": Array [
                 <p
                   className="ani-prop fillMode"
                 >
-                  fill-mode
+                  fillMode
                   <span>
                     :
                   </span>
@@ -1701,7 +1736,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "fill-mode",
+                    "fillMode",
                     <span>
                       :
                     </span>,
@@ -1710,7 +1745,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  "fill-mode",
+                  "fillMode",
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -1747,6 +1782,18 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "children": "*fillMode has no effect in this app*",
+              "className": "fill-mode-disclaimer",
+            },
+            "ref": null,
+            "rendered": "*fillMode has no effect in this app*",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
               "children": "}",
               "className": "close-curly",
             },
@@ -1757,6 +1804,61 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`PropertiesEditor should match the snapshot if there is no animation 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PropertiesEditor
+    currentAnimation={Object {}}
+    updateCurrentAnimation={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
       "type": "div",
     },
   ],
