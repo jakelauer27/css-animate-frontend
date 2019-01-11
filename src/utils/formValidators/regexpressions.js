@@ -39,7 +39,7 @@ const transformRegex= {
   'initial': RegExp('^initial(?!.)'),
   'inherit': RegExp('^inherit(?!.)'),
   'matrix': RegExp('^matrix[(](-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?,(-)?[0-9][0-9]?[0-9]?[)](?!.)'),
-  'perspective': RegExp('^perspective[(][0-9][0-9]?[0-9]?[0-9]?(cm|rem|px)[)](?!.)')
+  'perspective': RegExp('^perspective[(][0-9][0-9]?[0-9]?[0-9]?(cm|rem|px|em)[)](?!.)')
 }
 
 const keyframeValueRegex= {
