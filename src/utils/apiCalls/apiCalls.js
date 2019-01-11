@@ -1,6 +1,6 @@
 export const addUser = async (user) => {
   try {
-    const response = await fetch('https://css-animate.herokuapp.com/api/users/new', {
+    const response = await fetch('https://css-animate-backend.herokuapp.com/api/users/new', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
@@ -16,7 +16,7 @@ export const addUser = async (user) => {
 
 export const addAnimation = async (user_id, ani_name, properties, keyframes) => {
   try {
-    const response = await fetch(`https://css-animate.herokuapp.com/api/users/${user_id}/animations/new`, {
+    const response = await fetch(`https://css-animate-backend.herokuapp.com/api/users/${user_id}/animations/new`, {
       method: 'POST',
       body: JSON.stringify({user_id, ani_name, properties, keyframes}),
       headers: {
@@ -32,7 +32,7 @@ export const addAnimation = async (user_id, ani_name, properties, keyframes) => 
 
 export const editAnimation = async (user_id, animation_id, animation) => {
   try {
-    const response = await fetch(`https://css-animate.herokuapp.com/api/users/${user_id}/animations/${animation_id}`, {
+    const response = await fetch(`https://css-animate-backend.herokuapp.com/api/users/${user_id}/animations/${animation_id}`, {
       method: 'PUT',
       body: JSON.stringify({user_id, animation_id, ani_name: animation.properties.name, properties: animation.properties, keyframes: animation.keyframes}),
       headers: {

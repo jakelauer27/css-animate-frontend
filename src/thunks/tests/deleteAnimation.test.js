@@ -18,7 +18,7 @@ describe('deleteAnimation', () => {
 
     const thunk = deleteAnimation(1, 2)
     await thunk(mockDispatch)
-    const expected = 'http://localhost:3000/api/users/1/animations/2'
+    const expected = 'https://css-animate-backend.herokuapp.com/api/users/1/animations/2'
 
     expect(window.fetch).toHaveBeenCalledWith(expected, {method: 'DELETE'})
   })

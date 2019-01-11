@@ -3,7 +3,7 @@ import { signIn } from '../actions/actions'
 export const loginUser = (user) => {
   return async (dispatch) => {
     try {
-      const response = await fetch("https://css-animate.herokuapp.com/api/users/", {
+      const response = await fetch("https://css-animate-backend.herokuapp.com/api/users/", {
         method: 'POST',
         body: JSON.stringify(user),
         headers: {

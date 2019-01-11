@@ -16,7 +16,7 @@ describe('API calls', () => {
     })
 
     it('should call fetch with the correct params', async () => {
-      const expectedUrl = 'http://localhost:3000/api/users/new'
+      const expectedUrl = 'https://css-animate-backend.herokuapp.com/api/users/new'
       const expectObject = {      
         method: 'POST',
         body: JSON.stringify(mockUser),
@@ -62,7 +62,7 @@ describe('API calls', () => {
     })
 
     it('should call fetch with the correct params', async () => {
-      const expectedUrl = 'http://localhost:3000/api/users/1/animations/new'
+      const expectedUrl = 'https://css-animate-backend.herokuapp.com/api/users/1/animations/new'
       const expectObject = {      
         method: 'POST',
         body: JSON.stringify({user_id: mockUser_id, ani_name: mockAni_name, properties: mockProperties, keyframes: mockKeyframes}),
@@ -108,7 +108,7 @@ describe('API calls', () => {
     })
 
     it('should call fetch with the correct params', async () => {
-      const expectedUrl = 'http://localhost:3000/api/users/1/animations/3'
+      const expectedUrl = 'https://css-animate-backend.herokuapp.com/api/users/1/animations/3'
       const expectObject = {      
         method: 'PUT',
         body: JSON.stringify({

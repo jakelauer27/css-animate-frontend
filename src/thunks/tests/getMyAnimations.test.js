@@ -19,7 +19,7 @@ describe('getMyAnimations', () => {
   it('should call fetch with the correct url', async () => {
     const thunk = getMyAnimations(1)
     await thunk(mockDispatch)
-    const expected = 'http://localhost:3000/api/users/1/animations'
+    const expected = 'https://css-animate-backend.herokuapp.com/api/users/1/animations'
 
     expect(window.fetch).toHaveBeenCalledWith(expected)
   })
