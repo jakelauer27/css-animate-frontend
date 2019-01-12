@@ -1,5 +1,5 @@
 .editor {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .animation-container,
@@ -8,7 +8,6 @@
   font-size: 1.5em;
   font-family: 'Inconsolata', monospace;
   margin: 10px 16px;
-  overflow: scroll;
 
   p {
     margin-top: 5px;
