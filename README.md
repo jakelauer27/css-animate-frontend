@@ -19,7 +19,7 @@ CSS animations are an incredible way to give sites a very polished and professio
 
 ### See it Live! 
 
-css-animate.com
+[css-animate.com](css-animate.com)
 
 
 ### Primary Technologies Used
