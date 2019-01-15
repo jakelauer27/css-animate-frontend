@@ -15,6 +15,7 @@ import HowToPopup from '../../components/HowToPopup/HowToPopup'
 import Login from '../Login/Login'
 import SignUp from '../SignUp/SignUp'
 import Viewer from '../Viewer/Viewer'
+import Loading from '../../components/Loading/Loading'
 import '../../styles/app.scss'
 
 export class App extends Component {
@@ -35,7 +36,10 @@ export class App extends Component {
     CSSInsertion.updateKeyframes({...prebuiltAnimations[0].keyframes}) 
   }
 
-  render() {
+  render() {  
+    if(this.props.isLoading) {
+      return <Loading />
+    }
     return (
       <div className="App">
         <Header />
@@ -79,7 +83,8 @@ export class App extends Component {
 
 export const mapStateToProps = (state) => ({
   prebuiltAnimations: state.prebuiltAnimations,
-  user_id: state.user.id
+  user_id: state.user.id,
+  isLoading: state.isLoading
 })
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -95,7 +100,8 @@ App.propTypes = {
   getPrebuiltAnimations: PropTypes.func.isRequired,
   updateCurrentAnimation: PropTypes.func.isRequired,
   saveOriginalAnimation: PropTypes.func.isRequired,
-  getMyAnimations: PropTypes.func.isRequired
+  getMyAnimations: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

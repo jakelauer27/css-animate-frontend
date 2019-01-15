@@ -7,14 +7,8 @@ import { updateCurrentAnimation, saveOriginalAnimation } from '../../actions/act
 import * as CSSInsertion from '../../utils/keyframesInsertion'
 import { MemoryRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import rootReducer from '../../reducers/index'
-import AnimationMenu from '../AnimationMenu/AnimationMenu'
 import Editor from '../Editor/Editor'
 import Error from '../../components/Error/Error'
-import Header from '../Header/Header'
-import HowToPopup from '../../components/HowToPopup/HowToPopup'
-import Login from '../Login/Login'
-import SignUp from '../SignUp/SignUp'
 import Viewer from '../Viewer/Viewer'
 import { createStore } from 'redux'
 
@@ -39,6 +33,7 @@ describe('App', () => {
     mockPrebuiltAnimations = [{name: 'mockAnimation', keyframes: {}}]
     wrapper = shallow( 
       <App 
+        isLoading={false}
         prebuiltAnimations={mockPrebuiltAnimations}
         user_id={1}
         getPrebuiltAnimations={mockGetPrebuiltAnimations}
@@ -51,6 +46,19 @@ describe('App', () => {
 
 
   it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the snapshot if loading', () => {
+    wrapper = shallow(<App 
+      isLoading={true}
+      prebuiltAnimations={mockPrebuiltAnimations}
+      user_id={1}
+      getPrebuiltAnimations={mockGetPrebuiltAnimations}
+      updateCurrentAnimation={mockUpdateCurrentAnimation}
+      saveOriginalAnimation={mockSaveOriginalAnimation}
+      getMyAnimations={mockGetMyAnimations}
+    />)
     expect(wrapper).toMatchSnapshot()
   })
 
@@ -113,8 +121,8 @@ describe('App', () => {
   describe('mapStateToProps', () => {
 
     it('should return a props object with a user_id and prebuiltanimations property', () => {
-      const mockState = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user:{id: 1}}
-      const expected = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user_id: 1}
+      const mockState = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user:{id: 1}, isLoading: false}
+      const expected = {prebuiltAnimations: {keyframes: {name: 'slideInX'}}, user_id: 1, isLoading: false}
       const result = mapStateToProps(mockState)
       expect(result).toEqual(expected)
     })
@@ -238,6 +246,7 @@ describe('App', () => {
           }>
           <MemoryRouter initialEntries={['/error']}>
             <App 
+              isLoading={false}
               prebuiltAnimations={mockPrebuiltAnimations}
               user_id={1}
               getPrebuiltAnimations={mockGetPrebuiltAnimations}

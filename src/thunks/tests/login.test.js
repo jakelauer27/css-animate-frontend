@@ -17,7 +17,7 @@ describe('loginUser', () => {
   })
 
   it('should call fetch with the correct params', async () => {
-    const expectedUrl = 'https://css-animate-backend.herokuapp.com/api/api/users/'
+    const expectedUrl = 'https://css-animate-backend.herokuapp.com/api/users/'
     const expectedObject = {
       method: 'POST',
       body: JSON.stringify(mockUser),

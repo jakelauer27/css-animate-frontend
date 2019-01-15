@@ -5,6 +5,7 @@ import originalAnimationReducer from './originalAnimationReducer'
 import currentAnimationReducer from './currentAnimationReducer';
 import myAnimationsReducer from './myAnimationsReducer';
 import animationForEditReducer from './animationForEditReducer';
+import loadingReducer from './loadingReducer';
 
 const rootReducer = combineReducers({
   currentAnimation: currentAnimationReducer,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   animationForEdit: animationForEditReducer,
   prebuiltAnimations: prebuiltAnimationReducer,
   myAnimations: myAnimationsReducer,
-  user: userReducer
+  user: userReducer,
+  isLoading: loadingReducer
 })
 
 export default rootReducer

@@ -41,4 +41,9 @@ export const removeAnimationForEdit = () => ({
   type: 'REMOVE_ANIMATION_FOR_EDIT'
 })
 
+export const isLoading = (bool) => ({
+  type: 'IS_LOADING',
+  bool
+})
+
 

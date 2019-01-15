@@ -1,8 +1,9 @@
-import { signIn } from '../actions/actions'
+import { signIn, isLoading } from '../actions/actions'
 
 export const loginUser = (user) => {
   return async (dispatch) => {
     try {
+      dispatch(isLoading(true))
       const response = await fetch("https://css-animate-backend.herokuapp.com/api/users/", {
         method: 'POST',
         body: JSON.stringify(user),
@@ -12,6 +13,7 @@ export const loginUser = (user) => {
       })
       const data = await response.json()
       dispatch(signIn(data.data))
+      dispatch(isLoading(false))
       return data
     } catch(error) {
       return new Error(error)

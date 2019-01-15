@@ -88,4 +88,13 @@ describe('actions', () => {
       expect(actions.removeAnimationForEdit()).toEqual(expected)
     })
   })
+
+  describe('isLoading', () => {
+
+    it('should return a type of IS_LOADING with a boolean', () => {
+      const expected = {type: 'IS_LOADING', bool: true}
+
+      expect(actions.isLoading(true)).toEqual(expected)
+    })
+  })
 })
